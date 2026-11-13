@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Montallegro</string>
+    <string name="title_activity_main">Visit Montallegro Bovo Marina</string>
+    <string name="package_name">it.visitmontallegrobovomarina.infoapp</string>
+    <string name="custom_url_scheme">visitmontallegro</string>
+    <string name="scorciatoia_spiagge">Spiagge</string>
+    <string name="scorciatoia_torre">Visit Torre Salsa</string>
+    <string name="scorciatoia_visit">Visit</string>
+</resources>

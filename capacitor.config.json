@@ -1,0 +1,25 @@
+{
+  "appId": "it.visitmontallegrobovomarina.infoapp",
+  "appName": "Visit Montallegro Bovo Marina",
+  "webDir": "www",
+  "backgroundColor": "#F3F5F7",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#F3F5F7"
+  },
+  "android": {
+    "backgroundColor": "#F3F5F7"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 700,
+      "launchAutoHide": true,
+      "backgroundColor": "#FFFFFF",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "overlaysWebView": true
+    }
+  }
+}

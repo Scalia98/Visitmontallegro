@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scorciatoie dell'icona di Visit Montallegro Bovo Marina (pressione prolungata) -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="spiagge"
+        android:enabled="true"
+        android:icon="@drawable/ic_scorciatoia_spiagge"
+        android:shortcutShortLabel="@string/scorciatoia_spiagge"
+        android:shortcutLongLabel="@string/scorciatoia_spiagge">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="visitmontallegro://spiagge"
+            android:targetPackage="it.visitmontallegrobovomarina.infoapp"
+            android:targetClass="it.visitmontallegrobovomarina.infoapp.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="torresalsa"
+        android:enabled="true"
+        android:icon="@drawable/ic_scorciatoia_torre"
+        android:shortcutShortLabel="@string/scorciatoia_torre"
+        android:shortcutLongLabel="@string/scorciatoia_torre">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="visitmontallegro://torre-salsa"
+            android:targetPackage="it.visitmontallegrobovomarina.infoapp"
+            android:targetClass="it.visitmontallegrobovomarina.infoapp.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="visit"
+        android:enabled="true"
+        android:icon="@drawable/ic_scorciatoia_visit"
+        android:shortcutShortLabel="@string/scorciatoia_visit"
+        android:shortcutLongLabel="@string/scorciatoia_visit">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="visitmontallegro://visit"
+            android:targetPackage="it.visitmontallegrobovomarina.infoapp"
+            android:targetClass="it.visitmontallegrobovomarina.infoapp.MainActivity" />
+    </shortcut>
+</shortcuts>

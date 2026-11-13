@@ -1,0 +1,78 @@
+# Visit Montallegro Bovo Marina — compilazione nel cloud con Codemagic (https://codemagic.io), senza bisogno di un Mac.
+# Prima di partire leggi LEGGIMI.md, sezione "Pubblicare senza Mac".
+workflows:
+  ios-testflight:
+    name: iPhone → TestFlight
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: App Store Connect   # nome della chiave API in Codemagic (Settings → Integrations → Developer Portal)
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: it.visitmontallegrobovomarina.infoapp
+      vars:
+        XCODE_PROJECT: ios/App/App.xcodeproj
+        XCODE_SCHEME: App
+      node: 22
+      xcode: latest
+    scripts:
+      - name: Installa le dipendenze
+        script: npm ci || npm install
+      - name: Scarica nell'app le foto del portale e di Wikimedia Commons
+        script: node strumenti/scarica-foto.mjs || true
+      - name: Copia l'app nel progetto iOS
+        script: npx cap sync ios
+      - name: Numero di build progressivo
+        script: |
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = $BUILD_NUMBER;/g" "$XCODE_PROJECT/project.pbxproj"
+      - name: Firma
+        script: xcode-project use-profiles
+      - name: Compila
+        script: xcode-project build-ipa --project "$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+
+  android-apk:
+    name: Android → APK da installare sul telefono
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      node: 22
+      java: 21
+    scripts:
+      - name: Installa le dipendenze
+        script: npm ci || npm install
+      - name: Scarica nell'app le foto del portale e di Wikimedia Commons
+        script: node strumenti/scarica-foto.mjs || true
+      - name: Copia l'app nel progetto Android
+        script: npx cap sync android
+      - name: Compila
+        script: cd android && ./gradlew assembleDebug
+    artifacts:
+      - android/app/build/outputs/**/*.apk
+
+  android-aab:
+    name: Android → App Bundle firmato
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      android_signing:
+        - montallegro_keystore   # keystore caricato in Codemagic: Settings → Code signing identities → Android keystores
+      node: 22
+      java: 21
+    scripts:
+      - name: Installa le dipendenze
+        script: npm ci || npm install
+      - name: Scarica nell'app le foto del portale e di Wikimedia Commons
+        script: node strumenti/scarica-foto.mjs || true
+      - name: Copia l'app nel progetto Android
+        script: npx cap sync android
+      - name: Compila
+        script: cd android && ./gradlew bundleRelease
+    artifacts:
+      - android/app/build/outputs/**/*.aab

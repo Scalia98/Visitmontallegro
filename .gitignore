@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+# generati da "npx cap sync"
+ios/App/App/public/
+android/app/src/main/assets/public/
+android/.gradle/
+android/build/
+android/app/build/
+ios/App/build/
+*.keystore
+*.jks
