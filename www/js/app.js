@@ -61,7 +61,9 @@
       nessunEvento: "Nessun evento in programma per ora.", dateDaDefinire: "date in arrivo", organizza: "Organizza",
       infoTitolo: "Info utili", infoIntro: "Emergenze, contatti, trasporti e servizi.", emergenze: "Emergenze",
       lingua: "Lingua", app: "L'app", privacy: "Privacy", versione: "Versione", crediti: "Crediti foto e dati",
-      progetto: "Visit Montallegro Bovo Marina è un progetto della Pro Loco Montallegro APS.",
+      progetto: "Visit Montallegro Bovo Marina è un progetto della Pro Loco Montallegro APS.", realizzataDa: "App realizzata da",
+      tipiItinerario: { piedi: "A piedi", bici: "In bici", cavallo: "A cavallo", mare: "Mare", natura: "Natura", cultura: "Cultura", sapori: "Sapori" },
+      tracciaGps: "Traccia del percorso",
       vento: "Vento", mare: "Mare", acqua: "Acqua", tramonto: "Tramonto", alba: "Alba", percepita: "Percepita", umidita: "Umidità",
       meteoTitolo: "Meteo a Montallegro", meteoAdesso: "Adesso", previsioni: "Prossimi giorni", ilMare: "Il mare a Bovo Marina", onde: "Onde",
       meteoNo: "Dati meteo non disponibili: controlla la connessione.", oggi: "Oggi", domani: "Domani", pioggia: "pioggia",
@@ -73,7 +75,7 @@
       erroreDati: "Non riesco a caricare i contenuti. Chiudi e riapri l'app.", nonTrovato: "Pagina non trovata.", torna: "Torna alla home",
       salvatoToast: "Salvato nei preferiti", rimossoToast: "Rimosso dai preferiti",
       scoprila: "Scopri Montallegro e Bovo Marina con l'app Visit Montallegro",
-      stagionale: "Stagionale", landingSotto: "Oasi WWF · Montallegro (AG)", navetta: "Navetta per la spiaggia",
+      stagionale: "Stagionale", landingSotto: "Oasi WWF · Montallegro (AG)",
       escursione: "Escursione guidata", nellaRiserva: "Nella riserva", foto: "Foto", vediMappa: "Vedi sulla mappa",
       messaggioWa: "Ciao! Vorrei informazioni su: {x} (dall'app Visit Montallegro)", cellulare: "Cellulare",
       vediIndicazioni: "Come arrivare", tuttiNumeri: "Tutti i numeri utili", fotoDi: "Foto: {x}",
@@ -143,7 +145,9 @@
       nessunEvento: "No events scheduled right now.", dateDaDefinire: "dates coming soon", organizza: "Organised by",
       infoTitolo: "Useful info", infoIntro: "Emergencies, contacts, transport and services.", emergenze: "Emergencies",
       lingua: "Language", app: "The app", privacy: "Privacy", versione: "Version", crediti: "Photo & data credits",
-      progetto: "Visit Montallegro Bovo Marina is a project by Pro Loco Montallegro APS.",
+      progetto: "Visit Montallegro Bovo Marina is a project by Pro Loco Montallegro APS.", realizzataDa: "App made by",
+      tipiItinerario: { piedi: "On foot", bici: "By bike", cavallo: "On horseback", mare: "Sea", natura: "Nature", cultura: "Culture", sapori: "Food & wine" },
+      tracciaGps: "Route map",
       vento: "Wind", mare: "Sea", acqua: "Water", tramonto: "Sunset", alba: "Sunrise", percepita: "Feels like", umidita: "Humidity",
       meteoTitolo: "Weather in Montallegro", meteoAdesso: "Now", previsioni: "Next days", ilMare: "The sea at Bovo Marina", onde: "Waves",
       meteoNo: "Weather data unavailable: check your connection.", oggi: "Today", domani: "Tomorrow", pioggia: "rain",
@@ -155,7 +159,7 @@
       erroreDati: "Can't load the content. Close and reopen the app.", nonTrovato: "Page not found.", torna: "Back to home",
       salvatoToast: "Saved to favourites", rimossoToast: "Removed from favourites",
       scoprila: "Discover Montallegro and Bovo Marina with the Visit Montallegro app",
-      stagionale: "Seasonal", landingSotto: "WWF reserve · Montallegro (AG)", navetta: "Beach shuttle",
+      stagionale: "Seasonal", landingSotto: "WWF reserve · Montallegro (AG)",
       escursione: "Guided trip", nellaRiserva: "In the reserve", foto: "Photos", vediMappa: "See on the map",
       messaggioWa: "Hi! I'd like some information about: {x} (from the Visit Montallegro app)", cellulare: "Mobile",
       vediIndicazioni: "Getting here", tuttiNumeri: "All useful numbers", fotoDi: "Photo: {x}",
@@ -362,7 +366,6 @@
   function coloreDi(p) { return COLORI[catPrincipale(p).colore] || 'var(--mare)'; }
   function iconaDi(p) {
     if (p.id === 'torre-salsa') return 'tower';
-    if (p.id === 'stop-over') return 'shuttle';
     if (p.fonte === 'portale' && p.sotto && ICONE_SOTTO[p.sotto]) return ICONE_SOTTO[p.sotto];
     if (p.categorie[0] === 'dintorni' && p.categorie[1] && categoria(p.categorie[1])) return categoria(p.categorie[1]).icona;   // un museo nei dintorni ha l'icona del museo, non dell'auto
     return catPrincipale(p).icona;
@@ -616,9 +619,21 @@
       '<div class="evento-testo"><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(intervallo(e)) + (e.dateDaDefinire ? ' · ' + t('dateDaDefinire') : '') + '</p></div>' +
       ic('chevron', false, 'freccia') + '</a>';
   }
+  /* ---------- itinerari: "tipo" decide filtro, etichetta e segnaposto della foto ---------- */
+  var CAT_TIPO = { piedi: 'natura', bici: 'esperienze', cavallo: 'esperienze', mare: 'spiagge', natura: 'natura', cultura: 'cultura', sapori: 'sapori' };
+  function tipoItinerario(it) { var tipi = t('tipiItinerario') || {}; return it.tipo && tipi[it.tipo] ? tipi[it.tipo] : ''; }
+  function fotoItinerario(it, classe, eager) {
+    return copertina({ foto: it.foto, categorie: [CAT_TIPO[it.tipo] || 'esperienze'], id: 'itinerario' }, classe, false, eager);
+  }
+  function etichettaItinerario(it, conTappe) {
+    return [tipoItinerario(it), tx(it.durata), conTappe ? t('tappe', { n: it.tappe.length }) : ''].filter(Boolean).join(' · ');
+  }
   function cardItinerario(it) {
-    return '<a class="card" href="#itinerario-' + it.id + '">' + copertina({ foto: it.foto, categorie: ['esperienze'], id: 'itinerario' }, 'card-foto') +
-      '<div class="card-testo"><span class="etichetta" style="--c:var(--corallo)">' + esc(tx(it.durata)) + ' · ' + t('tappe', { n: it.tappe.length }) + '</span><h3>' + esc(tx(it.titolo)) + '</h3></div></a>';
+    return '<a class="card" href="#itinerario-' + it.id + '">' + fotoItinerario(it, 'card-foto') +
+      '<div class="card-testo"><span class="etichetta" style="--c:var(--corallo)">' + esc(etichettaItinerario(it, !it.tipo)) + '</span><h3>' + esc(tx(it.titolo)) + '</h3></div></a>';
+  }
+  function firmaApp() {
+    return '<span>' + esc(t('realizzataDa')) + ' ' + esterno('https://disegnailtuosito.it', 'Disegna il tuo sito', 'firma-app') + '</span>';
   }
   function tile(href, etichetta, icona, colore) {
     return '<a class="tile" href="' + href + '" style="--c:' + colore + '"><span class="tile-bolla">' + ic(icona) + '</span><span class="tile-nome">' + esc(etichetta) + '</span></a>';
@@ -757,7 +772,7 @@
       '<section class="blocco">' + titoloSezione(t('itinerari'), '#itinerari') +
       '<div class="binario">' + DATA.itinerari.map(cardItinerario).join('') + '</div></section>' +
       '<section class="blocco">' + titoloSezione(t('proLoco')) + riquadriProLoco() + '</section>' +
-      '<footer class="crediti"><span>' + t('progetto') + '</span></footer></div>';
+      '<footer class="crediti"><span>' + t('progetto') + '</span>' + firmaApp() + '</footer></div>';
   };
 
   /* ---------- Pro Loco: diventa socio, diventa partner ---------- */
@@ -840,7 +855,7 @@
     var vicine = tutte.filter(function (p) { return p.fonte === 'ricerca'; });
     var lidi = schedeDi('spiagge').filter(function (p) { return p.categorie.indexOf('mangiare') >= 0; });
     return '<div class="pagina sotto">' + barra(t('spiagge')) +
-      '<div class="testata-foto">' + copertina({ foto: 'img/foto/torre-salsa-acqua.jpg', categorie: ['spiagge'], id: 'x', credito: 'Stop Over Torre Salsa' }, '', true, true) +
+      '<div class="testata-foto">' + copertina({ foto: 'img/foto/torre-salsa-acqua.jpg', categorie: ['spiagge'], id: 'x' }, '', true, true) +
       '<div class="testata-foto-testo"><h1>' + t('spiagge') + '</h1><p>' + esc(t('spiaggeIntro')) + '</p></div></div>' +
       '<div class="elenco grande">' + spiagge.map(function (p) { return cardGrande(p); }).join('') + '</div>' +
       (vicine.length ? '<section class="blocco">' + titoloSezione(t('spiaggeVicine')) + '<div class="elenco">' + vicine.map(function (p) { return riga(p); }).join('') + '</div></section>' : '') +
@@ -854,7 +869,7 @@
       '<h3>' + esc(tx(p.nome)) + bollino(p) + '</h3><p>' + esc(tx(p.breve)) + '</p>' + (extra || '') + '</div></a>';
   }
 
-  var ORDINE_ESPERIENZE = ['seacily-torre-salsa', 'seacily-capo-bianco', 'seacily-monte-suso', 'stop-over', 'wwf-torre-salsa', 'opera-ammare', 'scuderia-ranch-todaro', 'sup-kayak-torre-salsa', 'lago-gorgo', 'museo-civilta-contadina'];
+  var ORDINE_ESPERIENZE = ['seacily-torre-salsa', 'seacily-capo-bianco', 'seacily-monte-suso', 'opera-ammare', 'scuderia-ranch-todaro', 'wwf-torre-salsa', 'birdwatching-gorgo', 'sup-kayak-torre-salsa', 'museo-civilta-contadina'];
   VISTE.esperienze = function () {
     var lista = partnerPrima(schedeDi('esperienze').slice().sort(function (a, b) {
       var x = ORDINE_ESPERIENZE.indexOf(a.id), y = ORDINE_ESPERIENZE.indexOf(b.id);
@@ -931,8 +946,8 @@
     if (!box) return;
     var q = norm(ricerca).trim();
     if (q.length < 2) {
-      var idee = lang === 'it' ? ['Farmacia', 'Pizzeria', 'B&B', 'Piscina', 'Navetta', 'Olio', 'Formaggi', 'Cavallo', 'Supermercato', 'Taxi']
-        : ['Pharmacy', 'Pizzeria', 'B&B', 'Pool', 'Shuttle', 'Olive oil', 'Cheese', 'Horse', 'Supermarket', 'Taxi'];
+      var idee = lang === 'it' ? ['Farmacia', 'Pizzeria', 'B&B', 'Piscina', 'Birdwatching', 'Olio', 'Formaggi', 'Cavallo', 'Supermercato', 'Taxi']
+        : ['Pharmacy', 'Pizzeria', 'B&B', 'Pool', 'Birdwatching', 'Olive oil', 'Cheese', 'Horse', 'Supermarket', 'Taxi'];
       box.innerHTML = '<p class="conteggio">' + esc(t('provaCon')) + '</p><div class="chips idee">' + idee.map(function (x) {
         return '<button type="button" class="chip" data-azione="suggerisci" data-val="' + esc(x) + '">' + esc(x) + '</button>';
       }).join('') + '</div>';
@@ -966,7 +981,7 @@
     var p = scheda('torre-salsa');
     if (!p) return VISTE.nontrovato();
     var paragrafi = txa(p.testo).map(function (s) { return '<p>' + esc(s) + '</p>'; }).join('');
-    var stop = scheda('stop-over'), escur = scheda('seacily-torre-salsa'), dama = scheda('dama-bianca');
+    var escur = scheda('seacily-torre-salsa'), dama = scheda('dama-bianca');
     var numeri = (p.numeri || []).map(function (n) { return '<div class="numero"><b>' + esc(n.valore) + '</b><span>' + esc(n[lang] || n.it) + '</span></div>'; }).join('');
     var box = function (s, titolo, testoBottone) {
       if (!s) return '';
@@ -984,7 +999,6 @@
       (numeri ? '<div class="numeri">' + numeri + '</div>' : '') +
       '<p class="attacco">' + esc(tx(p.breve)) + '</p>' +
       azioniScheda(p) +
-      box(stop, t('navetta'), t('prenotaWhatsApp')) +
       '<div class="testo">' + paragrafi + '</div>' +
       box(escur, t('escursione'), t('prenotaWhatsApp')) +
       ((p.info || []).length ? '<section class="blocco"><h2>' + t('infoPratiche') + '</h2><div class="fatti">' + p.info.map(rigaFatto).join('') + '</div></section>' : '') +
@@ -1154,11 +1168,22 @@
       '</div></article>';
   };
 
-  VISTE.itinerari = function () {
-    return '<div class="pagina sotto">' + barra(t('itinerari')) + testaPagina(t('itinerari'), '') +
-      '<div class="elenco grande">' + DATA.itinerari.map(function (it) {
-        return '<a class="card-grande" href="#itinerario-' + it.id + '">' + copertina({ foto: it.foto, categorie: ['esperienze'], id: 'x' }, 'card-grande-foto') +
-          '<div class="card-grande-testo"><span class="etichetta" style="--c:var(--corallo)">' + esc(tx(it.durata)) + ' · ' + t('tappe', { n: it.tappe.length }) + '</span><h3>' + esc(tx(it.titolo)) + '</h3><p>' + esc(tx(it.intro)) + '</p></div></a>';
+  VISTE.itinerari = function (r) {
+    var filtro = r && r.filtro;
+    var tipi = t('tipiItinerario') || {};
+    var presenti = Object.keys(tipi).filter(function (k) { return DATA.itinerari.some(function (it) { return it.tipo === k; }); });
+    var lista = filtro ? DATA.itinerari.filter(function (it) { return it.tipo === filtro; }) : DATA.itinerari;
+    var chip = function (id, nome, n) {
+      return '<a class="filtro" href="#itinerari' + (id ? '-' + id : '') + '" style="--c:var(--corallo)"' + ((filtro || '') === id ? ' aria-current="true"' : '') + '>' + esc(nome) + ' <small>' + n + '</small></a>';
+    };
+    var chips = presenti.length > 1 ? '<nav class="filtri" aria-label="Filtri">' + chip('', t('tuttiFiltro'), DATA.itinerari.length) + presenti.map(function (k) {
+      return chip(k, tipi[k], DATA.itinerari.filter(function (it) { return it.tipo === k; }).length);
+    }).join('') + '</nav>' : '';
+    return '<div class="pagina sotto">' + barra(t('itinerari')) + testaPagina(t('itinerari'), '') + chips +
+      '<div class="elenco grande">' + lista.map(function (it) {
+        return '<a class="card-grande" href="#itinerario-' + it.id + '">' + fotoItinerario(it, 'card-grande-foto') +
+          '<div class="card-grande-testo"><span class="etichetta" style="--c:var(--corallo)">' + esc(etichettaItinerario(it, true)) + '</span><h3>' + esc(tx(it.titolo)) + '</h3><p>' + esc(tx(it.intro)) + '</p>' +
+          (it.dati ? '<div class="chips"><span class="chip">' + ic('route') + esc(tx(it.dati).split(' · ')[0]) + '</span></div>' : '') + '</div></a>';
       }).join('') + '</div></div>';
   };
 
@@ -1166,15 +1191,19 @@
     var it = DATA.itinerari.filter(function (x) { return x.id === r.id; })[0];
     if (!it) return VISTE.nontrovato();
     return '<article class="dettaglio" style="--c:var(--corallo)">' +
-      '<div class="dettaglio-testa">' + copertina({ foto: it.foto, categorie: ['esperienze'], id: 'x' }, 'dettaglio-foto', false, true) +
+      '<div class="dettaglio-testa">' + fotoItinerario(it, 'dettaglio-foto', true) +
       '<button type="button" class="tasto-tondo indietro" data-azione="indietro" aria-label="' + t('indietro') + '">' + ic('back') + '</button></div>' +
-      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + esc(tx(it.durata)) + ' · ' + t('tappe', { n: it.tappe.length }) + '</span><h1>' + esc(tx(it.titolo)) + '</h1></div>' +
+      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + esc(etichettaItinerario(it, true)) + '</span><h1>' + esc(tx(it.titolo)) + '</h1></div>' +
       '<p class="attacco">' + esc(tx(it.intro)) + '</p>' +
+      (it.dati ? '<div class="fatti">' + fatto('route', esc(tx(it.dati))) + '</div>' : '') +
+      (it.traccia && /^https:\/\//.test(it.traccia.url || '') ? '<div class="azioni">' + azione(it.traccia.url, 'route', tx(it.traccia) || t('tracciaGps'), { esterno: true, classe: 'primaria' }) + '</div>' : '') +
       '<ol class="tappe">' + it.tappe.map(function (s) {
         var p = scheda(s.scheda);
         return '<li class="tappa"><div class="tappa-testo"><p>' + esc(s[lang] || s.it) + '</p>' +
           (p ? '<a class="tappa-link" href="#luogo-' + p.id + '">' + copertina(p, 'tappa-foto') + '<span>' + esc(tx(p.nome)) + '</span>' + ic('chevron', false, 'freccia') + '</a>' : '') + '</div></li>';
-      }).join('') + '</ol></div></article>';
+      }).join('') + '</ol>' +
+      (txa(it.consigli).length ? '<section class="blocco"><h2>' + t('daSapere') + '</h2><ul class="consigli">' + txa(it.consigli).map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul></section>' : '') +
+      '</div></article>';
   };
 
   VISTE.trasporti = function () {
@@ -1233,7 +1262,7 @@
       '<section class="gruppo"><h2>' + t('crediti') + '</h2><ul class="crediti-elenco">' + (DATA.crediti || []).map(function (c) {
         return '<li>' + (c.link ? esterno(c.link, esc(c[lang] || c.it)) : esc(c[lang] || c.it)) + '</li>';
       }).join('') + '<li>' + t('creditiMappa') + (CFG.CARTO_KEY ? ', © CARTO' : '') + '</li><li>' + t('creditiMeteo') + '</li></ul></section>' +
-      '<footer class="crediti"><span>' + t('progetto') + '</span><span>' + t('versione') + ' ' + esc(CFG.VERSIONE || '1.0') + '</span></footer></div>';
+      '<footer class="crediti"><span>' + t('progetto') + '</span>' + firmaApp() + '<span>' + t('versione') + ' ' + esc(CFG.VERSIONE || '1.0') + '</span></footer></div>';
   };
 
   VISTE.preferiti = function () {
@@ -1463,6 +1492,8 @@
     if (h === 'torre-salsa' || h === 'luogo-torre-salsa') return { tab: ultimoTab === 'visit' || ultimoTab === 'mappa' ? ultimoTab : 'home', vista: 'torreSalsa' };
     var el = /^(mangiare|dormire|sapori|servizi)-([a-z]+)$/.exec(h);
     if (el) return { tab: ultimoTab === 'info' ? 'info' : 'home', vista: el[1], filtro: el[2] };
+    var fi = /^itinerari-([a-z]+)$/.exec(h);
+    if (fi) return { tab: ultimoTab === 'visit' ? 'visit' : 'home', vista: 'itinerari', filtro: fi[1] };
     if (SEZIONI_HOME.indexOf(h) >= 0) {
       var tabSez = SEZIONI_INFO.indexOf(h) >= 0 && ultimoTab === 'info' ? 'info' : 'home';
       return { tab: tabSez, vista: h };

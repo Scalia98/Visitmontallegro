@@ -1,6 +1,6 @@
 {
- "versione": "2026-11-13.1",
- "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner.",
+ "versione": "2026-11-14.1",
+ "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo.",
  "paese": {
   "lat": 37.39385,
   "lng": 13.35005
@@ -164,11 +164,9 @@
     "spiagge"
    ],
    "foto": "img/foto/torre-salsa-falesia.jpg",
-   "credito": "Stop Over Torre Salsa",
    "galleria": [
     {
      "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La falesia di marna, dall'alto",
       "en": "The marl cliff from above"
@@ -176,7 +174,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-acqua.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Sabbia chiara e fondali bassi",
       "en": "Pale sand and shallow water"
@@ -184,7 +181,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-spiaggia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Lo sterrato che scende alla spiaggia",
       "en": "The dirt track down to the beach"
@@ -192,7 +188,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La Dama Bianca",
       "en": "The Dama Bianca"
@@ -200,7 +195,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-marna.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La montagna bianca: gessi e marne",
       "en": "The white mountain: gypsum and marl"
@@ -277,12 +271,6 @@
      "tipo": "orari",
      "it": "Accesso libero: 8–20 d'estate, 8–17 il resto dell'anno",
      "en": "Free access: 8 am–8 pm in summer, 8 am–5 pm the rest of the year"
-    },
-    {
-     "tipo": "navetta",
-     "it": "In stagione: parcheggio all'ingresso e navetta per la spiaggia, 9:00–19:00",
-     "en": "In season: parking at the entrance and a beach shuttle, 9 am – 7 pm",
-     "scheda": "stop-over"
     },
     {
      "tipo": "escursione",
@@ -458,7 +446,6 @@
     "natura"
    ],
    "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-   "credito": "Stop Over Torre Salsa",
    "lat": null,
    "lng": null,
    "mappe": "Riserva Naturale Orientata Torre Salsa, Montallegro",
@@ -500,12 +487,10 @@
    },
    "galleria": [
     {
-     "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-     "credito": "Stop Over Torre Salsa"
+     "foto": "img/foto/torre-salsa-dama-bianca.jpg"
     },
     {
      "foto": "img/foto/torre-salsa-marna.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La marna bianca vista dall’alto",
       "en": "The white marl from above"
@@ -513,7 +498,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Le falesie di marna della riserva",
       "en": "The reserve's marl cliffs"
@@ -648,14 +632,21 @@
    "testo": {
     "it": [
      "La Riserva Naturale Orientata Foce del Fiume Platani è stata istituita nel 1984 e protegge circa 206 ettari tra i comuni di Ribera e Cattolica Eraclea, ai piedi di Capo Bianco.",
-     "Dune, canneti e la foce del fiume sono il primo approdo per circa 80 specie di uccelli migratori che arrivano dall'Africa."
+     "Dune, canneti e la foce del fiume sono il primo approdo per circa 80 specie di uccelli migratori che arrivano dall'Africa.",
+     "Nella riserva c'è anche una pineta, nata dal rimboschimento dei primi anni Cinquanta. All'ingresso c'è una piccola area con panche e tavoli di legno, da cui partono diversi sentieri segnalati."
     ],
     "en": [
      "The Platani River Mouth Nature Reserve was established in 1984 and protects about 206 hectares between Ribera and Cattolica Eraclea, beneath Capo Bianco.",
-     "Its dunes, reed beds and river mouth are the first landfall for about 80 species of birds migrating from Africa."
+     "Its dunes, reed beds and river mouth are the first landfall for about 80 species of birds migrating from Africa.",
+     "The reserve also has a pine wood, planted in the early 1950s. At the entrance there's a small area with wooden benches and tables, where several marked trails begin."
     ]
    },
    "info": [
+    {
+     "tipo": "dove",
+     "it": "Dalla SS115 segui le indicazioni per Eraclea Minoa",
+     "en": "From the SS115, follow the signs for Eraclea Minoa"
+    },
     {
      "tipo": "escursione",
      "it": "Ci si arriva anche con l'escursione Capo Bianco e Foce del Platani",
@@ -695,8 +686,7 @@
   {
    "id": "lago-gorgo",
    "categorie": [
-    "natura",
-    "esperienze"
+    "natura"
    ],
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Cover.jpg",
    "lat": null,
@@ -708,7 +698,7 @@
    },
    "breve": {
     "it": "Un piccolo lago diventato oasi: sosta per gli uccelli migratori e casa della tartaruga palustre.",
-    "en": "A small lake turned nature haven: a stopover for migrating birds and home to the pond turtle."
+    "en": "A small lake turned nature haven: a resting place for migrating birds and home to the pond turtle."
    },
    "testo": {
     "it": [
@@ -717,7 +707,7 @@
      "Un sentiero segnalato gira attorno al laghetto, con pannelli che raccontano la natura del posto, piccole piazzole di osservazione e il capanno per guardare gli uccelli senza disturbarli. Le stagioni migliori sono la primavera e l'autunno."
     ],
     "en": [
-     "Laghetto Gorgo is a small gem hidden in the hills of Montallegro. Created as an artificial reservoir, it has been a LIPU bird reserve since 1986 and a stopover for birds migrating between Europe and Africa.",
+     "Laghetto Gorgo is a small gem hidden in the hills of Montallegro. Created as an artificial reservoir, it has been a LIPU bird reserve since 1986 and a resting place for birds migrating between Europe and Africa.",
      "In every season you can see cormorants, coots, grebes and grey herons; Cetti's warblers sing in the reeds. The pond turtle, a rare reptile in Sicily, basks on the banks, and in summer the lake belongs to dragonflies and butterflies.",
      "A marked path circles the lake, with panels about the local wildlife, small viewing spots and a hide for watching birds without disturbing them. Spring and autumn are the best seasons."
     ]
@@ -813,6 +803,136 @@
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-il-terriorio/laghetto-gorgo/"
    }
+  },
+  {
+   "id": "birdwatching-gorgo",
+   "fonte": "ricerca",
+   "categorie": [
+    "esperienze"
+   ],
+   "sotto": "natura",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Cover.jpg",
+   "credito": "Visit Montallegro Bovo Marina",
+   "galleria": [
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/11/folaga-con-pulcini.jpg",
+     "credito": "Folaga: Charles J. Sharp · CC BY-SA 4.0",
+     "didascalia": {
+      "it": "Folaga con i pulcini",
+      "en": "Coot with chicks"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/11/mignattaio-plegadis-falcinellus.jpg",
+     "credito": "Mignattaio: Charles J. Sharp · CC BY-SA 4.0",
+     "didascalia": {
+      "it": "Mignattaio",
+      "en": "Glossy ibis"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/11/airone-cenerino-in-volo.jpg",
+     "credito": "Airone cenerino: Dinkum · CC0",
+     "didascalia": {
+      "it": "Airone cenerino in volo",
+      "en": "Grey heron in flight"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Flora.jpg",
+     "credito": "Visit Montallegro Bovo Marina",
+     "didascalia": {
+      "it": "Il laghetto visto dal sentiero, tra salici e macchia",
+      "en": "The lake seen from the path, among willows and scrub"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Flora-.jpg",
+     "credito": "Visit Montallegro Bovo Marina",
+     "didascalia": {
+      "it": "Le sponde tra canneti e colline coltivate",
+      "en": "The banks between reed beds and farmed hills"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo.jpg",
+     "credito": "Visit Montallegro Bovo Marina"
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-panorama.jpg",
+     "credito": "Visit Montallegro Bovo Marina",
+     "didascalia": {
+      "it": "Veduta aerea del Laghetto Gorgo tra le colline di Montallegro",
+      "en": "Aerial view of Laghetto Gorgo among the hills of Montallegro"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Cover.jpg",
+     "credito": "Visit Montallegro Bovo Marina"
+    }
+   ],
+   "lat": null,
+   "lng": null,
+   "mappe": "Lago Gorgo, Montallegro AG",
+   "nome": {
+    "it": "Birdwatching al Laghetto Gorgo",
+    "en": "Birdwatching at Laghetto Gorgo"
+   },
+   "etichetta": {
+    "it": "Birdwatching",
+    "en": "Birdwatching"
+   },
+   "breve": {
+    "it": "Binocolo e silenzio nell'oasi LIPU: aironi, cormorani, svassi e folaghe tutto l'anno, i migratori in primavera e in autunno.",
+    "en": "Binoculars and silence in the LIPU reserve: herons, cormorants, grebes and coots all year, migrating birds in spring and autumn."
+   },
+   "testo": {
+    "it": [
+     "Il Laghetto Gorgo è un'oasi della LIPU dal 1986 e una sosta per gli uccelli migratori in viaggio tra Europa e Africa: è il posto più semplice del territorio per guardare gli uccelli.",
+     "In ogni stagione ci sono cormorani, folaghe, svassi e aironi cenerini, e nei canneti canta l'usignolo di fiume. In primavera e in autunno passano i migratori.",
+     "Il sentiero segnalato gira attorno al laghetto, con piccole piazzole di osservazione e un capanno per guardare gli uccelli senza disturbarli. Sulle sponde prende il sole la tartaruga palustre."
+    ],
+    "en": [
+     "Laghetto Gorgo has been a LIPU bird reserve since 1986 and is a stopping point for birds migrating between Europe and Africa: the easiest place in the area to watch birds.",
+     "Cormorants, coots, grebes and grey herons are here in every season, and Cetti's warblers sing in the reeds. Migrating birds pass through in spring and autumn.",
+     "A marked path circles the lake, with small viewing spots and a hide for watching birds without disturbing them. The pond turtle basks on the banks."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Contrada Gorgo, lungo la SS115 verso Sciacca",
+     "en": "Contrada Gorgo, along the SS115 towards Sciacca"
+    },
+    {
+     "tipo": "distanze",
+     "it": "Circa 3 km dal centro di Montallegro: segui le indicazioni per la località Gorgo",
+     "en": "About 3 km from the centre of Montallegro: follow the signs for the Gorgo area"
+    },
+    {
+     "tipo": "prezzo",
+     "it": "Ingresso libero e gratuito",
+     "en": "Free entry"
+    },
+    {
+     "tipo": "stagione",
+     "it": "Tutto l'anno; primavera e autunno per i migratori",
+     "en": "All year; spring and autumn for migrating birds"
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Porta un binocolo e muoviti in silenzio lungo le sponde.",
+     "La mattina presto è l'ora migliore per gli uccelli e per la luce delle foto.",
+     "Vestiti con colori neutri e resta sul sentiero."
+    ],
+    "en": [
+     "Bring binoculars and move quietly along the banks.",
+     "Early morning is the best time for birds and for photo light.",
+     "Wear neutral colours and stay on the path."
+    ]
+   },
+   "verificato": "novembre 2026"
   },
   {
    "id": "montallegro",
@@ -1605,7 +1725,6 @@
     "esperienze"
    ],
    "foto": "img/foto/torre-salsa-acqua.jpg",
-   "credito": "Stop Over Torre Salsa",
    "lat": null,
    "lng": null,
    "mappe": "",
@@ -1678,12 +1797,10 @@
    "verificato": "novembre 2026",
    "galleria": [
     {
-     "foto": "img/foto/torre-salsa-acqua.jpg",
-     "credito": "Stop Over Torre Salsa"
+     "foto": "img/foto/torre-salsa-acqua.jpg"
     },
     {
      "foto": "img/foto/torre-salsa-spiaggia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La spiaggia e il sentiero della riserva",
       "en": "The reserve's beach and path"
@@ -1691,7 +1808,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Le falesie bianche di marna",
       "en": "The white marl cliffs"
@@ -1699,7 +1815,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La Dama Bianca",
       "en": "La Dama Bianca"
@@ -1900,103 +2015,6 @@
     {
      "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/MONTE-SUSO11.jpg",
      "credito": "Visit Montallegro Bovo Marina"
-    }
-   ]
-  },
-  {
-   "id": "stop-over",
-   "categorie": [
-    "esperienze",
-    "servizi"
-   ],
-   "foto": "img/foto/torre-salsa-spiaggia.jpg",
-   "credito": "Stop Over Torre Salsa",
-   "lat": 37.376,
-   "lng": 13.322,
-   "mappe": "Stop Over, ingresso Riserva Torre Salsa, Montallegro",
-   "contatti": {
-    "tel": "3339982551",
-    "whatsapp": "393339982551",
-    "web": "https://torresalsastopover.it/"
-   },
-   "nome": {
-    "it": "Stop Over: parcheggio e navetta Torre Salsa",
-    "en": "Stop Over: Torre Salsa parking and shuttle"
-   },
-   "etichetta": {
-    "it": "Navetta per la spiaggia",
-    "en": "Beach shuttle"
-   },
-   "breve": {
-    "it": "Lasci l'auto all'ingresso della riserva, sali sulla navetta e in pochi minuti sei sulla sabbia. Ritorno quando vuoi.",
-    "en": "Leave the car at the reserve entrance, hop on the shuttle and you're on the sand in minutes. Come back whenever you like."
-   },
-   "testo": {
-    "it": [
-     "Torre Salsa è una riserva: niente strade asfaltate fino al mare, niente parcheggi sulla sabbia. La discesa è lunga, sterrata e senza ombra. Stop Over ti prende in cima e ti lascia in battigia.",
-     "Parcheggi all'imbocco della riserva, sali sulla navetta che attraversa la macchia lungo lo sterrato e scegli il tuo pezzo di spiaggia. Ombrelloni e lettini si noleggiano e li pianti dove vuoi: è una riserva, il lido non è ammesso.",
-     "Al parcheggio ti danno il sacchetto per i rifiuti: quello che porti giù torna su con te."
-    ],
-    "en": [
-     "Torre Salsa is a reserve: no paved roads to the sea, no parking on the sand. The way down is long, unpaved and shadeless. Stop Over picks you up at the top and drops you at the water's edge.",
-     "Park at the reserve entrance, ride the shuttle through the scrub along the dirt track and pick your own stretch of beach. Parasols and sunbeds are for rent and you set them up wherever you like: beach clubs are not allowed in the reserve.",
-     "At the car park you get a rubbish bag: whatever you take down comes back up with you."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "orari",
-     "it": "In stagione, tutti i giorni, navetta andata e ritorno 9:00–19:00",
-     "en": "In season, daily, return shuttle 9 am – 7 pm"
-    },
-    {
-     "tipo": "dove",
-     "it": "Ingresso Riserva Torre Salsa, 92010 Montallegro (37.3760 N, 13.3220 E)",
-     "en": "Torre Salsa reserve entrance, 92010 Montallegro (37.3760 N, 13.3220 E)"
-    },
-    {
-     "tipo": "prezzo",
-     "it": "Tariffe secondo stagione e servizi: chiedile su WhatsApp. Si paga sul posto",
-     "en": "Prices depend on season and services: ask on WhatsApp. Pay on site"
-    },
-    {
-     "tipo": "contatto",
-     "it": "Referente: Giovanna Ferraro",
-     "en": "Contact: Giovanna Ferraro"
-    }
-   ],
-   "consigli": {
-    "it": [
-     "In estate, nei fine settimana e ad agosto avvisa prima: tengono da parte ombrellone e lettini.",
-     "Con i bambini il passeggino sulla sabbia serve a poco: meglio uno zaino porta-bimbo."
-    ],
-    "en": [
-     "In summer, at weekends and in August, message ahead: they'll keep a parasol and sunbeds for you.",
-     "With small children a pushchair is little use on the sand: a baby carrier works better."
-    ]
-   },
-   "sotto": "trasporti",
-   "verificato": "novembre 2026",
-   "galleria": [
-    {
-     "foto": "img/foto/torre-salsa-spiaggia.jpg",
-     "credito": "Stop Over Torre Salsa"
-    },
-    {
-     "foto": "img/foto/torre-salsa-acqua.jpg",
-     "credito": "Stop Over Torre Salsa",
-     "didascalia": {
-      "it": "L'acqua limpida della riserva",
-      "en": "The reserve's clear water"
-     }
-    },
-    {
-     "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
-     "didascalia": {
-      "it": "Le falesie bianche di marna",
-      "en": "The white marl cliffs"
-     }
     }
    ]
   },
@@ -4561,6 +4579,55 @@
    "verificato": "novembre 2026"
   },
   {
+   "id": "calogero-caruana",
+   "fonte": "ricerca",
+   "categorie": [
+    "sapori"
+   ],
+   "sotto": "vino",
+   "foto": "",
+   "lat": null,
+   "lng": null,
+   "mappe": "Azienda Agricola Calogero Caruana, Contrada Piano Canale 7, Montallegro",
+   "nome": {
+    "it": "Azienda Agricola Calogero Caruana",
+    "en": "Azienda Agricola Calogero Caruana"
+   },
+   "etichetta": {
+    "it": "Vini artigianali",
+    "en": "Artisan wines"
+   },
+   "breve": {
+    "it": "I vini artigianali di Calogero Caruana, da vitigni siciliani coltivati sopra la Riserva di Torre Salsa, a meno di 2 km dal mare.",
+    "en": "Calogero Caruana's artisan wines, from Sicilian grape varieties grown above the Torre Salsa reserve, less than 2 km from the sea."
+   },
+   "testo": {
+    "it": [
+     "Calogero Caruana è tornato a Montallegro dopo anni di studio e di lavoro in Toscana. Coltiva quasi quattro ettari di vigna sopra la Riserva di Torre Salsa, a circa cento metri di altitudine, in mezzo alla macchia mediterranea.",
+     "Pianta solo vitigni del territorio: Inzolia, Grillo, Catarratto, Nero d'Avola e Nerello Cappuccio. In cantina interviene il meno possibile: le fermentazioni sono spontanee e, come nella tradizione contadina, macera sulle bucce anche le uve bianche.",
+     "L'azienda ha anche gli oliveti, con le varietà siciliane Biancolilla e Nocellara del Belice."
+    ],
+    "en": [
+     "Calogero Caruana came back to Montallegro after years of study and work in Tuscany. He farms almost four hectares of vines above the Torre Salsa reserve, about a hundred metres above sea level, surrounded by Mediterranean scrub.",
+     "He grows only local varieties: Inzolia, Grillo, Catarratto, Nero d'Avola and Nerello Cappuccio. In the cellar he does as little as possible: fermentations are spontaneous and, as in the old farming tradition, even the white grapes are macerated on their skins.",
+     "The farm also has olive groves of the Sicilian varieties Biancolilla and Nocellara del Belice."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Contrada Piano Canale, 7 · 92010 Montallegro (AG)",
+     "en": "Contrada Piano Canale, 7 · 92010 Montallegro (AG)"
+    }
+   ],
+   "consigli": {
+    "it": [],
+    "en": []
+   },
+   "zona": "torre-salsa",
+   "verificato": "novembre 2026"
+  },
+  {
    "id": "tipico-montallegro",
    "fonte": "portale",
    "categorie": [
@@ -5030,7 +5097,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Le falesie bianche di marna",
       "en": "The white marl cliffs"
@@ -5038,7 +5104,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La Dama Bianca",
       "en": "La Dama Bianca"
@@ -5046,7 +5111,6 @@
     },
     {
      "foto": "img/foto/torre-salsa-spiaggia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "La spiaggia e il sentiero della riserva",
       "en": "The reserve's beach and path"
@@ -5115,7 +5179,6 @@
    "galleria": [
     {
      "foto": "img/foto/torre-salsa-acqua.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Il mare della Riserva di Torre Salsa",
       "en": "The sea of the Torre Salsa reserve"
@@ -5123,14 +5186,12 @@
     },
     {
      "foto": "img/foto/torre-salsa-falesia.jpg",
-     "credito": "Stop Over Torre Salsa",
      "didascalia": {
       "it": "Le falesie bianche viste dall’alto",
       "en": "The white cliffs from above"
      }
     }
-   ],
-   "credito": "Stop Over Torre Salsa"
+   ]
   },
   {
    "id": "pro-loco-montallegro",
@@ -7374,258 +7435,6 @@
    }
   },
   {
-   "id": "paguro",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Ristorante Paguro, Via Principe di Piemonte 36, Siculiana Marina",
-   "nome": {
-    "it": "Ristorante Paguro",
-    "en": "Ristorante Paguro"
-   },
-   "etichetta": {
-    "it": "Ristorante e pizzeria",
-    "en": "Restaurant & pizzeria"
-   },
-   "localita": {
-    "it": "Siculiana Marina",
-    "en": "Siculiana Marina"
-   },
-   "breve": {
-    "it": "Il ristorante dell'Hotel Paguro sul lungomare di Siculiana Marina: pesce, pizza e d'estate grigliate in terrazza.",
-    "en": "The Hotel Paguro restaurant on Siculiana Marina's seafront: fish, pizza and summer barbecues on the terrace."
-   },
-   "testo": {
-    "it": [
-     "Sul lungomare di Siculiana Marina, è il ristorante dell'Hotel Residence Paguro. In cucina soprattutto pesce, oltre alla pizza; nei mesi estivi si organizzano grigliate sulla terrazza."
-    ],
-    "en": [
-     "On Siculiana Marina's seafront, this is the restaurant of the Hotel Residence Paguro. The kitchen focuses on fish, plus pizza; in summer there are barbecues on the terrace."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Via Principe di Piemonte, 36, 92010 Siculiana Marina (AG)",
-     "en": "Via Principe di Piemonte, 36, 92010 Siculiana Marina (AG)"
-    },
-    {
-     "tipo": "contatto",
-     "it": "Fa parte dell'Hotel Residence Paguro",
-     "en": "Part of the Hotel Residence Paguro",
-     "scheda": "hotel-paguro"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   },
-   "contatti": {
-    "tel": "0922815510"
-   },
-   "orari": {
-    "lun": "13:00-15:00, 20:00-23:00",
-    "mar": "13:00-15:00, 20:00-23:00",
-    "mer": "13:00-15:00, 20:00-23:00",
-    "gio": "13:00-15:00, 20:00-23:00",
-    "ven": "13:00-15:00, 20:00-23:00",
-    "sab": "13:00-15:00, 20:00-23:00",
-    "dom": "13:00-15:00, 20:00-23:00"
-   }
-  },
-  {
-   "id": "la-scogliera",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Ristorante La Scogliera, Via San Pietro 44, Siculiana Marina",
-   "nome": {
-    "it": "Ristorante La Scogliera",
-    "en": "Ristorante La Scogliera"
-   },
-   "etichetta": {
-    "it": "Ristorante sul mare",
-    "en": "Seaside restaurant"
-   },
-   "localita": {
-    "it": "Siculiana Marina",
-    "en": "Siculiana Marina"
-   },
-   "breve": {
-    "it": "Sala accogliente e terrazza coperta affacciata sul mare di Siculiana Marina, a pochi minuti da Torre Salsa.",
-    "en": "A cosy dining room and a covered terrace over the sea at Siculiana Marina, minutes from Torre Salsa."
-   },
-   "testo": {
-    "it": [
-     "Il ristorante ha una sala accogliente e una terrazza coperta che guarda il mare di Siculiana Marina, a pochi minuti dalla Riserva di Torre Salsa e a una ventina di chilometri dalla Valle dei Templi."
-    ],
-    "en": [
-     "The restaurant has a cosy dining room and a covered terrace looking out over the sea at Siculiana Marina, minutes from the Torre Salsa reserve and about twenty kilometres from the Valley of the Temples."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Via San Pietro, 44, 92010 Siculiana Marina (AG)",
-     "en": "Via San Pietro, 44, 92010 Siculiana Marina (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   },
-   "contatti": {
-    "tel": "0922817532",
-    "web": "http://www.ristorantelascogliera.com/"
-   }
-  },
-  {
-   "id": "lustru-di-luna",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Lustru di Luna, Via Lungomare 108, Siculiana Marina",
-   "nome": {
-    "it": "Lustru di Luna",
-    "en": "Lustru di Luna"
-   },
-   "etichetta": {
-    "it": "Ristorante e gelateria sul mare",
-    "en": "Seafront restaurant & gelateria"
-   },
-   "localita": {
-    "it": "Siculiana Marina",
-    "en": "Siculiana Marina"
-   },
-   "breve": {
-    "it": "Sul lungomare di Siculiana Marina: terrazza vista mare, pesce, pasta fatta in casa e gelateria.",
-    "en": "On Siculiana Marina's seafront: a sea-view terrace, fish, homemade pasta and a gelateria."
-   },
-   "testo": {
-    "it": [
-     "Affacciato sulla spiaggia di Siculiana Marina, accanto alla Riserva di Torre Salsa, propone piatti di pesce, pasta fatta in casa e gelati, con una terrazza sul mare e parcheggio gratuito nelle vicinanze. Ha anche piatti senza glutine."
-    ],
-    "en": [
-     "Right on Siculiana Marina beach, next to the Torre Salsa reserve, it serves seafood, homemade pasta and ice cream, with a terrace over the sea and free parking nearby. Gluten-free dishes are available."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Via Lungomare, 108, 92010 Siculiana Marina (AG)",
-     "en": "Via Lungomare, 108, 92010 Siculiana Marina (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   },
-   "contatti": {
-    "web": "http://www.lustrudiluna.it"
-   }
-  },
-  {
-   "id": "lido-sabbia-doro",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Lido Sabbia d'Oro, Siculiana Marina",
-   "nome": {
-    "it": "Lido Sabbia d'Oro",
-    "en": "Lido Sabbia d'Oro"
-   },
-   "etichetta": {
-    "it": "Lido con bar",
-    "en": "Beach club & bar"
-   },
-   "localita": {
-    "it": "Siculiana Marina",
-    "en": "Siculiana Marina"
-   },
-   "breve": {
-    "it": "Lido sul lungomare di Siculiana Marina, attivo dal 1997, a 500 metri dalla Riserva di Torre Salsa.",
-    "en": "A beach club on Siculiana Marina's seafront since 1997, 500 metres from the Torre Salsa reserve."
-   },
-   "testo": {
-    "it": [
-     "Nato nel 1997 sul lungomare di Siculiana Marina, quasi sulla riva della spiaggia di sabbia, a 200 metri da Monte Stella e a 500 dalla Riserva di Torre Salsa. Ha bar e pranzi in spiaggia."
-    ],
-    "en": [
-     "Opened in 1997 on Siculiana Marina's seafront, almost on the sandy shore, 200 metres from Monte Stella and 500 from the Torre Salsa reserve. It has a bar and beach lunches."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Lungomare Contrada Monte Stella, 92010 Siculiana Marina (AG)",
-     "en": "Lungomare Contrada Monte Stella, 92010 Siculiana Marina (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   },
-   "contatti": {
-    "tel": "0922815174"
-   },
-   "stagionale": true
-  },
-  {
-   "id": "maioliche-bistrot",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Maioliche Bistrot, Via Fontanelle, Siculiana",
-   "nome": {
-    "it": "Maioliche Bistrot",
-    "en": "Maioliche Bistrot"
-   },
-   "etichetta": {
-    "it": "Bistrot e cocktail bar",
-    "en": "Bistro & cocktail bar"
-   },
-   "localita": {
-    "it": "Siculiana",
-    "en": "Siculiana"
-   },
-   "breve": {
-    "it": "Bistrot su due piani nel paese di Siculiana: carne alla griglia, cocktail e un balcone per il tramonto.",
-    "en": "A two-storey bistro in Siculiana town: grilled meat, cocktails and a balcony for the sunset."
-   },
-   "testo": {
-    "it": [
-     "Locale su due piani in una zona tranquilla del paese, con cucina alla griglia, cocktail e un balcone panoramico che dà il meglio al tramonto."
-    ],
-    "en": [
-     "A two-storey place in a quiet part of town, with grilled dishes, cocktails and a panoramic balcony that is at its best at sunset."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Via Fontanelle, 92010 Siculiana (AG)",
-     "en": "Via Fontanelle, 92010 Siculiana (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   },
-   "contatti": {
-    "tel": "3512592256"
-   }
-  },
-  {
    "id": "lido-garibaldi",
    "fonte": "ricerca",
    "categorie": [
@@ -7677,50 +7486,6 @@
    }
   },
   {
-   "id": "mithos",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Mithos, Contrada Eraclea Minoa 3, Eraclea Minoa",
-   "nome": {
-    "it": "Mithos",
-    "en": "Mithos"
-   },
-   "etichetta": {
-    "it": "Ristorante sulla spiaggia",
-    "en": "Beach restaurant"
-   },
-   "localita": {
-    "it": "Eraclea Minoa",
-    "en": "Eraclea Minoa"
-   },
-   "breve": {
-    "it": "Locale moderno a ridosso della spiaggia di Eraclea Minoa, con vista sulla scogliera e cucina di pesce curata.",
-    "en": "A modern spot right by Eraclea Minoa beach, with views of the cliff and carefully made seafood."
-   },
-   "testo": {
-    "it": [
-     "Locale moderno a ridosso della spiaggia, con una vista ampia sulla scogliera bianca. La cucina è di pesce, con piatti curati che valorizzano la materia prima."
-    ],
-    "en": [
-     "A modern place right by the beach, with a wide view of the white cliff. The kitchen is seafood-based, with carefully presented dishes."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Contrada Eraclea Minoa, 3, 92011 Eraclea Minoa (AG)",
-     "en": "Contrada Eraclea Minoa, 3, 92011 Eraclea Minoa (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [],
-    "en": []
-   }
-  },
-  {
    "id": "marea-eraclea",
    "fonte": "ricerca",
    "categorie": [
@@ -7766,44 +7531,6 @@
    "stagionale": true
   },
   {
-   "id": "baglio-sicilia-antica",
-   "fonte": "ricerca",
-   "categorie": [
-    "mangiare"
-   ],
-   "sotto": "dintorni",
-   "mappe": "Ristorante Baglio Sicilia Antica, Eraclea Minoa",
-   "nome": {
-    "it": "Ristorante Baglio Sicilia Antica",
-    "en": "Ristorante Baglio Sicilia Antica"
-   },
-   "etichetta": {
-    "it": "Ristorante e pizzeria",
-    "en": "Restaurant & pizzeria"
-   },
-   "localita": {
-    "it": "Eraclea Minoa",
-    "en": "Eraclea Minoa"
-   },
-   "breve": {
-    "it": "Ristorante e pizzeria vicino a Eraclea Minoa: cucina siciliana, pesce e pizza.",
-    "en": "A restaurant and pizzeria near Eraclea Minoa: Sicilian cooking, seafood and pizza."
-   },
-   "testo": {
-    "it": [
-     "Ristorante e pizzeria nella zona di Eraclea Minoa, con cucina siciliana, piatti di pesce, pizza e opzioni vegetariane. D'estate è molto frequentato: conviene prenotare."
-    ],
-    "en": [
-     "A restaurant and pizzeria in the Eraclea Minoa area, with Sicilian cooking, seafood, pizza and vegetarian options. It gets busy in summer: booking is a good idea."
-    ]
-   },
-   "info": [],
-   "consigli": {
-    "it": [],
-    "en": []
-   }
-  },
-  {
    "id": "hotel-paguro",
    "fonte": "ricerca",
    "categorie": [
@@ -7842,12 +7569,6 @@
      "tipo": "dove",
      "it": "Via Principe di Piemonte, 35, 92010 Siculiana Marina (AG)",
      "en": "Via Principe di Piemonte, 35, 92010 Siculiana Marina (AG)"
-    },
-    {
-     "tipo": "contatto",
-     "it": "Ristorante dell'hotel: Ristorante Paguro",
-     "en": "The hotel restaurant: Ristorante Paguro",
-     "scheda": "paguro"
     }
    ],
    "consigli": {
@@ -8345,21 +8066,415 @@
      "en": "Morning at Bovo Marina: a swim and shade in the pine wood."
     },
     {
-     "scheda": "stop-over",
-     "it": "Verso mezzogiorno all'ingresso della riserva: parcheggio e navetta fino alla spiaggia di Torre Salsa.",
-     "en": "Around midday, to the reserve entrance: park and take the shuttle down to Torre Salsa beach."
-    },
-    {
      "scheda": "torre-salsa",
-     "it": "Pomeriggio in riserva: niente servizi, porta acqua e riporta su i rifiuti.",
-     "en": "Afternoon in the reserve: no facilities, bring water and take your rubbish back up."
+     "it": "Verso mezzogiorno cammina lungo la riva verso est: oltre la spiaggia di Bovo entri nella Riserva di Torre Salsa. Niente servizi: porta acqua e riporta indietro i rifiuti.",
+     "en": "Around midday, walk east along the shore: past Bovo beach you enter the Torre Salsa reserve. No facilities: bring water and take your rubbish back with you."
     },
     {
      "scheda": "eraclea-minoa",
      "it": "Tramonto verso le falesie di Capo Bianco.",
      "en": "Sunset towards the Capo Bianco cliffs."
     }
-   ]
+   ],
+   "tipo": "mare"
+  },
+  {
+   "id": "pineta-platani",
+   "tipo": "piedi",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Seccagrande_and_Platani_delta_seen_from_Eraclea_Minoa_-_Italy_2015.JPG/1280px-Seccagrande_and_Platani_delta_seen_from_Eraclea_Minoa_-_Italy_2015.JPG",
+   "durata": {
+    "it": "Mezza giornata",
+    "en": "Half a day"
+   },
+   "titolo": {
+    "it": "Nella pineta del Platani fino a Capo Bianco",
+    "en": "Through the Platani pine wood to Capo Bianco"
+   },
+   "intro": {
+    "it": "La pineta degli anni Cinquanta alla foce del fiume, le dune e la falesia bianca con la città greca in cima.",
+    "en": "The 1950s pine wood at the river mouth, the dunes and the white cliff with the Greek city on top."
+   },
+   "dati": {
+    "it": "Sentieri segnalati nella pineta, poi la salita sul promontorio",
+    "en": "Marked trails through the pine wood, then the climb up the headland"
+   },
+   "tappe": [
+    {
+     "scheda": "foce-platani",
+     "it": "Dalla SS115 segui le indicazioni per Eraclea Minoa. All'ingresso della riserva, vicino a panche e tavoli di legno, partono i sentieri segnalati nella pineta.",
+     "en": "From the SS115 follow the signs for Eraclea Minoa. At the reserve entrance, by the wooden benches and tables, the marked trails into the pine wood begin."
+    },
+    {
+     "it": "Sbuca sulla spiaggia: dune, canneti e la foce del fiume, dove si fermano gli uccelli migratori in arrivo dall'Africa.",
+     "en": "Come out onto the beach: dunes, reeds and the river mouth, where migrating birds arriving from Africa stop."
+    },
+    {
+     "scheda": "eraclea-minoa",
+     "it": "Lungo la costa sali su Capo Bianco, la falesia di marne e gesso alta circa 75 metri, con i resti di Eraclea Minoa in cima.",
+     "en": "Follow the coast up Capo Bianco, the marl-and-gypsum cliff about 75 metres high, with the remains of Eraclea Minoa on top."
+    },
+    {
+     "scheda": "seacily-capo-bianco",
+     "it": "Se preferisci una guida, al mattino o alla sera: l'escursione Seacily lungo la falesia.",
+     "en": "If you'd rather have a guide, morning or evening: Seacily's walk along the cliff."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Porta acqua e scarpe comode.",
+     "Per entrare nell'area archeologica di Eraclea Minoa controlla orari e biglietti sul sito del Parco della Valle dei Templi."
+    ],
+    "en": [
+     "Bring water and comfortable shoes.",
+     "To enter the Eraclea Minoa archaeological area, check opening times and tickets on the Valley of the Temples Park website."
+    ]
+   }
+  },
+  {
+   "id": "bici-torre-salsa",
+   "tipo": "bici",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover2.jpg",
+   "durata": {
+    "it": "Mezza giornata",
+    "en": "Half a day"
+   },
+   "titolo": {
+    "it": "In mountain bike verso Torre Salsa",
+    "en": "Mountain biking to Torre Salsa"
+   },
+   "intro": {
+    "it": "Un anello in mountain bike da Montallegro alla Riserva di Torre Salsa e ritorno.",
+    "en": "A mountain-bike loop from Montallegro to the Torre Salsa reserve and back."
+   },
+   "dati": {
+    "it": "Circa 17 km · 360 m di dislivello · serve allenamento",
+    "en": "About 17 km · 360 m of climbing · good fitness needed"
+   },
+   "traccia": {
+    "url": "https://www.komoot.com/guide/3253755/mtb-trails-in-riserva-naturale-orientata-torre-salsa",
+    "it": "Traccia su komoot",
+    "en": "Route on komoot"
+   },
+   "tappe": [
+    {
+     "scheda": "montallegro",
+     "it": "Partenza dal paese, ai piedi di Monte Suso.",
+     "en": "Start in town, at the foot of Monte Suso."
+    },
+    {
+     "scheda": "torre-salsa",
+     "it": "Verso la riserva: oltre 760 ettari protetti e circa sei chilometri di costa tra Bovo Marina e Siculiana Marina.",
+     "en": "Towards the reserve: over 760 protected hectares and about six kilometres of coast between Bovo Marina and Siculiana Marina."
+    },
+    {
+     "scheda": "arte-del-pane",
+     "it": "Al rientro, calzoni e arancine all'Arte del Pane.",
+     "en": "Back in town, calzoni and arancine at L'Arte del Pane."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Traccia GPS e dettagli del percorso su komoot.",
+     "In riserva segui le regole del WWF: chiedi al centro visite quali sentieri sono aperti alle bici.",
+     "D'estate parti al mattino presto: c'è poca ombra."
+    ],
+    "en": [
+     "GPS track and route details on komoot.",
+     "In the reserve, follow the WWF rules: ask at the visitor centre which trails are open to bikes.",
+     "In summer, set off early: there's little shade."
+    ]
+   }
+  },
+  {
+   "id": "a-cavallo",
+   "tipo": "cavallo",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-6.jpeg",
+   "durata": {
+    "it": "Mezza giornata",
+    "en": "Half a day"
+   },
+   "titolo": {
+    "it": "A cavallo tra pineta, mare e riserva",
+    "en": "On horseback through pine wood, sea and reserve"
+   },
+   "intro": {
+    "it": "Due maneggi, due paesaggi: il lungomare di Bovo Marina e i sentieri di Torre Salsa, con i formaggi del territorio al ritorno.",
+    "en": "Two stables, two landscapes: the Bovo Marina seafront and the Torre Salsa trails, with local cheese when you get back."
+   },
+   "tappe": [
+    {
+     "scheda": "opera-ammare",
+     "it": "Dal lungomare di Bovo Marina, tra pineta e mare verso Torre Salsa e Capo Bianco. Per i bambini c'è anche il pony.",
+     "en": "From the Bovo Marina seafront, between pine wood and sea towards Torre Salsa and Capo Bianco. There's a pony ride for children too."
+    },
+    {
+     "scheda": "scuderia-ranch-todaro",
+     "it": "Oppure un'ora a cavallo nella Riserva di Torre Salsa, tra il Belvedere e la torre, con l'aperitivo in scuderia al ritorno.",
+     "en": "Or an hour's ride in the Torre Salsa reserve, between the Belvedere and the tower, with an aperitivo at the stables afterwards."
+    },
+    {
+     "scheda": "azienda-agricola-todaro",
+     "it": "La ricotta e i formaggi della degustazione si comprano a Montallegro, in piazza Lo Verde.",
+     "en": "The ricotta and cheese from the tasting are sold in Montallegro, in Piazza Lo Verde."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Si prenota sempre: L'operAmmare online, la Scuderia Ranch Todaro su WhatsApp.",
+     "Scuderia Ranch Todaro dai 15 anni; L'operAmmare dai 5 anni (3 per le attività dei bambini)."
+    ],
+    "en": [
+     "Always book: L'operAmmare online, Scuderia Ranch Todaro on WhatsApp.",
+     "Scuderia Ranch Todaro from age 15; L'operAmmare from age 5 (3 for the children's rides)."
+    ]
+   }
+  },
+  {
+   "id": "sapori",
+   "tipo": "sapori",
+   "foto": "",
+   "durata": {
+    "it": "Giornata intera",
+    "en": "Full day"
+   },
+   "titolo": {
+    "it": "Sapori di Montallegro: formaggi, olio e vino",
+    "en": "Flavours of Montallegro: cheese, olive oil and wine"
+   },
+   "intro": {
+    "it": "Una giornata da chi fa le cose buone del territorio: il gregge, il frantoio, le vigne sopra Torre Salsa.",
+    "en": "A day with the people who make the area's good food: the flock, the olive mill, the vines above Torre Salsa."
+   },
+   "tappe": [
+    {
+     "scheda": "azienda-agricola-todaro",
+     "it": "Al mattino, ricotta e formaggi a latte crudo nel punto vendita di piazza Lo Verde (la domenica è chiuso).",
+     "en": "In the morning, raw-milk ricotta and cheese at the shop in Piazza Lo Verde (closed on Sundays)."
+    },
+    {
+     "scheda": "oleificio-chiara",
+     "it": "In contrada Parisa, il frantoio dell'olio extravergine: in autunno, quando lavora le olive, è il momento giusto.",
+     "en": "In Contrada Parisa, the extra virgin olive oil mill: autumn, when it's pressing the olives, is the time to go."
+    },
+    {
+     "scheda": "tipico-montallegro",
+     "it": "Sul viale della Vittoria, la bottega dei prodotti del territorio: conserve, vino e confezioni regalo spedite a casa.",
+     "en": "On Viale della Vittoria, the shop of local products: preserves, wine and gift boxes shipped home."
+    },
+    {
+     "scheda": "calogero-caruana",
+     "it": "I vini artigianali di Calogero Caruana, dalle vigne sopra la riserva.",
+     "en": "Calogero Caruana's artisan wines, from the vineyards above the reserve."
+    },
+    {
+     "scheda": "baglio-caruana-cantina",
+     "it": "Il lunedì e il venerdì alle 17:30, visita e degustazione alla Cantina Baglio Caruana; chi vuole resta a cena.",
+     "en": "On Mondays and Fridays at 5:30 pm, a tour and tasting at Cantina Baglio Caruana; stay for dinner if you like."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "La degustazione alla Cantina Baglio Caruana si prenota almeno il giorno prima.",
+     "Gli orari dei negozi cambiano: telefona prima di passare."
+    ],
+    "en": [
+     "Book the Cantina Baglio Caruana tasting at least the day before.",
+     "Shop hours vary: call before you go."
+    ]
+   }
+  },
+  {
+   "id": "trekking-monte-suso",
+   "tipo": "piedi",
+   "foto": "img/foto/montallegro-monte-suso.jpg",
+   "durata": {
+    "it": "Mezza giornata",
+    "en": "Half a day"
+   },
+   "titolo": {
+    "it": "Trekking a Monte Suso",
+    "en": "Hiking up Monte Suso"
+   },
+   "intro": {
+    "it": "Dal paese di oggi a quello dove tutto cominciò: i ruderi della Montallegro del 1574 e la costa vista dall'alto.",
+    "en": "From today's town to where it all began: the ruins of the 1574 Montallegro and the coast seen from above."
+   },
+   "dati": {
+    "it": "Salita ripida su sterrato e roccia · difficoltà medio-alta",
+    "en": "Steep climb on dirt and rock · fairly demanding"
+   },
+   "tappe": [
+    {
+     "scheda": "museo-civilta-contadina",
+     "it": "Parti dal Museo della Civiltà Contadina: oltre mille oggetti della vita di campagna di un tempo.",
+     "en": "Start at the Museum of Rural Life: over a thousand objects from the old country life."
+    },
+    {
+     "scheda": "ruderi-monte-suso",
+     "it": "Sali ai ruderi del paese antico, abbandonato nell'Ottocento per la mancanza d'acqua: la Chiesa Madre, la casa del barone, i silos del grano.",
+     "en": "Climb to the ruins of the old town, abandoned in the 19th century for lack of water: the mother church, the baron's house, the grain silos."
+    },
+    {
+     "it": "In cima, la luce del tardo pomeriggio su tutta la costa. Scendi prima che faccia buio.",
+     "en": "At the top, late-afternoon light over the whole coast. Head down before dark."
+    },
+    {
+     "scheda": "seacily-monte-suso",
+     "it": "Se preferisci una guida: l'escursione Seacily al tramonto, tre ore insieme al museo.",
+     "en": "If you'd rather have a guide: Seacily's sunset hike, three hours including the museum."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Scarpe da trekking, acqua, cappello e un bastone.",
+     "Prima di salire da solo chiedi informazioni alla Pro Loco."
+    ],
+    "en": [
+     "Hiking shoes, water, a hat and a walking stick.",
+     "Before going up on your own, ask the Pro Loco for information."
+    ]
+   }
+  },
+  {
+   "id": "natura-archeologia",
+   "foto": "img/foto/capo-bianco-tramonto.jpg",
+   "durata": {
+    "it": "Mezza giornata",
+    "en": "Half a day"
+   },
+   "titolo": {
+    "it": "Natura e archeologia",
+    "en": "Nature and archaeology"
+   },
+   "intro": {
+    "it": "Uccelli migratori al mattino, città greca nel pomeriggio, falesia bianca al tramonto.",
+    "en": "Migrating birds in the morning, a Greek city in the afternoon, the white cliff at sunset."
+   },
+   "tappe": [
+    {
+     "scheda": "birdwatching-gorgo",
+     "it": "Presto al Lago Gorgo, con il binocolo.",
+     "en": "Early at Lake Gorgo, with binoculars."
+    },
+    {
+     "scheda": "foce-platani",
+     "it": "La Foce del Platani, tra dune e canneti.",
+     "en": "The Platani river mouth, among dunes and reeds."
+    },
+    {
+     "scheda": "eraclea-minoa",
+     "it": "Eraclea Minoa: il teatro e la città sul promontorio, poi il tramonto sotto Capo Bianco.",
+     "en": "Eraclea Minoa: the theatre and the city on the headland, then sunset beneath Capo Bianco."
+    }
+   ],
+   "tipo": "natura"
+  },
+  {
+   "id": "torre-salsa-a-piedi",
+   "tipo": "piedi",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover2.jpg",
+   "durata": {
+    "it": "Giornata intera",
+    "en": "Full day"
+   },
+   "titolo": {
+    "it": "Torre Salsa a piedi",
+    "en": "Torre Salsa on foot"
+   },
+   "intro": {
+    "it": "Giù fino al mare della riserva, alla torre del Cinquecento e alla parete bianca della Dama Bianca.",
+    "en": "Down to the reserve's sea, the 16th-century tower and the white wall of the Dama Bianca."
+   },
+   "dati": {
+    "it": "Discesa e risalita su sterrato senza ombra",
+    "en": "Down and back up a shadeless dirt track"
+   },
+   "tappe": [
+    {
+     "scheda": "torre-salsa",
+     "it": "Entra dalla SS115 tra Montallegro e Siculiana Marina (accesso libero, d'estate dalle 8 alle 20) e scendi a piedi lungo lo sterrato.",
+     "en": "Enter from the SS115 between Montallegro and Siculiana Marina (free access, 8 am to 8 pm in summer) and walk down the dirt track."
+    },
+    {
+     "scheda": "wwf-torre-salsa",
+     "it": "Se vuoi una guida, il WWF accompagna gratis su prenotazione: il giardino delle orchidee, la Valle del ginepro e le cave con vista sul mare.",
+     "en": "If you'd like a guide, the WWF leads free visits by appointment: the orchid garden, the Juniper Valley and the quarries with sea views."
+    },
+    {
+     "it": "Al centro della riserva, su un promontorio d'argilla, la torre di avvistamento finita nel 1596.",
+     "en": "In the middle of the reserve, on a clay headland, the watchtower completed in 1596."
+    },
+    {
+     "scheda": "dama-bianca",
+     "it": "Lungo la costa, la parete di marna della Dama Bianca: al sole di mezzogiorno sembra neve.",
+     "en": "Along the coast, the marl wall of the Dama Bianca: in the midday sun it looks like snow."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "La risalita a mezzogiorno è dura: parti presto e porta molta acqua.",
+     "In riserva non ci sono servizi: riporta su i tuoi rifiuti.",
+     "D'estate rispetta i nidi recintati della tartaruga Caretta caretta."
+    ],
+    "en": [
+     "The climb back up at midday is hard: start early and bring plenty of water.",
+     "There are no facilities in the reserve: take your rubbish back up with you.",
+     "In summer, keep clear of the fenced Caretta caretta turtle nests."
+    ]
+   }
+  },
+  {
+   "id": "bici-capo-bianco",
+   "tipo": "bici",
+   "foto": "img/foto/capo-bianco-tramonto.jpg",
+   "durata": {
+    "it": "Giornata intera",
+    "en": "Full day"
+   },
+   "titolo": {
+    "it": "In bici da Montallegro a Capo Bianco",
+    "en": "Cycling from Montallegro to Capo Bianco"
+   },
+   "intro": {
+    "it": "Per ciclisti allenati: un anello su strada dalle colline di Montallegro al promontorio bianco di Eraclea Minoa.",
+    "en": "For trained cyclists: a road loop from the hills of Montallegro to the white headland of Eraclea Minoa."
+   },
+   "dati": {
+    "it": "Circa 52 km · 650 m di dislivello · impegnativo",
+    "en": "About 52 km · 650 m of climbing · hard"
+   },
+   "traccia": {
+    "url": "https://www.komoot.com/smarttour/41271728",
+    "it": "Traccia su komoot",
+    "en": "Route on komoot"
+   },
+   "tappe": [
+    {
+     "scheda": "montallegro",
+     "it": "Si parte dal paese; d'estate meglio all'alba.",
+     "en": "Start in town; in summer, better at dawn."
+    },
+    {
+     "scheda": "eraclea-minoa",
+     "it": "A Eraclea Minoa: il teatro greco sul promontorio e il mare sotto Capo Bianco.",
+     "en": "At Eraclea Minoa: the Greek theatre on the headland and the sea beneath Capo Bianco."
+    },
+    {
+     "scheda": "foce-platani",
+     "it": "Prima del rientro, una pausa all'ombra della pineta della Foce del Platani.",
+     "en": "Before heading back, a break in the shade of the Platani river-mouth pine wood."
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Percorso impegnativo: traccia GPS e dettagli su komoot.",
+     "Casco, acqua e luci sempre con te."
+    ],
+    "en": [
+     "A demanding route: GPS track and details on komoot.",
+     "Always carry a helmet, water and lights."
+    ]
+   }
   },
   {
    "id": "cultura",
@@ -8402,40 +8517,8 @@
      "it": "Per chi ha gambe: i ruderi su Monte Suso, meglio al tramonto e con una guida.",
      "en": "If you have the legs for it: the ruins on Monte Suso, best at sunset and with a guide."
     }
-   ]
-  },
-  {
-   "id": "natura-archeologia",
-   "foto": "img/foto/capo-bianco-tramonto.jpg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "Natura e archeologia",
-    "en": "Nature and archaeology"
-   },
-   "intro": {
-    "it": "Uccelli migratori al mattino, città greca nel pomeriggio, falesia bianca al tramonto.",
-    "en": "Migrating birds in the morning, a Greek city in the afternoon, the white cliff at sunset."
-   },
-   "tappe": [
-    {
-     "scheda": "lago-gorgo",
-     "it": "Presto al Lago Gorgo, con il binocolo.",
-     "en": "Early at Lake Gorgo, with binoculars."
-    },
-    {
-     "scheda": "foce-platani",
-     "it": "La Foce del Platani, tra dune e canneti.",
-     "en": "The Platani river mouth, among dunes and reeds."
-    },
-    {
-     "scheda": "eraclea-minoa",
-     "it": "Eraclea Minoa: il teatro e la città sul promontorio, poi il tramonto sotto Capo Bianco.",
-     "en": "Eraclea Minoa: the theatre and the city on the headland, then sunset beneath Capo Bianco."
-    }
-   ]
+   ],
+   "tipo": "cultura"
   }
  ],
  "trasporti": [
@@ -8548,29 +8631,6 @@
     "en": "The handiest airport is Palermo Falcone Borsellino: about 152 km and 1 hr 50 by car to Bovo Marina. There are also FlixBus links from Trapani airport to Montallegro."
    },
    "voci": []
-  },
-  {
-   "id": "navetta",
-   "icona": "shuttle",
-   "titolo": {
-    "it": "Navetta per Torre Salsa",
-    "en": "Torre Salsa shuttle"
-   },
-   "testo": {
-    "it": "In stagione Stop Over porta dal parcheggio all'ingresso della riserva fino alla spiaggia di Torre Salsa e ritorno, tutti i giorni dalle 9:00 alle 19:00.",
-    "en": "In season, Stop Over runs from the car park at the reserve entrance down to Torre Salsa beach and back, daily from 9 am to 7 pm."
-   },
-   "voci": [],
-   "azioni": [
-    {
-     "tipo": "scheda",
-     "valore": "stop-over",
-     "etichetta": {
-      "it": "Stop Over",
-      "en": "Stop Over"
-     }
-    }
-   ]
   }
  ],
  "contatti": [
@@ -8718,19 +8778,6 @@
      "tel": "3880598905"
     },
     {
-     "id": "stop-over",
-     "nome": {
-      "it": "Stop Over · navetta Torre Salsa",
-      "en": "Stop Over · Torre Salsa shuttle"
-     },
-     "nota": {
-      "it": "Parcheggio e navetta per la riserva, in stagione",
-      "en": "Parking and shuttle to the reserve, in season"
-     },
-     "tel": "3339982551",
-     "whatsapp": "393339982551"
-    },
-    {
      "id": "seacily",
      "nome": {
       "it": "Seacily · escursioni",
@@ -8767,10 +8814,6 @@
   "moduloSocio": ""
  },
  "crediti": [
-  {
-   "it": "Foto della Riserva di Torre Salsa: Stop Over Torre Salsa",
-   "en": "Torre Salsa reserve photos: Stop Over Torre Salsa"
-  },
   {
    "it": "Foto di Capo Bianco e di Monte Suso: Seacily",
    "en": "Capo Bianco and Monte Suso photos: Seacily"

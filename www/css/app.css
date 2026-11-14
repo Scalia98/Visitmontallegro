@@ -649,3 +649,7 @@ html.bloccato, html.bloccato body { overflow: hidden; }
 .pagina-proloco > .azioni, .pagina-proloco .fatti, .testo-come { margin: 0 16px; }
 .pagina-proloco .fatti { margin-bottom: 10px; }
 .testo-come { font-size: 15px; line-height: 1.55; color: #24343F; }
+
+/* ---------- firma in fondo ---------- */
+.crediti a { color: inherit; text-decoration: underline; text-decoration-color: rgba(15, 124, 156, .4); text-underline-offset: 2px; }
+.crediti .firma-app { font-weight: 650; color: var(--blu); }
