@@ -1176,7 +1176,8 @@
     var chip = function (id, nome, n) {
       return '<a class="filtro" href="#itinerari' + (id ? '-' + id : '') + '" style="--c:var(--corallo)"' + ((filtro || '') === id ? ' aria-current="true"' : '') + '>' + esc(nome) + ' <small>' + n + '</small></a>';
     };
-    var chips = presenti.length > 1 ? '<nav class="filtri" aria-label="Filtri">' + chip('', t('tuttiFiltro'), DATA.itinerari.length) + presenti.map(function (k) {
+    // i filtri servono solo quando gli itinerari sono tanti
+    var chips = presenti.length > 1 && DATA.itinerari.length > 4 ? '<nav class="filtri" aria-label="Filtri">' + chip('', t('tuttiFiltro'), DATA.itinerari.length) + presenti.map(function (k) {
       return chip(k, tipi[k], DATA.itinerari.filter(function (it) { return it.tipo === k; }).length);
     }).join('') + '</nav>' : '';
     return '<div class="pagina sotto">' + barra(t('itinerari')) + testaPagina(t('itinerari'), '') + chips +

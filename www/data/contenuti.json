@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-14.1",
+ "versione": "2026-11-14.3",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo.",
  "paese": {
   "lat": 37.39385,
@@ -4603,13 +4603,13 @@
    },
    "testo": {
     "it": [
-     "Calogero Caruana è tornato a Montallegro dopo anni di studio e di lavoro in Toscana. Coltiva quasi quattro ettari di vigna sopra la Riserva di Torre Salsa, a circa cento metri di altitudine, in mezzo alla macchia mediterranea.",
-     "Pianta solo vitigni del territorio: Inzolia, Grillo, Catarratto, Nero d'Avola e Nerello Cappuccio. In cantina interviene il meno possibile: le fermentazioni sono spontanee e, come nella tradizione contadina, macera sulle bucce anche le uve bianche.",
+     "Calogero Caruana è tornato a Montallegro dopo anni di studio e di lavoro in Toscana. Coltiva quasi quattro ettari di vigna sopra la Riserva di Torre Salsa, accanto al Laghetto Gorgo, a circa cento metri di altitudine e in mezzo alla macchia mediterranea.",
+     "Pianta solo vitigni del territorio: Inzolia, Grillo, Catarratto, Nero d'Avola e Nerello Cappuccio. Lavora già in biologico, anche se per ora senza certificazione, e in cantina interviene il meno possibile: le fermentazioni sono spontanee e, come nella tradizione contadina, macera sulle bucce anche le uve bianche.",
      "L'azienda ha anche gli oliveti, con le varietà siciliane Biancolilla e Nocellara del Belice."
     ],
     "en": [
-     "Calogero Caruana came back to Montallegro after years of study and work in Tuscany. He farms almost four hectares of vines above the Torre Salsa reserve, about a hundred metres above sea level, surrounded by Mediterranean scrub.",
-     "He grows only local varieties: Inzolia, Grillo, Catarratto, Nero d'Avola and Nerello Cappuccio. In the cellar he does as little as possible: fermentations are spontaneous and, as in the old farming tradition, even the white grapes are macerated on their skins.",
+     "Calogero Caruana came back to Montallegro after years of study and work in Tuscany. He farms almost four hectares of vines above the Torre Salsa reserve, next to Laghetto Gorgo, about a hundred metres above sea level and surrounded by Mediterranean scrub.",
+     "He grows only local varieties: Inzolia, Grillo, Catarratto, Nero d'Avola and Nerello Cappuccio. He already farms organically, though without certification for now, and does as little as possible in the cellar: fermentations are spontaneous and, as in the old farming tradition, even the white grapes are macerated on their skins.",
      "The farm also has olive groves of the Sicilian varieties Biancolilla and Nocellara del Belice."
     ]
    },
@@ -4621,11 +4621,21 @@
     }
    ],
    "consigli": {
-    "it": [],
-    "en": []
+    "it": [
+     "È una piccola azienda: per comprare il vino chiama o scrivi prima."
+    ],
+    "en": [
+     "It's a small farm: call or message before you go to buy wine."
+    ]
    },
    "zona": "torre-salsa",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "contatti": {
+    "tel": "3299728450",
+    "email": "aziendagricolacaruana@gmail.com",
+    "instagram": "https://www.instagram.com/aziendaagricolacalogerocaruana/",
+    "facebook": "https://www.facebook.com/aziendaagricolacalogerocaruana/"
+   }
   },
   {
    "id": "tipico-montallegro",
@@ -8184,341 +8194,6 @@
      "In summer, set off early: there's little shade."
     ]
    }
-  },
-  {
-   "id": "a-cavallo",
-   "tipo": "cavallo",
-   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-6.jpeg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "A cavallo tra pineta, mare e riserva",
-    "en": "On horseback through pine wood, sea and reserve"
-   },
-   "intro": {
-    "it": "Due maneggi, due paesaggi: il lungomare di Bovo Marina e i sentieri di Torre Salsa, con i formaggi del territorio al ritorno.",
-    "en": "Two stables, two landscapes: the Bovo Marina seafront and the Torre Salsa trails, with local cheese when you get back."
-   },
-   "tappe": [
-    {
-     "scheda": "opera-ammare",
-     "it": "Dal lungomare di Bovo Marina, tra pineta e mare verso Torre Salsa e Capo Bianco. Per i bambini c'è anche il pony.",
-     "en": "From the Bovo Marina seafront, between pine wood and sea towards Torre Salsa and Capo Bianco. There's a pony ride for children too."
-    },
-    {
-     "scheda": "scuderia-ranch-todaro",
-     "it": "Oppure un'ora a cavallo nella Riserva di Torre Salsa, tra il Belvedere e la torre, con l'aperitivo in scuderia al ritorno.",
-     "en": "Or an hour's ride in the Torre Salsa reserve, between the Belvedere and the tower, with an aperitivo at the stables afterwards."
-    },
-    {
-     "scheda": "azienda-agricola-todaro",
-     "it": "La ricotta e i formaggi della degustazione si comprano a Montallegro, in piazza Lo Verde.",
-     "en": "The ricotta and cheese from the tasting are sold in Montallegro, in Piazza Lo Verde."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "Si prenota sempre: L'operAmmare online, la Scuderia Ranch Todaro su WhatsApp.",
-     "Scuderia Ranch Todaro dai 15 anni; L'operAmmare dai 5 anni (3 per le attività dei bambini)."
-    ],
-    "en": [
-     "Always book: L'operAmmare online, Scuderia Ranch Todaro on WhatsApp.",
-     "Scuderia Ranch Todaro from age 15; L'operAmmare from age 5 (3 for the children's rides)."
-    ]
-   }
-  },
-  {
-   "id": "sapori",
-   "tipo": "sapori",
-   "foto": "",
-   "durata": {
-    "it": "Giornata intera",
-    "en": "Full day"
-   },
-   "titolo": {
-    "it": "Sapori di Montallegro: formaggi, olio e vino",
-    "en": "Flavours of Montallegro: cheese, olive oil and wine"
-   },
-   "intro": {
-    "it": "Una giornata da chi fa le cose buone del territorio: il gregge, il frantoio, le vigne sopra Torre Salsa.",
-    "en": "A day with the people who make the area's good food: the flock, the olive mill, the vines above Torre Salsa."
-   },
-   "tappe": [
-    {
-     "scheda": "azienda-agricola-todaro",
-     "it": "Al mattino, ricotta e formaggi a latte crudo nel punto vendita di piazza Lo Verde (la domenica è chiuso).",
-     "en": "In the morning, raw-milk ricotta and cheese at the shop in Piazza Lo Verde (closed on Sundays)."
-    },
-    {
-     "scheda": "oleificio-chiara",
-     "it": "In contrada Parisa, il frantoio dell'olio extravergine: in autunno, quando lavora le olive, è il momento giusto.",
-     "en": "In Contrada Parisa, the extra virgin olive oil mill: autumn, when it's pressing the olives, is the time to go."
-    },
-    {
-     "scheda": "tipico-montallegro",
-     "it": "Sul viale della Vittoria, la bottega dei prodotti del territorio: conserve, vino e confezioni regalo spedite a casa.",
-     "en": "On Viale della Vittoria, the shop of local products: preserves, wine and gift boxes shipped home."
-    },
-    {
-     "scheda": "calogero-caruana",
-     "it": "I vini artigianali di Calogero Caruana, dalle vigne sopra la riserva.",
-     "en": "Calogero Caruana's artisan wines, from the vineyards above the reserve."
-    },
-    {
-     "scheda": "baglio-caruana-cantina",
-     "it": "Il lunedì e il venerdì alle 17:30, visita e degustazione alla Cantina Baglio Caruana; chi vuole resta a cena.",
-     "en": "On Mondays and Fridays at 5:30 pm, a tour and tasting at Cantina Baglio Caruana; stay for dinner if you like."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "La degustazione alla Cantina Baglio Caruana si prenota almeno il giorno prima.",
-     "Gli orari dei negozi cambiano: telefona prima di passare."
-    ],
-    "en": [
-     "Book the Cantina Baglio Caruana tasting at least the day before.",
-     "Shop hours vary: call before you go."
-    ]
-   }
-  },
-  {
-   "id": "trekking-monte-suso",
-   "tipo": "piedi",
-   "foto": "img/foto/montallegro-monte-suso.jpg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "Trekking a Monte Suso",
-    "en": "Hiking up Monte Suso"
-   },
-   "intro": {
-    "it": "Dal paese di oggi a quello dove tutto cominciò: i ruderi della Montallegro del 1574 e la costa vista dall'alto.",
-    "en": "From today's town to where it all began: the ruins of the 1574 Montallegro and the coast seen from above."
-   },
-   "dati": {
-    "it": "Salita ripida su sterrato e roccia · difficoltà medio-alta",
-    "en": "Steep climb on dirt and rock · fairly demanding"
-   },
-   "tappe": [
-    {
-     "scheda": "museo-civilta-contadina",
-     "it": "Parti dal Museo della Civiltà Contadina: oltre mille oggetti della vita di campagna di un tempo.",
-     "en": "Start at the Museum of Rural Life: over a thousand objects from the old country life."
-    },
-    {
-     "scheda": "ruderi-monte-suso",
-     "it": "Sali ai ruderi del paese antico, abbandonato nell'Ottocento per la mancanza d'acqua: la Chiesa Madre, la casa del barone, i silos del grano.",
-     "en": "Climb to the ruins of the old town, abandoned in the 19th century for lack of water: the mother church, the baron's house, the grain silos."
-    },
-    {
-     "it": "In cima, la luce del tardo pomeriggio su tutta la costa. Scendi prima che faccia buio.",
-     "en": "At the top, late-afternoon light over the whole coast. Head down before dark."
-    },
-    {
-     "scheda": "seacily-monte-suso",
-     "it": "Se preferisci una guida: l'escursione Seacily al tramonto, tre ore insieme al museo.",
-     "en": "If you'd rather have a guide: Seacily's sunset hike, three hours including the museum."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "Scarpe da trekking, acqua, cappello e un bastone.",
-     "Prima di salire da solo chiedi informazioni alla Pro Loco."
-    ],
-    "en": [
-     "Hiking shoes, water, a hat and a walking stick.",
-     "Before going up on your own, ask the Pro Loco for information."
-    ]
-   }
-  },
-  {
-   "id": "natura-archeologia",
-   "foto": "img/foto/capo-bianco-tramonto.jpg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "Natura e archeologia",
-    "en": "Nature and archaeology"
-   },
-   "intro": {
-    "it": "Uccelli migratori al mattino, città greca nel pomeriggio, falesia bianca al tramonto.",
-    "en": "Migrating birds in the morning, a Greek city in the afternoon, the white cliff at sunset."
-   },
-   "tappe": [
-    {
-     "scheda": "birdwatching-gorgo",
-     "it": "Presto al Lago Gorgo, con il binocolo.",
-     "en": "Early at Lake Gorgo, with binoculars."
-    },
-    {
-     "scheda": "foce-platani",
-     "it": "La Foce del Platani, tra dune e canneti.",
-     "en": "The Platani river mouth, among dunes and reeds."
-    },
-    {
-     "scheda": "eraclea-minoa",
-     "it": "Eraclea Minoa: il teatro e la città sul promontorio, poi il tramonto sotto Capo Bianco.",
-     "en": "Eraclea Minoa: the theatre and the city on the headland, then sunset beneath Capo Bianco."
-    }
-   ],
-   "tipo": "natura"
-  },
-  {
-   "id": "torre-salsa-a-piedi",
-   "tipo": "piedi",
-   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover2.jpg",
-   "durata": {
-    "it": "Giornata intera",
-    "en": "Full day"
-   },
-   "titolo": {
-    "it": "Torre Salsa a piedi",
-    "en": "Torre Salsa on foot"
-   },
-   "intro": {
-    "it": "Giù fino al mare della riserva, alla torre del Cinquecento e alla parete bianca della Dama Bianca.",
-    "en": "Down to the reserve's sea, the 16th-century tower and the white wall of the Dama Bianca."
-   },
-   "dati": {
-    "it": "Discesa e risalita su sterrato senza ombra",
-    "en": "Down and back up a shadeless dirt track"
-   },
-   "tappe": [
-    {
-     "scheda": "torre-salsa",
-     "it": "Entra dalla SS115 tra Montallegro e Siculiana Marina (accesso libero, d'estate dalle 8 alle 20) e scendi a piedi lungo lo sterrato.",
-     "en": "Enter from the SS115 between Montallegro and Siculiana Marina (free access, 8 am to 8 pm in summer) and walk down the dirt track."
-    },
-    {
-     "scheda": "wwf-torre-salsa",
-     "it": "Se vuoi una guida, il WWF accompagna gratis su prenotazione: il giardino delle orchidee, la Valle del ginepro e le cave con vista sul mare.",
-     "en": "If you'd like a guide, the WWF leads free visits by appointment: the orchid garden, the Juniper Valley and the quarries with sea views."
-    },
-    {
-     "it": "Al centro della riserva, su un promontorio d'argilla, la torre di avvistamento finita nel 1596.",
-     "en": "In the middle of the reserve, on a clay headland, the watchtower completed in 1596."
-    },
-    {
-     "scheda": "dama-bianca",
-     "it": "Lungo la costa, la parete di marna della Dama Bianca: al sole di mezzogiorno sembra neve.",
-     "en": "Along the coast, the marl wall of the Dama Bianca: in the midday sun it looks like snow."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "La risalita a mezzogiorno è dura: parti presto e porta molta acqua.",
-     "In riserva non ci sono servizi: riporta su i tuoi rifiuti.",
-     "D'estate rispetta i nidi recintati della tartaruga Caretta caretta."
-    ],
-    "en": [
-     "The climb back up at midday is hard: start early and bring plenty of water.",
-     "There are no facilities in the reserve: take your rubbish back up with you.",
-     "In summer, keep clear of the fenced Caretta caretta turtle nests."
-    ]
-   }
-  },
-  {
-   "id": "bici-capo-bianco",
-   "tipo": "bici",
-   "foto": "img/foto/capo-bianco-tramonto.jpg",
-   "durata": {
-    "it": "Giornata intera",
-    "en": "Full day"
-   },
-   "titolo": {
-    "it": "In bici da Montallegro a Capo Bianco",
-    "en": "Cycling from Montallegro to Capo Bianco"
-   },
-   "intro": {
-    "it": "Per ciclisti allenati: un anello su strada dalle colline di Montallegro al promontorio bianco di Eraclea Minoa.",
-    "en": "For trained cyclists: a road loop from the hills of Montallegro to the white headland of Eraclea Minoa."
-   },
-   "dati": {
-    "it": "Circa 52 km · 650 m di dislivello · impegnativo",
-    "en": "About 52 km · 650 m of climbing · hard"
-   },
-   "traccia": {
-    "url": "https://www.komoot.com/smarttour/41271728",
-    "it": "Traccia su komoot",
-    "en": "Route on komoot"
-   },
-   "tappe": [
-    {
-     "scheda": "montallegro",
-     "it": "Si parte dal paese; d'estate meglio all'alba.",
-     "en": "Start in town; in summer, better at dawn."
-    },
-    {
-     "scheda": "eraclea-minoa",
-     "it": "A Eraclea Minoa: il teatro greco sul promontorio e il mare sotto Capo Bianco.",
-     "en": "At Eraclea Minoa: the Greek theatre on the headland and the sea beneath Capo Bianco."
-    },
-    {
-     "scheda": "foce-platani",
-     "it": "Prima del rientro, una pausa all'ombra della pineta della Foce del Platani.",
-     "en": "Before heading back, a break in the shade of the Platani river-mouth pine wood."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "Percorso impegnativo: traccia GPS e dettagli su komoot.",
-     "Casco, acqua e luci sempre con te."
-    ],
-    "en": [
-     "A demanding route: GPS track and details on komoot.",
-     "Always carry a helmet, water and lights."
-    ]
-   }
-  },
-  {
-   "id": "cultura",
-   "foto": "img/foto/montallegro-monte-suso.jpg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "Il borgo e la sua storia",
-    "en": "The town and its history"
-   },
-   "intro": {
-    "it": "Dalla piazza al paese antico: chiese, museo, la vecchia stazione e le rovine sul monte.",
-    "en": "From the square to the old town: churches, the museum, the old station and the ruins on the hill."
-   },
-   "tappe": [
-    {
-     "scheda": "chiesa-immacolata",
-     "it": "Parti da «lu Chianu» e dalla Chiesa dell'Immacolata.",
-     "en": "Start at \"lu Chianu\" and the Church of the Immacolata."
-    },
-    {
-     "scheda": "chiesa-san-leonardo",
-     "it": "Sali nella parte antica fino alla Chiesa di San Leonardo.",
-     "en": "Walk up to the old town and the Church of San Leonardo."
-    },
-    {
-     "scheda": "museo-civilta-contadina",
-     "it": "Il Museo della Civiltà Contadina e il suo carretto dipinto.",
-     "en": "The Museum of Rural Life and its painted cart."
-    },
-    {
-     "scheda": "vecchia-stazione",
-     "it": "Dietro il Calvario, la vecchia stazione.",
-     "en": "Behind the Calvario, the old station."
-    },
-    {
-     "scheda": "ruderi-monte-suso",
-     "it": "Per chi ha gambe: i ruderi su Monte Suso, meglio al tramonto e con una guida.",
-     "en": "If you have the legs for it: the ruins on Monte Suso, best at sunset and with a guide."
-    }
-   ],
-   "tipo": "cultura"
   }
  ],
  "trasporti": [
