@@ -16,6 +16,9 @@ window.MONTALLEGRO_CONFIG = {
   PORTALE: 'https://visitmontallegrobovomarina.it',
   PRIVACY: 'privacy.html',
 
+  // Versione web (GitHub Pages): si apre da qualsiasi telefono; finché mancano gli store, "Condividi l'app" manda questo link
+  WEB_URL: 'https://scalia98.github.io/Visitmontallegro/',
+
   // Dopo la pubblicazione: link agli store, usati dal tasto "Condividi l'app"
   APP_STORE_URL: '',
   PLAY_STORE_URL: '',

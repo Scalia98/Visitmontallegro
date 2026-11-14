@@ -87,11 +87,16 @@ L'app, a ogni apertura, scarica `www/data/contenuti.json` dal repository GitHub 
 
 ---
 
-## Provarla subito sul telefono
+## Versione web (online subito, gratis)
 
-Carica il contenuto della cartella `www/` su SiteGround (per esempio un sottodominio `app.visitmontallegrobovomarina.it` con HTTPS) e aprilo dal telefono.
+L'app è online anche come web app su **https://scalia98.github.io/Visitmontallegro/** (GitHub Pages). Il QR code da stampare è `risorse/qr-web-app.png`.
+- **Attivarla, una volta sola**: su GitHub apri il repository → Settings → Pages → Build and deployment → Source «Deploy from a branch» → Branch `gh-pages`, cartella `/ (root)` → Save. Dopo un paio di minuti l'indirizzo funziona.
+- **Aggiornamenti**: i contenuti arrivano da soli da `contenuti.json`; quando cambia il codice in `www/`, il workflow «Versione web» (`.github/workflows/versione-web.yml`) ricopia la cartella sul ramo `gh-pages`.
+- **Dominio vostro (facoltativo)**: per usare `app.visitmontallegrobovomarina.it`, nel DNS del dominio aggiungi un record CNAME `app` → `scalia98.github.io` e scrivi lo stesso indirizzo in Settings → Pages → Custom domain. Il vecchio indirizzo (e il QR già stampato) rimanda da solo a quello nuovo.
 - **iPhone**: Safari → Condividi → Aggiungi alla schermata Home. Funziona tutto tranne il menu a pressione prolungata, che Apple concede solo alle app dello store.
 - **Android**: Chrome → Installa app. Qui anche la versione web ha le scorciatoie.
+- In alternativa puoi caricare la cartella `www/` sul vostro hosting (per esempio SiteGround, con HTTPS).
+- La privacy (`privacy.html`) è online su https://scalia98.github.io/Visitmontallegro/privacy.html: è l'indirizzo da dare agli store.
 
 ---
 

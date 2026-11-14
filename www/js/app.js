@@ -1243,7 +1243,7 @@
           (az.length ? '<div class="voce-azioni">' + az.join('') + '</div>' : '') + '</div>';
       }).join('') + '</div></section>';
     });
-    var store_ = CFG.APP_STORE_URL || CFG.PLAY_STORE_URL;
+    var store_ = CFG.APP_STORE_URL || CFG.PLAY_STORE_URL || CFG.WEB_URL;
     var link = function (href, icona, nome) { return '<a class="voce voce-link" href="' + href + '">' + ic(icona) + '<span class="voce-nome">' + esc(nome) + '</span>' + ic('chevron', false, 'freccia') + '</a>'; };
     var pratiche = '<section class="gruppo"><h2>' + t('infoPraticheTitolo') + '</h2><div class="voci">' +
       link('#servizi', 'shop', t('serviziTitolo')) + link('#trasporti', 'bus', t('comeArrivare')) + link('#meteo', 'sun', t('meteo')) +
@@ -1592,7 +1592,7 @@
       var e = (DATA.eventi || []).filter(function (x) { return x.id === id; })[0];
       if (e) condividi(tx(e.titolo), intervallo(e) + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), CFG.PORTALE || '');
     } else if (az === 'condividi-app') {
-      condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n'));
+      condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.WEB_URL);
     } else if (az === 'indietro') {
       indietro();
     } else if (az === 'vedi-mappa') {
