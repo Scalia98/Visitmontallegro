@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-14.3",
+ "versione": "2026-11-14.4",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo.",
  "paese": {
   "lat": 37.39385,
@@ -8137,61 +8137,6 @@
     "en": [
      "Bring water and comfortable shoes.",
      "To enter the Eraclea Minoa archaeological area, check opening times and tickets on the Valley of the Temples Park website."
-    ]
-   }
-  },
-  {
-   "id": "bici-torre-salsa",
-   "tipo": "bici",
-   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover2.jpg",
-   "durata": {
-    "it": "Mezza giornata",
-    "en": "Half a day"
-   },
-   "titolo": {
-    "it": "In mountain bike verso Torre Salsa",
-    "en": "Mountain biking to Torre Salsa"
-   },
-   "intro": {
-    "it": "Un anello in mountain bike da Montallegro alla Riserva di Torre Salsa e ritorno.",
-    "en": "A mountain-bike loop from Montallegro to the Torre Salsa reserve and back."
-   },
-   "dati": {
-    "it": "Circa 17 km · 360 m di dislivello · serve allenamento",
-    "en": "About 17 km · 360 m of climbing · good fitness needed"
-   },
-   "traccia": {
-    "url": "https://www.komoot.com/guide/3253755/mtb-trails-in-riserva-naturale-orientata-torre-salsa",
-    "it": "Traccia su komoot",
-    "en": "Route on komoot"
-   },
-   "tappe": [
-    {
-     "scheda": "montallegro",
-     "it": "Partenza dal paese, ai piedi di Monte Suso.",
-     "en": "Start in town, at the foot of Monte Suso."
-    },
-    {
-     "scheda": "torre-salsa",
-     "it": "Verso la riserva: oltre 760 ettari protetti e circa sei chilometri di costa tra Bovo Marina e Siculiana Marina.",
-     "en": "Towards the reserve: over 760 protected hectares and about six kilometres of coast between Bovo Marina and Siculiana Marina."
-    },
-    {
-     "scheda": "arte-del-pane",
-     "it": "Al rientro, calzoni e arancine all'Arte del Pane.",
-     "en": "Back in town, calzoni and arancine at L'Arte del Pane."
-    }
-   ],
-   "consigli": {
-    "it": [
-     "Traccia GPS e dettagli del percorso su komoot.",
-     "In riserva segui le regole del WWF: chiedi al centro visite quali sentieri sono aperti alle bici.",
-     "D'estate parti al mattino presto: c'è poca ombra."
-    ],
-    "en": [
-     "GPS track and route details on komoot.",
-     "In the reserve, follow the WWF rules: ask at the visitor centre which trails are open to bikes.",
-     "In summer, set off early: there's little shade."
     ]
    }
   }

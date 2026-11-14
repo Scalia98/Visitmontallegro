@@ -10,7 +10,7 @@ Dentro l'app trovi, come in Agrigento InfoApp:
 - **Spiagge**: Torre Salsa, Bovo Marina, Eraclea Minoa, Scala dei Turchi, lidi e regole per il mare
 - **Cosa vedere** (tab Visit): natura e riserve, storia e cultura, dintorni, con la distanza da te
 - **Esperienze**: escursioni Seacily, a cavallo con L'operAmmare e la Scuderia Ranch Todaro, visite WWF, birdwatching al Laghetto Gorgo, SUP e kayak, museo
-- **Itinerari**: una giornata di mare, a piedi nella pineta del Platani fino a Capo Bianco, in mountain bike verso Torre Salsa (con la traccia su komoot); con più di 4 itinerari compaiono i filtri per tipo
+- **Itinerari**: una giornata di mare e a piedi nella pineta del Platani fino a Capo Bianco; con più di 4 itinerari compaiono i filtri per tipo
 - **Mangiare e bere** (23 locali) e **Dove dormire** (37 strutture), con filtri per tipo, orari con «aperto adesso», prenotazioni, social e numeri
 - **Sapori e prodotti** (formaggi, olio, vino, miele, pane, carne) e **Servizi utili** (farmacia, salute, trasporti, spesa, negozi, uffici)
 - **Nei dintorni**: Siculiana, Siculiana Marina, Giallonardo, Villa Romana di Durrueli, Porto Empedocle, Agrigento, Sciacca, Caltabellotta e altro
@@ -62,7 +62,7 @@ Poi, per portare le modifiche nelle app: `npx cap sync`.
 - **Scopri il territorio** (portale): Riserva Torre Salsa, Bovo Marina, Monte Suso, Laghetto Gorgo, le calcare di gesso e il Museo della Civiltà Contadina hanno i testi e le **gallerie di foto** delle pagine «Scopri il territorio» di visitmontallegrobovomarina.it (62 foto). In home sono il carosello «Scopri il territorio» e in Cosa vedere la prima sezione. Dove il portale e le schede verificate della guida non coincidono (date, numeri, direzioni) vale la guida verificata; alcune parti generiche del portale (eventi di Bovo Marina, punti panoramici e sentieri con nomi non verificabili) non sono state riportate.
 - **Portale** (`"fonte": "portale"`, 95 schede): locali, strutture, produttori, esperienze e servizi della guida di visitmontallegrobovomarina.it, con i dati verificati dalla Pro Loco a novembre 2026. Le schede in bozza e le note interne del portale **non** sono state pubblicate.
 - **Dintorni** (`"fonte": "ricerca"`, 30 schede): luoghi, ristoranti e alloggi fuori Montallegro presi da fonti pubbliche (italia.it, siti ufficiali, guide). Prima di pubblicare sugli store fai una telefonata di controllo ai locali e alle strutture: orari e numeri cambiano.
-- Le altre schede (riserva, spiagge, chiese, Seacily, eventi, trasporti) sono quelle dell'app originale. Gli itinerari della pineta del Platani e della mountain bike, il birdwatching e l'Azienda Agricola Calogero Caruana sono stati aggiunti a novembre 2026 da fonti pubbliche (Balarm, komoot, schede dei produttori).
+- Le altre schede (riserva, spiagge, chiese, Seacily, eventi, trasporti) sono quelle dell'app originale. L'itinerario della pineta del Platani, il birdwatching e l'Azienda Agricola Calogero Caruana sono stati aggiunti a novembre 2026 da fonti pubbliche (Balarm, komoot, schede dei produttori).
 
 ### Da completare
 - **Foto mancanti**: la guida del portale ha le foto solo per 11 schede; locali, strutture, servizi e posti dei dintorni per ora hanno il fondo colorato con l'icona. Aggiungi le foto sul portale o in `www/img/foto/`.
