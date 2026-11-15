@@ -52,6 +52,7 @@ Apri `www/data/contenuti.json` con un editor di testo (VS Code va benissimo).
 - **Foto**: metti l'immagine in `www/img/foto/` (orizzontale, circa 1600 px di lato, JPG) e scrivi il percorso nel campo `"foto"`, per esempio `"foto": "img/foto/bovo-marina.jpg"`, con l'autore in `"credito"`. Senza foto si vede un fondo colorato con l'icona della categoria.
 - **Contatti di una scheda**: blocco `"contatti"` con `"tel"`, `"whatsapp"` (con il 39 davanti), `"web"`, `"email"`. Compaiono da soli i tasti Chiama, WhatsApp, Sito.
 - **Posizione sulla mappa**: campi `"lat"` e `"lng"`. In Google Maps tieni premuto sul punto esatto e copia i due numeri. Senza coordinate la scheda non compare sulla mappa (ma Indicazioni funziona lo stesso con il nome in `"mappe"`).
+- **Prezzi**: nell'app non ci sono prezzi. Al posto del prezzo metti una riga `{"tipo": "telefono", "it": "Per maggiori info", "en": "For more info", "tel": "3201234567"}`: il numero diventa un tasto per chiamare.
 - **Eventi**: aggiungi un blocco in `"eventi"` con date `"inizio"` e `"fine"` (formato `2026-12-19`). Gli eventi passati spariscono da soli.
 - **Itinerari**: blocco in `"itinerari"` con `"titolo"`, `"intro"`, `"durata"`, `"foto"` e le `"tappe"` (ognuna con il testo e, se c'è, la `"scheda"` del luogo). `"tipo"` (`piedi`, `bici`, `cavallo`, `mare`, `natura`, `cultura`, `sapori`) decide il filtro e l'etichetta; `"dati"` (lunghezza, dislivello, difficoltà), `"traccia"` (link al percorso GPS) e `"consigli"` sono facoltativi.
 - A ogni modifica aggiorna `"versione"` (es. `"2026-12-01"`).
@@ -79,7 +80,7 @@ L'app, a ogni apertura, scarica `www/data/contenuti.json` dal repository GitHub 
 
 ### Partner e soci
 - In home (riquadri «Pro Loco Montallegro»), in Info e in fondo a Mangiare, Dormire, Sapori, Servizi ed Esperienze ci sono **Diventa socio** e **Diventa partner**: pagine con WhatsApp, Chiama ed Email alla Pro Loco, con il messaggio già scritto.
-- **Quote**: nel blocco `"proloco"` di `contenuti.json` scrivi `"quotaSocio"` e `"prezzoPartner"`, per esempio `{"it": "15 € l'anno", "en": "€15 a year"}`. Se restano vuoti l'app scrive «chiedi alla Pro Loco». `"moduloSocio"` (facoltativo): indirizzo https di un modulo di iscrizione online, compare come tasto «Modulo online».
+- **Prezzi**: l'app non mostra quote né prezzi. Nelle pagine c'è «Per maggiori info» con il numero della Pro Loco. `"moduloSocio"` nel blocco `"proloco"` (facoltativo): indirizzo https di un modulo di iscrizione online, compare come tasto «Modulo online».
 - **Attivare un partner**: nella sua scheda aggiungi `"partner": true`, oppure la data di fine `"partner": "2027-09-30"` (scaduta la data, il bollino sparisce da solo). Il partner ha il bollino ★ Partner, sta in cima alla sua sezione e ai filtri, compare in home tra i «Consigliati dalla Pro Loco» (ogni giorno apre la fila un partner diverso) e nell'elenco della pagina Diventa partner.
 - Con il repository GitHub pubblico basta modificare il file e aumentare `"versione"`: il bollino compare a tutti senza aggiornare l'app.
 - **Niente pagamenti nell'app**: quote e spazi partner si incassano fuori dall'app (bonifico, contanti, ricevuta della Pro Loco). L'app resta gratuita e senza acquisti, che è una delle condizioni dell'esonero Apple.

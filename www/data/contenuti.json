@@ -1,6 +1,6 @@
 {
- "versione": "2026-11-14.4",
- "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo.",
+ "versione": "2026-11-15.1",
+ "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare.",
  "paese": {
   "lat": 37.39385,
   "lng": 13.35005
@@ -270,7 +270,7 @@
     {
      "tipo": "orari",
      "it": "Accesso libero: 8–20 d'estate, 8–17 il resto dell'anno",
-     "en": "Free access: 8 am–8 pm in summer, 8 am–5 pm the rest of the year"
+     "en": "Open access: 8 am–8 pm in summer, 8 am–5 pm the rest of the year"
     },
     {
      "tipo": "escursione",
@@ -280,8 +280,8 @@
     },
     {
      "tipo": "escursione",
-     "it": "Visite guidate gratuite del WWF, su prenotazione",
-     "en": "Free WWF guided visits, by appointment",
+     "it": "Visite guidate del WWF, su prenotazione",
+     "en": "WWF guided visits, by appointment",
      "scheda": "wwf-torre-salsa"
     }
    ],
@@ -724,9 +724,9 @@
      "en": "About 3 km from the centre of Montallegro: follow the signs for the Gorgo area"
     },
     {
-     "tipo": "prezzo",
-     "it": "Ingresso libero e gratuito",
-     "en": "Free entry"
+     "tipo": "contatto",
+     "it": "Accesso libero",
+     "en": "Open access"
     }
    ],
    "consigli": {
@@ -910,9 +910,9 @@
      "en": "About 3 km from the centre of Montallegro: follow the signs for the Gorgo area"
     },
     {
-     "tipo": "prezzo",
-     "it": "Ingresso libero e gratuito",
-     "en": "Free entry"
+     "tipo": "contatto",
+     "it": "Accesso libero",
+     "en": "Open access"
     },
     {
      "tipo": "stagione",
@@ -1310,9 +1310,10 @@
      "en": "Viale della Vittoria, Montallegro"
     },
     {
-     "tipo": "prezzo",
-     "it": "Ingresso gratuito, visite su prenotazione",
-     "en": "Free entry, visits by appointment"
+     "tipo": "telefono",
+     "it": "Visite su prenotazione · per maggiori info",
+     "en": "Visits by appointment · for more info",
+     "tel": "3288597144"
     },
     {
      "tipo": "durata",
@@ -1750,19 +1751,20 @@
     "it": [
      "Si scende in jeep tra la macchia mediterranea, quattro chilometri di discesa panoramica, fino alla spiaggia di Cannicella, dentro l'Oasi WWF di Torre Salsa: acqua limpida, dune vive, nessuno intorno.",
      "Passeggiata naturalistica, un minuto di silenzio senza telefono, piedi nudi sulla terra. Acqua, cibo e ombrellone sono previsti; alla fine porti a casa una foto stampata dell'uscita.",
-     "Gruppi chiusi: si parte con un minimo di 4 persone. Con pioggia forte o mare mosso la data si rimanda senza costi."
+     "Gruppi chiusi: si parte con un minimo di 4 persone. Con pioggia forte o mare mosso la data si rimanda."
     ],
     "en": [
      "You drive down by jeep through Mediterranean scrub, four kilometres of panoramic descent, to Cannicella beach inside the Torre Salsa WWF reserve: clear water, living dunes, nobody around.",
      "A nature walk, a minute of silence with no phones, bare feet on the ground. Water, food and a parasol are included, and you take home a printed photo of the day.",
-     "Closed groups: departures need at least 4 people. In heavy rain or rough seas the date is moved at no cost."
+     "Closed groups: departures need at least 4 people. In heavy rain or rough seas the date is moved."
     ]
    },
    "info": [
     {
-     "tipo": "prezzo",
-     "it": "29 € a persona · 50 € la formula in coppia",
-     "en": "€29 per person · €50 for couples"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3206896437"
     },
     {
      "tipo": "orari",
@@ -1862,9 +1864,10 @@
    },
    "info": [
     {
-     "tipo": "prezzo",
-     "it": "25 € a persona",
-     "en": "€25 per person"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3206896437"
     },
     {
      "tipo": "orari",
@@ -1960,9 +1963,10 @@
    },
    "info": [
     {
-     "tipo": "prezzo",
-     "it": "12 € contributo a persona",
-     "en": "€12 contribution per person"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3206896437"
     },
     {
      "tipo": "orari",
@@ -2068,7 +2072,6 @@
     "prenotaTesto": "Prenota su TheFork"
    },
    "zona": "paese",
-   "fascia": "€€€",
    "orari": {
     "lun": "chiuso",
     "mar": "19:00-22:30",
@@ -2126,7 +2129,6 @@
     "prenotaTesto": "Prenota su TheFork"
    },
    "zona": "campagna",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2170,7 +2172,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "orari": {
     "lun": "18:30-24:00",
     "mar": "18:30-24:00",
@@ -2222,8 +2223,7 @@
     "tel": "3717461659",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese",
-   "fascia": "€€"
+   "zona": "paese"
   },
   {
    "id": "dennys",
@@ -2270,7 +2270,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2310,8 +2309,7 @@
     "tel": "3398541022",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese",
-   "fascia": "€"
+   "zona": "paese"
   },
   {
    "id": "da-calogero",
@@ -2350,8 +2348,7 @@
     "tel": "3336927899",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese",
-   "fascia": "€"
+   "zona": "paese"
   },
   {
    "id": "bistrot",
@@ -2395,7 +2392,6 @@
     "facebook": "https://www.facebook.com/p/Bistrot-0193-Montallegro-100068029583984/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "orari": {
     "lun": "18:00-24:00",
     "mar": "chiuso",
@@ -2446,7 +2442,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2498,7 +2493,6 @@
     "web": "https://www.locandaperbellinialmare.it/"
    },
    "zona": "bovo",
-   "fascia": "€€€",
    "orari": {
     "lun": "12:30-14:30, 19:30-22:30",
     "mar": "chiuso",
@@ -2567,7 +2561,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2612,7 +2605,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "fascia": "€€",
    "orari": {
     "lun": "08:30-24:00",
     "mar": "08:30-24:00",
@@ -2671,7 +2663,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "fascia": "€€",
    "caratteristiche": [
     "Noleggio canoe",
     "Spiaggia accessibile"
@@ -2702,7 +2693,7 @@
    },
    "testo": {
     "it": [
-     "Cucina di pesce semplice: linguine alle vongole, busiate con le sarde, frittura. Su TheFork il prezzo medio è di circa 25 euro."
+     "Cucina di pesce semplice: linguine alle vongole, busiate con le sarde, frittura."
     ]
    },
    "info": [
@@ -2726,7 +2717,6 @@
     "prenotaTesto": "Prenota su TheFork"
    },
    "zona": "bovo",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2768,7 +2758,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2812,8 +2801,7 @@
     "tel": "3248954771",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese",
-   "fascia": "€"
+   "zona": "paese"
   },
   {
    "id": "barry-white",
@@ -2855,7 +2843,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€",
    "verificato": "novembre 2026"
   },
   {
@@ -2892,7 +2879,6 @@
     "it": []
    },
    "zona": "paese",
-   "fascia": "€",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    }
@@ -2939,7 +2925,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -2981,7 +2966,6 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "fascia": "€€",
    "verificato": "novembre 2026"
   },
   {
@@ -3029,7 +3013,6 @@
     "facebook": "https://www.facebook.com/villadominirestaurant"
    },
    "zona": "campagna",
-   "fascia": "€€€",
    "verificato": "novembre 2026"
   },
   {
@@ -3426,7 +3409,7 @@
     "Angolo cottura",
     "Balcone",
     "Colazione in camera",
-    "Parcheggio gratuito",
+    "Parcheggio",
     "Wi-Fi",
     "Aria condizionata"
    ],
@@ -4487,8 +4470,10 @@
      "it": "Contrada Gorgo, 92010 Montallegro (AG)"
     },
     {
-     "tipo": "prezzo",
-     "it": "Da 5,50 € (vasetto da 250 g)"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3760791380"
     }
    ],
    "consigli": {
@@ -4545,8 +4530,10 @@
      "it": "Contrada Torre Salsa, 92010 Montallegro (AG)"
     },
     {
-     "tipo": "prezzo",
-     "it": "30 € a persona · cena 55 €"
+     "tipo": "contatto",
+     "it": "Per maggiori info e prenotazioni",
+     "en": "For more info and bookings",
+     "link": "https://www.youontour.it/en/cosa-fare-mini/wine-tasting-experience-2/"
     },
     {
      "tipo": "durata",
@@ -4574,7 +4561,7 @@
     "Visita in vigna e in cantina",
     "Degustazione",
     "Cena",
-    "Parcheggio gratuito"
+    "Parcheggio"
    ],
    "verificato": "novembre 2026"
   },
@@ -4942,8 +4929,8 @@
    },
    "testo": {
     "it": [
-     "Ci sono cinque uscite: il pony per i bambini (20 minuti, 15 €), un'ora per i bambini (50 €), la passeggiata di un'ora (55 €) e quella di due ore con rinfresco (75 €).",
-     "Per i cavalieri esperti c'è la mezza giornata fino a Eraclea Minoa, con il bagno a cavallo nel Platani (300 € a coppia). Si esce tutto l'anno, con orario da concordare."
+     "Ci sono cinque uscite: il pony per i bambini (20 minuti), un'ora per i bambini, la passeggiata di un'ora e quella di due ore con rinfresco.",
+     "Per i cavalieri esperti c'è la mezza giornata fino a Eraclea Minoa, con il bagno a cavallo nel Platani. Si esce tutto l'anno, con orario da concordare."
     ]
    },
    "info": [
@@ -4953,8 +4940,10 @@
      "en": "Meeting point: Viale Lungomare, 9 · Bovo Marina"
     },
     {
-     "tipo": "prezzo",
-     "it": "Da 15 € (pony) a 75 € a persona"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3394713600"
     },
     {
      "tipo": "durata",
@@ -4966,7 +4955,7 @@
      "Età minima 5 anni (3 per le attività dei bambini)",
      "Sotto i 14 anni serve un adulto",
      "Peso massimo 110 kg",
-     "Cancellazione gratuita fino a 24 ore prima"
+     "Si può disdire fino a 24 ore prima"
     ]
    },
    "contatti": {
@@ -5013,8 +5002,10 @@
      "en": "Meeting point: Contrada Carlici, 52 · Montallegro"
     },
     {
-     "tipo": "prezzo",
-     "it": "Su richiesta"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3496806127"
     },
     {
      "tipo": "durata",
@@ -5072,8 +5063,10 @@
      "en": "Meeting point: Centro visite «F. Galìa» della riserva"
     },
     {
-     "tipo": "prezzo",
-     "it": "Gratuita"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "0922818220"
     },
     {
      "tipo": "durata",
@@ -5161,8 +5154,10 @@
      "en": "Meeting point: Cala Manbrù Beach Club, Siculiana Marina"
     },
     {
-     "tipo": "prezzo",
-     "it": "Da 38 € a persona"
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "0922824256"
     },
     {
      "tipo": "durata",
@@ -5685,10 +5680,6 @@
     {
      "tipo": "dove",
      "it": "Contrada Torre Salsa, 92010 Montallegro (AG)"
-    },
-    {
-     "tipo": "prezzo",
-     "it": "25–30 € a notte"
     }
    ],
    "consigli": {
@@ -7610,17 +7601,17 @@
     "en": "Siculiana Marina"
    },
    "breve": {
-    "it": "Albergo a 200 metri dalla spiaggia di Siculiana Marina, con ristorante, bar e parcheggio gratuito.",
-    "en": "A hotel 200 metres from Siculiana Marina beach, with a restaurant, bar and free parking."
+    "it": "Albergo a 200 metri dalla spiaggia di Siculiana Marina, con ristorante, bar e parcheggio.",
+    "en": "A hotel 200 metres from Siculiana Marina beach, with a restaurant, bar and parking."
    },
    "testo": {
     "it": [
      "Il resort si affaccia sulla baia di Siculiana Marina, a circa 200 metri dalla spiaggia e a pochi minuti dalla Riserva di Torre Salsa.",
-     "Ha camere con aria condizionata, alcune con balcone vista mare, ristorante, bar, palestra e parcheggio gratuito; la colazione è inclusa."
+     "Ha camere con aria condizionata, alcune con balcone vista mare, ristorante, bar, palestra e parcheggio; la colazione è inclusa."
     ],
     "en": [
      "The resort overlooks the bay of Siculiana Marina, about 200 metres from the beach and a few minutes from the Torre Salsa reserve.",
-     "It has air-conditioned rooms, some with a sea-view balcony, a restaurant, a bar, a gym and free parking; breakfast is included."
+     "It has air-conditioned rooms, some with a sea-view balcony, a restaurant, a bar, a gym and parking; breakfast is included."
     ]
    },
    "info": [
@@ -8194,8 +8185,8 @@
     "en": "By bus"
    },
    "testo": {
-    "it": "Autolinee Salvatore Lumia collega Agrigento (Piazzale Rosselli) e Montallegro più volte al giorno, sulla linea verso Sciacca e Trapani. Il viaggio dura 30–40 minuti; il biglietto costa circa 3–5 €.",
-    "en": "Autolinee Salvatore Lumia runs several buses a day between Agrigento (Piazzale Rosselli) and Montallegro, on the line towards Sciacca and Trapani. The ride takes 30–40 minutes; tickets cost about €3–5."
+    "it": "Autolinee Salvatore Lumia collega Agrigento (Piazzale Rosselli) e Montallegro più volte al giorno, sulla linea verso Sciacca e Trapani. Il viaggio dura 30–40 minuti.",
+    "en": "Autolinee Salvatore Lumia runs several buses a day between Agrigento (Piazzale Rosselli) and Montallegro, on the line towards Sciacca and Trapani. The ride takes 30–40 minutes."
    },
    "voci": [
     {
@@ -8427,10 +8418,8 @@
   }
  ],
  "proloco": {
-  "_nota": "Testi mostrati nelle pagine Diventa socio e Diventa partner. quotaSocio e prezzoPartner: scrivi l'importo, anche in due lingue, es. {\"it\": \"15 € l'anno\", \"en\": \"€15 a year\"}; se restano vuoti l'app scrive «chiedi alla Pro Loco». moduloSocio: indirizzo https di un modulo di iscrizione online (facoltativo). Niente pagamenti nell'app: quote e spazi partner si pagano direttamente alla Pro Loco.",
+  "_nota": "Pagine Diventa socio e Diventa partner. L'app non mostra quote né prezzi: c'è «Per maggiori info» con il numero della Pro Loco. moduloSocio: indirizzo https di un modulo di iscrizione online (facoltativo). Niente pagamenti nell'app.",
   "contatto": "pro-loco",
-  "quotaSocio": "",
-  "prezzoPartner": "",
   "moduloSocio": ""
  },
  "crediti": [

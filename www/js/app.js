@@ -96,8 +96,8 @@
         "Puoi dare una mano come volontario",
         "Sei sempre informato su quello che organizziamo"
       ],
-      voceQuota: "Quota associativa", chiediProLoco: "chiedi alla Pro Loco", comeIscriversi: "Come iscriversi",
-      socioCome: "Scrivi o chiama la Pro Loco: ti diciamo la quota e come iscriverti. La quota si versa direttamente alla Pro Loco.",
+      perInfo: "Per maggiori info", comeIscriversi: "Come iscriversi",
+      socioCome: "Scrivi o chiama la Pro Loco: ti diciamo come iscriverti.",
       moduloOnline: "Modulo online",
       messaggioSocio: "Ciao! Vorrei diventare socio della Pro Loco Montallegro (dall'app Visit Montallegro).",
       oggettoSocio: "Iscrizione socio Pro Loco",
@@ -110,8 +110,8 @@
         "Uno spazio in home tra i «Consigliati dalla Pro Loco»",
         "Il tuo contributo sostiene gli eventi del paese"
       ],
-      vocePartner: "Spazio partner", comeFunziona: "Come funziona",
-      partnerCome: "Contatta la Pro Loco e concordiamo lo spazio. Aggiorniamo la tua scheda e il bollino compare a tutti, senza aggiornare l'app. Il pagamento si fa direttamente alla Pro Loco, fuori dall'app.",
+      comeFunziona: "Come funziona",
+      partnerCome: "Contatta la Pro Loco e concordiamo lo spazio. Aggiorniamo la tua scheda e il bollino compare a tutti, senza aggiornare l'app.",
       messaggioPartner: "Ciao! Ho un'attività e vorrei uno spazio partner nell'app Visit Montallegro.",
       oggettoPartner: "Spazio partner app Visit Montallegro",
       invitoPartner: "Hai un'attività a Montallegro?", invitoPartnerSotto: "Diventa partner: la tua scheda in evidenza nell'app."
@@ -180,8 +180,8 @@
         "Lend a hand as a volunteer",
         "Stay up to date on everything we organise"
       ],
-      voceQuota: "Membership fee", chiediProLoco: "ask the Pro Loco", comeIscriversi: "How to join",
-      socioCome: "Message or call the Pro Loco: we'll tell you the fee and how to join. The fee is paid directly to the Pro Loco.",
+      perInfo: "For more info", comeIscriversi: "How to join",
+      socioCome: "Message or call the Pro Loco: we'll tell you how to join.",
       moduloOnline: "Online form",
       messaggioSocio: "Hi! I'd like to become a member of Pro Loco Montallegro (from the Visit Montallegro app).",
       oggettoSocio: "Pro Loco membership",
@@ -194,8 +194,8 @@
         "A place on the home screen under “Recommended by the Pro Loco”",
         "Your contribution supports the town's events"
       ],
-      vocePartner: "Partner listing", comeFunziona: "How it works",
-      partnerCome: "Contact the Pro Loco and we'll agree on your listing. We update your page and the badge shows up for everyone, with no app update needed. Payment is made directly to the Pro Loco, outside the app.",
+      comeFunziona: "How it works",
+      partnerCome: "Contact the Pro Loco and we'll agree on your listing. We update your page and the badge shows up for everyone, with no app update needed.",
       messaggioPartner: "Hi! I run a business and I'd like a partner listing in the Visit Montallegro app.",
       oggettoPartner: "Partner listing – Visit Montallegro app",
       invitoPartner: "Run a business in Montallegro?", invitoPartnerSotto: "Become a partner: feature your page in the app."
@@ -797,7 +797,6 @@
     if (c.tel) az.push(azione(tel(c.tel), 'phone', t('chiama'), { classe: c.whatsapp ? '' : 'primaria' }));
     if (c.email) az.push(azione('mailto:' + c.email + '?subject=' + encodeURIComponent(t(o.oggetto)) + '&body=' + encodeURIComponent(messaggio), 'mail', t('email')));
     if (o.modulo && /^https:\/\//.test(PL[o.modulo] || '')) az.push(azione(PL[o.modulo], 'globe', t('moduloOnline'), { esterno: true }));
-    var importo = tx(PL[o.importo]);
     var partner = o.mostraPartner ? ruota(DATA.schede.filter(isPartner)) : [];
     return '<div class="pagina sotto pagina-proloco">' + barra(t(o.barra)) +
       '<header class="testata-proloco"><img class="proloco-logo" src="img/logo-tondo.png" alt="" width="64" height="64">' +
@@ -805,18 +804,18 @@
       (az.length ? '<div class="azioni">' + az.join('') + '</div>' : '') +
       '<section class="blocco">' + titoloSezione(t(o.elenco)) + '<ul class="consigli">' + t(o.vantaggi).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></section>' +
       '<section class="blocco">' + titoloSezione(t(o.come)) +
-      '<div class="fatti">' + fatto('euro', '<b>' + esc(t(o.voce)) + '</b>: ' + esc(importo || t('chiediProLoco'))) + '</div>' +
+      (c.tel ? '<div class="fatti">' + fatto('phone', esc(t('perInfo')), '<a class="vai" href="' + tel(c.tel) + '">' + telTesto(c.tel) + '</a>') + '</div>' : '') +
       '<p class="testo-come">' + esc(t(o.testoCome)) + '</p></section>' +
       (partner.length ? '<section class="blocco">' + titoloSezione(t('iNostriPartner')) + '<div class="elenco">' + partner.map(function (p) { return riga(p); }).join('') + '</div></section>' : '') +
       '</div>';
   }
   VISTE.socio = function () {
     return paginaProLoco({ barra: 'diventaSocio', titolo: 'socioTitolo', intro: 'socioIntro', elenco: 'socioPerche', vantaggi: 'socioVantaggi',
-      come: 'comeIscriversi', voce: 'voceQuota', importo: 'quotaSocio', testoCome: 'socioCome', messaggio: 'messaggioSocio', oggetto: 'oggettoSocio', modulo: 'moduloSocio' });
+      come: 'comeIscriversi', testoCome: 'socioCome', messaggio: 'messaggioSocio', oggetto: 'oggettoSocio', modulo: 'moduloSocio' });
   };
   VISTE.partner = function () {
     return paginaProLoco({ barra: 'diventaPartner', titolo: 'partnerTitolo', intro: 'partnerIntro', elenco: 'partnerCosa', vantaggi: 'partnerVantaggi',
-      come: 'comeFunziona', voce: 'vocePartner', importo: 'prezzoPartner', testoCome: 'partnerCome', messaggio: 'messaggioPartner', oggetto: 'oggettoPartner', mostraPartner: true });
+      come: 'comeFunziona', testoCome: 'partnerCome', messaggio: 'messaggioPartner', oggetto: 'oggettoPartner', mostraPartner: true });
   };
 
   VISTE.visit = function (r) {
@@ -987,7 +986,7 @@
       if (!s) return '';
       var c = s.contatti || {};
       var cta = c.whatsapp ? esterno(urlWhatsApp(c.whatsapp, tx(s.nome)), ic('chat') + esc(testoBottone), 'bottone verde') : '';
-      var info = (s.info || []).filter(function (i) { return i.tipo === 'orari' || i.tipo === 'prezzo'; }).map(rigaFatto).join('');
+      var info = (s.info || []).filter(function (i) { return i.tipo === 'orari' || i.tipo === 'telefono'; }).map(rigaFatto).join('');
       return '<section class="riquadro">' + '<a class="riquadro-testa" href="#luogo-' + s.id + '">' + copertina(s, 'riquadro-foto') +
         '<div><span class="occhiello">' + esc(titolo) + '</span><h3>' + esc(tx(s.nome)) + '</h3></div>' + ic('chevron', false, 'freccia') + '</a>' +
         '<p>' + esc(tx(s.breve)) + '</p><div class="fatti">' + info + '</div>' + cta + '</section>';
