@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-15.1",
+ "versione": "2026-11-16.1",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare.",
  "paese": {
   "lat": 37.39385,
@@ -5664,29 +5664,47 @@
    "lng": 13.3278,
    "mappe": "Sosta Camper «U Pantanu», Contrada Torre Salsa, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Sosta Camper «U Pantanu»"
+    "it": "Sosta Camper Torre Salsa «U Pantanu»",
+    "en": "Sosta Camper Torre Salsa «U Pantanu»"
    },
    "etichetta": {
     "it": "Area sosta camper",
     "en": "Campervan area"
    },
    "breve": {
-    "it": "Area camper privata vicino alla spiaggia della riserva, con elettricità, acqua, scarico, docce calde e Wi-Fi."
+    "it": "Area camper al confine con la Riserva di Torre Salsa, a meno di un chilometro dalla spiaggia, con docce calde, Wi-Fi, bar, noleggio bici e navetta per il mare.",
+    "en": "A campervan area on the edge of the Torre Salsa reserve, less than a kilometre from the beach, with hot showers, Wi-Fi, a bar, bike hire and a beach shuttle."
    },
    "testo": {
-    "it": []
+    "it": [
+     "L'area è nata nel 2022 nella campagna di famiglia di Vanessa e di suo fratello Stefano, al confine con la Riserva di Torre Salsa, a meno di un chilometro dalla spiaggia.",
+     "Ci sono carico e scarico delle acque, docce calde, bagni, Wi-Fi, bar, area barbecue e lavanderia. Si possono noleggiare le bici e c'è la navetta fino alla spiaggia."
+    ],
+    "en": [
+     "The area opened in 2022 on the family farmland of Vanessa and her brother Stefano, on the edge of the Torre Salsa reserve, less than a kilometre from the beach.",
+     "There's water loading and waste disposal, hot showers, toilets, Wi-Fi, a bar, a barbecue area and laundry. You can hire bikes, and a shuttle runs to the beach."
+    ]
    },
    "info": [
     {
      "tipo": "dove",
      "it": "Contrada Torre Salsa, 92010 Montallegro (AG)"
+    },
+    {
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3714270767"
     }
    ],
    "consigli": {
     "it": [
-     "Aperta tutto l’anno",
-     "Lo sterrato si infanga dopo la pioggia",
-     "Il numero di telefono è sul cancello"
+     "Aperta tutto l'anno",
+     "Lo sterrato si infanga dopo la pioggia"
+    ],
+    "en": [
+     "Open all year",
+     "The dirt road gets muddy after rain"
     ]
    },
    "zona": "torre-salsa",
@@ -5696,9 +5714,20 @@
     "Docce calde",
     "Wi-Fi",
     "Chiosco bar",
-    "Navetta per la spiaggia"
+    "Navetta per la spiaggia",
+    "Noleggio bici",
+    "Area barbecue",
+    "Lavanderia"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "contatti": {
+    "tel": "3714270767",
+    "tel2": "3206897047",
+    "email": "sostacampertorresalsa@gmail.com",
+    "web": "https://sostacampertorresalsa.it/",
+    "prenota": "https://www.sostacampertorresalsa.it/prenotazioni",
+    "prenotaTesto": "Prenota online"
+   }
   },
   {
    "id": "taxi-ncc-montallegro",
