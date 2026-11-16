@@ -37,7 +37,7 @@
       scopri: "Scopri", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Spiagge", cosaVedere: "Cosa vedere", esperienze: "Esperienze",
       eventi: "Eventi", mangiare: "Mangiare", mangiareTitolo: "Mangiare e bere", dormire: "Dormire", dormireTitolo: "Dove dormire",
       itinerari: "Itinerari", comeArrivare: "Come arrivare", meteo: "Meteo", numeriUtili: "Numeri utili", mappa: "Mappa",
-      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", tutti: "Tutti", tutto: "Tutto",
+      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", tutti: "Tutti", tutto: "Tutto",
       infoPraticheTitolo: "Info pratiche",
       visitIntro: "Spiagge, riserve naturali, storia e gite nei dintorni di Montallegro.",
       spiaggeIntro: "Sabbia fine, falesie bianche e chilometri di costa protetta tra Eraclea Minoa e Siculiana Marina.",
@@ -121,7 +121,7 @@
       scopri: "Discover", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Beaches", cosaVedere: "Sightseeing", esperienze: "Experiences",
       eventi: "Events", mangiare: "Eat", mangiareTitolo: "Eat & drink", dormire: "Stay", dormireTitolo: "Where to stay",
       itinerari: "Itineraries", comeArrivare: "Getting here", meteo: "Weather", numeriUtili: "Useful numbers", mappa: "Map",
-      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", tutti: "All", tutto: "All",
+      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", tutti: "All", tutto: "All",
       infoPraticheTitolo: "Practical info",
       visitIntro: "Beaches, nature reserves, history and day trips around Montallegro.",
       spiaggeIntro: "Fine sand, white cliffs and miles of protected coast between Eraclea Minoa and Siculiana Marina.",
@@ -593,6 +593,8 @@
   function dataEvento(e, conAnno) { return conOra(unGiorno(e) ? giornoLungo(e.inizio, conAnno) : quandoTesto(e), e); }
   // l'evento in evidenza resta in home ed Eventi fino al suo ultimo giorno
   function eventoInEvidenza() { return eventiFuturi().filter(function (e) { return e.evidenza; })[0]; }
+  // "daConfermare": true = appuntamento non ancora confermato, con l'etichetta in elenco e nella pagina
+  function etichettaStato(e) { return e.daConfermare ? '<span class="stato-evento">' + esc(t('daConfermare')) + '</span>' : ''; }
   function slideAttuale(s) { return !s.fino || s.fino >= oggiISO(); }
   function urlEvento(e) { return CFG.WEB_URL ? CFG.WEB_URL.replace(/#.*$/, '') + '#evento-' + e.id : (CFG.PORTALE || ''); }
 
@@ -640,14 +642,14 @@
     var a = partiData(e.inizio);
     return '<a class="evento" href="#evento-' + e.id + '">' +
       '<div class="data" aria-hidden="true"><b>' + a.g + '</b><span>' + MESI[lang][a.m] + '</span></div>' +
-      '<div class="evento-testo"><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(conOra(quandoTesto(e), e)) + '</p></div>' +
+      '<div class="evento-testo"><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(conOra(quandoTesto(e), e)) + etichettaStato(e) + '</p></div>' +
       ic('chevron', false, 'freccia') + '</a>';
   }
   function cardEvidenza(e) {
     var finta = { id: e.id, foto: e.foto, categorie: ['esperienze'] };
     return '<a class="card-evidenza" href="#evento-' + e.id + '">' + copertina(finta, 'card-evidenza-foto', false, true) +
       '<span class="chip-evidenza">' + ic('star', true) + esc(t('inEvidenza')) + '</span>' +
-      '<span class="card-evidenza-testo"><span class="quando-evidenza">' + esc(dataEvento(e)) + (tx(e.occhiello) ? ' · ' + esc(tx(e.occhiello)) : '') + '</span>' +
+      '<span class="card-evidenza-testo"><span class="quando-evidenza">' + esc(dataEvento(e)) + (tx(e.occhiello) ? ' · ' + esc(tx(e.occhiello)) : '') + etichettaStato(e) + '</span>' +
       '<b class="titolo-evidenza">' + esc(tx(e.titolo)) + '</b>' +
       (tx(e.breve) ? '<span class="breve-evidenza">' + esc(tx(e.breve)) + '</span>' : '') +
       '<span class="luogo-evidenza">' + ic('pin') + esc(tx(e.luogo)) + '</span></span></a>';
@@ -1204,7 +1206,7 @@
       '<div class="dettaglio-testa">' + copertina(finta, 'dettaglio-foto evento-foto', false, true) +
       '<button type="button" class="tasto-tondo indietro" data-azione="indietro" aria-label="' + t('indietro') + '">' + ic('back') + '</button>' +
       '<div class="data-grande" aria-hidden="true"><b>' + partiData(e.inizio).g + '</b><span>' + MESI[lang][partiData(e.inizio).m] + '</span></div></div>' +
-      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + esc(tx(e.occhiello) || t('eventi')) + '</span><h1>' + esc(tx(e.titolo)) + '</h1></div>' +
+      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + esc(tx(e.occhiello) || t('eventi')) + '</span><h1>' + esc(tx(e.titolo)) + '</h1>' + etichettaStato(e) + '</div>' +
       '<div class="fatti">' +
       fatto('calendar', esc(dataEvento(e, true))) +
       fatto('pin', esc(tx(e.luogo)), sch ? '<a class="vai" href="#luogo-' + sch.id + '">' + t('apri') + '</a>' : '') +
@@ -1640,7 +1642,7 @@
       if (p) condividi(tx(p.nome), tx(p.breve) + '\n' + t('scoprila'), urlCondivisione(p));
     } else if (az === 'condividi-evento') {
       var e = (DATA.eventi || []).filter(function (x) { return x.id === id; })[0];
-      if (e) condividi(tx(e.titolo), dataEvento(e, true) + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), urlEvento(e));
+      if (e) condividi(tx(e.titolo), dataEvento(e, true) + (e.daConfermare ? ' (' + t('daConfermare').toLowerCase() + ')' : '') + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), urlEvento(e));
     } else if (az === 'condividi-app') {
       condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.WEB_URL);
     } else if (az === 'indietro') {

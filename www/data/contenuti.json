@@ -1,6 +1,6 @@
 {
- "versione": "2026-11-16.2",
- "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data.",
+ "versione": "2026-11-16.3",
+ "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data.",
  "paese": {
   "lat": 37.39385,
   "lng": 13.35005
@@ -99,8 +99,8 @@
      "en": "19 December – 6 January"
     },
     "titolo": {
-     "it": "Natale a Montallegro: undici appuntamenti",
-     "en": "Christmas in Montallegro: eleven events"
+     "it": "Natale a Montallegro: il programma",
+     "en": "Christmas in Montallegro: the programme"
     }
    },
    {
@@ -7997,8 +7997,8 @@
    "organizza": "Pro Loco Montallegro APS",
    "contatto": "pro-loco",
    "testo": {
-    "it": "Dal 19 dicembre al 6 gennaio Montallegro ha undici appuntamenti: la presentazione di un libro, il concerto, la tombola, lo Spettacolo di Natale, il Museo Vivente, i mercatini, il cinema e il Capodanno in piazza. Quasi tutto si fa nell'Aula Multimediale Ercole Longo; il Museo Vivente è al Museo della Civiltà Contadina. Gli orari arrivano a breve qui sull'app.",
-    "en": "From 19 December to 6 January Montallegro has eleven events: a book talk, a concert, the tombola, the Christmas Show, the Living Museum, the Christmas markets, films and New Year's Eve in the square. Most take place in the Aula Multimediale Ercole Longo; the Living Museum is at the Museum of Rural Life. Times will be published here in the app soon."
+    "it": "Dal 19 dicembre al 6 gennaio Montallegro prepara undici appuntamenti: la presentazione di un libro, il concerto, la tombola, lo Spettacolo di Natale, il Museo Vivente, i mercatini, il cinema e il Capodanno in piazza. Sono confermati il 19, il 20 e il 23 dicembre; gli altri sono ancora da confermare. Il programma, con gli orari, si aggiorna qui sull'app.",
+    "en": "From 19 December to 6 January Montallegro is preparing eleven events: a book talk, a concert, the tombola, the Christmas Show, the Living Museum, the Christmas markets, films and New Year's Eve in the square. The events on 19, 20 and 23 December are confirmed; the others are still to be confirmed. The programme, with times, is updated here in the app."
    }
   },
   {
@@ -8065,7 +8065,8 @@
     "it": "La tombola di Natale, ma alla montallegrese: ogni numero estratto si chiama con una parola siciliana e il suo significato. Si gioca tutti insieme, grandi e piccoli, con premi del territorio.",
     "en": "The Christmas tombola (Italian bingo), Montallegro style: every number drawn is called out with a Sicilian word and its meaning. Everyone plays together, young and old, with local prizes."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "daConfermare": true
   },
   {
    "id": "spettacolo-natale-2026",
@@ -8084,8 +8085,8 @@
    "organizza": "Pro Loco Montallegro APS",
    "contatto": "pro-loco",
    "testo": {
-    "it": "Il palco è di chi sale: canta, suona, recita una poesia anche in siciliano o fai ridere il pubblico. Cinque minuti a testa. Per esibirti iscriviti entro il 20 dicembre, anche su WhatsApp.",
-    "en": "The stage belongs to whoever steps up: sing, play, recite a poem (in Sicilian too) or make the audience laugh. Five minutes each. To perform, sign up by 20 December, WhatsApp works too."
+    "it": "Il palco è di chi sale: canta, suona, recita una poesia anche in siciliano o fai ridere il pubblico.",
+    "en": "The stage belongs to whoever steps up: sing, play, recite a poem (in Sicilian too) or make the audience laugh."
    },
    "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
    "evidenza": true,
@@ -8094,20 +8095,8 @@
     "en": "Open mic"
    },
    "breve": {
-    "it": "Il palco è di chi sale: canta, suona, recita o fai ridere. Iscrizioni entro il 20 dicembre.",
-    "en": "The stage is yours: sing, play, recite or make people laugh. Sign up by 20 December."
-   },
-   "info": [
-    {
-     "tipo": "telefono",
-     "it": "Iscrizioni entro il 20 dicembre",
-     "en": "Sign up by 20 December",
-     "tel": "3288597144"
-    }
-   ],
-   "messaggio": {
-    "it": "Ciao! Vorrei iscrivermi allo Spettacolo di Natale del 23 dicembre.",
-    "en": "Hi! I'd like to sign up to perform at the Christmas Show on 23 December."
+    "it": "Il palco è di chi sale: canta, suona, recita o fai ridere il pubblico.",
+    "en": "The stage is yours: sing, play, recite or make the audience laugh."
    }
   },
   {
@@ -8130,7 +8119,8 @@
     "it": "Il Museo della Civiltà Contadina prende vita: nelle sue stanze tornano al lavoro i mestieri di una volta, dal pane all'olio, dal carretto alla creta. Ai bambini un passaporto da timbrare a ogni stazione: chi lo completa diventa Custode delle parole.",
     "en": "The Museum of Rural Life comes alive: the old trades go back to work in its rooms, from bread to olive oil, from the painted cart to clay. Children get a passport to stamp at every station: whoever completes it becomes a Keeper of Words."
    },
-   "scheda": "museo-civilta-contadina"
+   "scheda": "museo-civilta-contadina",
+   "daConfermare": true
   },
   {
    "id": "mercatini-2026",
@@ -8156,7 +8146,8 @@
    "quando": {
     "it": "26–30 dicembre e 2–3 gennaio",
     "en": "26–30 December and 2–3 January"
-   }
+   },
+   "daConfermare": true
   },
   {
    "id": "film-natale-2026",
@@ -8178,7 +8169,8 @@
     "it": "Un pomeriggio al cinema sotto le feste, con un film di Natale per tutta la famiglia. Lo stesso giorno c'è anche il Museo Vivente.",
     "en": "An afternoon at the cinema during the holidays, with a Christmas film for the whole family. The Living Museum is open the same day."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "daConfermare": true
   },
   {
    "id": "capodanno-2026",
@@ -8199,7 +8191,8 @@
    "testo": {
     "it": "Salutiamo il 2026 tutti insieme in piazza, con musica e conto alla rovescia. L'ospite della serata è una sorpresa: lo scoprirete sul palco.",
     "en": "Let's see off 2026 together in the square, with music and the countdown. The evening's guest is a surprise: you'll find out on stage."
-   }
+   },
+   "daConfermare": true
   },
   {
    "id": "dottor-why-2027",
@@ -8221,7 +8214,8 @@
     "it": "Tra le bancarelle dei mercatini arriva il Dottor Why con il suo quiz dal vivo. Lui fa le domande, il pubblico risponde: si gioca tutti insieme, grandi e piccoli.",
     "en": "Dottor Why comes to the Christmas markets with his live quiz. He asks the questions, the audience answers: everyone plays together, young and old."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "daConfermare": true
   },
   {
    "id": "natale-dimora-2027",
@@ -8243,7 +8237,8 @@
     "it": "Un pomeriggio per i più piccoli con Natale Dimora e Moviti: giochi e intrattenimento per i bimbi, tra le bancarelle dei mercatini.",
     "en": "An afternoon for little ones with Natale Dimora and Moviti: games and entertainment for children, among the market stalls."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "daConfermare": true
   },
   {
    "id": "film-epifania-2027",
@@ -8265,7 +8260,8 @@
     "it": "La Befana chiude le feste al cinema: proiezione per bambini e famiglie nell'aula multimediale.",
     "en": "The Befana closes the holidays at the cinema: a screening for children and families in the multimedia hall."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "daConfermare": true
   }
  ],
  "ricorrenze": [
