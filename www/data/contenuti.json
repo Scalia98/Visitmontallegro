@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-16.5",
+ "versione": "2026-11-16.6",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data.",
  "paese": {
   "lat": 37.39385,
@@ -3289,6 +3289,67 @@
    "zona": "paese",
    "caratteristiche": [
     "Wi-Fi"
+   ],
+   "verificato": "novembre 2026"
+  },
+  {
+   "id": "villa-del-poeta",
+   "fonte": "portale",
+   "categorie": [
+    "dormire"
+   ],
+   "sotto": "villa",
+   "foto": "",
+   "lat": null,
+   "lng": null,
+   "mappe": "Villa del Poeta, Campagna di Torre Salsa, Montallegro (AG)",
+   "nome": {
+    "it": "Villa del Poeta"
+   },
+   "etichetta": {
+    "it": "Villa in campagna",
+    "en": "Country villa"
+   },
+   "breve": {
+    "it": "Villa tutta per voi nella campagna verso Torre Salsa, con giardino e barbecue, a 10 minuti da Bovo Marina."
+   },
+   "testo": {
+    "it": [
+     "Tre camere e due bagni, la cucina attrezzata e un grande giardino con la zona relax, il barbecue e il tavolo per mangiare fuori. La Riserva di Torre Salsa è a 2,4 km; per l'arrivo c'è una guida al self check-in."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Campagna di Torre Salsa, Montallegro (AG)"
+    },
+    {
+     "tipo": "distanze",
+     "it": "10 minuti da Bovo Marina · 2,4 km dalla Riserva di Torre Salsa"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {
+    "tel": "3288597144",
+    "whatsapp": "393288597144",
+    "prenota": "https://www.airbnb.it/h/villadelpoeta",
+    "prenotaTesto": "Prenota su Airbnb",
+    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
+   },
+   "zona": "torre-salsa",
+   "caratteristiche": [
+    "3 camere e 2 bagni",
+    "Giardino con zona relax",
+    "Barbecue",
+    "Parcheggio privato",
+    "Wi-Fi",
+    "Aria condizionata",
+    "Smart TV",
+    "Lavatrice",
+    "Giochi per bambini",
+    "Animali su richiesta"
    ],
    "verificato": "novembre 2026"
   },
