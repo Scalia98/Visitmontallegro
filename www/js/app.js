@@ -37,7 +37,7 @@
       scopri: "Scopri", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Spiagge", cosaVedere: "Cosa vedere", esperienze: "Esperienze",
       eventi: "Eventi", mangiare: "Mangiare", mangiareTitolo: "Mangiare e bere", dormire: "Dormire", dormireTitolo: "Dove dormire",
       itinerari: "Itinerari", comeArrivare: "Come arrivare", meteo: "Meteo", numeriUtili: "Numeri utili", mappa: "Mappa",
-      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", siAggiorna: "Il programma si aggiorna qui sull'app.", installaTitolo: "Installa l'app", installa: "Installa", installaSotto: "Gratis: si apre come un'app e funziona anche senza rete.", installaIos: "In Safari tocca Condividi (anche dal menu ···) e poi «Aggiungi alla schermata Home».", installaInApp: "Per installarla apri questa pagina nel browser: tocca ··· e scegli di aprirla nel browser.", tutti: "Tutti", tutto: "Tutto",
+      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", siAggiorna: "Il programma si aggiorna qui sull'app.", tiAvvisiamo: "Hai le notifiche attive: ti avvisiamo noi.", avvisami: "Avvisami", notifiche: "Notifiche", notificheTitolo: "Attiva le notifiche", notificheSotto: "Ti avvisiamo degli eventi e delle novità di Montallegro.", attiva: "Attiva", notificheAttive: "Attive", notificheSpente: "Spente", notificheBloccate: "Bloccate", notificheOn: "Notifiche attive: ti avvisiamo noi.", notificheOff: "Notifiche spente.", notificheNo: "Le notifiche sono bloccate: puoi riattivarle dalle impostazioni del telefono o del browser, alla voce di questa app.", notificheErrore: "Non è stato possibile attivare le notifiche. Riprova tra poco.", notificheInstalla: "Su iPhone arrivano con l'app installata: aggiungila alla schermata Home.", installaTitolo: "Installa l'app", installa: "Installa", installaSotto: "Gratis: si apre come un'app e funziona anche senza rete.", installaIos: "In Safari tocca Condividi (anche dal menu ···) e poi «Aggiungi alla schermata Home».", installaInApp: "Per installarla apri questa pagina nel browser: tocca ··· e scegli di aprirla nel browser.", tutti: "Tutti", tutto: "Tutto",
       infoPraticheTitolo: "Info pratiche",
       visitIntro: "Spiagge, riserve naturali, storia e gite nei dintorni di Montallegro.",
       spiaggeIntro: "Sabbia fine, falesie bianche e chilometri di costa protetta tra Eraclea Minoa e Siculiana Marina.",
@@ -121,7 +121,7 @@
       scopri: "Discover", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Beaches", cosaVedere: "Sightseeing", esperienze: "Experiences",
       eventi: "Events", mangiare: "Eat", mangiareTitolo: "Eat & drink", dormire: "Stay", dormireTitolo: "Where to stay",
       itinerari: "Itineraries", comeArrivare: "Getting here", meteo: "Weather", numeriUtili: "Useful numbers", mappa: "Map",
-      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", siAggiorna: "The programme is updated here in the app.", installaTitolo: "Install the app", installa: "Install", installaSotto: "Free: opens like an app and works offline too.", installaIos: "In Safari tap Share (also in the ··· menu), then «Add to Home Screen».", installaInApp: "To install it, open this page in your browser: tap ··· and choose to open it in the browser.", tutti: "All", tutto: "All",
+      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", siAggiorna: "The programme is updated here in the app.", tiAvvisiamo: "Notifications are on: we'll let you know.", avvisami: "Notify me", notifiche: "Notifications", notificheTitolo: "Turn on notifications", notificheSotto: "We'll let you know about events and news in Montallegro.", attiva: "Turn on", notificheAttive: "On", notificheSpente: "Off", notificheBloccate: "Blocked", notificheOn: "Notifications on: we'll keep you posted.", notificheOff: "Notifications off.", notificheNo: "Notifications are blocked: you can turn them back on in your phone or browser settings, under this app.", notificheErrore: "Couldn't turn on notifications. Please try again shortly.", notificheInstalla: "On iPhone they need the app installed: add it to your Home Screen.", installaTitolo: "Install the app", installa: "Install", installaSotto: "Free: opens like an app and works offline too.", installaIos: "In Safari tap Share (also in the ··· menu), then «Add to Home Screen».", installaInApp: "To install it, open this page in your browser: tap ··· and choose to open it in the browser.", tutti: "All", tutto: "All",
       infoPraticheTitolo: "Practical info",
       visitIntro: "Beaches, nature reserves, history and day trips around Montallegro.",
       spiaggeIntro: "Fine sand, white cliffs and miles of protected coast between Eraclea Minoa and Siculiana Marina.",
@@ -260,6 +260,7 @@
     car: '<path d="M4.5 16.5h15l-1.6-5.6a1.5 1.5 0 0 0-1.4-1.1h-9a1.5 1.5 0 0 0-1.4 1.1z"/><path d="M6.5 16.5v2.5M17.5 16.5v2.5"/><circle cx="8" cy="13.6" r=".9"/><circle cx="16" cy="13.6" r=".9"/>',
     hike: '<path d="M3.5 19.5 9 10l3.5 5 2.5-3.5 5.5 8z"/><circle cx="16.5" cy="5.5" r="2"/>',
     star: '<path d="m12 3.5 2.5 5.3 5.8.7-4.3 4 1.1 5.8L12 16.5l-5.1 2.8L8 13.5l-4.3-4 5.8-.7z"/>',
+    bell: '<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.6 2.2H4.4z"/><path d="M10 20.6a2.2 2.2 0 0 0 4 0"/>',
     lifebuoy: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.8"/><path d="m5.6 5.6 3.7 3.7M18.4 5.6l-3.7 3.7M5.6 18.4l3.7-3.7M18.4 18.4l-3.7-3.7"/>',
     sun: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/>',
     moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
@@ -588,7 +589,7 @@
   }
   function aggiornaInstalla() {
     var posto = document.querySelector('.installa-posto');
-    if (posto) posto.innerHTML = cardInstalla();
+    if (posto) posto.innerHTML = cardInstalla() || cardNotifiche();
   }
   function installa() {
     if (richiestaInstalla && !dentroSocial) {
@@ -602,6 +603,95 @@
   }
   window.addEventListener('beforeinstallprompt', function (ev) { ev.preventDefault(); richiestaInstalla = ev; aggiornaInstalla(); });
   window.addEventListener('appinstalled', function () { richiestaInstalla = null; chiudiInstalla(); aggiornaInstalla(); });
+
+  /* ---------- notifiche push (OneSignal) ----------
+     Si attivano solo con un tocco. Il servizio si carica solo per chi le ha attivate.
+     Su iPhone e iPad funzionano solo con l'app aggiunta alla schermata Home (iOS 16.4 o successivo). */
+  var notif = { attive: !!store.get('notifiche', false), pronto: null };
+  function notificheConInstallazione() { return !isNative && !!CFG.ONESIGNAL_APP_ID && !dentroSocial && isApple && !giaInstallata(); }
+  function notificheDisponibili() {
+    return !isNative && !!CFG.ONESIGNAL_APP_ID && !dentroSocial && !(isApple && !giaInstallata()) &&
+      'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window && window.isSecureContext !== false;
+  }
+  function statoNotifiche() {
+    if (!notificheDisponibili()) return 'no';
+    if (Notification.permission === 'denied') return 'bloccate';
+    return notif.attive && Notification.permission === 'granted' ? 'attive' : 'spente';
+  }
+  function maiChieste() { return statoNotifiche() === 'spente' && Notification.permission === 'default'; }
+  function caricaOneSignal() {
+    if (notif.pronto) return notif.pronto;
+    notif.pronto = new Promise(function (ok, ko) {
+      var base = location.pathname.replace(/[^/]*$/, '');
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      window.OneSignalDeferred.push(function (OneSignal) {
+        return Promise.resolve(OneSignal.init({
+          appId: CFG.ONESIGNAL_APP_ID,
+          path: base + 'push/',
+          serviceWorkerPath: 'OneSignalSDKWorker.js',
+          serviceWorkerParam: { scope: base + 'push/' },
+          serviceWorkerOverrideForTypical: true,
+          notifyButton: { enable: false },
+          autoResubscribe: true,
+          allowLocalhostAsSecureOrigin: true
+        })).then(function () { ok(OneSignal); }, ko);
+      });
+      var s = document.createElement('script');
+      s.src = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';
+      s.defer = true;
+      s.onerror = function () { ko(new Error('onesignal')); };
+      document.head.appendChild(s);
+    });
+    notif.pronto.catch(function () { notif.pronto = null; });
+    return notif.pronto;
+  }
+  function iscriviOneSignal() {
+    return caricaOneSignal().then(function (OS) {
+      return Promise.resolve(OS.User.PushSubscription.optIn()).then(function () { OS.User.addTag('lingua', lang); });
+    });
+  }
+  function ridisegna() { var y0 = window.scrollY; disegna(false); window.scrollTo(0, y0); }
+  function attivaNotifiche() {
+    if (!notificheDisponibili()) { if (notificheConInstallazione()) installa(); return; }
+    if (Notification.permission === 'denied') { toast(t('notificheNo'), 7000); return; }
+    // la richiesta del permesso parte subito, dentro il tocco (Safari lo vuole)
+    var chiesta = Notification.permission === 'granted' ? 'granted' : Notification.requestPermission();
+    Promise.resolve(chiesta).then(function (p) {
+      if (p !== 'granted') { ridisegna(); if (p === 'denied') toast(t('notificheNo'), 7000); return; }
+      notif.attive = true; store.set('notifiche', true);
+      ridisegna();
+      return iscriviOneSignal().then(function () { toast(t('notificheOn')); });
+    }).catch(function () { toast(t('notificheErrore'), 5000); });
+  }
+  function spegniNotifiche() {
+    notif.attive = false; store.set('notifiche', false);
+    ridisegna();
+    toast(t('notificheOff'));
+    caricaOneSignal().then(function (OS) { return OS.User.PushSubscription.optOut(); }).catch(function () { /* niente */ });
+  }
+  function notificheChiuse() {
+    try { return Date.now() - (+localStorage.getItem('vm-notifiche-chiusa') || 0) < 30 * 864e5; } catch (e) { return false; }
+  }
+  function cardNotifiche() {
+    if (!maiChieste() || notificheChiuse()) return '';
+    return '<div class="installa avviso-notifiche"><span class="installa-icona">' + ic('bell') + '</span>' +
+      '<div class="installa-testo"><b>' + esc(t('notificheTitolo')) + '</b><small>' + esc(t('notificheSotto')) + '</small></div>' +
+      '<button type="button" class="installa-tasto" data-azione="notifiche-attiva">' + esc(t('attiva')) + '</button>' +
+      '<button type="button" class="installa-chiudi" data-azione="notifiche-chiudi" aria-label="' + esc(t('chiudi')) + '">' + ic('close') + '</button></div>';
+  }
+  function voceNotifiche() {
+    var s = statoNotifiche();
+    if (s === 'no') {
+      return notificheConInstallazione() ? '<button type="button" class="voce voce-link" data-azione="installa">' + ic('bell') +
+        '<span class="voce-nome">' + t('notifiche') + '<small class="voce-sotto">' + esc(t('notificheInstalla')) + '</small></span>' + ic('chevron', false, 'freccia') + '</button>' : '';
+    }
+    var testo = s === 'attive' ? t('notificheAttive') : s === 'bloccate' ? t('notificheBloccate') : t('notificheSpente');
+    return '<button type="button" class="voce voce-link voce-notifiche stato-' + s + '" data-azione="notifiche-cambia" role="switch" aria-checked="' + (s === 'attive') + '">' + ic('bell') +
+      '<span class="voce-nome">' + t('notifiche') + '</span><span class="stato-notifiche">' + esc(testo) + (s === 'bloccate' ? '' : '<span class="interruttore" aria-hidden="true"></span>') + '</span></button>';
+  }
+  function avviaNotifiche() {
+    if (statoNotifiche() === 'attive') iscriviOneSignal().catch(function () { /* riprova al prossimo avvio */ });
+  }
 
   /* ---------- date ---------- */
   function oggiISO() { var d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -637,9 +727,11 @@
   function notaProgramma(e, link) {
     var n = tx(e.programmaNota);
     if (!n) return '';
-    var dentro = ic('star') + '<span><b>' + esc(n) + '</b><small>' + esc(t('siAggiorna')) + '</small></span>';
-    return link ? '<a class="nota-programma" href="#evento-' + e.id + '">' + dentro + ic('chevron', false, 'freccia') + '</a>'
-      : '<div class="nota-programma">' + dentro + '</div>';
+    var sotto = statoNotifiche() === 'attive' ? t('tiAvvisiamo') : t('siAggiorna');
+    var dentro = ic('star') + '<span><b>' + esc(n) + '</b><small>' + esc(sotto) + '</small></span>';
+    if (link) return '<a class="nota-programma" href="#evento-' + e.id + '">' + dentro + ic('chevron', false, 'freccia') + '</a>';
+    var tasto = maiChieste() ? '<button type="button" class="nota-tasto" data-azione="notifiche-attiva">' + ic('bell') + esc(t('avvisami')) + '</button>' : '';
+    return '<div class="nota-programma' + (tasto ? ' con-tasto' : '') + '">' + dentro + tasto + '</div>';
   }
   function etichettaStato(e) { return e.daConfermare ? '<span class="stato-evento">' + esc(t('daConfermare')) + '</span>' : ''; }
   function slideAttuale(s) { return !s.fino || s.fino >= oggiISO(); }
@@ -825,7 +917,7 @@
     var consigliati = ruota(DATA.schede.filter(isPartner)).slice(0, 10);
     return '<div class="pagina home">' +
       '<header class="testata-app">' + marchio() + '<div class="testata-destra"><a class="tasto-cerca" href="#cerca" aria-label="' + esc(t('cercaTitolo')) + '">' + ic('search') + '</a>' + linguaToggle() + '</div></header>' +
-      '<div class="installa-posto">' + cardInstalla() + '</div>' +
+      '<div class="installa-posto">' + (cardInstalla() || cardNotifiche()) + '</div>' +
       slider((H.slider || []).filter(slideAttuale), { auto: true, classe: 'slider-home' }) +
       (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<div id="meteo-breve"></div>' +
@@ -1358,6 +1450,7 @@
       '<section class="gruppo"><h2>' + t('app') + '</h2><div class="voci">' +
       link('#preferiti', 'heart', t('preferiti') + ' (' + preferiti.length + ')') +
       '<div class="voce voce-riga"><span class="voce-nome">' + t('lingua') + '</span>' + linguaToggle() + '</div>' +
+      voceNotifiche() +
       (installabile() ? '<button type="button" class="voce voce-link" data-azione="installa">' + ic('home') + '<span class="voce-nome">' + t('installaTitolo') + '</span>' + ic('chevron', false, 'freccia') + '</button>' : '') +
       (store_ ? '<button type="button" class="voce voce-link" data-azione="condividi-app">' + ic('share') + '<span class="voce-nome">' + t('condividiApp') + '</span>' + ic('chevron', false, 'freccia') + '</button>' : '') +
       '<div class="voce"><div class="voce-azioni">' + esterno(CFG.PORTALE || 'https://visitmontallegrobovomarina.it', ic('globe') + t('portale'), 'pillola') +
@@ -1679,6 +1772,7 @@
       lang = el.getAttribute('data-val');
       store.set('lang', lang);
       document.documentElement.lang = lang;
+      if (statoNotifiche() === 'attive') caricaOneSignal().then(function (OS) { OS.User.addTag('lingua', lang); }).catch(function () { /* niente */ });
       var y0 = window.scrollY;
       disegna(false);
       window.scrollTo(0, y0);
@@ -1694,6 +1788,14 @@
     } else if (az === 'condividi-evento') {
       var e = (DATA.eventi || []).filter(function (x) { return x.id === id; })[0];
       if (e) condividi(tx(e.titolo), dataEvento(e, true) + (e.daConfermare ? ' (' + t('daConfermare').toLowerCase() + ')' : '') + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), urlEvento(e));
+    } else if (az === 'notifiche-attiva') {
+      attivaNotifiche();
+    } else if (az === 'notifiche-chiudi') {
+      try { localStorage.setItem('vm-notifiche-chiusa', String(Date.now())); } catch (e2) { /* niente */ }
+      aggiornaInstalla();
+    } else if (az === 'notifiche-cambia') {
+      var sn = statoNotifiche();
+      if (sn === 'attive') spegniNotifiche(); else if (sn === 'bloccate') toast(t('notificheNo'), 7000); else attivaNotifiche();
     } else if (az === 'installa') {
       installa();
     } else if (az === 'installa-chiudi') {
@@ -1766,6 +1868,7 @@
     hashCorrente = location.hash;
     disegna(false);
     avviaNativo();
+    avviaNotifiche();
   });
 
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !isNative && window.top === window.self) {

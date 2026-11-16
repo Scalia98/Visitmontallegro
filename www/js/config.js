@@ -23,5 +23,9 @@ window.MONTALLEGRO_CONFIG = {
   APP_STORE_URL: '',
   PLAY_STORE_URL: '',
 
+  // Notifiche push (OneSignal, piano gratuito): l'App ID dell'app creata su onesignal.com
+  // (Settings > Keys & IDs). Vuoto = notifiche nascoste.
+  ONESIGNAL_APP_ID: '',
+
   VERSIONE: '1.0'
 };

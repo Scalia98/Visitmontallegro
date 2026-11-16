@@ -715,3 +715,24 @@ html.bloccato, html.bloccato body { overflow: hidden; }
 .nota-programma .freccia { width: 20px; height: 20px; color: #ffc24a; }
 a.nota-programma:active { filter: brightness(1.1); }
 .pagina .blocco > .nota-programma { margin-left: 16px; margin-right: 16px; }
+
+/* ---------- notifiche ---------- */
+.installa-icona { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; color: #ffc24a;
+  background: radial-gradient(120% 120% at 0% 0%, #1f4c91 0%, #0d2a5a 70%); box-shadow: 0 1px 4px rgba(16, 36, 52, .15); }
+.installa-icona svg { width: 24px; height: 24px; }
+.nota-programma.con-tasto { grid-template-columns: 42px minmax(0, 1fr); }
+.nota-programma.con-tasto .nota-tasto { grid-column: 2; justify-self: start; }
+.nota-tasto { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: #ffc24a; color: #0d2a5a;
+  font-size: 14px; font-weight: 750; white-space: nowrap; }
+.nota-tasto svg { width: 16px; height: 16px; }
+.nota-tasto:active { filter: brightness(.95); }
+.voce-notifiche { grid-template-columns: 22px 1fr auto; }
+.voce-sotto { display: block; margin-top: 2px; font-size: 13px; font-weight: 500; color: var(--muto); }
+.stato-notifiche { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 650; color: var(--muto); }
+.interruttore { position: relative; flex: none; width: 46px; height: 28px; border-radius: 999px; background: #c8d2de; transition: background .2s; }
+.interruttore::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25); transition: transform .2s; }
+.stato-attive .stato-notifiche { color: var(--verde); }
+.stato-attive .interruttore { background: var(--verde); }
+.stato-attive .interruttore::after { transform: translateX(18px); }
+.stato-bloccate .stato-notifiche { color: var(--rosso); }

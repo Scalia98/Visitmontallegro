@@ -1,5 +1,5 @@
 /* Visit Montallegro Bovo Marina — funzionamento offline per la versione web (nell'app installata i file sono già sul telefono) */
-const CACHE = 'visit-montallegro-v18';
+const CACHE = 'visit-montallegro-v19';
 const FILES = [
   './', 'index.html', 'css/app.css', 'js/config.js', 'js/app.js', 'data/contenuti.json',
   'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'vendor/capacitor/capacitor.js',

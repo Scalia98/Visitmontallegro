@@ -99,6 +99,12 @@ L'app è online anche come web app su **https://scalia98.github.io/Visitmontalle
 - In alternativa puoi caricare la cartella `www/` sul vostro hosting (per esempio SiteGround, con HTTPS).
 - La privacy (`privacy.html`) è online su https://scalia98.github.io/Visitmontallegro/privacy.html: è l'indirizzo da dare agli store.
 
+### Notifiche (OneSignal, gratis)
+Le persone le attivano con un tocco: riquadro in home, Info → Notifiche, tasto «Avvisami» sotto il programma di Natale. Su iPhone arrivano solo con l'app aggiunta alla schermata Home (iOS 16.4 o successivo). Il servizio si carica solo per chi le attiva; finché `ONESIGNAL_APP_ID` in `www/js/config.js` è vuoto, tutto resta nascosto.
+- **Creare l'app su OneSignal, una volta sola**: account su onesignal.com (meglio con la mail della Pro Loco) → New App «Visit Montallegro Bovo Marina» → piattaforma **Web** → integrazione **Custom Code** → Site URL `https://scalia98.github.io` → icona `https://scalia98.github.io/Visitmontallegro/icons/icon-512.png`. L'App ID (Settings → Keys & IDs) va in `ONESIGNAL_APP_ID`. Il service worker di OneSignal è già in `www/push/`.
+- **Mandare una notifica**: Messages → New Push. Pubblico: tutti gli iscritti, oppure un segmento per lingua (filtro sul tag `lingua` = `it` o `en`). Titolo e testo, immagine se serve, e come **Launch URL** la pagina da aprire, per esempio `https://scalia98.github.io/Visitmontallegro/#evento-spettacolo-natale-2026` (gli indirizzi delle pagine sono `#evento-<id>` e `#luogo-<id>`). Si può mandare subito o programmare.
+- **Piano gratuito**: per la web app gli iscritti sono illimitati (10.000 per invio). Per le app degli store si aggiungono Android e iOS nella stessa app OneSignal quando ci sono gli account; il gratuito copre fino a 1.000 utenti attivi al mese.
+
 ---
 
 ## Pubblicare su App Store e Google Play
@@ -136,7 +142,7 @@ Con Codemagic: carica il keystore in Settings → Code signing identities con il
 Il keystore va conservato con cura: senza, non potrai più aggiornare l'app.
 
 ### 4. Cosa chiedono gli store
-- **Privacy**: carica `www/privacy.html` sul sito e usa quell'indirizzo come URL dell'informativa. Nel questionario Apple sulla privacy la risposta è «Dati non raccolti».
+- **Privacy**: carica `www/privacy.html` sul sito e usa quell'indirizzo come URL dell'informativa. Nel questionario Apple sulla privacy la risposta è «Dati non raccolti» finché nell'app degli store non ci sono le notifiche; con le notifiche vanno dichiarati gli identificativi del dispositivo e i dati d'uso, come indica OneSignal.
 - **Screenshot**: in `screenshot-store/` trovi le immagini iPhone 6,9" (1320 × 2868), in italiano e inglese, pronte da caricare.
 - **Categoria**: Viaggi. **Età**: 4+.
 
