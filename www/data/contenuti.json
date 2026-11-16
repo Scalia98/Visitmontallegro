@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-16.7",
+ "versione": "2026-11-16.8",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data.",
  "paese": {
   "lat": 37.39385,
@@ -3312,8 +3312,8 @@
     "en": "B&B"
    },
    "breve": {
-    "it": "B&B a Bovo Marina, in contrada Gorgo Vizzì.",
-    "en": "B&B in Bovo Marina, in the Gorgo Vizzì area."
+    "it": "B&B fronte mare a Bovo Marina, con giardino e camere con vista sul mare o sul giardino.",
+    "en": "Beachfront B&B in Bovo Marina, with a garden and rooms overlooking the sea or the garden."
    },
    "testo": {
     "it": []
@@ -3327,10 +3327,21 @@
    "consigli": {
     "it": []
    },
-   "contatti": {},
+   "contatti": {
+    "tel": "3493422544",
+    "prenota": "https://www.booking.com/hotel/it/b-amp-b-l-39-eden-di-capo-bianco.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "bovo",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "Fronte spiaggia",
+    "Camere vista mare",
+    "Giardino",
+    "Barbecue",
+    "Colazione",
+    "Parcheggio privato",
+    "Wi-Fi"
+   ]
   },
   {
    "id": "villa-del-poeta",
@@ -3786,7 +3797,7 @@
    "categorie": [
     "dormire"
    ],
-   "sotto": "villa",
+   "sotto": "casa",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -3796,12 +3807,12 @@
     "en": "Villa Caterina"
    },
    "etichetta": {
-    "it": "Villa",
-    "en": "Villa"
+    "it": "Appartamenti per vacanze",
+    "en": "Holiday apartments"
    },
    "breve": {
-    "it": "Villa in paese, in via Liborio Bonifacio.",
-    "en": "Villa in the town centre, on Via Liborio Bonifacio."
+    "it": "Appartamenti per le vacanze in paese, con giardino, gazebo e barbecue.",
+    "en": "Holiday apartments in the town, with a garden, gazebo and barbecue."
    },
    "testo": {
     "it": []
@@ -3815,10 +3826,18 @@
    "consigli": {
     "it": []
    },
-   "contatti": {},
+   "contatti": {
+    "prenota": "https://www.booking.com/hotel/it/casa-vacanze-villa-caterina-montallegro.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "paese",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "Giardino con gazebo",
+    "Barbecue",
+    "Aria condizionata",
+    "Ingresso indipendente",
+    "Wi-Fi"
+   ]
   },
   {
    "id": "villa-emanuela",
@@ -3840,8 +3859,8 @@
     "en": "Villa"
    },
    "breve": {
-    "it": "Villa a Bovo Marina.",
-    "en": "Villa in Bovo Marina."
+    "it": "Villa a Bovo Marina con terrazza sul giardino, a meno di 2 km dalla spiaggia di Eraclea Minoa.",
+    "en": "Villa in Bovo Marina with a terrace over the garden, less than 2 km from Eraclea Minoa beach."
    },
    "testo": {
     "it": []
@@ -3855,10 +3874,21 @@
    "consigli": {
     "it": []
    },
-   "contatti": {},
+   "contatti": {
+    "prenota": "https://www.booking.com/hotel/it/villa-emanuela-libero-consorzio-comunale-di-agrigento.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "bovo",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "1 camera, fino a 4 ospiti",
+    "2 bagni",
+    "Terrazza",
+    "Cucina attrezzata",
+    "Lavatrice",
+    "Aria condizionata",
+    "Parcheggio privato",
+    "Wi-Fi"
+   ]
   },
   {
    "id": "villa-chalet-al-mare",
@@ -3866,7 +3896,7 @@
    "categorie": [
     "dormire"
    ],
-   "sotto": "villa",
+   "sotto": "casa",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -3876,12 +3906,12 @@
     "en": "Villa Chalet al Mare"
    },
    "etichetta": {
-    "it": "Villa",
-    "en": "Villa"
+    "it": "Chalet",
+    "en": "Chalet"
    },
    "breve": {
-    "it": "Villa a Bovo Marina.",
-    "en": "Villa in Bovo Marina."
+    "it": "Chalet di 45 m² a Bovo Marina, con giardino, barbecue e vista mare.",
+    "en": "45 m² chalet in Bovo Marina, with a garden, barbecue and sea views."
    },
    "testo": {
     "it": []
@@ -3895,10 +3925,19 @@
    "consigli": {
     "it": []
    },
-   "contatti": {},
+   "contatti": {
+    "prenota": "https://www.booking.com/hotel/it/villa-chalet-al-mare.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "bovo",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "Intera casa, 45 m²",
+    "Giardino",
+    "Barbecue",
+    "Vista mare",
+    "Parcheggio",
+    "Animali ammessi"
+   ]
   },
   {
    "id": "casa-corte-eraclea",
@@ -4289,7 +4328,7 @@
    "categorie": [
     "dormire"
    ],
-   "sotto": "casa",
+   "sotto": "camere",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -4299,12 +4338,12 @@
     "en": "Bovo Marina Suites"
    },
    "etichetta": {
-    "it": "Suite",
-    "en": "Suites"
+    "it": "Affittacamere",
+    "en": "Guest rooms"
    },
    "breve": {
-    "it": "Suite a Bovo Marina.",
-    "en": "Suites in Bovo Marina."
+    "it": "Affittacamere a Bovo Marina.",
+    "en": "Guest rooms in Bovo Marina."
    },
    "testo": {
     "it": []
@@ -4320,8 +4359,7 @@
    },
    "contatti": {},
    "zona": "bovo",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": []
   },
   {
    "id": "caretta-caretta",
@@ -4329,7 +4367,7 @@
    "categorie": [
     "dormire"
    ],
-   "sotto": "casa",
+   "sotto": "camere",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -4339,12 +4377,12 @@
     "en": "Caretta Caretta"
    },
    "etichetta": {
-    "it": "Alloggio",
-    "en": "Accommodation"
+    "it": "Affittacamere",
+    "en": "Guest rooms"
    },
    "breve": {
-    "it": "Alloggio a Bovo Marina.",
-    "en": "Accommodation in Bovo Marina."
+    "it": "Affittacamere a Bovo Marina.",
+    "en": "Guest rooms in Bovo Marina."
    },
    "testo": {
     "it": []
@@ -4360,8 +4398,7 @@
    },
    "contatti": {},
    "zona": "bovo",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": []
   },
   {
    "id": "casa-pizzuco",
@@ -4369,7 +4406,7 @@
    "categorie": [
     "dormire"
    ],
-   "sotto": "casa",
+   "sotto": "camere",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -4379,12 +4416,12 @@
     "en": "Casa Pizzuco"
    },
    "etichetta": {
-    "it": "Casa vacanza",
-    "en": "Holiday home"
+    "it": "Affittacamere",
+    "en": "Guest rooms"
    },
    "breve": {
-    "it": "Casa vacanza in paese, in via Volturno.",
-    "en": "Holiday home in the town centre, on Via Volturno."
+    "it": "Camere in affitto in paese, in via Volturno, con aria condizionata e Wi-Fi. Online si trova come Pizzuco Holiday Rooms.",
+    "en": "Rooms for rent in the town, on Via Volturno, with air conditioning and Wi-Fi. Listed online as Pizzuco Holiday Rooms."
    },
    "testo": {
     "it": []
@@ -4396,12 +4433,21 @@
     }
    ],
    "consigli": {
-    "it": []
+    "it": [
+     "Animali non ammessi"
+    ]
    },
-   "contatti": {},
+   "contatti": {
+    "prenota": "https://www.booking.com/hotel/it/casa-pizzuco.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "paese",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "Camere con bagno privato",
+    "Aria condizionata",
+    "Wi-Fi",
+    "Ingresso indipendente"
+   ]
   },
   {
    "id": "cantina-rustica",
@@ -4419,12 +4465,12 @@
     "en": "Cantina Rustica"
    },
    "etichetta": {
-    "it": "Alloggio",
-    "en": "Accommodation"
+    "it": "Appartamento",
+    "en": "Apartment"
    },
    "breve": {
-    "it": "Alloggio in paese, in viale della Vittoria.",
-    "en": "Accommodation in the town centre, on Viale della Vittoria."
+    "it": "Appartamento di 40 m² per due persone in viale della Vittoria, in paese.",
+    "en": "40 m² apartment for two on Viale della Vittoria, in the town."
    },
    "testo": {
     "it": []
@@ -4438,10 +4484,20 @@
    "consigli": {
     "it": []
    },
-   "contatti": {},
+   "contatti": {
+    "prenota": "https://www.booking.com/hotel/it/cantina-rustica.html",
+    "prenotaTesto": "Vedi su Booking"
+   },
    "zona": "paese",
-   "caratteristiche": [],
-   "verificato": "novembre 2026"
+   "caratteristiche": [
+    "1 camera, 2 ospiti",
+    "40 m²",
+    "Cucina attrezzata",
+    "Lavatrice",
+    "Aria condizionata",
+    "Parcheggio",
+    "Wi-Fi"
+   ]
   },
   {
    "id": "azienda-agricola-todaro",
@@ -8616,6 +8672,13 @@
     "nome": {
      "it": "B&B",
      "en": "B&Bs"
+    }
+   },
+   {
+    "id": "camere",
+    "nome": {
+     "it": "Affittacamere",
+     "en": "Guest rooms"
     }
    },
    {

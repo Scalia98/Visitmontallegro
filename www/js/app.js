@@ -50,7 +50,7 @@
       ],
       esperienzeIntro: "Escursioni in riserva, passeggiate a cavallo, kayak e SUP, natura e cultura del paese.",
       mangiareIntro: "Ristoranti, pizzerie, lidi sul mare, bar e pub di Montallegro e Bovo Marina, più i migliori indirizzi dei dintorni.", spiaggeVicine: "Altre spiagge vicine", territorio: "Scopri il territorio", altriLuoghi: "Altri luoghi da vedere", neiDintorni: "Nei dintorni", foto: "Foto", chiudi: "Chiudi", notiziePortale: "Notizie ed eventi sul portale", fotoNonDisponibile: "Foto non disponibile senza rete",
-      dormireIntro: "Hotel, B&B, agriturismi, ville e case vacanza a Montallegro e Bovo Marina, sul mare e in campagna.",
+      dormireIntro: "Hotel, B&B, affittacamere, agriturismi, ville e case vacanza a Montallegro e Bovo Marina, sul mare e in campagna.",
       chiamaPrima: "Molti locali sul mare aprono solo in stagione: chiama prima di andare.",
       tuttiLocali: "Altri locali sul portale Visit Montallegro", tutteStrutture: "Tutte le strutture sul portale Visit Montallegro",
       prenotaWhatsApp: "Prenota su WhatsApp", prenota: "Prenota", whatsapp: "WhatsApp", chiama: "Chiama", sito: "Sito", email: "Email",
@@ -134,7 +134,7 @@
       ],
       esperienzeIntro: "Nature reserve hikes, horse rides, kayak and SUP, nature and local culture.",
       mangiareIntro: "Restaurants, pizzerias, beach clubs, bars and pubs in Montallegro and Bovo Marina, plus the best addresses nearby.", spiaggeVicine: "More beaches nearby", territorio: "Discover the area", altriLuoghi: "More places to see", neiDintorni: "Nearby", foto: "Photos", chiudi: "Close", notiziePortale: "News and events on the website", fotoNonDisponibile: "Photo not available offline",
-      dormireIntro: "Hotels, B&Bs, farm stays, villas and holiday homes in Montallegro and Bovo Marina, by the sea and in the countryside.",
+      dormireIntro: "Hotels, B&Bs, guest rooms, farm stays, villas and holiday homes in Montallegro and Bovo Marina, by the sea and in the countryside.",
       chiamaPrima: "Many seaside places open only in season: call before you go.",
       tuttiLocali: "More places on the Visit Montallegro website", tutteStrutture: "All places to stay on the Visit Montallegro website",
       prenotaWhatsApp: "Book on WhatsApp", prenota: "Book", whatsapp: "WhatsApp", chiama: "Call", sito: "Website", email: "Email",
@@ -306,7 +306,7 @@
   };
   var ICONE_SOTTO = {
     ristoranti: 'fork', mare: 'fork', bar: 'cup', pub: 'glass', eventi: 'star',
-    hotel: 'bed', bb: 'bed', agri: 'leaf', villa: 'home', casa: 'home',
+    hotel: 'bed', bb: 'bed', camere: 'bed', agri: 'leaf', villa: 'home', casa: 'home',
     formaggi: 'basket', olio: 'drop', vino: 'glass', miele: 'basket', conserve: 'basket', tipici: 'shop', pane: 'basket', carne: 'basket',
     info: 'info', salute: 'cross', trasporti: 'bus', spesa: 'basket', negozi: 'shop', servizi: 'wrench', benessere: 'star', comunita: 'people',
     escursioni: 'hike', natura: 'leaf', cavallo: 'hike', cultura: 'columns'
