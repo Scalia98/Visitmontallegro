@@ -1,12 +1,12 @@
 /* Visit Montallegro Bovo Marina — funzionamento offline per la versione web (nell'app installata i file sono già sul telefono) */
-const CACHE = 'visit-montallegro-v17';
+const CACHE = 'visit-montallegro-v18';
 const FILES = [
   './', 'index.html', 'css/app.css', 'js/config.js', 'js/app.js', 'data/contenuti.json',
   'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'vendor/capacitor/capacitor.js',
   'fonts/inter-latin-wght-normal.woff2', 'fonts/fraunces-latin-opsz-normal.woff2', 'img/logo-tondo.png', 'icons/icon-192.png', 'icons/apple-touch-icon.png', 'privacy.html',
   'img/foto/torre-salsa-falesia.jpg', 'img/foto/torre-salsa-spiaggia.jpg', 'img/foto/torre-salsa-acqua.jpg',
   'img/foto/torre-salsa-marna.jpg', 'img/foto/torre-salsa-dama-bianca.jpg', 'img/foto/capo-bianco-tramonto.jpg',
-  'img/foto/montallegro-monte-suso.jpg', 'img/foto/natale-luci.jpg', 'img/foto/natale-spettacolo.jpg'
+  'img/foto/montallegro-monte-suso.jpg', 'img/foto/natale-2026.jpg', 'img/foto/natale-libro.jpg', 'img/foto/natale-concerto.jpg', 'img/foto/natale-spettacolo.jpg'
 ];
 
 self.addEventListener('install', (e) => {

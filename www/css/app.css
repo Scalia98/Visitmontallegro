@@ -696,3 +696,22 @@ html.bloccato, html.bloccato body { overflow: hidden; }
 .installa-tasto:active { background: var(--blu-scuro); }
 .installa-chiudi { width: 34px; height: 34px; display: grid; place-items: center; color: var(--tenue); border-radius: 50%; }
 .installa-chiudi svg { width: 18px; height: 18px; }
+
+/* ---------- Natale: «tanti altri eventi stanno arrivando» ---------- */
+.nota-programma {
+  position: relative; overflow: hidden; margin-top: 12px; display: grid; grid-template-columns: 42px minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 14px; border-radius: 18px; color: #fff; text-decoration: none; box-shadow: var(--ombra);
+  background: radial-gradient(130% 150% at 0% 0%, #1f4c91 0%, #0d2a5a 55%, #071a3d 100%);
+}
+.nota-programma::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(circle, rgba(255, 214, 120, .95) 0 1.5px, transparent 2.6px), radial-gradient(circle, rgba(255, 255, 255, .75) 0 1px, transparent 2px);
+  background-size: 47px 35px, 29px 41px; background-position: 7px 5px, 20px 16px;
+}
+.nota-programma > * { position: relative; }
+.nota-programma > svg:first-child { width: 42px; height: 42px; padding: 10px; border-radius: 50%; background: rgba(255, 194, 74, .18); color: #ffc24a; fill: #ffc24a; }
+.nota-programma b { display: block; font-size: 16px; font-weight: 750; letter-spacing: -.01em; line-height: 1.25; }
+.nota-programma small { display: block; margin-top: 3px; font-size: 13px; line-height: 1.35; opacity: .85; }
+.nota-programma .freccia { width: 20px; height: 20px; color: #ffc24a; }
+a.nota-programma:active { filter: brightness(1.1); }
+.pagina .blocco > .nota-programma { margin-left: 16px; margin-right: 16px; }

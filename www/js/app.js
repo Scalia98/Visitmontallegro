@@ -37,7 +37,7 @@
       scopri: "Scopri", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Spiagge", cosaVedere: "Cosa vedere", esperienze: "Esperienze",
       eventi: "Eventi", mangiare: "Mangiare", mangiareTitolo: "Mangiare e bere", dormire: "Dormire", dormireTitolo: "Dove dormire",
       itinerari: "Itinerari", comeArrivare: "Come arrivare", meteo: "Meteo", numeriUtili: "Numeri utili", mappa: "Mappa",
-      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", installaTitolo: "Installa l'app", installa: "Installa", installaSotto: "Gratis: si apre come un'app e funziona anche senza rete.", installaIos: "In Safari tocca Condividi (anche dal menu ···) e poi «Aggiungi alla schermata Home».", installaInApp: "Per installarla apri questa pagina nel browser: tocca ··· e scegli di aprirla nel browser.", tutti: "Tutti", tutto: "Tutto",
+      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", siAggiorna: "Il programma si aggiorna qui sull'app.", installaTitolo: "Installa l'app", installa: "Installa", installaSotto: "Gratis: si apre come un'app e funziona anche senza rete.", installaIos: "In Safari tocca Condividi (anche dal menu ···) e poi «Aggiungi alla schermata Home».", installaInApp: "Per installarla apri questa pagina nel browser: tocca ··· e scegli di aprirla nel browser.", tutti: "Tutti", tutto: "Tutto",
       infoPraticheTitolo: "Info pratiche",
       visitIntro: "Spiagge, riserve naturali, storia e gite nei dintorni di Montallegro.",
       spiaggeIntro: "Sabbia fine, falesie bianche e chilometri di costa protetta tra Eraclea Minoa e Siculiana Marina.",
@@ -121,7 +121,7 @@
       scopri: "Discover", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Beaches", cosaVedere: "Sightseeing", esperienze: "Experiences",
       eventi: "Events", mangiare: "Eat", mangiareTitolo: "Eat & drink", dormire: "Stay", dormireTitolo: "Where to stay",
       itinerari: "Itineraries", comeArrivare: "Getting here", meteo: "Weather", numeriUtili: "Useful numbers", mappa: "Map",
-      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", installaTitolo: "Install the app", installa: "Install", installaSotto: "Free: opens like an app and works offline too.", installaIos: "In Safari tap Share (also in the ··· menu), then «Add to Home Screen».", installaInApp: "To install it, open this page in your browser: tap ··· and choose to open it in the browser.", tutti: "All", tutto: "All",
+      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", siAggiorna: "The programme is updated here in the app.", installaTitolo: "Install the app", installa: "Install", installaSotto: "Free: opens like an app and works offline too.", installaIos: "In Safari tap Share (also in the ··· menu), then «Add to Home Screen».", installaInApp: "To install it, open this page in your browser: tap ··· and choose to open it in the browser.", tutti: "All", tutto: "All",
       infoPraticheTitolo: "Practical info",
       visitIntro: "Beaches, nature reserves, history and day trips around Montallegro.",
       spiaggeIntro: "Fine sand, white cliffs and miles of protected coast between Eraclea Minoa and Siculiana Marina.",
@@ -633,6 +633,14 @@
   // l'evento in evidenza resta in home ed Eventi fino al suo ultimo giorno
   function eventoInEvidenza() { return eventiFuturi().filter(function (e) { return e.evidenza; })[0]; }
   // "daConfermare": true = appuntamento non ancora confermato, con l'etichetta in elenco e nella pagina
+  // «tanti altri eventi stanno arrivando» sotto il programma di un evento che ne raccoglie altri
+  function notaProgramma(e, link) {
+    var n = tx(e.programmaNota);
+    if (!n) return '';
+    var dentro = ic('star') + '<span><b>' + esc(n) + '</b><small>' + esc(t('siAggiorna')) + '</small></span>';
+    return link ? '<a class="nota-programma" href="#evento-' + e.id + '">' + dentro + ic('chevron', false, 'freccia') + '</a>'
+      : '<div class="nota-programma">' + dentro + '</div>';
+  }
   function etichettaStato(e) { return e.daConfermare ? '<span class="stato-evento">' + esc(t('daConfermare')) + '</span>' : ''; }
   function slideAttuale(s) { return !s.fino || s.fino >= oggiISO(); }
   function urlEvento(e) { return CFG.WEB_URL ? CFG.WEB_URL.replace(/#.*$/, '') + '#evento-' + e.id : (CFG.PORTALE || ''); }
@@ -1219,7 +1227,8 @@
     return '<div class="pagina">' + testaPagina(t('eventiTitolo'), t('eventiIntro')) +
       (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<section class="blocco">' + titoloSezione(t('inProgramma')) + '<div class="elenco">' +
-      (ev.length ? ev.map(rigaEvento).join('') : '<p class="vuoto">' + t('nessunEvento') + '</p>') + '</div></section>' +
+      (ev.length ? ev.map(rigaEvento).join('') : '<p class="vuoto">' + t('nessunEvento') + '</p>') + '</div>' +
+      ev.filter(function (e) { return e.programma; }).map(function (e) { return notaProgramma(e, true); }).join('') + '</section>' +
       '<section class="blocco">' + titoloSezione(t('ogniAnno')) + '<div class="elenco">' +
       (DATA.ricorrenze || []).map(function (e) {
         return '<div class="ricorrenza"><span class="quando">' + ic('calendar') + esc(tx(e.quando)) + '</span><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(tx(e.testo)) + '</p></div>';
@@ -1256,7 +1265,7 @@
       (e.organizza ? fatto('info', t('organizza') + ': ' + esc(e.organizza)) : '') +
       '</div>' +
       '<div class="testo"><p>' + esc(tx(e.testo)) + '</p></div>' +
-      (figli.length ? '<section class="blocco programma"><h2>' + esc(t('programma')) + '</h2><div class="elenco">' + figli.map(rigaEvento).join('') + '</div></section>' : '') +
+      (figli.length ? '<section class="blocco programma"><h2>' + esc(t('programma')) + '</h2><div class="elenco">' + figli.map(rigaEvento).join('') + '</div>' + notaProgramma(e) + '</section>' : '') +
       '<div class="azioni">' + az.join('') + '</div>' +
       '</div></article>';
   };
