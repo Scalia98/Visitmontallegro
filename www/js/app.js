@@ -374,7 +374,7 @@
   function coloreDi(p) { return COLORI[catPrincipale(p).colore] || 'var(--mare)'; }
   function iconaDi(p) {
     if (p.id === 'torre-salsa') return 'tower';
-    if (p.fonte === 'portale' && p.sotto && ICONE_SOTTO[p.sotto]) return ICONE_SOTTO[p.sotto];
+    if ((p.fonte === 'portale' || p.fonte === 'imposta') && p.sotto && ICONE_SOTTO[p.sotto]) return ICONE_SOTTO[p.sotto];
     if (p.categorie[0] === 'dintorni' && p.categorie[1] && categoria(p.categorie[1])) return categoria(p.categorie[1]).icona;   // un museo nei dintorni ha l'icona del museo, non dell'auto
     return catPrincipale(p).icona;
   }
