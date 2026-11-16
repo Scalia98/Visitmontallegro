@@ -37,7 +37,7 @@
       scopri: "Scopri", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Spiagge", cosaVedere: "Cosa vedere", esperienze: "Esperienze",
       eventi: "Eventi", mangiare: "Mangiare", mangiareTitolo: "Mangiare e bere", dormire: "Dormire", dormireTitolo: "Dove dormire",
       itinerari: "Itinerari", comeArrivare: "Come arrivare", meteo: "Meteo", numeriUtili: "Numeri utili", mappa: "Mappa",
-      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", tutti: "Tutti", tutto: "Tutto",
+      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", tutti: "Tutti", tutto: "Tutto",
       infoPraticheTitolo: "Info pratiche",
       visitIntro: "Spiagge, riserve naturali, storia e gite nei dintorni di Montallegro.",
       spiaggeIntro: "Sabbia fine, falesie bianche e chilometri di costa protetta tra Eraclea Minoa e Siculiana Marina.",
@@ -121,7 +121,7 @@
       scopri: "Discover", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Beaches", cosaVedere: "Sightseeing", esperienze: "Experiences",
       eventi: "Events", mangiare: "Eat", mangiareTitolo: "Eat & drink", dormire: "Stay", dormireTitolo: "Where to stay",
       itinerari: "Itineraries", comeArrivare: "Getting here", meteo: "Weather", numeriUtili: "Useful numbers", mappa: "Map",
-      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", tutti: "All", tutto: "All",
+      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", tutti: "All", tutto: "All",
       infoPraticheTitolo: "Practical info",
       visitIntro: "Beaches, nature reserves, history and day trips around Montallegro.",
       spiaggeIntro: "Fine sand, white cliffs and miles of protected coast between Eraclea Minoa and Siculiana Marina.",
@@ -208,6 +208,14 @@
   var GIORNI = {
     it: ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'],
     en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  };
+  var MESI_LUNGHI = {
+    it: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
+    en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  };
+  var GIORNI_LUNGHI = {
+    it: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
+    en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   };
   var VENTI = {
     it: ['Tramontana', 'Grecale', 'Levante', 'Scirocco', 'Mezzogiorno', 'Libeccio', 'Ponente', 'Maestrale'],
@@ -571,6 +579,22 @@
     return (DATA.eventi || []).filter(function (e) { return (e.fine || e.inizio) >= o; })
       .sort(function (x, y) { return x.inizio < y.inizio ? -1 : x.inizio > y.inizio ? 1 : 0; });
   }
+  function evento(id) { return (DATA.eventi || []).filter(function (x) { return x.id === id; })[0]; }
+  // "quando" scrive le date a mano quando non sono di seguito (es. 26–30 dicembre e 2–3 gennaio)
+  function quandoTesto(e) { return tx(e.quando) || (intervallo(e) + (e.dateDaDefinire ? ' · ' + t('dateDaDefinire') : '')); }
+  function unGiorno(e) { return !e.quando && !e.dateDaDefinire && e.inizio === (e.fine || e.inizio); }
+  // «Mercoledì 23 dicembre» / «Wednesday 23 December»
+  function giornoLungo(s, conAnno) {
+    var p = partiData(s), g = GIORNI_LUNGHI[lang][new Date(p.a, p.m, p.g).getDay()];
+    return g.charAt(0).toUpperCase() + g.slice(1) + ' ' + p.g + ' ' + MESI_LUNGHI[lang][p.m] + (conAnno ? ' ' + p.a : '');
+  }
+  // "ora": testo libero per lingua, es. {"it": "ore 20:30", "en": "8:30 pm"} o "16:30–21:30"
+  function conOra(testo, e) { return tx(e.ora) ? testo + ' · ' + tx(e.ora) : testo; }
+  function dataEvento(e, conAnno) { return conOra(unGiorno(e) ? giornoLungo(e.inizio, conAnno) : quandoTesto(e), e); }
+  // l'evento in evidenza resta in home ed Eventi fino al suo ultimo giorno
+  function eventoInEvidenza() { return eventiFuturi().filter(function (e) { return e.evidenza; })[0]; }
+  function slideAttuale(s) { return !s.fino || s.fino >= oggiISO(); }
+  function urlEvento(e) { return CFG.WEB_URL ? CFG.WEB_URL.replace(/#.*$/, '') + '#evento-' + e.id : (CFG.PORTALE || ''); }
 
   /* ---------- pezzi riutilizzati ---------- */
   function linguaToggle() {
@@ -616,8 +640,17 @@
     var a = partiData(e.inizio);
     return '<a class="evento" href="#evento-' + e.id + '">' +
       '<div class="data" aria-hidden="true"><b>' + a.g + '</b><span>' + MESI[lang][a.m] + '</span></div>' +
-      '<div class="evento-testo"><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(intervallo(e)) + (e.dateDaDefinire ? ' · ' + t('dateDaDefinire') : '') + '</p></div>' +
+      '<div class="evento-testo"><h3>' + esc(tx(e.titolo)) + '</h3><p>' + esc(conOra(quandoTesto(e), e)) + '</p></div>' +
       ic('chevron', false, 'freccia') + '</a>';
+  }
+  function cardEvidenza(e) {
+    var finta = { id: e.id, foto: e.foto, categorie: ['esperienze'] };
+    return '<a class="card-evidenza" href="#evento-' + e.id + '">' + copertina(finta, 'card-evidenza-foto', false, true) +
+      '<span class="chip-evidenza">' + ic('star', true) + esc(t('inEvidenza')) + '</span>' +
+      '<span class="card-evidenza-testo"><span class="quando-evidenza">' + esc(dataEvento(e)) + (tx(e.occhiello) ? ' · ' + esc(tx(e.occhiello)) : '') + '</span>' +
+      '<b class="titolo-evidenza">' + esc(tx(e.titolo)) + '</b>' +
+      (tx(e.breve) ? '<span class="breve-evidenza">' + esc(tx(e.breve)) + '</span>' : '') +
+      '<span class="luogo-evidenza">' + ic('pin') + esc(tx(e.luogo)) + '</span></span></a>';
   }
   /* ---------- itinerari: "tipo" decide filtro, etichetta e segnaposto della foto ---------- */
   var CAT_TIPO = { piedi: 'natura', bici: 'esperienze', cavallo: 'esperienze', mare: 'spiagge', natura: 'natura', cultura: 'cultura', sapori: 'sapori' };
@@ -737,11 +770,13 @@
     var H = DATA.home || {};
     var evidenza = (H.evidenza || []).map(scheda).filter(Boolean);
     var territorio = (H.territorio || []).map(scheda).filter(Boolean);
-    var ev = eventiFuturi().slice(0, 3);
+    var evid = eventoInEvidenza();
+    var ev = eventiFuturi().filter(function (e) { return e !== evid; }).slice(0, 3);
     var consigliati = ruota(DATA.schede.filter(isPartner)).slice(0, 10);
     return '<div class="pagina home">' +
       '<header class="testata-app">' + marchio() + '<div class="testata-destra"><a class="tasto-cerca" href="#cerca" aria-label="' + esc(t('cercaTitolo')) + '">' + ic('search') + '</a>' + linguaToggle() + '</div></header>' +
-      slider(H.slider || [], { auto: true, classe: 'slider-home' }) +
+      slider((H.slider || []).filter(slideAttuale), { auto: true, classe: 'slider-home' }) +
+      (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<div id="meteo-breve"></div>' +
       (territorio.length ? '<section class="blocco">' + titoloSezione(t('territorio'), '#visit') +
         '<div class="binario alto">' + territorio.map(cardAlta).join('') + '</div></section>' : '') +
@@ -1137,7 +1172,9 @@
 
   VISTE.eventi = function () {
     var ev = eventiFuturi();
+    var evid = eventoInEvidenza();
     return '<div class="pagina">' + testaPagina(t('eventiTitolo'), t('eventiIntro')) +
+      (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<section class="blocco">' + titoloSezione(t('inProgramma')) + '<div class="elenco">' +
       (ev.length ? ev.map(rigaEvento).join('') : '<p class="vuoto">' + t('nessunEvento') + '</p>') + '</div></section>' +
       '<section class="blocco">' + titoloSezione(t('ogniAnno')) + '<div class="elenco">' +
@@ -1148,22 +1185,36 @@
   };
 
   VISTE.evento = function (r) {
-    var e = (DATA.eventi || []).filter(function (x) { return x.id === r.id; })[0];
+    var e = evento(r.id);
     if (!e) return VISTE.nontrovato();
     var finta = { id: e.id, foto: e.foto, categorie: ['esperienze'] };
+    var padre = e.gruppo ? evento(e.gruppo) : null;
+    var figli = e.programma ? (DATA.eventi || []).filter(function (x) { return x.gruppo === e.id; })
+      .sort(function (x, y) { return x.inizio < y.inizio ? -1 : x.inizio > y.inizio ? 1 : 0; }) : [];
+    var sch = e.scheda ? scheda(e.scheda) : null;
+    var c = e.contatto ? contatto(e.contatto) : null;
+    var msg = tx(e.messaggio) || t('messaggioWa', { x: tx(e.titolo) + ' (' + dataEvento(e) + ')' });
+    var az = [];
+    if (c && c.whatsapp) az.push(azione('https://wa.me/' + c.whatsapp + '?text=' + encodeURIComponent(msg), 'chat', t('whatsapp'), { esterno: true, classe: 'verde' }));
+    if (c && c.tel) az.push(azione(tel(c.tel), 'phone', t('chiama'), { classe: c.whatsapp ? '' : 'primaria' }));
+    if (e.mappe) az.push(azione(urlIndicazioni(e), 'directions', t('indicazioni'), { esterno: true }));
+    if (!c) az.push(azione('#info', 'lifebuoy', t('infoTitolo')));
+    az.push(azione('', 'share', t('condividi'), { data: 'data-azione="condividi-evento" data-id="' + e.id + '"' }));
     return '<article class="dettaglio" style="--c:var(--ambra)">' +
       '<div class="dettaglio-testa">' + copertina(finta, 'dettaglio-foto evento-foto', false, true) +
       '<button type="button" class="tasto-tondo indietro" data-azione="indietro" aria-label="' + t('indietro') + '">' + ic('back') + '</button>' +
       '<div class="data-grande" aria-hidden="true"><b>' + partiData(e.inizio).g + '</b><span>' + MESI[lang][partiData(e.inizio).m] + '</span></div></div>' +
-      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + t('eventi') + '</span><h1>' + esc(tx(e.titolo)) + '</h1></div>' +
+      '<div class="dettaglio-corpo"><div class="titoli"><span class="etichetta">' + esc(tx(e.occhiello) || t('eventi')) + '</span><h1>' + esc(tx(e.titolo)) + '</h1></div>' +
       '<div class="fatti">' +
-      fatto('calendar', esc(intervallo(e)) + (e.dateDaDefinire ? ' · ' + t('dateDaDefinire') : '')) +
-      fatto('pin', esc(tx(e.luogo))) +
+      fatto('calendar', esc(dataEvento(e, true))) +
+      fatto('pin', esc(tx(e.luogo)), sch ? '<a class="vai" href="#luogo-' + sch.id + '">' + t('apri') + '</a>' : '') +
+      (e.info || []).map(rigaFatto).join('') +
+      (padre ? fatto('star', esc(t('parteDi') + ' ' + tx(padre.titolo)), '<a class="vai" href="#evento-' + padre.id + '">' + t('apri') + '</a>') : '') +
       (e.organizza ? fatto('info', t('organizza') + ': ' + esc(e.organizza)) : '') +
       '</div>' +
       '<div class="testo"><p>' + esc(tx(e.testo)) + '</p></div>' +
-      '<div class="azioni">' + azione('', 'share', t('condividi'), { data: 'data-azione="condividi-evento" data-id="' + e.id + '"' }) +
-      azione('#info', 'lifebuoy', t('infoTitolo')) + '</div>' +
+      (figli.length ? '<section class="blocco programma"><h2>' + esc(t('programma')) + '</h2><div class="elenco">' + figli.map(rigaEvento).join('') + '</div></section>' : '') +
+      '<div class="azioni">' + az.join('') + '</div>' +
       '</div></article>';
   };
 
@@ -1589,7 +1640,7 @@
       if (p) condividi(tx(p.nome), tx(p.breve) + '\n' + t('scoprila'), urlCondivisione(p));
     } else if (az === 'condividi-evento') {
       var e = (DATA.eventi || []).filter(function (x) { return x.id === id; })[0];
-      if (e) condividi(tx(e.titolo), intervallo(e) + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), CFG.PORTALE || '');
+      if (e) condividi(tx(e.titolo), dataEvento(e, true) + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), urlEvento(e));
     } else if (az === 'condividi-app') {
       condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.WEB_URL);
     } else if (az === 'indietro') {

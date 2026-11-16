@@ -53,7 +53,7 @@ Apri `www/data/contenuti.json` con un editor di testo (VS Code va benissimo).
 - **Contatti di una scheda**: blocco `"contatti"` con `"tel"`, `"whatsapp"` (con il 39 davanti), `"web"`, `"email"`. Compaiono da soli i tasti Chiama, WhatsApp, Sito.
 - **Posizione sulla mappa**: campi `"lat"` e `"lng"`. In Google Maps tieni premuto sul punto esatto e copia i due numeri. Senza coordinate la scheda non compare sulla mappa (ma Indicazioni funziona lo stesso con il nome in `"mappe"`).
 - **Prezzi**: nell'app non ci sono prezzi. Al posto del prezzo metti una riga `{"tipo": "telefono", "it": "Per maggiori info", "en": "For more info", "tel": "3201234567"}`: il numero diventa un tasto per chiamare.
-- **Eventi**: aggiungi un blocco in `"eventi"` con date `"inizio"` e `"fine"` (formato `2026-12-19`). Gli eventi passati spariscono da soli.
+- **Eventi**: aggiungi un blocco in `"eventi"` con date `"inizio"` e `"fine"` (formato `2026-12-19`). Gli eventi passati spariscono da soli. Facoltativi: `"quando"` (date scritte a mano, se non sono di seguito), `"gruppo"` (l'id del programma di cui fa parte: l'evento con `"programma": true` elenca i suoi), `"evidenza": true` con `"occhiello"` e `"breve"` (card «In evidenza» in home e in Eventi fino al giorno dell'evento), `"contatto"` (tasti WhatsApp e Chiama; `"messaggio"` è il testo già scritto), `"mappe"` (indicazioni), `"scheda"` (collega il luogo alla sua scheda), `"info"` (righe come nelle schede), `"ora"` (testo dell'orario, accanto alla data). Una slide della home con `"fino"` sparisce dopo quella data. Il Natale 2026 (19 dicembre – 6 gennaio) è fatto così, con lo Spettacolo di Natale del 23 in evidenza.
 - **Itinerari**: blocco in `"itinerari"` con `"titolo"`, `"intro"`, `"durata"`, `"foto"` e le `"tappe"` (ognuna con il testo e, se c'è, la `"scheda"` del luogo). `"tipo"` (`piedi`, `bici`, `cavallo`, `mare`, `natura`, `cultura`, `sapori`) decide il filtro e l'etichetta; `"dati"` (lunghezza, dislivello, difficoltà), `"traccia"` (link al percorso GPS) e `"consigli"` sono facoltativi.
 - A ogni modifica aggiorna `"versione"` (es. `"2026-12-01"`).
 
@@ -68,7 +68,7 @@ Poi, per portare le modifiche nelle app: `npx cap sync`.
 ### Da completare
 - **Foto mancanti**: la guida del portale ha le foto solo per 11 schede; locali, strutture, servizi e posti dei dintorni per ora hanno il fondo colorato con l'icona. Aggiungi le foto sul portale o in `www/img/foto/`.
 - **Coordinate mancanti**: molte schede del portale e dei dintorni non hanno `"lat"` e `"lng"`, quindi non compaiono sulla mappa (Indicazioni funziona lo stesso con l'indirizzo).
-- **Date dei mercatini di Natale** e programma completo del Natale.
+- **Orari del Natale**: date e luoghi sono quelli decisi; gli orari si aggiungono con `"ora"` in ogni evento (es. `{"it": "ore 20:30", "en": "8:30 pm"}`) quando sono confermati.
 - Foto di Torre Salsa in `www/img/foto/` e foto di Seacily: verifica di poterle usare (se sono tue, nessun problema).
 - Azienda Agricola Calogero Caruana: manca la foto.
 
@@ -147,7 +147,7 @@ Il keystore va conservato con cura: senza, non potrai più aggiornare l'app.
 - **Descrizione**:
   Visit Montallegro Bovo Marina è la guida ufficiale di Montallegro, realizzata dalla Pro Loco Montallegro APS.
   Scopri la Riserva Naturale Torre Salsa e la Dama Bianca, la spiaggia di Bovo Marina, Eraclea Minoa e Capo Bianco, i ruderi del paese antico su Monte Suso, le chiese e il Museo della Civiltà Contadina.
-  Prenota su WhatsApp la navetta per la spiaggia di Torre Salsa e le escursioni guidate, trova dove mangiare e dormire con orari e contatti, i prodotti tipici e i produttori del paese, la farmacia e i servizi utili, i posti da vedere nei dintorni, come arrivare, il meteo e il mare con le previsioni, la mappa, gli eventi e tutti i numeri utili.
+  Prenota su WhatsApp le escursioni guidate, trova dove mangiare e dormire con orari e contatti, i prodotti tipici e i produttori del paese, la farmacia e i servizi utili, i posti da vedere nei dintorni, come arrivare, il meteo e il mare con le previsioni, la mappa, gli eventi e tutti i numeri utili.
   Tieni premuta l'icona per andare dritto a Spiagge, Visit Torre Salsa e Visit.
 
 ---
