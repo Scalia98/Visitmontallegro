@@ -680,3 +680,19 @@ html.bloccato, html.bloccato body { overflow: hidden; }
 /* ---------- firma in fondo ---------- */
 .crediti a { color: inherit; text-decoration: underline; text-decoration-color: rgba(15, 124, 156, .4); text-underline-offset: 2px; }
 .crediti .firma-app { font-weight: 650; color: var(--blu); }
+.crediti .sito-agenzia { justify-self: center; margin: 6px 0 2px; font-size: 13.5px; font-weight: 650; color: var(--blu); text-decoration: none; }
+
+/* ---------- installare la web app ---------- */
+.installa-posto:empty { display: none; }
+.installa {
+  margin: 0 16px; display: grid; grid-template-columns: 46px minmax(0, 1fr) auto auto; gap: 10px; align-items: center;
+  background: var(--carta); border-radius: 18px; padding: 10px 6px 10px 12px; box-shadow: var(--ombra);
+}
+.installa img { width: 46px; height: 46px; border-radius: 12px; box-shadow: 0 1px 4px rgba(16, 36, 52, .15); }
+.installa-testo { display: grid; gap: 2px; }
+.installa-testo b { font-size: 15px; font-weight: 750; color: var(--blu); }
+.installa-testo small { font-size: 12.5px; line-height: 1.35; color: var(--muto); }
+.installa-tasto { background: var(--blu); color: #fff; border-radius: 999px; padding: 8px 15px; font-size: 14px; font-weight: 700; }
+.installa-tasto:active { background: var(--blu-scuro); }
+.installa-chiudi { width: 34px; height: 34px; display: grid; place-items: center; color: var(--tenue); border-radius: 50%; }
+.installa-chiudi svg { width: 18px; height: 18px; }

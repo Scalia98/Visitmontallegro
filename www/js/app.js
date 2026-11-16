@@ -37,7 +37,7 @@
       scopri: "Scopri", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Spiagge", cosaVedere: "Cosa vedere", esperienze: "Esperienze",
       eventi: "Eventi", mangiare: "Mangiare", mangiareTitolo: "Mangiare e bere", dormire: "Dormire", dormireTitolo: "Dove dormire",
       itinerari: "Itinerari", comeArrivare: "Come arrivare", meteo: "Meteo", numeriUtili: "Numeri utili", mappa: "Mappa",
-      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", tutti: "Tutti", tutto: "Tutto",
+      daNonPerdere: "Da non perdere", vediTutti: "Vedi tutti", prossimiEventi: "Prossimi eventi", inEvidenza: "In evidenza", programma: "Il programma", parteDi: "Fa parte di", daConfermare: "Da confermare", installaTitolo: "Installa l'app", installa: "Installa", installaSotto: "Gratis: si apre come un'app e funziona anche senza rete.", installaIos: "In Safari tocca Condividi (anche dal menu ···) e poi «Aggiungi alla schermata Home».", installaInApp: "Per installarla apri questa pagina nel browser: tocca ··· e scegli di aprirla nel browser.", tutti: "Tutti", tutto: "Tutto",
       infoPraticheTitolo: "Info pratiche",
       visitIntro: "Spiagge, riserve naturali, storia e gite nei dintorni di Montallegro.",
       spiaggeIntro: "Sabbia fine, falesie bianche e chilometri di costa protetta tra Eraclea Minoa e Siculiana Marina.",
@@ -61,7 +61,7 @@
       nessunEvento: "Nessun evento in programma per ora.", dateDaDefinire: "date in arrivo", organizza: "Organizza",
       infoTitolo: "Info utili", infoIntro: "Emergenze, contatti, trasporti e servizi.", emergenze: "Emergenze",
       lingua: "Lingua", app: "L'app", privacy: "Privacy", versione: "Versione", crediti: "Crediti foto e dati",
-      progetto: "Visit Montallegro Bovo Marina è un progetto della Pro Loco Montallegro APS.", realizzataDa: "App realizzata da",
+      progetto: "Visit Montallegro Bovo Marina è un progetto del Comune di Montallegro e della Pro Loco Montallegro APS.", realizzataDa: "App realizzata da",
       tipiItinerario: { piedi: "A piedi", bici: "In bici", cavallo: "A cavallo", mare: "Mare", natura: "Natura", cultura: "Cultura", sapori: "Sapori" },
       tracciaGps: "Traccia del percorso",
       vento: "Vento", mare: "Mare", acqua: "Acqua", tramonto: "Tramonto", alba: "Alba", percepita: "Percepita", umidita: "Umidità",
@@ -121,7 +121,7 @@
       scopri: "Discover", visitTorreSalsa: "Visit Torre Salsa", spiagge: "Beaches", cosaVedere: "Sightseeing", esperienze: "Experiences",
       eventi: "Events", mangiare: "Eat", mangiareTitolo: "Eat & drink", dormire: "Stay", dormireTitolo: "Where to stay",
       itinerari: "Itineraries", comeArrivare: "Getting here", meteo: "Weather", numeriUtili: "Useful numbers", mappa: "Map",
-      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", tutti: "All", tutto: "All",
+      daNonPerdere: "Don't miss", vediTutti: "See all", prossimiEventi: "Coming up", inEvidenza: "Featured", programma: "Programme", parteDi: "Part of", daConfermare: "To be confirmed", installaTitolo: "Install the app", installa: "Install", installaSotto: "Free: opens like an app and works offline too.", installaIos: "In Safari tap Share (also in the ··· menu), then «Add to Home Screen».", installaInApp: "To install it, open this page in your browser: tap ··· and choose to open it in the browser.", tutti: "All", tutto: "All",
       infoPraticheTitolo: "Practical info",
       visitIntro: "Beaches, nature reserves, history and day trips around Montallegro.",
       spiaggeIntro: "Fine sand, white cliffs and miles of protected coast between Eraclea Minoa and Siculiana Marina.",
@@ -145,7 +145,7 @@
       nessunEvento: "No events scheduled right now.", dateDaDefinire: "dates coming soon", organizza: "Organised by",
       infoTitolo: "Useful info", infoIntro: "Emergencies, contacts, transport and services.", emergenze: "Emergencies",
       lingua: "Language", app: "The app", privacy: "Privacy", versione: "Version", crediti: "Photo & data credits",
-      progetto: "Visit Montallegro Bovo Marina is a project by Pro Loco Montallegro APS.", realizzataDa: "App made by",
+      progetto: "Visit Montallegro Bovo Marina is a project by the Municipality of Montallegro and Pro Loco Montallegro APS.", realizzataDa: "App made by",
       tipiItinerario: { piedi: "On foot", bici: "By bike", cavallo: "On horseback", mare: "Sea", natura: "Nature", cultura: "Culture", sapori: "Food & wine" },
       tracciaGps: "Route map",
       vento: "Wind", mare: "Sea", acqua: "Water", tramonto: "Sunset", alba: "Sunrise", percepita: "Feels like", umidita: "Humidity",
@@ -556,13 +556,52 @@
   }
 
   var toastTimer = null;
-  function toast(msg) {
+  function toast(msg, durata) {
     var el = document.getElementById('toast');
     el.textContent = msg;
     el.classList.add('visibile');
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { el.classList.remove('visibile'); }, 2200);
+    toastTimer = setTimeout(function () { el.classList.remove('visibile'); }, durata || 2200);
   }
+
+  /* ---------- installare la web app ----------
+     Chrome, Edge e Android: tasto «Installa» (evento beforeinstallprompt).
+     iPhone e iPad: istruzioni per «Aggiungi alla schermata Home».
+     Browser dentro Instagram, Facebook e simili: prima va aperta nel browser. */
+  var richiestaInstalla = null;
+  var dentroSocial = /Instagram|FBAN|FBAV|FB_IAB|FBIOS|Line\/|TikTok|musical_ly|Bytedance|Snapchat|Pinterest/i.test(navigator.userAgent);
+  function giaInstallata() {
+    return isNative || navigator.standalone === true || !!(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  }
+  function installabile() { return !giaInstallata() && (dentroSocial || !!richiestaInstalla || isApple); }
+  function testoInstalla() { return dentroSocial ? t('installaInApp') : richiestaInstalla ? t('installaSotto') : t('installaIos'); }
+  function installaChiusa() {
+    try { return Date.now() - (+localStorage.getItem('vm-installa-chiusa') || 0) < 30 * 864e5; } catch (e) { return false; }
+  }
+  function chiudiInstalla() { try { localStorage.setItem('vm-installa-chiusa', String(Date.now())); } catch (e) { /* niente */ } }
+  function cardInstalla() {
+    if (!installabile() || installaChiusa()) return '';
+    return '<div class="installa"><img src="icons/icon-192.png" alt="" width="46" height="46">' +
+      '<div class="installa-testo"><b>' + esc(t('installaTitolo')) + '</b><small>' + esc(testoInstalla()) + '</small></div>' +
+      (richiestaInstalla && !dentroSocial ? '<button type="button" class="installa-tasto" data-azione="installa">' + esc(t('installa')) + '</button>' : '') +
+      '<button type="button" class="installa-chiudi" data-azione="installa-chiudi" aria-label="' + esc(t('chiudi')) + '">' + ic('close') + '</button></div>';
+  }
+  function aggiornaInstalla() {
+    var posto = document.querySelector('.installa-posto');
+    if (posto) posto.innerHTML = cardInstalla();
+  }
+  function installa() {
+    if (richiestaInstalla && !dentroSocial) {
+      var r = richiestaInstalla;
+      r.prompt();
+      Promise.resolve(r.userChoice).then(function (c) {
+        if (c && c.outcome === 'accepted') { richiestaInstalla = null; chiudiInstalla(); }
+        aggiornaInstalla();
+      });
+    } else toast(testoInstalla(), 7000);
+  }
+  window.addEventListener('beforeinstallprompt', function (ev) { ev.preventDefault(); richiestaInstalla = ev; aggiornaInstalla(); });
+  window.addEventListener('appinstalled', function () { richiestaInstalla = null; chiudiInstalla(); aggiornaInstalla(); });
 
   /* ---------- date ---------- */
   function oggiISO() { var d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -668,7 +707,8 @@
       '<div class="card-testo"><span class="etichetta" style="--c:var(--corallo)">' + esc(etichettaItinerario(it, !it.tipo)) + '</span><h3>' + esc(tx(it.titolo)) + '</h3></div></a>';
   }
   function firmaApp() {
-    return '<span>' + esc(t('realizzataDa')) + ' ' + esterno('https://disegnailtuosito.it', 'Disegna il tuo sito', 'firma-app') + '</span>';
+    return '<span>' + esc(t('realizzataDa')) + ' ' + esterno('https://disegnailtuosito.it', 'Disegna il tuo sito', 'firma-app') + '</span>' +
+      esterno('https://disegnailtuosito.it', ic('globe') + 'disegnailtuosito.it', 'pillola sito-agenzia');
   }
   function tile(href, etichetta, icona, colore) {
     return '<a class="tile" href="' + href + '" style="--c:' + colore + '"><span class="tile-bolla">' + ic(icona) + '</span><span class="tile-nome">' + esc(etichetta) + '</span></a>';
@@ -777,6 +817,7 @@
     var consigliati = ruota(DATA.schede.filter(isPartner)).slice(0, 10);
     return '<div class="pagina home">' +
       '<header class="testata-app">' + marchio() + '<div class="testata-destra"><a class="tasto-cerca" href="#cerca" aria-label="' + esc(t('cercaTitolo')) + '">' + ic('search') + '</a>' + linguaToggle() + '</div></header>' +
+      '<div class="installa-posto">' + cardInstalla() + '</div>' +
       slider((H.slider || []).filter(slideAttuale), { auto: true, classe: 'slider-home' }) +
       (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<div id="meteo-breve"></div>' +
@@ -1308,6 +1349,7 @@
       '<section class="gruppo"><h2>' + t('app') + '</h2><div class="voci">' +
       link('#preferiti', 'heart', t('preferiti') + ' (' + preferiti.length + ')') +
       '<div class="voce voce-riga"><span class="voce-nome">' + t('lingua') + '</span>' + linguaToggle() + '</div>' +
+      (installabile() ? '<button type="button" class="voce voce-link" data-azione="installa">' + ic('home') + '<span class="voce-nome">' + t('installaTitolo') + '</span>' + ic('chevron', false, 'freccia') + '</button>' : '') +
       (store_ ? '<button type="button" class="voce voce-link" data-azione="condividi-app">' + ic('share') + '<span class="voce-nome">' + t('condividiApp') + '</span>' + ic('chevron', false, 'freccia') + '</button>' : '') +
       '<div class="voce"><div class="voce-azioni">' + esterno(CFG.PORTALE || 'https://visitmontallegrobovomarina.it', ic('globe') + t('portale'), 'pillola') +
       '<a class="pillola" href="' + esc(CFG.PRIVACY || 'privacy.html') + '" target="_blank" rel="noopener">' + ic('info') + t('privacy') + '</a></div></div>' +
@@ -1643,6 +1685,11 @@
     } else if (az === 'condividi-evento') {
       var e = (DATA.eventi || []).filter(function (x) { return x.id === id; })[0];
       if (e) condividi(tx(e.titolo), dataEvento(e, true) + (e.daConfermare ? ' (' + t('daConfermare').toLowerCase() + ')' : '') + ' · ' + tx(e.luogo) + '\n' + tx(e.testo), urlEvento(e));
+    } else if (az === 'installa') {
+      installa();
+    } else if (az === 'installa-chiudi') {
+      chiudiInstalla();
+      aggiornaInstalla();
     } else if (az === 'condividi-app') {
       condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.WEB_URL);
     } else if (az === 'indietro') {

@@ -10,15 +10,90 @@
   "orientation": "portrait",
   "background_color": "#F3F5F7",
   "theme_color": "#F3F5F7",
-  "categories": ["travel", "navigation"],
+  "categories": [
+    "travel",
+    "navigation"
+  ],
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "Spiagge", "url": "./#spiagge", "icons": [{ "src": "icons/shortcut-spiagge.png", "sizes": "96x96" }] },
-    { "name": "Visit Torre Salsa", "url": "./#torre-salsa", "icons": [{ "src": "icons/shortcut-torre.png", "sizes": "96x96" }] },
-    { "name": "Visit", "url": "./#visit", "icons": [{ "src": "icons/shortcut-visit.png", "sizes": "96x96" }] }
+    {
+      "name": "Spiagge",
+      "url": "./#spiagge",
+      "icons": [
+        {
+          "src": "icons/shortcut-spiagge.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Visit Torre Salsa",
+      "url": "./#torre-salsa",
+      "icons": [
+        {
+          "src": "icons/shortcut-torre.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Visit",
+      "url": "./#visit",
+      "icons": [
+        {
+          "src": "icons/shortcut-visit.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/schermate/home.jpg",
+      "sizes": "540x1173",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "La home"
+    },
+    {
+      "src": "img/schermate/torre-salsa.jpg",
+      "sizes": "540x1173",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Visit Torre Salsa"
+    },
+    {
+      "src": "img/schermate/spiagge.jpg",
+      "sizes": "540x1173",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Le spiagge"
+    },
+    {
+      "src": "img/schermate/esperienze.jpg",
+      "sizes": "540x1173",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Le esperienze"
+    }
   ]
 }

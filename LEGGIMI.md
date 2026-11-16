@@ -1,6 +1,6 @@
 # Visit Montallegro Bovo Marina
 
-App ufficiale di Montallegro, Bovo Marina e della Riserva di Torre Salsa, per iPhone e Android. Un progetto della Pro Loco Montallegro APS.
+App ufficiale di Montallegro, Bovo Marina e della Riserva di Torre Salsa, per iPhone e Android. Un progetto del Comune di Montallegro e della Pro Loco Montallegro APS, realizzato da Disegna il tuo sito (disegnailtuosito.it).
 
 Tenendo premuta l'icona compaiono le scorciatoie **Spiagge**, **Visit Torre Salsa** e **Visit**, con Condividi app ed Elimina app aggiunte dal telefono, come in Agrigento InfoApp.
 
@@ -145,7 +145,7 @@ Il keystore va conservato con cura: senza, non potrai più aggiornare l'app.
 - **Sottotitolo**: Torre Salsa, spiagge ed eventi
 - **Parole chiave**: montallegro,bovo marina,torre salsa,agrigento,sicilia,spiagge,riserva,eraclea minoa,pro loco,eventi
 - **Descrizione**:
-  Visit Montallegro Bovo Marina è la guida ufficiale di Montallegro, realizzata dalla Pro Loco Montallegro APS.
+  Visit Montallegro Bovo Marina è la guida ufficiale di Montallegro, un progetto del Comune di Montallegro e della Pro Loco Montallegro APS.
   Scopri la Riserva Naturale Torre Salsa e la Dama Bianca, la spiaggia di Bovo Marina, Eraclea Minoa e Capo Bianco, i ruderi del paese antico su Monte Suso, le chiese e il Museo della Civiltà Contadina.
   Prenota su WhatsApp le escursioni guidate, trova dove mangiare e dormire con orari e contatti, i prodotti tipici e i produttori del paese, la farmacia e i servizi utili, i posti da vedere nei dintorni, come arrivare, il meteo e il mare con le previsioni, la mappa, gli eventi e tutti i numeri utili.
   Tieni premuta l'icona per andare dritto a Spiagge, Visit Torre Salsa e Visit.
