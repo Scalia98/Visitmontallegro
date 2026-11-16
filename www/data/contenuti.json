@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-16.4",
+ "versione": "2026-11-16.5",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data.",
  "paese": {
   "lat": 37.39385,
@@ -3029,89 +3029,6 @@
    "verificato": "novembre 2026"
   },
   {
-   "id": "adler-sicilia",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "hotel",
-   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-spa-resort-sicilia-piscina-mare.jpg",
-   "lat": null,
-   "lng": null,
-   "mappe": "ADLER Spa Resort SICILIA, Contrada Salsa, 92010 Siculiana (AG)",
-   "nome": {
-    "it": "ADLER Spa Resort SICILIA"
-   },
-   "etichetta": {
-    "it": "Resort con spa",
-    "en": "Spa resort"
-   },
-   "breve": {
-    "it": "Sulla collina di Torre Salsa: 90 suite con terrazza, una spa di 3.200 m² e il mare a 300 metri."
-   },
-   "testo": {
-    "it": [
-     "Il resort del gruppo altoatesino ADLER ha aperto nel 2022 a circa 80 metri sul mare, al confine della Riserva di Torre Salsa. Le 90 suite, junior e family, hanno tutte la terrazza privata.",
-     "La spa ha piscine interne ed esterne riscaldate e la talassoterapia. Alla spiaggia si scende a piedi o con la navetta. Resta aperto quasi tutto l'anno, da febbraio all'inizio di gennaio."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Contrada Salsa, 92010 Siculiana (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [
-     "Si trova nel Comune di Siculiana, al confine con la Riserva di Torre Salsa"
-    ]
-   },
-   "galleria": [
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-spa-resort-sicilia-piscina-mare.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    },
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-suite.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    },
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-architettura-torre-salsa.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    },
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-sauna-vista-mare.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    },
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-terrazza-falo-tramonto.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    },
-    {
-     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-ristorante-tramonto.jpg",
-     "credito": "Foto: ADLER Spa Resort SICILIA"
-    }
-   ],
-   "credito": "ADLER Spa Resort SICILIA",
-   "contatti": {
-    "web": "https://www.adler-resorts.com",
-    "prenota": "https://www.booking.com/hotel/it/adler-spa-resort-sicilia.html",
-    "prenotaTesto": "Vedi su Booking"
-   },
-   "zona": "torre-salsa",
-   "caratteristiche": [
-    "Spa e talassoterapia",
-    "Piscine interne ed esterne",
-    "Vista mare",
-    "Spiaggia a 300 m con navetta",
-    "Ristorante",
-    "Kids club",
-    "Palestra",
-    "Ricarica auto elettriche"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
    "id": "relais-briuccia",
    "fonte": "portale",
    "categorie": [
@@ -3216,61 +3133,6 @@
     "Wi-Fi",
     "Aria condizionata",
     "Colazione inclusa"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
-   "id": "baglio-caruana",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "agri",
-   "foto": "",
-   "lat": 37.39105,
-   "lng": 13.3269,
-   "mappe": "Baglio Caruana Cantina & Relais, Contrada Torre Salsa, 92010 Montallegro (AG)",
-   "nome": {
-    "it": "Baglio Caruana Cantina & Relais"
-   },
-   "etichetta": {
-    "it": "Relais con cantina",
-    "en": "Country hotel & winery"
-   },
-   "breve": {
-    "it": "Relais di campagna con la cantina della tenuta, la piscina a sfioro e le degustazioni di vini biologici."
-   },
-   "testo": {
-    "it": [
-     "La piscina esterna a sfioro, di circa 110 m², ha l'idromassaggio. La colazione è inclusa e d'estate si serve nella corte. Il mare di Bovo Marina è a 2–3 chilometri."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Contrada Torre Salsa, 92010 Montallegro (AG)"
-    }
-   ],
-   "consigli": {
-    "it": [
-     "La cantina organizza degustazioni e cene: la trovi in Sapori e prodotti",
-     "Animali non ammessi"
-    ]
-   },
-   "contatti": {
-    "prenota": "https://www.booking.com/hotel/it/baglio-caruana-cantina-amp-relais.html",
-    "prenotaTesto": "Vedi su Booking",
-    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
-   },
-   "zona": "torre-salsa",
-   "caratteristiche": [
-    "Piscina a sfioro",
-    "Idromassaggio",
-    "Cantina e degustazioni",
-    "Colazione inclusa",
-    "Parcheggio",
-    "Wi-Fi",
-    "Aria condizionata"
    ],
    "verificato": "novembre 2026"
   },
@@ -3383,52 +3245,6 @@
    "verificato": "novembre 2026"
   },
   {
-   "id": "torre-letus",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "bb",
-   "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Torre Letus, Montallegro AG",
-   "nome": {
-    "it": "Torre Letus"
-   },
-   "etichetta": {
-    "it": "B&B",
-    "en": "B&B"
-   },
-   "breve": {
-    "it": "B&B in paese con camere con angolo cottura e balcone, e la colazione servita in camera."
-   },
-   "testo": {
-    "it": []
-   },
-   "info": [],
-   "consigli": {
-    "it": [
-     "Animali non ammessi"
-    ]
-   },
-   "contatti": {
-    "web": "https://torreletus.com",
-    "prenota": "https://www.booking.com/hotel/it/torre-letus.html",
-    "prenotaTesto": "Vedi su Booking"
-   },
-   "zona": "paese",
-   "caratteristiche": [
-    "Angolo cottura",
-    "Balcone",
-    "Colazione in camera",
-    "Parcheggio",
-    "Wi-Fi",
-    "Aria condizionata"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
    "id": "la-maison",
    "fonte": "portale",
    "categorie": [
@@ -3473,113 +3289,6 @@
    "zona": "paese",
    "caratteristiche": [
     "Wi-Fi"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
-   "id": "baglio-quadrone",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "bb",
-   "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Baglio Quadrone, Montallegro AG",
-   "nome": {
-    "it": "Baglio Quadrone"
-   },
-   "etichetta": {
-    "it": "Camere e appartamenti",
-    "en": "Rooms & apartments"
-   },
-   "breve": {
-    "it": "Baglio di campagna con camere e piccoli appartamenti, terrazza e giardino in comune; alcune camere guardano il mare."
-   },
-   "testo": {
-    "it": []
-   },
-   "info": [],
-   "consigli": {
-    "it": [
-     "Colazione a pagamento",
-     "Animali non ammessi"
-    ]
-   },
-   "contatti": {
-    "prenota": "https://www.holidu.it/d/64715240",
-    "prenotaTesto": "Vedi disponibilità",
-    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
-   },
-   "zona": "campagna",
-   "caratteristiche": [
-    "Terrazza condivisa",
-    "Cucina condivisa",
-    "Giardino",
-    "Parcheggio",
-    "Aria condizionata"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
-   "id": "villa-del-poeta",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "villa",
-   "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Villa del Poeta, Campagna di Torre Salsa, Montallegro (AG)",
-   "nome": {
-    "it": "Villa del Poeta"
-   },
-   "etichetta": {
-    "it": "Villa in campagna",
-    "en": "Country villa"
-   },
-   "breve": {
-    "it": "Villa tutta per voi nella campagna verso Torre Salsa, con giardino e barbecue, a 10 minuti da Bovo Marina."
-   },
-   "testo": {
-    "it": [
-     "Tre camere e due bagni, la cucina attrezzata e un grande giardino con la zona relax, il barbecue e il tavolo per mangiare fuori. La Riserva di Torre Salsa è a 2,4 km; per l'arrivo c'è una guida al self check-in."
-    ]
-   },
-   "info": [
-    {
-     "tipo": "dove",
-     "it": "Campagna di Torre Salsa, Montallegro (AG)"
-    },
-    {
-     "tipo": "distanze",
-     "it": "10 minuti da Bovo Marina · 2,4 km dalla Riserva di Torre Salsa"
-    }
-   ],
-   "consigli": {
-    "it": []
-   },
-   "contatti": {
-    "tel": "3288597144",
-    "whatsapp": "393288597144",
-    "prenota": "https://www.airbnb.it/h/villadelpoeta",
-    "prenotaTesto": "Prenota su Airbnb",
-    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
-   },
-   "zona": "torre-salsa",
-   "caratteristiche": [
-    "3 camere e 2 bagni",
-    "Giardino con zona relax",
-    "Barbecue",
-    "Parcheggio privato",
-    "Wi-Fi",
-    "Aria condizionata",
-    "Smart TV",
-    "Lavatrice",
-    "Giochi per bambini",
-    "Animali su richiesta"
    ],
    "verificato": "novembre 2026"
   },
@@ -3682,48 +3391,6 @@
     "Parcheggio",
     "Wi-Fi",
     "Aria condizionata"
-   ],
-   "verificato": "novembre 2026"
-  },
-  {
-   "id": "villa-gentile",
-   "fonte": "portale",
-   "categorie": [
-    "dormire"
-   ],
-   "sotto": "villa",
-   "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Villa Gentile, Montallegro AG",
-   "nome": {
-    "it": "Villa Gentile"
-   },
-   "etichetta": {
-    "it": "Villa con piscina",
-    "en": "Villa with pool"
-   },
-   "breve": {
-    "it": "Villa su un promontorio sul mare, con piscina a sfioro e idromassaggio e tre camere matrimoniali."
-   },
-   "testo": {
-    "it": []
-   },
-   "info": [],
-   "consigli": {
-    "it": []
-   },
-   "contatti": {
-    "prenota": "https://www.airbnb.it/rooms/25763474",
-    "prenotaTesto": "Vedi su Airbnb",
-    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
-   },
-   "caratteristiche": [
-    "3 camere matrimoniali",
-    "Fino a 6 ospiti",
-    "Piscina a sfioro",
-    "Vista mare",
-    "Wi-Fi"
    ],
    "verificato": "novembre 2026"
   },
