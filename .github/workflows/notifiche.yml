@@ -1,0 +1,44 @@
+# Notifiche automatiche: quando su main cambia www/data/contenuti.json e ci sono eventi nuovi
+# (o un evento passa da «da confermare» a confermato), avvisa gli iscritti con OneSignal.
+# Tutto il funzionamento è spiegato in strumenti/notifica-eventi.mjs e nel LEGGIMI.
+# Serve il segreto ONESIGNAL_API_KEY (Settings → Secrets and variables → Actions → Secrets).
+# Per le prove: variabile ONESIGNAL_PROVA con l'id dell'iscrizione di prova (stessa pagina, scheda Variables).
+name: Notifiche nuovi eventi
+on:
+  push:
+    branches: [main]
+    paths: ['www/data/contenuti.json']
+  workflow_dispatch:
+    inputs:
+      eventi:
+        description: 'Eventi da annunciare: id separati da virgola (vuoto, in prova = il prossimo evento)'
+        required: false
+        default: ''
+      prova:
+        description: 'Solo prova: manda solo al telefono di prova'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  notifica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Manda la notifica
+        env:
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
+          PRIMA: ${{ github.event.before }}
+          DOPO: ${{ github.sha }}
+          EVENTI: ${{ inputs.eventi }}
+          MANUALE: ${{ github.event_name == 'workflow_dispatch' }}
+          PROVA: ${{ github.event_name == 'workflow_dispatch' && inputs.prova }}
+          PROVA_ID: ${{ vars.ONESIGNAL_PROVA }}
+        run: node strumenti/notifica-eventi.mjs

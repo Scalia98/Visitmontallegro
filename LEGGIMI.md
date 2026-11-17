@@ -75,7 +75,7 @@ Poi, per portare le modifiche nelle app: `npx cap sync`.
 ### Aggiornare i contenuti senza ripubblicare sugli store
 L'app, a ogni apertura, scarica `www/data/contenuti.json` dal repository GitHub `Scalia98/Visitmontallegro` (indirizzo in `www/js/config.js`, voce `DATA_URL`; il repository deve essere **pubblico**).
 1. Modifica `www/data/contenuti.json` su GitHub (eventi, luoghi, orari, foto, contatti, siti) e aumenta `"versione"`.
-2. Salva (Commit): alla prossima apertura tutti i telefoni vedono i contenuti nuovi. Le foto già salvate dentro l'app continuano a funzionare anche senza rete.
+2. Salva (Commit): alla prossima apertura tutti i telefoni vedono i contenuti nuovi. Le foto già salvate dentro l'app continuano a funzionare anche senza rete. Se hai aggiunto eventi, parte da sola la notifica agli iscritti (vedi «Notifiche»).
 3. Grafica e funzioni nuove (sezioni, pulsanti, colori) invece richiedono una nuova versione: avvia di nuovo il workflow su Codemagic e carica l'aggiornamento sugli store.
 
 ### Partner e soci
@@ -103,6 +103,14 @@ L'app è online anche come web app su **https://scalia98.github.io/Visitmontalle
 Le persone le attivano con un tocco: riquadro in home, Info → Notifiche, tasto «Avvisami» sotto il programma di Natale. Su iPhone arrivano solo con l'app aggiunta alla schermata Home (iOS 16.4 o successivo). Il servizio si carica solo per chi le attiva; finché `ONESIGNAL_APP_ID` in `www/js/config.js` è vuoto, tutto resta nascosto.
 - **Creare l'app su OneSignal, una volta sola**: account su onesignal.com (meglio con la mail della Pro Loco) → New App «Visit Montallegro Bovo Marina» → piattaforma **Web** → integrazione **Custom Code** → Site URL `https://scalia98.github.io` → icona `https://scalia98.github.io/Visitmontallegro/icons/icon-256.png` (256 × 256, come chiede OneSignal). L'App ID (Settings → Keys & IDs) va in `ONESIGNAL_APP_ID`. Il service worker di OneSignal è già in `www/push/`.
 - **Mandare una notifica**: Messages → New Push. Pubblico: tutti gli iscritti, oppure un segmento per lingua (filtro sul tag `lingua` = `it` o `en`). Titolo e testo, immagine se serve, e come **Launch URL** la pagina da aprire, per esempio `https://scalia98.github.io/Visitmontallegro/#evento-spettacolo-natale-2026` (gli indirizzi delle pagine sono `#evento-<id>` e `#luogo-<id>`). Si può mandare subito o programmare.
+- **Automatiche per gli eventi**: a ogni salvataggio di `contenuti.json` su GitHub il workflow «Notifiche nuovi eventi» (`.github/workflows/notifiche.yml`, script `strumenti/notifica-eventi.mjs`) cerca gli eventi nuovi e quelli passati da «da confermare» a confermati, e avvisa tutti gli iscritti nella lingua dell'app (tag `lingua`).
+  - Un evento: titolo, data, ora e luogo; il tocco apre la sua pagina. Più eventi nello stesso salvataggio: un solo avviso con i titoli, che apre il loro programma (per esempio Natale a Montallegro) oppure Eventi. Meglio quindi aggiungere gli eventi insieme, in un solo salvataggio.
+  - Parte circa 6 minuti dopo il salvataggio, quando il programma nuovo è già online (raw di GitHub tiene la copia vecchia fino a 5 minuti). Tra le 21 e le 9 aspetta le 9:30.
+  - Niente avviso per bozze, eventi già finiti o ancora da confermare. Per non mandarlo: `"notifica": false` nell'evento. Per scrivere tu il testo: `"notifica": {"it": "…", "en": "…"}`.
+  - Se il workflow riparte, OneSignal non manda due volte lo stesso avviso (`idempotency_key`, vale 30 giorni).
+  - **Una volta sola**: OneSignal → Settings → Keys & IDs → crea una chiave API e copiala; GitHub → Settings → Secrets and variables → Actions → New repository secret, nome `ONESIGNAL_API_KEY`. Senza la chiave il workflow non manda niente e lo scrive nel riepilogo. La variabile `ONESIGNAL_PROVA` (stessa pagina, scheda Variables) contiene l'id dell'iscrizione del telefono di prova.
+  - **Prova o annuncio a mano**: GitHub → Actions → «Notifiche nuovi eventi» → Run workflow. Con «Solo prova» spuntato arriva solo al telefono di prova (il prossimo evento, o gli id scritti nel campo). Senza spunta e con gli id degli eventi, l'avviso va a tutti: serve per annunciare di nuovo un evento, per esempio quando si conosce l'orario.
+  - Ogni esecuzione in Actions ha un riepilogo (testo, link, orario di invio); le notifiche mandate sono anche in OneSignal → Messages.
 - **Piano gratuito**: per la web app gli iscritti sono illimitati (10.000 per invio). Per le app degli store si aggiungono Android e iOS nella stessa app OneSignal quando ci sono gli account; il gratuito copre fino a 1.000 utenti attivi al mese.
 
 ---

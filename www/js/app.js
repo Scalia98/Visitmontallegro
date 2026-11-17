@@ -346,8 +346,13 @@
     }
     return 0;
   }
+  var mappaFotoP = null;
+  function mappaFotoLocali() {
+    if (!mappaFotoP) mappaFotoP = fetch('data/foto-locali.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    return mappaFotoP;
+  }
   function caricaDati() {
-    var mappaFoto = fetch('data/foto-locali.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    var mappaFoto = mappaFotoLocali();
     var locale = fetch('data/contenuti.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).catch(function () { return null; })
       .then(function (d) { return valido(d) ? d : caricaDaScript(); });
     return locale.then(function (bundle) {
@@ -361,10 +366,29 @@
       }).catch(function () { return dati; });
     }).then(function (d) { return mappaFoto.then(function (m) { return usaFotoLocali(d, m); }); });
   }
-  function fetchJSON(url, ms) {
+  // Una notifica può aprire un evento (o un luogo) appena aggiunto mentre il telefono ha ancora i contenuti
+  // di qualche minuto prima (copia in cache, o app già aperta). Una volta per pagina li riscarica senza cache
+  // e, se ci sono novità, ridisegna; nel frattempo la pagina mostra il caricamento invece di «Pagina non trovata».
+  var giaCercati = {};
+  function cercaNovita(pagina) {
+    if (!CFG.DATA_URL || giaCercati[pagina]) return false;
+    giaCercati[pagina] = true;
+    fetchJSON(CFG.DATA_URL, 8000, true).then(function (remoti) {
+      if (!valido(remoti) || confrontaVersioni(remoti.versione, DATA.versione) < 0) return null;
+      store.set('dati', remoti);
+      return mappaFotoLocali().then(function (m) { return usaFotoLocali(remoti, m); });
+    }).catch(function () { return null; }).then(function (nuovi) {
+      if (nuovi) DATA = nuovi;
+      if (location.hash === '#' + pagina) ridisegna();
+    });
+    return true;
+  }
+  function fetchJSON(url, ms, senzaCache) {
     var ctrl = window.AbortController ? new AbortController() : null;
     var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, ms || 8000) : null;
-    return fetch(url, ctrl ? { signal: ctrl.signal } : {}).then(function (r) {
+    var opz = ctrl ? { signal: ctrl.signal } : {};
+    if (senzaCache) opz.cache = 'no-store';
+    return fetch(url, opz).then(function (r) {
       if (timer) clearTimeout(timer);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
@@ -1198,7 +1222,7 @@
   VISTE.luogo = function (r) {
     if (r.id === 'torre-salsa') return VISTE.torreSalsa();
     var p = scheda(r.id);
-    if (!p) return VISTE.nontrovato();
+    if (!p) return cercaNovita('luogo-' + r.id) ? VISTE.attesa() : VISTE.nontrovato();
     var paragrafi = txa(p.testo).map(function (s) { return '<p>' + esc(s) + '</p>'; }).join('');
     var consigli = txa(p.consigli);
     var fatti = (p.info || []).map(rigaFatto);
@@ -1341,7 +1365,7 @@
 
   VISTE.evento = function (r) {
     var e = evento(r.id);
-    if (!e) return VISTE.nontrovato();
+    if (!e) return cercaNovita('evento-' + r.id) ? VISTE.attesa() : VISTE.nontrovato();
     var finta = { id: e.id, foto: e.foto, categorie: ['esperienze'] };
     var padre = e.gruppo ? evento(e.gruppo) : null;
     var figli = e.programma ? (DATA.eventi || []).filter(function (x) { return x.gruppo === e.id; })
@@ -1499,6 +1523,8 @@
       '<button type="button" class="tasto-posizione" data-azione="posizione" aria-label="' + t('posizione') + '">' + ic('locate') + '</button>' +
       '<div id="foglio"></div></div>';
   };
+
+  VISTE.attesa = function () { return '<div class="caricamento">' + marchio() + '</div>'; };
 
   VISTE.nontrovato = function () {
     return '<div class="pagina sotto">' + barra('') + testaPagina(t('nonTrovato'), '') + '<p><a class="pillola" href="#home">' + t('torna') + '</a></p></div>';
