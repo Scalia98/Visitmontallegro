@@ -336,6 +336,16 @@
     (d.eventi || []).forEach(fix);
     return d;
   }
+  // versioni tipo "2026-11-17.02": si confrontano i numeri uno per uno, non il testo
+  // (come testo "2026-11-16.10" verrebbe prima di "2026-11-16.9" e l'app terrebbe i dati vecchi)
+  function confrontaVersioni(a, b) {
+    var x = String(a || '').match(/\d+/g) || [], y = String(b || '').match(/\d+/g) || [];
+    for (var i = 0; i < Math.max(x.length, y.length); i++) {
+      var d = (+x[i] || 0) - (+y[i] || 0);
+      if (d) return d;
+    }
+    return 0;
+  }
   function caricaDati() {
     var mappaFoto = fetch('data/foto-locali.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
     var locale = fetch('data/contenuti.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).catch(function () { return null; })
@@ -343,10 +353,10 @@
     return locale.then(function (bundle) {
       var dati = valido(bundle) ? bundle : null;
       var salvati = store.get('dati', null);
-      if (valido(salvati) && (!dati || String(salvati.versione) > String(dati.versione))) dati = salvati;
+      if (valido(salvati) && (!dati || confrontaVersioni(salvati.versione, dati.versione) > 0)) dati = salvati;
       if (!CFG.DATA_URL) return dati;
       return fetchJSON(CFG.DATA_URL, 6000).then(function (remoti) {
-        if (valido(remoti) && (!dati || String(remoti.versione) >= String(dati.versione))) { store.set('dati', remoti); return remoti; }
+        if (valido(remoti) && (!dati || confrontaVersioni(remoti.versione, dati.versione) >= 0)) { store.set('dati', remoti); return remoti; }
         return dati;
       }).catch(function () { return dati; });
     }).then(function (d) { return mappaFoto.then(function (m) { return usaFotoLocali(d, m); }); });
