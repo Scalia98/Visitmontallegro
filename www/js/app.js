@@ -1812,7 +1812,7 @@
       chiudiInstalla();
       aggiornaInstalla();
     } else if (az === 'condividi-app') {
-      condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.WEB_URL);
+      condividi(NOME_APP, t('scoprila'), [CFG.APP_STORE_URL, CFG.PLAY_STORE_URL].filter(Boolean).join('\n') || CFG.LINK_APP || CFG.WEB_URL);
     } else if (az === 'indietro') {
       indietro();
     } else if (az === 'vedi-mappa') {

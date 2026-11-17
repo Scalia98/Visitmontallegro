@@ -90,10 +90,10 @@ L'app, a ogni apertura, scarica `www/data/contenuti.json` dal repository GitHub 
 
 ## Versione web (online subito, gratis)
 
-L'app è online anche come web app su **https://scalia98.github.io/Visitmontallegro/** (GitHub Pages). Il QR code da stampare è `risorse/qr-web-app.png`.
+L'app è online anche come web app su **https://scalia98.github.io/Visitmontallegro/** (GitHub Pages). Il link da far girare è **visitmontallegrobovomarina.it/app**: su WordPress il plugin «Redirection» (di John Godley) lo rimanda alla web app con un reindirizzamento 302. Lo usano il QR da stampare (`risorse/qr-web-app.png`, solo il codice in `risorse/qr-web-app-solo.png`) e il tasto «Condividi l'app». Le notifiche e i link alle singole pagine usano invece l'indirizzo GitHub, perché solo con quello si apre l'app installata.
 - **Attivarla, una volta sola**: su GitHub apri il repository → Settings → Pages → Build and deployment → Source «Deploy from a branch» → Branch `gh-pages`, cartella `/ (root)` → Save. Dopo un paio di minuti l'indirizzo funziona.
 - **Aggiornamenti**: i contenuti arrivano da soli da `contenuti.json`; quando cambia il codice in `www/`, il workflow «Versione web» (`.github/workflows/versione-web.yml`) ricopia la cartella sul ramo `gh-pages`.
-- **Dominio vostro (facoltativo)**: per usare `app.visitmontallegrobovomarina.it`, nel DNS del dominio aggiungi un record CNAME `app` → `scalia98.github.io` e scrivi lo stesso indirizzo in Settings → Pages → Custom domain. Il vecchio indirizzo (e il QR già stampato) rimanda da solo a quello nuovo.
+- **Dominio vostro (facoltativo)**: per usare `app.visitmontallegrobovomarina.it`, nel DNS del dominio aggiungi un record CNAME `app` → `scalia98.github.io` e scrivi lo stesso indirizzo in Settings → Pages → Custom domain. Il vecchio indirizzo rimanda da solo a quello nuovo. Va fatto prima di attivare le notifiche: le iscrizioni restano legate all'indirizzo dell'app e cambiandolo si perdono.
 - **iPhone**: Safari → Condividi → Aggiungi alla schermata Home. Funziona tutto tranne il menu a pressione prolungata, che Apple concede solo alle app dello store.
 - **Android**: Chrome → Installa app. Qui anche la versione web ha le scorciatoie.
 - In alternativa puoi caricare la cartella `www/` sul vostro hosting (per esempio SiteGround, con HTTPS).

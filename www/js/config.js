@@ -19,6 +19,10 @@ window.MONTALLEGRO_CONFIG = {
   // Versione web (GitHub Pages): si apre da qualsiasi telefono; finché mancano gli store, "Condividi l'app" manda questo link
   WEB_URL: 'https://scalia98.github.io/Visitmontallegro/',
 
+  // Link corto da far girare (QR, bio, tasto «Condividi l'app»): su WordPress il plugin Redirection lo rimanda a WEB_URL.
+  // Le notifiche e i link alle singole pagine usano invece WEB_URL, perché aprono l'app installata solo con il suo indirizzo.
+  LINK_APP: 'https://visitmontallegrobovomarina.it/app',
+
   // Dopo la pubblicazione: link agli store, usati dal tasto "Condividi l'app"
   APP_STORE_URL: '',
   PLAY_STORE_URL: '',
