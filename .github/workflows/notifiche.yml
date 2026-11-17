@@ -2,7 +2,7 @@
 # (o un evento passa da «da confermare» a confermato), avvisa gli iscritti con OneSignal.
 # Tutto il funzionamento è spiegato in strumenti/notifica-eventi.mjs e nel LEGGIMI.
 # Serve il segreto ONESIGNAL_API_KEY (Settings → Secrets and variables → Actions → Secrets).
-# Per le prove: variabile ONESIGNAL_PROVA con l'id dell'iscrizione di prova (stessa pagina, scheda Variables).
+# Prova: Run workflow con «Solo prova» e, in «telefono», l'id dell'iscrizione del telefono di prova.
 name: Notifiche nuovi eventi
 on:
   push:
@@ -18,6 +18,10 @@ on:
         description: 'Solo prova: manda solo al telefono di prova'
         type: boolean
         default: true
+      telefono:
+        description: 'Telefono di prova: id iscrizione (OneSignal → Users & subscriptions → Test subscriptions)'
+        required: false
+        default: ''
 permissions:
   contents: read
 jobs:
@@ -25,13 +29,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
           filter: blob:none
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
       - name: Manda la notifica
         env:
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
@@ -40,5 +44,4 @@ jobs:
           EVENTI: ${{ inputs.eventi }}
           MANUALE: ${{ github.event_name == 'workflow_dispatch' }}
           PROVA: ${{ github.event_name == 'workflow_dispatch' && inputs.prova }}
-          PROVA_ID: ${{ vars.ONESIGNAL_PROVA }}
         run: node strumenti/notifica-eventi.mjs

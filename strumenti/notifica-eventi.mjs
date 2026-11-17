@@ -18,7 +18,8 @@
 //   ONESIGNAL_API_KEY  chiave API dell'app OneSignal (segreto del repository). Senza, non manda niente.
 //   PRIMA, DOPO        i commit da confrontare (github.event.before e github.sha).
 //   EVENTI             id degli eventi da annunciare, separati da virgola, al posto del confronto.
-//   PROVA=1            solo prova: manda subito e solo alle iscrizioni in PROVA_ID (id separati da virgola).
+//   PROVA=1            solo prova: manda subito e solo al telefono di prova (campo «telefono» dell'avvio a mano,
+//                      o PROVA_ID: id delle iscrizioni separati da virgola).
 //   MANUALE=1          avvio a mano: niente attesa iniziale e ogni avvio manda di nuovo.
 //   SOLO_ANTEPRIMA=1   mostra le notifiche senza mandarle.
 //   Solo per le prove dello script: ONESIGNAL_URL, ATTESA_MINIMA e PAUSA (secondi), LIMITE (minuti), ADESSO (data ISO).
@@ -42,7 +43,13 @@ const DATA_URL = voce('DATA_URL');
 const API = env.ONESIGNAL_URL || 'https://api.onesignal.com/notifications?c=push';
 const CHIAVE = (env.ONESIGNAL_API_KEY || '').trim();
 const PROVA = vero(env.PROVA);
-const PROVA_ID = elencoIds(env.PROVA_ID);
+// telefono di prova: campo «telefono» dell'avvio a mano, letto dal file dell'evento (così l'id non compare nei log pubblici)
+let PROVA_ID = elencoIds(env.PROVA_ID);
+try {
+  const evento = JSON.parse(readFileSync(env.GITHUB_EVENT_PATH || '', 'utf8'));
+  if (evento.inputs && evento.inputs.telefono) PROVA_ID = elencoIds(evento.inputs.telefono);
+} catch { /* fuori da GitHub Actions */ }
+PROVA_ID.forEach((id) => console.log('::add-mask::' + id));
 const MANUALE = vero(env.MANUALE);
 const ANTEPRIMA = vero(env.SOLO_ANTEPRIMA);
 const ATTESA_MINIMA = (env.ATTESA_MINIMA ? +env.ATTESA_MINIMA : 6 * 60) * 1000;
@@ -268,7 +275,7 @@ if (!CHIAVE && !ANTEPRIMA) {
   riepilogo('⚠️ Manca il segreto **ONESIGNAL_API_KEY**: notifica non mandata.');
   process.exit(0);
 }
-if (PROVA && !PROVA_ID.length) esci('Per la prova manca la variabile ONESIGNAL_PROVA (id dell\'iscrizione di prova).', 1);
+if (PROVA && !PROVA_ID.length) esci('Per la prova scrivi nel campo «telefono» l\'id dell\'iscrizione di prova (OneSignal → Users & subscriptions → Test subscriptions).', 1);
 
 if (!PROVA && !ANTEPRIMA) {
   const fotoNuove = annunci.map(({ e }) => assoluto(e.foto)).filter((f) => f && f.startsWith(WEB_URL));
@@ -292,7 +299,6 @@ for (const L of PROVA ? ['it'] : LINGUE) {
   if (immagine) corpo.chrome_web_image = immagine;
   if (invio.inviaDopo) corpo.send_after = invio.inviaDopo;
   if (PROVA) {
-    PROVA_ID.forEach((id) => log('::add-mask::' + id));
     corpo.include_subscription_ids = PROVA_ID;
   } else {
     corpo.filters = L === 'en'
