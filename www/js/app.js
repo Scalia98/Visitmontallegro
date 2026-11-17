@@ -637,6 +637,7 @@
       window.OneSignalDeferred.push(function (OneSignal) {
         return Promise.resolve(OneSignal.init({
           appId: CFG.ONESIGNAL_APP_ID,
+          safari_web_id: CFG.ONESIGNAL_SAFARI_WEB_ID || undefined,
           path: base + 'push/',
           serviceWorkerPath: 'OneSignalSDKWorker.js',
           serviceWorkerParam: { scope: base + 'push/' },

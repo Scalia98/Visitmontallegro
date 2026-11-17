@@ -29,7 +29,9 @@ window.MONTALLEGRO_CONFIG = {
 
   // Notifiche push (OneSignal, piano gratuito): l'App ID dell'app creata su onesignal.com
   // (Settings > Keys & IDs). Vuoto = notifiche nascoste.
-  ONESIGNAL_APP_ID: '',
+  ONESIGNAL_APP_ID: '3a88d8ba-cc4f-401e-805a-c56a08eb869f',
+  // solo per Safari su Mac fino alla versione 15 (lo dà OneSignal insieme all'App ID)
+  ONESIGNAL_SAFARI_WEB_ID: 'web.onesignal.auto.24e91fba-47ec-4183-a873-89e8fb838de6',
 
   VERSIONE: '1.0'
 };
