@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-18.04",
+ "versione": "2026-11-18.05",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -5116,7 +5116,7 @@
     "esperienze"
    ],
    "sotto": "cavallo",
-   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-6.jpeg",
+   "foto": "img/foto/opera-ammare.jpg",
    "lat": null,
    "lng": null,
    "mappe": "L'operAmmare · A cavallo al mare, Viale Lungomare, 9, Bovo Marina",
@@ -5172,7 +5172,8 @@
     "facebook": "https://www.facebook.com/profile.php?id=100079636006416"
    },
    "zona": "bovo",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "L'operAmmare"
   },
   {
    "id": "scuderia-ranch-todaro",
@@ -5193,11 +5194,19 @@
     "en": "Horse riding in the reserve"
    },
    "breve": {
-    "it": "Un'ora a cavallo nella Riserva di Torre Salsa, tra il Belvedere e la torre, e al rientro l'aperitivo con i prodotti dell'azienda agricola Todaro."
+    "it": "Un'ora a cavallo nella Riserva di Torre Salsa, tra il Belvedere e la torre, e al rientro l'aperitivo con i prodotti dell'azienda agricola Todaro.",
+    "en": "An hour on horseback in the Torre Salsa reserve, between the Belvedere and the tower, followed by an aperitif with the Todaro farm's own produce."
    },
    "testo": {
     "it": [
-     "L'uscita è guidata e adatta anche a chi non è mai salito a cavallo. Al ritorno in scuderia c'è la degustazione a chilometro zero: formaggi, pane e olio, antipasti e vino."
+     "L'uscita è guidata e adatta a tutti, dai principianti a chi va già a cavallo: un'ora sui sentieri della riserva WWF, con le soste per le foto e i panorami sul mare.",
+     "Al rientro c'è una pausa di circa 45 minuti nell'area relax, all'aperto o al coperto, con la degustazione a chilometro zero: formaggi, pane e olio, antipasti e vino.",
+     "C'è anche la sola degustazione dei prodotti dell'azienda, di circa tre ore, con il trasporto se serve."
+    ],
+    "en": [
+     "The guided ride suits everyone, from beginners to experienced riders: an hour on the trails of the WWF reserve, with stops for photos and views over the sea.",
+     "Back at the stables there is a break of about 45 minutes in the relax area, outdoors or indoors, with a zero-mile tasting: cheese, bread and olive oil, starters and wine.",
+     "They also offer the tasting of the farm's produce on its own, about three hours, with transport if needed."
     ]
    },
    "info": [
@@ -5214,14 +5223,22 @@
     },
     {
      "tipo": "durata",
-     "it": "Circa 1 ora e mezza (1 ora a cavallo)"
+     "it": "1 ora a cavallo e circa 45 minuti di aperitivo",
+     "en": "1 hour riding plus about 45 minutes of aperitif"
     }
    ],
    "consigli": {
     "it": [
      "Tutti i giorni su prenotazione, meteo permettendo",
-     "Età minima 15 anni",
-     "Prenotazione su WhatsApp"
+     "D'estate due turni: alle 7:30 e alle 19:00",
+     "Età minima 15 anni; i minorenni solo con un genitore",
+     "Si prenota su WhatsApp o online"
+    ],
+    "en": [
+     "Every day by booking, weather permitting",
+     "In summer two rides a day: at 7:30 am and 7 pm",
+     "Minimum age 15; under-18s only with a parent",
+     "Book on WhatsApp or online"
     ]
    },
    "contatti": {
@@ -5230,7 +5247,10 @@
     "whatsapp": "393496806127",
     "email": "escursioni@shopaziendatodaro.it",
     "web": "https://scuderiatodaro.it/",
-    "instagram": "https://www.instagram.com/scuderia_ranch_todaro_/"
+    "instagram": "https://www.instagram.com/scuderia_ranch_todaro_/",
+    "prenota": "https://www.getyourguide.com/it-it/sicilia-l65/esperienza-romantica-con-i-cavalli-nella-riserva-naturale-wwf-t544849/",
+    "prenotaTesto": "Prenota online",
+    "facebook": "https://www.facebook.com/people/Scuderia-Ranch-Todaro/61553229990558/"
    },
    "zona": "torre-salsa",
    "verificato": "novembre 2026"
