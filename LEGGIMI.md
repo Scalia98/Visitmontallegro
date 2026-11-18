@@ -99,6 +99,13 @@ L'app è online anche come web app su **https://scalia98.github.io/Visitmontalle
 - In alternativa puoi caricare la cartella `www/` sul vostro hosting (per esempio SiteGround, con HTTPS).
 - La privacy (`privacy.html`) è online su https://scalia98.github.io/Visitmontallegro/privacy.html: è l'indirizzo da dare agli store.
 
+### Apertura della home nelle feste
+
+- In `home.apertura` di `contenuti.json` c'è la grafica di apertura di Natale: al posto del carosello la home mostra la scena «Natale a Montallegro» disegnata nell'app (funzione `scenaNatale` in `app.js`). Ci sono le luminarie che si accendono a turno, la stella cometa, Monte Suso con i ruderi, il paese, il mare di Bovo Marina con Capo Bianco e i fichi d'India.
+- Campi: `tema` (per ora solo `natale`), `fino` (ultimo giorno: dopo torna da solo il carosello), `link` (pagina che apre), `occhiello`, `titolo`, `sottotitolo`, `bottone` in italiano e inglese.
+- Con «Riduci movimento» attivo sul telefono le luci restano accese ferme.
+- La pagina del programma usa la stessa scena come immagine fissa: `img/foto/natale-2026-luminarie.jpg`.
+
 ### Notifiche (OneSignal, gratis)
 Le persone le attivano con un tocco: riquadro in home, Info → Notifiche, tasto «Avvisami» sotto il programma di Natale. Su iPhone arrivano solo con l'app aggiunta alla schermata Home (iOS 16.4 o successivo). Il servizio si carica solo per chi le attiva; finché `ONESIGNAL_APP_ID` in `www/js/config.js` è vuoto, tutto resta nascosto.
 - **Creare l'app su OneSignal, una volta sola**: account su onesignal.com (meglio con la mail della Pro Loco) → New App «Visit Montallegro Bovo Marina» → piattaforma **Web** → integrazione **Custom Code** → Site URL `https://scalia98.github.io` → icona `https://scalia98.github.io/Visitmontallegro/icons/icon-256.png` (256 × 256, come chiede OneSignal). L'App ID (Settings → Keys & IDs) va in `ONESIGNAL_APP_ID`. Il service worker di OneSignal è già in `www/push/`.

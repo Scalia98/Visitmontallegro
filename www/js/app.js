@@ -940,6 +940,197 @@
     });
   }
 
+  /* ---------- apertura della home nelle feste: Natale a Montallegro disegnato in SVG ----------
+     Le luminarie (le arcate di lampadine delle feste siciliane), la stella cometa, Monte Suso con i ruderi,
+     il paese con le finestre accese, il mare di Bovo Marina con la falesia bianca di Capo Bianco e i fichi d'India.
+     Le lampadine stanno in tre strati che si accendono a turno, come la «corsa» delle luminarie: si anima solo
+     l'opacità di strati interi, così il telefono non ridisegna la scena a ogni fotogramma. */
+  var scenaNataleSvg = null;
+  function scenaNatale(cieloPieno) {   // cieloPieno: stelle anche dietro al titolo (per l'immagine di copertina)
+    if (scenaNataleSvg && !cieloPieno) return scenaNataleSvg;
+    var seme = 1912;
+    var caso = function () { seme = (seme * 48271) % 2147483647; return seme / 2147483647; };
+    var n = function (v) { return Math.round(v * 10) / 10; };
+    var VB = 'viewBox="0 0 360 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"';
+    var paese = [], finestre = [], lampade = [], luci = [[], [], []], stelle = [], brillano = [], riflesso = [], conta = 0;
+
+    function lampada(x, y, piccola) {
+      var g = conta++ % 3;
+      x = n(x); y = n(y);
+      lampade.push('<circle cx="' + x + '" cy="' + y + '" r="' + (piccola ? .8 : 1.05) + '"/>');
+      luci[g].push('<circle cx="' + x + '" cy="' + y + '" r="' + (piccola ? 3.4 : 4.4) + '"/>');
+    }
+    // punti ogni `passo` lungo la metà alta di un'ellisse, con la normale verso l'esterno
+    function arco(cx, cy, rx, ry, passo) {
+      var punti = [], prima = null, fatto = passo;
+      for (var i = 0; i <= 900; i++) {
+        var a = Math.PI * (1 - i / 900), p = [cx + rx * Math.cos(a), cy - ry * Math.sin(a)];
+        if (prima) fatto += Math.hypot(p[0] - prima[0], p[1] - prima[1]);
+        if (fatto >= passo - .01) {
+          var nx = Math.cos(a) / rx, ny = -Math.sin(a) / ry, l = Math.hypot(nx, ny);
+          punti.push({ x: p[0], y: p[1], nx: nx / l, ny: ny / l });
+          fatto = 0;
+        }
+        prima = p;
+      }
+      return punti;
+    }
+    function anello(cx, cy, r, quante, piccola) {
+      for (var q = 0; q < quante; q++) lampada(cx + r * Math.cos(q * 2 * Math.PI / quante - Math.PI / 2), cy + r * Math.sin(q * 2 * Math.PI / quante - Math.PI / 2), piccola);
+    }
+
+    // cielo: stelle fisse e stelle che brillano (lasciando libero lo spazio del titolo)
+    for (var s = 0; s < 120; s++) {
+      var sx = n(3 + caso() * 354), sy = n(3 + caso() * 222), sr = n(.3 + caso() * caso() * 1.15), so = n(.3 + caso() * .6);
+      if (!cieloPieno && sx > 62 && sx < 298 && sy > 60 && sy < 174) continue;
+      (s % 3 ? stelle : brillano).push('<circle cx="' + sx + '" cy="' + sy + '" r="' + sr + '" opacity="' + so + '"/>');
+    }
+
+    // luminarie: fascia ad arco (due fili paralleli), in cima punte verso il cielo e festoni sotto,
+    // rosone sulla chiave, colonne tortili ai lati con il capitello
+    var fascia = arco(180, 162, 170, 134, 6.8), dentro = function (p, d) { return [p.x - p.nx * d, p.y - p.ny * d]; };
+    fascia.forEach(function (p, i) {
+      lampada(p.x, p.y);
+      var q = dentro(p, 8);
+      lampada(q[0], q[1]);
+      if (p.y > 70 || Math.abs(p.x - 180) < 16) return;
+      if (i % 4 === 2) { lampada(p.x + p.nx * 5.5, p.y + p.ny * 5.5, true); lampada(p.x + p.nx * 10.5, p.y + p.ny * 10.5, true); }
+      var p2 = fascia[i + 4];
+      if (i % 4 === 0 && p2 && p2.y <= 64) {
+        var q1 = dentro(p, 8), q2 = dentro(p2, 8), mx = (q1[0] + q2[0]) / 2, my = (q1[1] + q2[1]) / 2;
+        var hx = (q2[0] - q1[0]) / 2, hy = (q2[1] - q1[1]) / 2, prof = Math.hypot(hx, hy) * .75, m = fascia[i + 2];
+        for (var k = 1; k < 6; k++) {
+          var f = Math.PI * k / 6;
+          lampada(mx - Math.cos(f) * hx - m.nx * prof * Math.sin(f), my - Math.cos(f) * hy - m.ny * prof * Math.sin(f), true);
+        }
+      }
+    });
+    anello(180, 14, 8.6, 13, true); anello(180, 14, 4, 6, true); lampada(180, 14);
+    [16, 344].forEach(function (x0) {
+      anello(x0, 167, 5.4, 9, true);
+      for (var y = 178; y < 396; y += 6.4) {
+        var o = 4.4 * Math.sin((y - 178) / 8);
+        lampada(x0 + o, y, true);
+        lampada(x0 - o, y + 3.2, true);
+      }
+    });
+
+    // il paese ai piedi di Monte Suso: tre file di case, la chiesa, le finestre accese
+    function fila(x0, x1, base, hMin, hMax, colore) {
+      for (var x = x0; x < x1;) {
+        var w = 9 + caso() * 11, h = hMin + caso() * (hMax - hMin);
+        paese.push('<rect x="' + n(x) + '" y="' + n(base - h) + '" width="' + n(w + .6) + '" height="' + n(h + 14) + '" fill="' + colore + '"/>');
+        if (caso() < .35) paese.push('<path d="M' + n(x - .4) + ' ' + n(base - h) + 'L' + n(x + w / 2) + ' ' + n(base - h - 4.5) + 'L' + n(x + w + 1) + ' ' + n(base - h) + 'Z" fill="' + colore + '"/>');
+        var quante = caso() < .22 ? 0 : 1 + Math.floor(caso() * 2.6);
+        for (var f = 0; f < quante; f++) {
+          var fx = n(x + 2 + caso() * (w - 5)), fy = n(base - h + 2.5 + caso() * Math.max(1, h - 9));
+          finestre.push('<circle cx="' + n(fx + .85) + '" cy="' + n(fy + 1.2) + '" r="3.2" fill="url(#sn-finestra)"/><rect x="' + fx + '" y="' + fy + '" width="1.7" height="2.4"/>');
+        }
+        x += w;
+      }
+    }
+    fila(104, 236, 300, 9, 20, '#0d1a3b');
+    paese.push('<rect x="145" y="252" width="11" height="52" fill="#0d1a3b"/><path d="M144 253h13l-6.5-8z" fill="#0d1a3b"/>' +
+      '<path d="M150.5 245.5v-5M148.6 242.4h3.8" stroke="#0d1a3b" stroke-width="1.1"/>' +
+      '<path d="M148.4 266v-3.4a2.1 2.1 0 0 1 4.2 0v3.4z" fill="#ffd27a"/><circle cx="150.5" cy="264" r="6" fill="url(#sn-finestra)"/>' +
+      '<path d="M156 304v-24l15-9 15 9v24z" fill="#0d1a3b"/><circle cx="171" cy="283" r="2.2" fill="#ffd27a"/><circle cx="171" cy="283" r="6.5" fill="url(#sn-finestra)"/>');
+    // lucine sparse sul fianco della collina, sempre sotto il crinale
+    var crinale = [[88, 237], [112, 233], [132, 243], [150, 257], [172, 275], [205, 291], [242, 301]];
+    var quota = function (x) {
+      for (var k = 1; k < crinale.length; k++) if (x <= crinale[k][0]) { var p0 = crinale[k - 1], p1 = crinale[k]; return p0[1] + (p1[1] - p0[1]) * (x - p0[0]) / (p1[0] - p0[0]); }
+      return 301;
+    };
+    for (var lu = 0; lu < 16; lu++) {
+      var lx = 92 + caso() * 112, cima = quota(lx) + 4;
+      finestre.push('<circle cx="' + n(lx) + '" cy="' + n(cima + caso() * Math.max(2, 296 - cima)) + '" r=".7" opacity="' + n(.5 + caso() * .5) + '"/>');
+    }
+    fila(66, 238, 316, 9, 17, '#0a1532');
+    fila(24, 244, 332, 8, 15, '#07102a');
+
+    // albero in piazza, con le sue lucine
+    paese.push('<path d="M206 297l6 11h-3l6 10h-4l7 13h-24l7-13h-4l6-10h-3z" fill="#0e3d2e"/><path d="M206 292.6l1.1 2.3 2.5.3-1.8 1.7.4 2.5-2.2-1.2-2.2 1.2.4-2.5-1.8-1.7 2.5-.3z" fill="#ffd98a"/>');
+    [[204, 304], [208.5, 309], [202, 313], [207, 316], [211.5, 320], [201, 322], [205.5, 325], [210, 328], [214.5, 330], [198, 329]].forEach(function (p) { lampada(p[0], p[1], true); });
+
+    // riflesso della cometa sul mare
+    for (var ry = 297; ry < 341; ry += 3.4) {
+      var largo = 3 + (ry - 297) * .32, cx = 268 - (ry - 297) * .3;
+      for (var tr = 0; tr < 2; tr++) {
+        var rx = cx + (caso() - .5) * largo * 2, ll = 2 + caso() * (4 + (ry - 297) * .18);
+        if (rx - ll / 2 < 247) continue;   // a sinistra c'è la collina
+        riflesso.push('<rect x="' + n(rx - ll / 2) + '" y="' + n(ry) + '" width="' + n(ll) + '" height=".9" rx=".45" opacity="' + n(.45 + caso() * .5) + '"/>');
+      }
+    }
+
+    var lampadeTutte = '<g fill="#f0c56e" opacity=".55">' + lampade.join('') + '</g>';
+    var fondo = '<svg class="sn-scena" ' + VB + '><defs>' +
+      '<linearGradient id="sn-cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#040c22"/><stop offset=".42" stop-color="#0a1f4d"/><stop offset=".66" stop-color="#16377a"/><stop offset=".8" stop-color="#36407e"/><stop offset="1" stop-color="#6a4c7a"/></linearGradient>' +
+      '<radialGradient id="sn-paese-luce" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb35c" stop-opacity=".42"/><stop offset="1" stop-color="#ffb35c" stop-opacity="0"/></radialGradient>' +
+      '<radialGradient id="sn-cometa" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff7de" stop-opacity=".95"/><stop offset=".35" stop-color="#ffd27a" stop-opacity=".32"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>' +
+      '<linearGradient id="sn-coda" gradientUnits="userSpaceOnUse" x1="268" y1="200" x2="382" y2="124"><stop offset="0" stop-color="#fff3c4" stop-opacity=".9"/><stop offset=".4" stop-color="#ffd27a" stop-opacity=".38"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></linearGradient>' +
+      '<linearGradient id="sn-mare" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a4888"/><stop offset="1" stop-color="#0a1a40"/></linearGradient>' +
+      '<linearGradient id="sn-falesia" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#eceaf3"/><stop offset="1" stop-color="#9aa6c6"/></linearGradient>' +
+      '<radialGradient id="sn-finestra" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb648" stop-opacity=".5"/><stop offset="1" stop-color="#ffb648" stop-opacity="0"/></radialGradient>' +
+      '<linearGradient id="sn-terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050b1d" stop-opacity="0"/><stop offset="1" stop-color="#050b1d" stop-opacity=".75"/></linearGradient>' +
+      '</defs>' +
+      '<rect width="360" height="400" fill="url(#sn-cielo)"/>' +
+      '<g fill="#fff">' + stelle.join('') + brillano.join('') + '</g>' +
+      '<ellipse cx="170" cy="300" rx="215" ry="74" fill="url(#sn-paese-luce)"/>' +
+      // stella cometa
+      '<path d="M266 199C304 180 344 152 390 114L390 144C346 162 306 188 269 203Z" fill="url(#sn-coda)"/>' +
+      '<path d="M270 198C310 176 348 148 390 124M271 201C314 184 352 164 390 152" stroke="#fff3cf" stroke-opacity=".35" stroke-width=".6" fill="none"/>' +
+      '<circle cx="268" cy="200" r="30" fill="url(#sn-cometa)"/>' +
+      '<path d="M268 178l2.1 19.9 19.9 2.1-19.9 2.1L268 222l-2.1-19.9-19.9-2.1 19.9-2.1z" fill="#fffdf6"/>' +
+      '<path d="M268 200l6.4-6.4M268 200l6.4 6.4M268 200l-6.4 6.4M268 200l-6.4-6.4" stroke="#fffdf6" stroke-width="1" stroke-linecap="round"/>' +
+      // mare di Bovo Marina e Capo Bianco
+      '<rect x="190" y="292" width="170" height="70" fill="url(#sn-mare)"/>' +
+      '<path d="M190 292.3H360" stroke="#8ea3dc" stroke-opacity=".45" stroke-width=".7"/>' +
+      '<path d="M283 292.5l7-9 6-8.5 5-3.4c14-1.6 32-3.6 59-4.6v25.5z" fill="url(#sn-falesia)"/>' +
+      '<path d="M296 286l4-9M306 289l3-14M318 290l2-16M331 290l1-17M345 291l.5-17" stroke="#8792b4" stroke-opacity=".55" stroke-width=".7"/>' +
+      '<path d="M289 284.6l7-9.1 5-3.4c14-1.6 32-3.6 59-4.6" stroke="#0b1f2a" stroke-width="3" stroke-linejoin="round" fill="none"/>' +
+      '<g fill="#0b1f2a"><circle cx="305" cy="270.6" r="2.4"/><circle cx="314" cy="269.4" r="2.8"/><circle cx="324" cy="268.6" r="2.2"/><circle cx="335" cy="267.4" r="3"/><circle cx="347" cy="266.6" r="2.4"/><circle cx="356" cy="266" r="2.8"/></g>' +
+      '<path d="M283 292.7l7 6 6 4.4c16 1.3 34 2.4 64 2.6v-13z" fill="url(#sn-falesia)" opacity=".15"/>' +
+      '<g fill="#ffdf9a" opacity=".45">' + riflesso.join('') + '</g>' +
+      // Monte Suso con i ruderi
+      '<path d="M-10 318C20 300 45 252 88 237C112 229 132 241 150 257C172 277 205 292 242 301L242 400H-10Z" fill="#142651"/>' +
+      '<path d="M-10 318C20 300 45 252 88 237C112 229 132 241 150 257C172 277 205 292 242 301" stroke="#5a74b8" stroke-opacity=".5" stroke-width=".8" fill="none"/>' +
+      '<path d="M79 239v-11h2v-2h2v3l2-2v12zM69 240v-5h3v2h3v-4h2v7zM92 239v-6h3v2l3-4h2v8z" fill="#142651"/>' +
+      '<g fill="#ffd27a">' + paese.join('') + finestre.join('') + '</g>' +
+      '<path d="M-10 334C50 326 120 328 190 338C240 345 300 352 370 358V410H-10Z" fill="#060d22"/>' +
+      // fichi d'India in primo piano
+      '<g fill="#091530" stroke="#6683c9" stroke-opacity=".6" stroke-width=".9">' +
+      '<ellipse cx="44" cy="394" rx="14" ry="18" transform="rotate(-8 44 394)"/><ellipse cx="29" cy="366" rx="11" ry="15" transform="rotate(-30 29 366)"/>' +
+      '<ellipse cx="58" cy="364" rx="11" ry="15" transform="rotate(22 58 364)"/><ellipse cx="42" cy="342" rx="9" ry="12.5" transform="rotate(-6 42 342)"/>' +
+      '<ellipse cx="69" cy="343" rx="8.5" ry="11.5" transform="rotate(36 69 343)"/><ellipse cx="20" cy="342" rx="8" ry="11" transform="rotate(-40 20 342)"/></g>' +
+      '<g fill="#b4503f" stroke="#ffb27a" stroke-opacity=".5" stroke-width=".6"><ellipse cx="38" cy="329.4" rx="2.1" ry="2.6"/><ellipse cx="44" cy="329" rx="2.1" ry="2.6"/>' +
+      '<ellipse cx="73" cy="331.6" rx="2" ry="2.5" transform="rotate(30 73 331.6)"/><ellipse cx="14" cy="331.5" rx="2" ry="2.5" transform="rotate(-38 14 331.5)"/><ellipse cx="68" cy="351" rx="2" ry="2.5" transform="rotate(40 68 351)"/></g>' +
+      '<rect y="300" width="360" height="100" fill="url(#sn-terra)"/>' +
+      lampadeTutte + '</svg>';
+
+    var strato = function (classe, interno2, defs) {
+      return '<svg class="sn-strato ' + classe + '" ' + VB + '>' + (defs || '') + interno2 + '</svg>';
+    };
+    var svg = fondo +
+      strato('sn-brillano', '<g fill="#fff">' + brillano.join('').replace(/opacity="[\d.]+"/g, '') + '</g>') +
+      strato('sn-onde', '<g fill="#fff1c9">' + riflesso.join('') + '</g>') +
+      luci.map(function (gruppo, g) {
+        return strato('sn-luci sn-luci-' + g, '<g fill="url(#sn-alone-' + g + ')">' + gruppo.join('') + '</g>',
+          '<defs><radialGradient id="sn-alone-' + g + '" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fffdf6"/><stop offset=".22" stop-color="#fff4cf"/><stop offset=".3" stop-color="#ffdd92" stop-opacity=".62"/><stop offset=".62" stop-color="#ffc45c" stop-opacity=".2"/><stop offset="1" stop-color="#ffc45c" stop-opacity="0"/></radialGradient></defs>');
+      }).join('');
+    if (!cieloPieno) scenaNataleSvg = svg;
+    return svg;
+  }
+  function aperturaHome(a) {
+    if (!a || a.tema !== 'natale' || !slideAttuale(a)) return '';
+    var polvere = '';
+    for (var i = 0; i < 12; i++) polvere += '<i></i>';
+    return '<a class="apertura apertura-natale" href="' + esc(a.link || '#eventi') + '">' + scenaNatale() +
+      '<span class="sn-bagliore" aria-hidden="true"></span><span class="sn-polvere" aria-hidden="true">' + polvere + '</span>' +
+      '<span class="sn-testo">' + (a.occhiello ? '<span class="sn-date">' + esc(tx(a.occhiello)) + '</span>' : '') +
+      '<b class="sn-titolo">' + esc(tx(a.titolo)) + '</b>' +
+      (a.sottotitolo ? '<span class="sn-sotto">' + esc(tx(a.sottotitolo)) + '</span>' : '') + '</span>' +
+      (a.bottone ? '<span class="sn-tasto">' + esc(tx(a.bottone)) + ic('chevron') + '</span>' : '') + '</a>';
+  }
+
   /* ---------- viste ---------- */
   var VISTE = {};
 
@@ -953,7 +1144,7 @@
     return '<div class="pagina home">' +
       '<header class="testata-app">' + marchio() + '<div class="testata-destra"><a class="tasto-cerca" href="#cerca" aria-label="' + esc(t('cercaTitolo')) + '">' + ic('search') + '</a>' + linguaToggle() + '</div></header>' +
       '<div class="installa-posto">' + (cardInstalla() || cardNotifiche()) + '</div>' +
-      slider((H.slider || []).filter(slideAttuale), { auto: true, classe: 'slider-home' }) +
+      (aperturaHome(H.apertura) || slider((H.slider || []).filter(slideAttuale), { auto: true, classe: 'slider-home' })) +
       (evid ? '<section class="blocco" aria-label="' + esc(t('inEvidenza')) + '">' + cardEvidenza(evid) + '</section>' : '') +
       '<div id="meteo-breve"></div>' +
       (territorio.length ? '<section class="blocco">' + titoloSezione(t('territorio'), '#visit') +
