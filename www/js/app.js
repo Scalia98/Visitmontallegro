@@ -668,8 +668,18 @@
           serviceWorkerOverrideForTypical: true,
           notifyButton: { enable: false },
           autoResubscribe: true,
-          allowLocalhostAsSecureOrigin: true
-        })).then(function () { ok(OneSignal); }, ko);
+          allowLocalhostAsSecureOrigin: true,
+          // con l'app già aperta, il tocco sulla notifica la porta in primo piano; la pagina giusta la apre l'app
+          notificationClickHandlerMatch: 'origin',
+          notificationClickHandlerAction: 'focus'
+        })).then(function () {
+          try { OneSignal.Notifications.addEventListener('click', function (e) { vaiDaNotifica(e && e.result && e.result.url); }); } catch (er) { /* niente */ }
+          // il service worker delle notifiche si aggiorna solo se glielo chiediamo (nessuna pagina sta in push/)
+          if (navigator.serviceWorker && navigator.serviceWorker.getRegistration) {
+            navigator.serviceWorker.getRegistration(base + 'push/').then(function (r) { if (r) r.update(); }).catch(function () { /* niente */ });
+          }
+          ok(OneSignal);
+        }, ko);
       });
       var s = document.createElement('script');
       s.src = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';
@@ -727,6 +737,28 @@
   function avviaNotifiche() {
     if (statoNotifiche() === 'attive') iscriviOneSignal().catch(function () { /* riprova al prossimo avvio */ });
   }
+  // tocco su una notifica: va alla pagina del link (la parte dopo #, solo indirizzi dell'app)
+  function vaiDaNotifica(url) {
+    var h = String(url || '').split('#')[1];
+    if (h && /^[\w-]+$/.test(h) && location.hash !== '#' + h) location.hash = h;
+  }
+  // Su iPhone l'app installata a volte si apre sulla home invece che sul link della notifica toccata.
+  // Il service worker delle notifiche (push/OneSignalSDKWorker.js) lascia un promemoria nella cache:
+  // lo leggiamo all'avvio e ogni volta che l'app torna in primo piano, e lo cancelliamo subito.
+  function promemoriaNotifica() {
+    if (!window.caches || !caches.open) return;
+    var chiave = new URL('push/apri-notifica', location.href.replace(/#.*$/, '')).href;
+    caches.open('vm-notifica').then(function (c) {
+      return c.match(chiave).then(function (r) {
+        if (!r) return;
+        return r.json().then(function (d) {
+          c.delete(chiave);
+          if (d && d.url && Date.now() - (+d.t || 0) < 10 * 60 * 1000) vaiDaNotifica(d.url);
+        });
+      });
+    }).catch(function () { /* niente */ });
+  }
+  function controllaPromemoria() { [0, 700, 2000, 4000].forEach(function (ms) { setTimeout(promemoriaNotifica, ms); }); }
 
   /* ---------- date ---------- */
   function oggiISO() { var d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -2097,6 +2129,10 @@
     disegna(false);
     avviaNativo();
     avviaNotifiche();
+    controllaPromemoria();
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) controllaPromemoria(); });
+    window.addEventListener('pageshow', controllaPromemoria);
+    window.addEventListener('focus', controllaPromemoria);
   });
 
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !isNative && window.top === window.self) {

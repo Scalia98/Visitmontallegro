@@ -1,5 +1,5 @@
 /* Visit Montallegro Bovo Marina — funzionamento offline per la versione web (nell'app installata i file sono già sul telefono) */
-const CACHE = 'visit-montallegro-v24';
+const CACHE = 'visit-montallegro-v25';
 const FILES = [
   './', 'index.html', 'css/app.css', 'js/config.js', 'js/app.js', 'data/contenuti.json',
   'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css', 'vendor/capacitor/capacitor.js',
@@ -15,7 +15,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('activate', (e) => {
   e.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())
+    caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE && k.indexOf('visit-montallegro-') === 0).map((k) => caches.delete(k)))).then(() => self.clients.claim())
   );
 });
 
