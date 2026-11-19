@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-19.04",
+ "versione": "2026-11-19.05",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -2379,7 +2379,10 @@
    "categorie": [
     "mangiare"
    ],
-   "sotto": "ristoranti",
+   "sotto": [
+    "ristoranti",
+    "bar"
+   ],
    "foto": "",
    "lat": 37.3899287,
    "lng": 13.3512624,
@@ -2418,6 +2421,56 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
+   "verificato": "novembre 2026"
+  },
+  {
+   "id": "osteria-del-gorgo",
+   "fonte": "ricerca",
+   "categorie": [
+    "mangiare"
+   ],
+   "sotto": "ristoranti",
+   "foto": "",
+   "lat": 37.3972217,
+   "lng": 13.329579,
+   "mappe": "Osteria del Gorgo Montallegro, Contrada Gorgo, 92010 Montallegro (AG)",
+   "nome": {
+    "it": "Osteria del Gorgo"
+   },
+   "etichetta": {
+    "it": "Osteria siciliana",
+    "en": "Sicilian osteria"
+   },
+   "breve": {
+    "it": "Osteria di cucina siciliana in contrada Gorgo, nella campagna di Montallegro.",
+    "en": "Sicilian osteria in Contrada Gorgo, in the countryside of Montallegro."
+   },
+   "testo": {
+    "it": []
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Contrada Gorgo, 92010 Montallegro (AG)",
+     "en": "Contrada Gorgo, 92010 Montallegro (AG)"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {
+    "tel": "3513534208"
+   },
+   "zona": "campagna",
+   "orari": {
+    "lun": "chiuso",
+    "mar": "19:00-24:00",
+    "mer": "19:00-24:00",
+    "gio": "19:00-24:00",
+    "ven": "19:00-24:00",
+    "sab": "12:00-15:00, 19:00-24:00",
+    "dom": "12:00-15:00, 19:00-24:00"
+   },
    "verificato": "novembre 2026"
   },
   {
@@ -4703,6 +4756,124 @@
    ]
   },
   {
+   "id": "adler-sicilia",
+   "fonte": "portale",
+   "categorie": [
+    "dormire"
+   ],
+   "sotto": "dintorni",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-spa-resort-sicilia-piscina-mare.jpg",
+   "credito": "ADLER Spa Resort SICILIA",
+   "lat": 37.3767557,
+   "lng": 13.3188793,
+   "mappe": "ADLER Spa Resort SICILIA, Contrada Salsa, 92010 Siculiana (AG)",
+   "nome": {
+    "it": "ADLER Spa Resort SICILIA"
+   },
+   "etichetta": {
+    "it": "Resort con spa",
+    "en": "Spa resort"
+   },
+   "localita": {
+    "it": "Siculiana",
+    "en": "Siculiana"
+   },
+   "breve": {
+    "it": "Sulla collina di Torre Salsa: 90 suite con terrazza, una spa di 3.200 m² e il mare a 300 metri.",
+    "en": "On the hill above Torre Salsa: 90 suites with terraces, a 3,200 m² spa and the sea 300 metres away."
+   },
+   "testo": {
+    "it": [
+     "Il resort del gruppo altoatesino ADLER ha aperto nel 2022 a circa 80 metri sul mare, al confine della Riserva di Torre Salsa. Le 90 suite, junior e family, hanno tutte la terrazza privata.",
+     "La spa ha piscine interne ed esterne riscaldate e la talassoterapia. Alla spiaggia si scende a piedi o con la navetta. Resta aperto quasi tutto l'anno, da febbraio all'inizio di gennaio."
+    ],
+    "en": [
+     "The South Tyrolean ADLER group opened this resort in 2022, about 80 metres above the sea on the edge of the Torre Salsa reserve. All 90 suites, junior and family, have a private terrace.",
+     "The spa has heated indoor and outdoor pools and thalassotherapy. The beach is a walk or a shuttle ride away. It is open almost all year, from February to early January."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Contrada Salsa, 92010 Siculiana (AG)",
+     "en": "Contrada Salsa, 92010 Siculiana (AG)"
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Si trova nel Comune di Siculiana, al confine con la Riserva di Torre Salsa"
+    ],
+    "en": [
+     "It lies in the municipality of Siculiana, on the edge of the Torre Salsa reserve"
+    ]
+   },
+   "contatti": {
+    "web": "https://www.adler-resorts.com"
+   },
+   "caratteristiche": [
+    "Spa e talassoterapia",
+    "Piscine interne ed esterne",
+    "Vista mare",
+    "Spiaggia a 300 m con navetta",
+    "Ristorante",
+    "Kids club",
+    "Palestra",
+    "Ricarica auto elettriche"
+   ],
+   "zona": "torre-salsa",
+   "galleria": [
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-spa-resort-sicilia-piscina-mare.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "La piscina e il mare",
+      "en": "The pool and the sea"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-suite.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "Una suite",
+      "en": "A suite"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-architettura-torre-salsa.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "Il resort sulla collina di Torre Salsa",
+      "en": "The resort on the hill above Torre Salsa"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-sauna-vista-mare.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "La sauna vista mare",
+      "en": "The sauna with sea view"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-terrazza-falo-tramonto.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "Il falò in terrazza al tramonto",
+      "en": "Fire pit on the terrace at sunset"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/adler-sicilia-ristorante-tramonto.jpg",
+     "credito": "ADLER Spa Resort SICILIA",
+     "didascalia": {
+      "it": "Il ristorante al tramonto",
+      "en": "The restaurant at sunset"
+     }
+    }
+   ],
+   "verificato": "novembre 2026"
+  },
+  {
    "id": "azienda-agricola-todaro",
    "fonte": "portale",
    "categorie": [
@@ -5287,6 +5458,56 @@
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/sapori-e-prodotti/"
    }
+  },
+  {
+   "id": "macelleria-zambito",
+   "fonte": "ricerca",
+   "categorie": [
+    "sapori"
+   ],
+   "sotto": "carne",
+   "foto": "",
+   "lat": 37.3927526,
+   "lng": 13.3501408,
+   "mappe": "Macelleria Zambito, Corso Vittorio Emanuele, 95, 92010 Montallegro (AG)",
+   "nome": {
+    "it": "Macelleria Zambito"
+   },
+   "etichetta": {
+    "it": "Macelleria",
+    "en": "Butcher"
+   },
+   "breve": {
+    "it": "La macelleria sul corso Vittorio Emanuele.",
+    "en": "The butcher's shop on Corso Vittorio Emanuele."
+   },
+   "testo": {
+    "it": []
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Corso Vittorio Emanuele, 95, 92010 Montallegro (AG)",
+     "en": "Corso Vittorio Emanuele, 95, 92010 Montallegro (AG)"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {
+    "tel": "3207777663"
+   },
+   "zona": "paese",
+   "orari": {
+    "lun": "08:00-13:30, 16:00-20:00",
+    "mar": "08:00-13:00, 16:00-20:00",
+    "mer": "08:00-13:00, 16:00-20:00",
+    "gio": "08:00-13:30, 16:00-20:00",
+    "ven": "08:00-13:30, 16:00-20:00",
+    "sab": "08:00-13:30, 16:00-20:00",
+    "dom": "chiuso"
+   },
+   "verificato": "novembre 2026"
   },
   {
    "id": "opera-ammare",
@@ -7024,7 +7245,7 @@
    "categorie": [
     "servizi"
    ],
-   "sotto": "benessere",
+   "sotto": "svago",
    "foto": "",
    "lat": null,
    "lng": null,
@@ -7056,6 +7277,44 @@
    },
    "zona": "paese",
    "verificato": "novembre 2026"
+  },
+  {
+   "id": "campo-bocce",
+   "fonte": "ricerca",
+   "categorie": [
+    "servizi"
+   ],
+   "sotto": "svago",
+   "foto": "",
+   "lat": 37.3949211,
+   "lng": 13.3500127,
+   "mappe": "Campo da bocce, Via Piave, 2, 92010 Montallegro (AG)",
+   "nome": {
+    "it": "Campo da bocce"
+   },
+   "etichetta": {
+    "it": "Bocce",
+    "en": "Bocce court"
+   },
+   "breve": {
+    "it": "Il campo da bocce di via Piave, in paese.",
+    "en": "The bocce court on Via Piave, in town."
+   },
+   "testo": {
+    "it": []
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Via Piave, 2, 92010 Montallegro (AG)",
+     "en": "Via Piave, 2, 92010 Montallegro (AG)"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {},
+   "zona": "paese"
   },
   {
    "id": "chiesa-madre",
@@ -7521,40 +7780,40 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.28661,
-   "lng": 13.52661,
-   "mappe": "Torre Carlo V, Via Molo, Porto Empedocle",
+   "lat": 37.2866676,
+   "lng": 13.5265658,
+   "mappe": "Torre di Carlo V, Via Molo, 92014 Porto Empedocle (AG)",
    "nome": {
-    "it": "Porto Empedocle e la Torre di Carlo V",
-    "en": "Porto Empedocle and the Charles V Tower"
+    "it": "Torre di Carlo V",
+    "en": "Charles V Tower"
    },
    "etichetta": {
-    "it": "Paese di mare",
-    "en": "Port town"
+    "it": "Torre del Cinquecento",
+    "en": "16th-century tower"
    },
    "localita": {
     "it": "Porto Empedocle",
     "en": "Porto Empedocle"
    },
    "breve": {
-    "it": "Il paese di Andrea Camilleri, la Vigata di Montalbano, con la torre cinquecentesca sul porto.",
-    "en": "Andrea Camilleri's home town, Montalbano's Vigata, with its 16th-century tower on the harbour."
+    "it": "La torre cinquecentesca sul porto di Porto Empedocle, la Vigata di Camilleri.",
+    "en": "The 16th-century tower on the harbour of Porto Empedocle, Camilleri's Vigata."
    },
    "testo": {
     "it": [
-     "Porto Empedocle è il paese natale di Andrea Camilleri, che lo ha raccontato come Vigata nei romanzi del commissario Montalbano. In paese ci sono la statua di Montalbano, un murale dedicato a Camilleri e una statua di Luigi Pirandello.",
-     "Sul porto si alza la Torre di Carlo V, voluta nel Cinquecento per difendere lo scalo e il grano; poi fu un carcere borbonico, teatro della strage del 1848 raccontata da Camilleri ne «La strage dimenticata». Dal porto partono i traghetti per Lampedusa e Linosa."
+     "Sul porto di Porto Empedocle si alza la Torre di Carlo V, voluta nel Cinquecento per difendere lo scalo e il grano dai pirati. Poi fu un carcere borbonico, teatro della strage del 1848 raccontata da Andrea Camilleri ne «La strage dimenticata».",
+     "Dentro ci sono pezzi di artiglieria e pannelli che raccontano la difesa della costa, e in cima c'è una terrazza panoramica. Dal porto partono i traghetti per Lampedusa e Linosa."
     ],
     "en": [
-     "Porto Empedocle is Andrea Camilleri's home town, which he turned into Vigata in the Inspector Montalbano novels. In town you'll find a statue of Montalbano, a mural of Camilleri and a statue of Luigi Pirandello.",
-     "On the harbour stands the Charles V Tower, built in the 16th century to defend the port and its grain; later a Bourbon prison, it saw the 1848 massacre told by Camilleri in «La strage dimenticata». Ferries to Lampedusa and Linosa leave from the port."
+     "On the harbour of Porto Empedocle stands the Charles V Tower, built in the 16th century to defend the port and its grain from pirates. It later became a Bourbon prison, scene of the 1848 massacre told by Andrea Camilleri in «La strage dimenticata».",
+     "Inside there are artillery pieces and panels on the defence of the coast, and on top a panoramic terrace. Ferries to Lampedusa and Linosa leave from the port."
     ]
    },
    "info": [
     {
      "tipo": "dove",
-     "it": "Torre Carlo V: Via Molo, 92014 Porto Empedocle (AG)",
-     "en": "Charles V Tower: Via Molo, 92014 Porto Empedocle (AG)"
+     "it": "Via Molo, 92014 Porto Empedocle (AG)",
+     "en": "Via Molo, 92014 Porto Empedocle (AG)"
     },
     {
      "tipo": "distanze",
@@ -7572,6 +7831,14 @@
    },
    "galleria": [
     {
+     "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Porto_Empedocle_-_Torre_di_Carlo_V.jpg/1280px-Porto_Empedocle_-_Torre_di_Carlo_V.jpg",
+     "credito": "Antonio Pignato · CC BY-SA 4.0",
+     "didascalia": {
+      "it": "La Torre di Carlo V",
+      "en": "The Charles V Tower"
+     }
+    },
+    {
      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Porto_Empedocle_seen_from_Agrigento_-_Italy_2015.JPG/1280px-Porto_Empedocle_seen_from_Agrigento_-_Italy_2015.JPG",
      "credito": "José Luiz Bernardes Ribeiro · CC BY-SA 4.0",
      "didascalia": {
@@ -7580,9 +7847,141 @@
      }
     }
    ],
-   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Porto_Empedocle_seen_from_Agrigento_-_Italy_2015.JPG/1280px-Porto_Empedocle_seen_from_Agrigento_-_Italy_2015.JPG",
-   "credito": "José Luiz Bernardes Ribeiro · CC BY-SA 4.0",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Porto_Empedocle_-_Torre_di_Carlo_V.jpg/1280px-Porto_Empedocle_-_Torre_di_Carlo_V.jpg",
+   "credito": "Antonio Pignato · CC BY-SA 4.0",
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Porto_Empedocle_seen_from_Agrigento_-_Italy_2015.JPG"
+  },
+  {
+   "id": "statua-montalbano",
+   "fonte": "ricerca",
+   "categorie": [
+    "dintorni",
+    "cultura"
+   ],
+   "lat": 37.2887831,
+   "lng": 13.5283138,
+   "mappe": "Statua del Commissario Montalbano, Via Roma, Porto Empedocle",
+   "nome": {
+    "it": "Statua di Montalbano e via Roma",
+    "en": "Montalbano statue and Via Roma"
+   },
+   "etichetta": {
+    "it": "Luoghi di Camilleri",
+    "en": "Camilleri's places"
+   },
+   "localita": {
+    "it": "Porto Empedocle",
+    "en": "Porto Empedocle"
+   },
+   "breve": {
+    "it": "Nella via principale di Porto Empedocle, la Vigata dei romanzi, la statua in bronzo del commissario Montalbano.",
+    "en": "On the main street of Porto Empedocle, the Vigata of the novels, a bronze statue of Inspector Montalbano."
+   },
+   "testo": {
+    "it": [
+     "Porto Empedocle è il paese natale di Andrea Camilleri, che lo ha raccontato come Vigata nei romanzi del commissario Montalbano. Il cuore del paese è la via Roma, con negozi, bar e palazzi storici.",
+     "All'inizio di via Roma c'è dal 2009 la statua in bronzo del commissario Montalbano; a pochi passi c'è quella di Luigi Pirandello, nato qui vicino in contrada Caos. In paese c'è anche un murale dedicato a Camilleri."
+    ],
+    "en": [
+     "Porto Empedocle is Andrea Camilleri's home town, which he turned into Vigata in the Inspector Montalbano novels. Its heart is Via Roma, with shops, cafés and old buildings.",
+     "At the start of Via Roma a bronze statue of Inspector Montalbano has stood since 2009; a few steps away is the statue of Luigi Pirandello, born nearby in Contrada Caos. In town there is also a mural of Camilleri."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Via Roma, 92014 Porto Empedocle (AG)",
+     "en": "Via Roma, 92014 Porto Empedocle (AG)"
+    },
+    {
+     "tipo": "distanze",
+     "it": "Circa 30 minuti in auto da Montallegro",
+     "en": "About 30 minutes by car from Montallegro"
+    }
+   ],
+   "consigli": {
+    "it": [],
+    "en": []
+   },
+   "contatti": {},
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/PortoEmpedocleViaRomajpg.jpg/1280px-PortoEmpedocleViaRomajpg.jpg",
+   "credito": "ArishG · CC BY-SA 4.0",
+   "galleria": [
+    {
+     "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/PortoEmpedocleViaRomajpg.jpg/1280px-PortoEmpedocleViaRomajpg.jpg",
+     "credito": "ArishG · CC BY-SA 4.0",
+     "didascalia": {
+      "it": "La scalinata di ceramica in via Roma",
+      "en": "The ceramic staircase on Via Roma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "le-pergole",
+   "fonte": "ricerca",
+   "categorie": [
+    "dintorni",
+    "spiagge"
+   ],
+   "lat": 37.304099,
+   "lng": 13.431129,
+   "mappe": "Spiaggia Le Pergole, Contrada Pergole, Realmonte (AG)",
+   "nome": {
+    "it": "Spiaggia Le Pergole",
+    "en": "Le Pergole beach"
+   },
+   "etichetta": {
+    "it": "Spiaggia",
+    "en": "Beach"
+   },
+   "localita": {
+    "it": "Realmonte",
+    "en": "Realmonte"
+   },
+   "breve": {
+    "it": "Una caletta di sabbia tra Siculiana Marina e Realmonte, sotto le falesie e la Torre di Monterosso.",
+    "en": "A sandy cove between Siculiana Marina and Realmonte, below the cliffs and the Monterosso tower."
+   },
+   "testo": {
+    "it": [
+     "Le Pergole è l'ultima delle piccole calette di sabbia che si incontrano lungo la costa tra Siculiana Marina e Realmonte, chiusa da falesie a picco sul mare.",
+     "Sul promontorio che la domina c'è la Torre di Monterosso, della prima metà del Cinquecento. In estate c'è anche un lido attrezzato."
+    ],
+    "en": [
+     "Le Pergole is the last of the small sandy coves along the coast between Siculiana Marina and Realmonte, closed in by cliffs dropping into the sea.",
+     "On the headland above it stands the Monterosso tower, from the first half of the 16th century. In summer there is also a beach club."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Contrada Pergole, 92010 Realmonte (AG)",
+     "en": "Contrada Pergole, 92010 Realmonte (AG)"
+    },
+    {
+     "tipo": "distanze",
+     "it": "Circa 25 minuti in auto da Montallegro",
+     "en": "About 25 minutes by car from Montallegro"
+    }
+   ],
+   "consigli": {
+    "it": [],
+    "en": []
+   },
+   "contatti": {},
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Le_pergole_-_panoramio.jpg/1280px-Le_pergole_-_panoramio.jpg",
+   "credito": "gironavigando.it · CC BY 3.0",
+   "galleria": [
+    {
+     "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Le_pergole_-_panoramio.jpg/1280px-Le_pergole_-_panoramio.jpg",
+     "credito": "gironavigando.it · CC BY 3.0",
+     "didascalia": {
+      "it": "La spiaggia Le Pergole",
+      "en": "Le Pergole beach"
+     }
+    }
+   ]
   },
   {
    "id": "casa-pirandello",
@@ -8025,6 +8424,78 @@
    "contatti": {
     "web": "https://www.comune.sciacca.ag.it"
    }
+  },
+  {
+   "id": "castello-incantato",
+   "fonte": "ricerca",
+   "categorie": [
+    "dintorni",
+    "cultura"
+   ],
+   "lat": 37.505688,
+   "lng": 13.080469,
+   "mappe": "Castello Incantato, Via Fondo Bentivegna, 16, 92019 Sciacca (AG)",
+   "nome": {
+    "it": "Castello Incantato di Sciacca",
+    "en": "Enchanted Castle of Sciacca"
+   },
+   "etichetta": {
+    "it": "Giardino di sculture",
+    "en": "Sculpture garden"
+   },
+   "localita": {
+    "it": "Sciacca",
+    "en": "Sciacca"
+   },
+   "breve": {
+    "it": "Il giardino di Filippo Bentivegna, con migliaia di teste scolpite nella pietra tra ulivi e mandorli.",
+    "en": "Filippo Bentivegna's garden, with thousands of heads carved in stone among olive and almond trees."
+   },
+   "testo": {
+    "it": [
+     "Non è un vero castello ma un museo all'aperto: per oltre cinquant'anni Filippo Bentivegna (1888–1967), chiamato in paese «Filippu di li testi», ha scolpito volti e teste nelle pietre e nelle rocce del suo terreno, ai piedi del monte Kronio.",
+     "Alcune sue sculture fanno parte della collezione d'Art Brut di Losanna. Nel giardino c'è anche la casetta dove l'artista viveva."
+    ],
+    "en": [
+     "Not a real castle but an open-air museum: for over fifty years Filippo Bentivegna (1888–1967), known locally as «Filippu di li testi», carved faces and heads into the stones and rocks of his land at the foot of Mount Kronio.",
+     "Some of his sculptures belong to the Art Brut collection in Lausanne. The garden also holds the small house where the artist lived."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Via Fondo Bentivegna, 16, 92019 Sciacca (AG)",
+     "en": "Via Fondo Bentivegna, 16, 92019 Sciacca (AG)"
+    },
+    {
+     "tipo": "distanze",
+     "it": "Circa 45 minuti in auto da Montallegro",
+     "en": "About 45 minutes by car from Montallegro"
+    }
+   ],
+   "consigli": {
+    "it": [
+     "Prima di andare chiama per gli orari di apertura"
+    ],
+    "en": [
+     "Call ahead for opening times"
+    ]
+   },
+   "contatti": {
+    "tel": "3208446278"
+   },
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sciacca_Castello_incantato_-_le_sculture_tra_i_fichidindia.jpg/1280px-Sciacca_Castello_incantato_-_le_sculture_tra_i_fichidindia.jpg",
+   "credito": "magalibobois · CC BY 2.0",
+   "galleria": [
+    {
+     "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sciacca_Castello_incantato_-_le_sculture_tra_i_fichidindia.jpg/1280px-Sciacca_Castello_incantato_-_le_sculture_tra_i_fichidindia.jpg",
+     "credito": "magalibobois · CC BY 2.0",
+     "didascalia": {
+      "it": "Le teste di pietra tra i fichi d'India",
+      "en": "Stone heads among the prickly pears"
+     }
+    }
+   ]
   },
   {
    "id": "caltabellotta",
@@ -9035,6 +9506,13 @@
      "it": "Case vacanza",
      "en": "Holiday homes"
     }
+   },
+   {
+    "id": "dintorni",
+    "nome": {
+     "it": "Alloggi nei dintorni",
+     "en": "Stays nearby"
+    }
    }
   ],
   "sapori": [
@@ -9141,8 +9619,15 @@
    {
     "id": "benessere",
     "nome": {
-     "it": "Benessere e svago",
-     "en": "Wellbeing & leisure"
+     "it": "Benessere",
+     "en": "Wellbeing"
+    }
+   },
+   {
+    "id": "svago",
+    "nome": {
+     "it": "Svago e tempo libero",
+     "en": "Leisure"
     }
    },
    {

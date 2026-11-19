@@ -309,7 +309,7 @@
     ristoranti: 'fork', mare: 'fork', bar: 'cup', pub: 'glass', eventi: 'star',
     hotel: 'bed', bb: 'bed', camere: 'bed', agri: 'leaf', villa: 'home', casa: 'home',
     formaggi: 'basket', olio: 'drop', vino: 'glass', miele: 'basket', conserve: 'basket', tipici: 'shop', pane: 'basket', carne: 'basket',
-    info: 'info', salute: 'cross', trasporti: 'bus', spesa: 'basket', negozi: 'shop', servizi: 'wrench', benessere: 'star', comunita: 'people',
+    info: 'info', salute: 'cross', trasporti: 'bus', spesa: 'basket', negozi: 'shop', servizi: 'wrench', benessere: 'star', comunita: 'people', svago: 'star',
     escursioni: 'hike', natura: 'leaf', cavallo: 'hike', cultura: 'columns'
   };
   var ZONE = { paese: 'zonaPaese', bovo: 'zonaBovo', 'torre-salsa': 'zonaTorre', campagna: 'zonaCampagna', eraclea: 'zonaEraclea' };
@@ -409,7 +409,7 @@
   function coloreDi(p) { return COLORI[catPrincipale(p).colore] || 'var(--mare)'; }
   function iconaDi(p) {
     if (p.id === 'torre-salsa') return 'tower';
-    if ((p.fonte === 'portale' || p.fonte === 'imposta') && p.sotto && ICONE_SOTTO[p.sotto]) return ICONE_SOTTO[p.sotto];
+    if ((p.fonte === 'portale' || p.fonte === 'imposta') && p.sotto && ICONE_SOTTO[[].concat(p.sotto)[0]]) return ICONE_SOTTO[[].concat(p.sotto)[0]];
     if (p.categorie[0] === 'dintorni' && p.categorie[1] && categoria(p.categorie[1])) return categoria(p.categorie[1]).icona;   // un museo nei dintorni ha l'icona del museo, non dell'auto
     return catPrincipale(p).icona;
   }
@@ -1323,11 +1323,13 @@
       '<section class="blocco">' + titoloSezione(t('itinerari'), '#itinerari') + '<div class="binario">' + DATA.itinerari.map(cardItinerario).join('') + '</div></section></div>';
   };
 
+  // una scheda può stare in più sottosezioni: "sotto": ["ristoranti", "bar"]
+  function haSotto(p, id) { return Array.isArray(p.sotto) ? p.sotto.indexOf(id) >= 0 : p.sotto === id; }
   function sottoVoce(p) {
     if (!p.sotto || !DATA.sottocategorie) return null;
     for (var i = 0; i < p.categorie.length; i++) {
       var el = DATA.sottocategorie[p.categorie[i]] || [];
-      for (var j = 0; j < el.length; j++) if (el[j].id === p.sotto) return el[j];
+      for (var j = 0; j < el.length; j++) if (haSotto(p, el[j].id)) return el[j];
     }
     return null;
   }
@@ -1342,19 +1344,19 @@
     var tutti = partnerPrima(schedeDi(cat));
     var sotto = (DATA.sottocategorie && DATA.sottocategorie[cat]) || [];
     var colore = COLORI[(categoria(cat) || {}).colore] || 'var(--blu)';
-    var lista = filtro ? tutti.filter(function (p) { return p.sotto === filtro; }) : tutti;
+    var lista = filtro ? tutti.filter(function (p) { return haSotto(p, filtro); }) : tutti;
     var chip = function (id, nome, n) {
       return '<a class="filtro" href="#' + cat + (id ? '-' + id : '') + '" style="--c:' + colore + '"' + ((filtro || '') === id ? ' aria-current="true"' : '') + '>' + esc(nome) + ' <small>' + n + '</small></a>';
     };
     var chips = sotto.length > 1 ? '<nav class="filtri" aria-label="Filtri">' + chip('', t('tuttiFiltro'), tutti.length) + sotto.map(function (x) {
-      var n = tutti.filter(function (p) { return p.sotto === x.id; }).length;
+      var n = tutti.filter(function (p) { return haSotto(p, x.id); }).length;
       return n ? chip(x.id, tx(x.nome), n) : '';
     }).join('') + '</nav>' : '';
     var corpo;
     if (!filtro && sotto.length > 1) {
-      var senzaGruppo = tutti.filter(function (p) { return !sotto.some(function (x) { return x.id === p.sotto; }); });
+      var senzaGruppo = tutti.filter(function (p) { return !sotto.some(function (x) { return haSotto(p, x.id); }); });
       corpo = sotto.map(function (x) {
-        var gr = tutti.filter(function (p) { return p.sotto === x.id; });
+        var gr = tutti.filter(function (p) { return haSotto(p, x.id); });
         return gr.length ? '<section class="gruppo-elenco"><h2 class="sottotitolo">' + esc(tx(x.nome)) + '</h2><div class="elenco">' + gr.map(rigaContatto).join('') + '</div></section>' : '';
       }).join('') + (senzaGruppo.length ? '<div class="elenco">' + senzaGruppo.map(rigaContatto).join('') + '</div>' : '');
     } else {
