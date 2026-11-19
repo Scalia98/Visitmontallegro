@@ -541,7 +541,8 @@
   function urlIndicazioni(p) {
     var q = p.mappe || tx(p.nome);
     var punto = p.navigaA || (p.lat != null ? { lat: p.lat, lng: p.lng } : null);   // navigaA: dove arriva l'auto (es. ingresso della riserva)
-    if (isApple) return 'https://maps.apple.com/?q=' + encodeURIComponent(q) + (punto ? '&ll=' + punto.lat + ',' + punto.lng : '');
+    // Con le coordinate, Mappe di Apple apre il percorso verso il punto esatto (con q= cercherebbe il nome e può sbagliare posto)
+    if (isApple) return punto ? 'https://maps.apple.com/?daddr=' + punto.lat + ',' + punto.lng + '&dirflg=d' : 'https://maps.apple.com/?q=' + encodeURIComponent(q);
     var dest = punto ? punto.lat + ',' + punto.lng : q;
     return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(dest);
   }
