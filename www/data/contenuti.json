@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-20.04",
+ "versione": "2026-11-20.05",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1686,16 +1686,16 @@
    },
    "testo": {
     "it": [
-     "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro, dentro il Museo della Civiltà Contadina, con un forno per la ceramica: è nato dal Comune, dalla Pro Loco e dalle associazioni di artisti del paese, grazie al progetto del GAL Sicani.",
+     "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro, dentro il Museo della Civiltà Contadina, con un forno per la ceramica: è nato grazie agli artisti del paese e al Comune, con il progetto del GAL Sicani.",
+     "Adesso la Pro Loco, insieme a Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino e Teresa Tuttolomondo, sta mettendo in funzione il laboratorio.",
      "Aprirà due volte a settimana ed è aperto a tutti. Per i ragazzi dai 10 ai 18 anni ci sarà un laboratorio di ceramica di sei incontri, due al mese, la sera dalle 18.",
-     "Si comincia con una serata di presentazione: i video e la storia del progetto, con gli interventi del Sindaco, del Vicesindaco e degli artisti coinvolti. La data sarà annunciata a breve.",
-     "Crita Allegra è stato organizzato grazie a Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino e Teresa Tuttolomondo."
+     "Si comincia con una serata di presentazione: i video e la storia del progetto, con gli interventi del Sindaco, del Vicesindaco e degli artisti coinvolti. La data sarà annunciata a breve."
     ],
     "en": [
-     "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, inside the Museum of Rural Life, with a ceramics kiln: it was set up by the town council, the Pro Loco and the town's artists' associations through a GAL Sicani project.",
+     "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, inside the Museum of Rural Life, with a ceramics kiln: it came about thanks to the town's artists and the town council, through a GAL Sicani project.",
+     "Now the Pro Loco, together with Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino and Teresa Tuttolomondo, is getting the workshop up and running.",
      "It will open twice a week, to everyone. For young people aged 10 to 18 there will be a ceramics course of six evening sessions, two a month, starting at 6 pm.",
-     "It starts with a presentation evening: videos and the story of the project, with talks by the Mayor, the Deputy Mayor and the artists involved. The date will be announced soon.",
-     "Crita Allegra was organised thanks to Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino and Teresa Tuttolomondo."
+     "It starts with a presentation evening: videos and the story of the project, with talks by the Mayor, the Deputy Mayor and the artists involved. The date will be announced soon."
     ]
    },
    "info": [
