@@ -1759,9 +1759,10 @@
   /* ---------- mappa ---------- */
   var mappa = null, livelloSegnaposti = null, segnaIo = null, filtroMappa = 'tutto', fuocoMappa = null;
   function chiudiMappa() { if (mappa) { try { mappa.stop(); mappa.remove(); } catch (e) { /* mappa già chiusa */ } mappa = null; livelloSegnaposti = null; segnaIo = null; } }
-  function spillo(colore, icona) {
+  function spillo(colore, icona, sposta) {
+    var dx = sposta ? sposta[0] : 0, dy = sposta ? sposta[1] : 0;
     return L.divIcon({
-      className: '', iconSize: [36, 36], iconAnchor: [18, 36],
+      className: '', iconSize: [36, 36], iconAnchor: [18 - dx, 36 - dy],
       html: '<div class="spillo" style="--c:' + colore + '">' + ic(icona) + '</div>'
     });
   }
@@ -1810,12 +1811,15 @@
       vicini.push([paese.lat, paese.lng]);
     }
     var visti = {};
+    var AFFIANCA = [[0, 0], [30, 0], [-30, 0], [0, -34], [30, -34], [-30, -34], [0, 34], [30, 34], [-30, 34]];
     DATA.schede.forEach(function (p) {
       if (p.lat == null || p.id === 'montallegro') return;
       if (filtroMappa !== 'tutto' && p.categorie.indexOf(filtroMappa) < 0) return;
       var chiave = p.lat.toFixed(4) + ',' + p.lng.toFixed(4);
       var n = visti[chiave] = (visti[chiave] || 0) + 1;
-      L.marker([p.lat + (n - 1) * 0.00016, p.lng + (n - 1) * 0.00026], { icon: spillo(coloreDi(p), iconaDi(p)), title: tx(p.nome), keyboard: true })
+      // più schede nello stesso punto (il museo e il laboratorio che ospita, la chiesa e la parrocchia...): i segnaposti
+      // si affiancano di qualche pixel, a ogni zoom, invece di coprirsi; così si vedono e si toccano tutti
+      L.marker([p.lat, p.lng], { icon: spillo(coloreDi(p), iconaDi(p), AFFIANCA[(n - 1) % AFFIANCA.length]), title: tx(p.nome), keyboard: true })
         .on('click', function () { mostraFoglio(p); })
         .addTo(livelloSegnaposti);
       if (filtroMappa !== 'tutto' || p.categorie.indexOf('dintorni') < 0) vicini.push([p.lat, p.lng]);

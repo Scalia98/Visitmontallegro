@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-20.03",
+ "versione": "2026-11-20.04",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1179,8 +1179,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Alla periferia occidentale di Montallegro",
-     "en": "On the western edge of Montallegro"
+     "it": "Lungo la SP61, alla periferia occidentale di Montallegro",
+     "en": "Along the SP61, on the western edge of Montallegro"
     },
     {
      "tipo": "contatto",
@@ -1227,7 +1227,10 @@
    ],
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-il-terriorio/"
-   }
+   },
+   "lat": 37.3959106,
+   "lng": 13.3449177,
+   "mappe": "Antica fornace di gesso, SP61, Montallegro (AG)"
   },
   {
    "id": "chiesa-immacolata",
@@ -1674,23 +1677,25 @@
     "en": "Crita Allegra"
    },
    "etichetta": {
-    "it": "Laboratorio artistico",
-    "en": "Art workshop"
+    "it": "Laboratorio artistico e di ceramica",
+    "en": "Art and ceramics workshop"
    },
    "breve": {
-    "it": "Il nuovo laboratorio artistico di Montallegro, nato dal Comune, dalla Pro Loco e dalle associazioni di artisti grazie al progetto del GAL Sicani.",
-    "en": "Montallegro's new art workshop, set up by the town council, the Pro Loco and local artists' associations through a GAL Sicani project."
+    "it": "Il nuovo laboratorio di ceramica e arte di Montallegro, dentro il Museo della Civiltà Contadina: aprirà due volte a settimana, per tutti.",
+    "en": "Montallegro's new ceramics and art workshop, inside the Museum of Rural Life: it will open twice a week, to everyone."
    },
    "testo": {
     "it": [
-     "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro, dentro il Museo della Civiltà Contadina: è nato dal Comune, dalla Pro Loco e dalle associazioni di artisti del paese, grazie al progetto del GAL Sicani.",
-     "Il laboratorio ha un forno per la ceramica, dove gli artisti di Montallegro terranno laboratori di ceramica per i ragazzi del paese.",
-     "La data ufficiale del primo evento sarà annunciata a breve."
+     "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro, dentro il Museo della Civiltà Contadina, con un forno per la ceramica: è nato dal Comune, dalla Pro Loco e dalle associazioni di artisti del paese, grazie al progetto del GAL Sicani.",
+     "Aprirà due volte a settimana ed è aperto a tutti. Per i ragazzi dai 10 ai 18 anni ci sarà un laboratorio di ceramica di sei incontri, due al mese, la sera dalle 18.",
+     "Si comincia con una serata di presentazione: i video e la storia del progetto, con gli interventi del Sindaco, del Vicesindaco e degli artisti coinvolti. La data sarà annunciata a breve.",
+     "Crita Allegra è stato organizzato grazie a Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino e Teresa Tuttolomondo."
     ],
     "en": [
-     "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, inside the Museum of Rural Life: it was set up by the town council, the Pro Loco and the town's artists' associations through a GAL Sicani project.",
-     "The workshop has a ceramics kiln, where Montallegro's artists will run pottery workshops for the town's young people.",
-     "The date of the first official event will be announced soon."
+     "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, inside the Museum of Rural Life, with a ceramics kiln: it was set up by the town council, the Pro Loco and the town's artists' associations through a GAL Sicani project.",
+     "It will open twice a week, to everyone. For young people aged 10 to 18 there will be a ceramics course of six evening sessions, two a month, starting at 6 pm.",
+     "It starts with a presentation evening: videos and the story of the project, with talks by the Mayor, the Deputy Mayor and the artists involved. The date will be announced soon.",
+     "Crita Allegra was organised thanks to Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino and Teresa Tuttolomondo."
     ]
    },
    "info": [
@@ -1701,20 +1706,35 @@
      "scheda": "museo-civilta-contadina"
     },
     {
+     "tipo": "orari",
+     "it": "Due volte a settimana, per tutti: i giorni arrivano con la serata di presentazione",
+     "en": "Twice a week, open to everyone: days to be announced at the presentation evening"
+    },
+    {
      "tipo": "contatto",
      "it": "Per informazioni: Pro Loco Montallegro",
      "en": "For information: Pro Loco Montallegro"
     }
    ],
    "consigli": {
-    "it": []
+    "it": [
+     "Per sapere la data della serata di presentazione scrivi alla Pro Loco."
+    ],
+    "en": [
+     "To find out the date of the presentation evening, write to the Pro Loco."
+    ]
    },
    "contatti": {
     "tel": "3288597144",
     "email": "prolocomontallegro@gmail.com"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "caratteristiche": [
+    "Forno per la ceramica",
+    "Aperto a tutti",
+    "Corso per ragazzi 10-18 anni"
+   ]
   },
   {
    "id": "vecchia-stazione",
@@ -3963,8 +3983,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3904495,
+   "lng": 13.3043422,
    "mappe": "Villa Tre \"S\", Montallegro AG",
    "nome": {
     "it": "Villa Tre \"S\""
@@ -4231,10 +4251,7 @@
    "consigli": {
     "it": []
    },
-   "contatti": {
-    "prenota": "https://www.booking.com/hotel/it/villa-chalet-al-mare.html",
-    "prenotaTesto": "Vedi su Booking"
-   },
+   "contatti": {},
    "zona": "bovo",
    "caratteristiche": [
     "Intera casa, 45 m²",
@@ -4560,8 +4577,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3936386,
+   "lng": 13.3497801,
    "mappe": "La Margherita, Montallegro AG",
    "nome": {
     "it": "La Margherita"
@@ -5493,8 +5510,8 @@
    ],
    "sotto": "pane",
    "foto": "",
-   "lat": 37.39426,
-   "lng": 13.35009,
+   "lat": 37.3941252,
+   "lng": 13.3502907,
    "mappe": "Panificio del Corso, Corso Vittorio Emanuele, 44, 92010 Montallegro (AG)",
    "nome": {
     "it": "Panificio del Corso",
@@ -5521,7 +5538,8 @@
    "consigli": {
     "it": []
    },
-   "zona": "paese"
+   "zona": "paese",
+   "verificato": "novembre 2026"
   },
   {
    "id": "panificio-piruzza",
@@ -5810,9 +5828,9 @@
    ],
    "sotto": "natura",
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover2.jpg",
-   "lat": null,
-   "lng": null,
-   "mappe": "Visite guidate della Riserva di Torre Salsa, Centro visite «F. Galìa» della riserva",
+   "lat": 37.337333,
+   "lng": 13.4232409,
+   "mappe": "Centro visite Riserva Torre Salsa, Via Roma, 156/D, 92010 Siculiana (AG)",
    "nome": {
     "it": "Visite guidate della Riserva di Torre Salsa"
    },
@@ -5831,8 +5849,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Ritrovo: Centro visite «F. Galìa» della riserva",
-     "en": "Meeting point: Centro visite «F. Galìa» della riserva"
+     "it": "Ritrovo: Centro visite «F. Galìa», via Roma 156/D, Siculiana",
+     "en": "Meeting point: «F. Galìa» visitor centre, Via Roma 156/D, Siculiana"
     },
     {
      "tipo": "telefono",
@@ -6555,9 +6573,9 @@
    ],
    "sotto": "trasporti",
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2017_Flixbus_Milano_Lampugnano_01.jpg/1280px-2017_Flixbus_Milano_Lampugnano_01.jpg",
-   "lat": null,
-   "lng": null,
-   "mappe": "Autobus FlixBus, Fermata sulla Strada Statale 115",
+   "lat": 37.388837,
+   "lng": 13.351174,
+   "mappe": "Fermata FlixBus, Strada Statale 115, 92010 Montallegro (AG)",
    "nome": {
     "it": "Autobus FlixBus"
    },
@@ -6574,7 +6592,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Fermata sulla Strada Statale 115"
+     "it": "Fermata sulla Strada Statale 115, accanto al distributore Eni",
+     "en": "Stop on the SS115 road, next to the Eni petrol station"
     }
    ],
    "consigli": {
