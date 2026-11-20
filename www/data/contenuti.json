@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-19.06",
+ "versione": "2026-11-20.01",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -480,8 +480,8 @@
     "natura"
    ],
    "foto": "img/foto/torre-salsa-dama-bianca.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.361405,
+   "lng": 13.3340345,
    "mappe": "Riserva Naturale Orientata Torre Salsa, Montallegro",
    "nome": {
     "it": "La Dama Bianca",
@@ -551,8 +551,8 @@
    ],
    "foto": "img/foto/capo-bianco-tramonto.jpg",
    "credito": "Seacily",
-   "lat": 37.39389,
-   "lng": 13.28083,
+   "lat": 37.393966,
+   "lng": 13.2822102,
    "mappe": "Area archeologica di Eraclea Minoa, Cattolica Eraclea",
    "nome": {
     "it": "Eraclea Minoa e Capo Bianco",
@@ -652,8 +652,8 @@
     "dintorni"
    ],
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Seccagrande_and_Platani_delta_seen_from_Eraclea_Minoa_-_Italy_2015.JPG/1280px-Seccagrande_and_Platani_delta_seen_from_Eraclea_Minoa_-_Italy_2015.JPG",
-   "lat": null,
-   "lng": null,
+   "lat": 37.4077554,
+   "lng": 13.2686559,
    "mappe": "Riserva Naturale Orientata Foce del Fiume Platani",
    "nome": {
     "it": "Riserva Foce del Platani",
@@ -723,8 +723,8 @@
     "natura"
    ],
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Cover.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.4084347,
+   "lng": 13.3247998,
    "mappe": "Lago Gorgo, Montallegro AG",
    "nome": {
     "it": "Laghetto Gorgo",
@@ -905,8 +905,8 @@
      "credito": "Visit Montallegro Bovo Marina"
     }
    ],
-   "lat": null,
-   "lng": null,
+   "lat": 37.4084347,
+   "lng": 13.3247998,
    "mappe": "Lago Gorgo, Montallegro AG",
    "nome": {
     "it": "Birdwatching al Laghetto Gorgo",
@@ -1033,8 +1033,8 @@
    ],
    "foto": "img/foto/montallegro-monte-suso.jpg",
    "credito": "Seacily · Visit Montallegro Bovo Marina",
-   "lat": 37.399,
-   "lng": 13.352,
+   "lat": 37.3927688,
+   "lng": 13.3469966,
    "mappe": "Ruderi di Montallegro, Monte Suso",
    "nome": {
     "it": "Monte Suso e il paese antico",
@@ -1235,8 +1235,8 @@
     "cultura"
    ],
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3902177,
+   "lng": 13.3517671,
    "mappe": "Chiesa Santa Maria dell'Immacolata, Montallegro",
    "nome": {
     "it": "Chiesa dell'Immacolata",
@@ -1269,8 +1269,8 @@
     "cultura"
    ],
    "foto": "",
-   "lat": 37.39281,
-   "lng": 13.34956,
+   "lat": 37.3928405,
+   "lng": 13.3495115,
    "mappe": "Chiesa di San Leonardo, Via Ferraro 10, Montallegro",
    "nome": {
     "it": "Chiesa di San Leonardo",
@@ -1312,8 +1312,8 @@
     "esperienze"
    ],
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/MuseoDellaCivilta-Cover.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3896174,
+   "lng": 13.351929,
    "mappe": "Museo della Civiltà Contadina, Viale della Vittoria, Montallegro",
    "nome": {
     "it": "Museo della Civiltà Contadina",
@@ -1559,8 +1559,8 @@
    ],
    "sotto": "cultura",
    "foto": "img/foto/presepe-montallegro-1.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3896174,
+   "lng": 13.351929,
    "mappe": "Museo della Civiltà Contadina, Viale della Vittoria, Montallegro",
    "nome": {
     "it": "Il presepe di Montallegro",
@@ -1659,13 +1659,65 @@
    ]
   },
   {
+   "id": "crita-allegra",
+   "categorie": [
+    "esperienze",
+    "cultura"
+   ],
+   "sotto": "cultura",
+   "foto": "",
+   "lat": null,
+   "lng": null,
+   "mappe": "Montallegro AG",
+   "nome": {
+    "it": "Crita Allegra",
+    "en": "Crita Allegra"
+   },
+   "etichetta": {
+    "it": "Laboratorio artistico",
+    "en": "Art workshop"
+   },
+   "breve": {
+    "it": "Il nuovo laboratorio artistico di Montallegro, nato dal Comune, dalla Pro Loco e dalle associazioni di artisti grazie al progetto del GAL Sicani.",
+    "en": "Montallegro's new art workshop, set up by the town council, the Pro Loco and local artists' associations through a GAL Sicani project."
+   },
+   "testo": {
+    "it": [
+     "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro: è nato dal Comune, dalla Pro Loco e dalle associazioni di artisti del paese, grazie al progetto del GAL Sicani.",
+     "Il laboratorio ha un forno per la ceramica, dove gli artisti di Montallegro terranno laboratori di ceramica per i ragazzi del paese.",
+     "La data ufficiale del primo evento sarà annunciata a breve."
+    ],
+    "en": [
+     "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, set up by the town council, the Pro Loco and the town's artists' associations through a GAL Sicani project.",
+     "The workshop has a ceramics kiln, where Montallegro's artists will run pottery workshops for the town's young people.",
+     "The date of the first official event will be announced soon."
+    ]
+   },
+   "info": [
+    {
+     "tipo": "contatto",
+     "it": "Per informazioni: Pro Loco Montallegro",
+     "en": "For information: Pro Loco Montallegro"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {
+    "tel": "3288597144",
+    "email": "prolocomontallegro@gmail.com"
+   },
+   "zona": "paese",
+   "verificato": "novembre 2026"
+  },
+  {
    "id": "vecchia-stazione",
    "categorie": [
     "cultura"
    ],
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3890941,
+   "lng": 13.3546134,
    "mappe": "Stazione di Montallegro",
    "nome": {
     "it": "La vecchia stazione",
@@ -1701,8 +1753,8 @@
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Scala_dei_Turqui.JPG/960px-Scala_dei_Turqui.JPG",
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/9/98/Scala_dei_Turqui.JPG",
    "credito": "Anna Pujol · Wikimedia Commons",
-   "lat": 37.29,
-   "lng": 13.474,
+   "lat": 37.2899672,
+   "lng": 13.4727618,
    "mappe": "Scala dei Turchi, Realmonte",
    "nome": {
     "it": "Scala dei Turchi",
@@ -1784,8 +1836,8 @@
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Concordiatempelagrigent3_retouched.jpg/960px-Concordiatempelagrigent3_retouched.jpg",
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Concordiatempelagrigent3_retouched.jpg",
    "credito": "pixelfehler · CC BY-SA 2.5",
-   "lat": 37.2903,
-   "lng": 13.5859,
+   "lat": 37.2923664,
+   "lng": 13.5937011,
    "mappe": "Parco Archeologico Valle dei Templi, Agrigento",
    "nome": {
     "it": "Valle dei Templi",
@@ -2176,8 +2228,8 @@
    ],
    "sotto": "ristoranti",
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/07/Capitolo-pr.jpg",
-   "lat": 37.395419,
-   "lng": 13.348671,
+   "lat": 37.395441,
+   "lng": 13.3500845,
    "mappe": "Capitolo Primo, Via Trieste, 1, 92010 Montallegro (AG)",
    "nome": {
     "it": "Capitolo Primo"
@@ -2774,8 +2826,8 @@
    ],
    "sotto": "mare",
    "foto": "",
-   "lat": 37.3808631,
-   "lng": 13.3071347,
+   "lat": 37.3807923,
+   "lng": 13.3070902,
    "mappe": "Canaima, Contrada Bovo Marina, 92010 Montallegro (AG)",
    "nome": {
     "it": "Canaima"
@@ -3226,8 +3278,8 @@
    ],
    "sotto": "hotel",
    "foto": "https://www.relaisbriuccia.com/images/relais/slide-1-5d4_9307_-benedetto-tarantino-1.jpg",
-   "lat": 37.395419,
-   "lng": 13.348671,
+   "lat": 37.3954389,
+   "lng": 13.3500889,
    "mappe": "Relais Briuccia, Via Trieste, 1, 92010 Montallegro (AG)",
    "nome": {
     "it": "Relais Briuccia"
@@ -3280,8 +3332,8 @@
    ],
    "sotto": "hotel",
    "foto": "https://www.lunaminoica.it/wp-content/uploads/sites/421/2024/04/L13709211.jpg",
-   "lat": 37.381353,
-   "lng": 13.311656,
+   "lat": 37.3811355,
+   "lng": 13.3116441,
    "mappe": "Luna Minoica Suites & Apartments, Contrada Bovo Marina, 92010 Montallegro (AG)",
    "nome": {
     "it": "Luna Minoica Suites & Apartments"
@@ -3338,8 +3390,8 @@
    ],
    "sotto": "agri",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3867408,
+   "lng": 13.3430232,
    "mappe": "Agriturismo Casebianche, Contrada Stretto, 92010 Montallegro (AG)",
    "nome": {
     "it": "Agriturismo Casebianche"
@@ -3392,8 +3444,8 @@
    ],
    "sotto": "bb",
    "foto": "https://globaluserfiles.com/media/3226_1ce33f045035a47032d538b7efde6699cab6a7d6.jpeg/v1/w_1400,h_0/foto-facciata_1609873348896.webp",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3958845,
+   "lng": 13.3501345,
    "mappe": "Le Mangiatoie del Cavaliere, Via Piemonte, 18, 92010 Montallegro (AG)",
    "nome": {
     "it": "Le Mangiatoie del Cavaliere"
@@ -3448,8 +3500,8 @@
    ],
    "sotto": "bb",
    "foto": "",
-   "lat": 37.390453,
-   "lng": 13.350653,
+   "lat": 37.3905082,
+   "lng": 13.3506405,
    "mappe": "La Maison, Via Siracusa, 4, 92010 Montallegro (AG)",
    "nome": {
     "it": "La Maison"
@@ -3496,8 +3548,8 @@
    ],
    "sotto": "bb",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3946142,
+   "lng": 13.3007429,
    "mappe": "L'Eden di Capo Bianco, Contrada Gorgo Vizzì, Bovo Marina, 92010 Montallegro (AG)",
    "nome": {
     "it": "L'Eden di Capo Bianco",
@@ -3547,8 +3599,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3803725,
+   "lng": 13.3523681,
    "mappe": "Villa del Poeta, Campagna di Torre Salsa, Montallegro (AG)",
    "nome": {
     "it": "Villa del Poeta"
@@ -3712,8 +3764,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3863068,
+   "lng": 13.3106937,
    "mappe": "Villa Anthea, Montallegro AG",
    "nome": {
     "it": "Villa Anthea"
@@ -3762,8 +3814,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3788873,
+   "lng": 13.3533655,
    "mappe": "Villa Chiara, Montallegro AG",
    "nome": {
     "it": "Villa Chiara"
@@ -3810,8 +3862,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3893681,
+   "lng": 13.3096414,
    "mappe": "Il Casale di Bovo Marina, Montallegro AG",
    "nome": {
     "it": "Il Casale di Bovo Marina"
@@ -3857,8 +3909,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3927952,
+   "lng": 13.3046911,
    "mappe": "Villa Cecilia, Montallegro AG",
    "nome": {
     "it": "Villa Cecilia"
@@ -3950,8 +4002,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3970844,
+   "lng": 13.3281995,
    "mappe": "Villa Peppino, Contrada Gorgo, 6, 92010 Montallegro (AG)",
    "nome": {
     "it": "Villa Peppino"
@@ -4047,8 +4099,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3897257,
+   "lng": 13.3541984,
    "mappe": "Villa Caterina, Via Liborio Bonifacio 40, 92010 Montallegro (AG)",
    "nome": {
     "it": "Villa Caterina",
@@ -4095,8 +4147,8 @@
    ],
    "sotto": "villa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3930702,
+   "lng": 13.3024397,
    "mappe": "Villa Emanuela, Contrada Bovo Marina, 92010 Montallegro (AG)",
    "nome": {
     "it": "Villa Emanuela",
@@ -4279,8 +4331,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3788109,
+   "lng": 13.30933,
    "mappe": "Casa da cui godersi meravigliosi tramonti, Montallegro AG",
    "nome": {
     "it": "Casa da cui godersi meravigliosi tramonti"
@@ -4314,8 +4366,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3890406,
+   "lng": 13.3142109,
    "mappe": "Villa Giulia Bovo Marina, Montallegro AG",
    "nome": {
     "it": "Villa Giulia Bovo Marina"
@@ -4364,8 +4416,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3950824,
+   "lng": 13.3332416,
    "mappe": "Le 3 Rose Apartments, Contrada Gorgo, 92010 Montallegro (AG)",
    "nome": {
     "it": "Le 3 Rose Apartments"
@@ -4459,8 +4511,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3866882,
+   "lng": 13.30336,
    "mappe": "Villa Theía, Montallegro AG",
    "nome": {
     "it": "Villa Theía"
@@ -4543,9 +4595,9 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "La Casa dei Nonni, Montallegro AG",
+   "lat": 37.3924701,
+   "lng": 13.3495702,
+   "mappe": "La Casa dei Nonni, Via Villani, 28, 92010 Montallegro (AG)",
    "nome": {
     "it": "La Casa dei Nonni"
    },
@@ -4559,7 +4611,13 @@
    "testo": {
     "it": []
    },
-   "info": [],
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Via Villani, 28-30, 92010 Montallegro (AG)",
+     "en": "Via Villani, 28-30, 92010 Montallegro (AG)"
+    }
+   ],
    "consigli": {
     "it": []
    },
@@ -4664,8 +4722,8 @@
    ],
    "sotto": "camere",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3914528,
+   "lng": 13.3499696,
    "mappe": "Casa Pizzuco, Via Volturno 16, 92010 Montallegro (AG)",
    "nome": {
     "it": "Casa Pizzuco",
@@ -4713,8 +4771,8 @@
    ],
    "sotto": "casa",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3908793,
+   "lng": 13.3504578,
    "mappe": "Cantina Rustica, Viale della Vittoria 100, 92010 Montallegro (AG)",
    "nome": {
     "it": "Cantina Rustica",
@@ -4881,8 +4939,8 @@
    ],
    "sotto": "formaggi",
    "foto": "https://pub-a4d6ad10dc1a4e1da401961c64a9749e.r2.dev/projects/ac2968d5-01f5-4bab-b3cb-88dc8cbe7b3f/img/44c8f8c3151fe321.jpg",
-   "lat": 37.3920113,
-   "lng": 13.3499996,
+   "lat": 37.3919663,
+   "lng": 13.3500033,
    "mappe": "Azienda Agricola Todaro, Piazza Lo Verde, 5, 92010 Montallegro (AG)",
    "nome": {
     "it": "Azienda Agricola Todaro"
@@ -4939,8 +4997,8 @@
    ],
    "sotto": "miele",
    "foto": "https://globaluserfiles.com/media/158430_8842a617a91dedb97ee08b0cb926c3deb84b7f9d.jpeg/v1/w_1400,h_0/img_20260827_14375272.webp",
-   "lat": null,
-   "lng": null,
+   "lat": 37.4012696,
+   "lng": 13.332545,
    "mappe": "Apicoltura Munisteri, Contrada Gorgo, 92010 Montallegro (AG)",
    "nome": {
     "it": "Apicoltura Munisteri"
@@ -4999,8 +5057,8 @@
    ],
    "sotto": "vino",
    "foto": "",
-   "lat": 37.39105,
-   "lng": 13.3269,
+   "lat": 37.3906941,
+   "lng": 13.3282618,
    "mappe": "Cantina Baglio Caruana, Contrada Torre Salsa, 92010 Montallegro (AG)",
    "nome": {
     "it": "Cantina Baglio Caruana"
@@ -5067,8 +5125,8 @@
    ],
    "sotto": "vino",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3920045,
+   "lng": 13.3534081,
    "mappe": "Azienda Agricola Calogero Caruana, Contrada Piano Canale 7, Montallegro",
    "nome": {
     "it": "Azienda Agricola Calogero Caruana",
@@ -5126,8 +5184,8 @@
    ],
    "sotto": "tipici",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3910489,
+   "lng": 13.3505188,
    "mappe": "Tipico Montallegro, Viale della Vittoria, 32, 92010 Montallegro (AG)",
    "nome": {
     "it": "Tipico Montallegro"
@@ -5188,8 +5246,8 @@
    ],
    "sotto": "conserve",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3797164,
+   "lng": 13.3558392,
    "mappe": "Antichi Sapori Caserecci, Contrada Carlici, 92010 Montallegro (AG)",
    "nome": {
     "it": "Antichi Sapori Caserecci"
@@ -5238,8 +5296,8 @@
    ],
    "sotto": "conserve",
    "foto": "https://www.conserveittichedimora.it/wp-content/uploads/2024/09/Slide3.jpg",
-   "lat": 37.3970464,
-   "lng": 13.3304345,
+   "lat": 37.3970062,
+   "lng": 13.3304866,
    "mappe": "Conserve Ittiche di Diego Dimora, Contrada Gorgo, Strada Provinciale 87, 92010 Montallegro (AG)",
    "nome": {
     "it": "Conserve Ittiche di Diego Dimora"
@@ -5297,8 +5355,8 @@
    ],
    "sotto": "formaggi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.4044963,
+   "lng": 13.3291099,
    "mappe": "Caseificio Rifor, Contrada Gorgo, 92010 Montallegro (AG)",
    "nome": {
     "it": "Caseificio Rifor"
@@ -5345,8 +5403,8 @@
    ],
    "sotto": "olio",
    "foto": "",
-   "lat": 37.3896036,
-   "lng": 13.3557532,
+   "lat": 37.3858161,
+   "lng": 13.3567274,
    "mappe": "Oleificio Chiara, Contrada Parisa, 17, 92010 Montallegro (AG)",
    "nome": {
     "it": "Oleificio Chiara"
@@ -5387,8 +5445,8 @@
    ],
    "sotto": "pane",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3918621,
+   "lng": 13.3504369,
    "mappe": "L'Arte del Pane, Via Salvatore Ingraudo Gagliano, 11, 92010 Montallegro (AG)",
    "nome": {
     "it": "L'Arte del Pane"
@@ -5428,8 +5486,8 @@
    ],
    "sotto": "carne",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3948134,
+   "lng": 13.350354,
    "mappe": "Macelleria Vella · La Bontà della Carne, Corso Vittorio Emanuele, 5, 92010 Montallegro (AG)",
    "nome": {
     "it": "Macelleria Vella · La Bontà della Carne"
@@ -5517,8 +5575,8 @@
    ],
    "sotto": "cavallo",
    "foto": "img/foto/opera-ammare.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3871827,
+   "lng": 13.3092381,
    "mappe": "L'operAmmare · A cavallo al mare, Viale Lungomare, 9, Bovo Marina",
    "nome": {
     "it": "L'operAmmare · A cavallo al mare"
@@ -5583,8 +5641,8 @@
    ],
    "sotto": "cavallo",
    "foto": "https://pub-a4d6ad10dc1a4e1da401961c64a9749e.r2.dev/projects/4f2fdbc5-f7f3-4992-b1b4-894b72f07c90/img/5b9c82cbf92abbf5.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3773237,
+   "lng": 13.3532467,
    "mappe": "Scuderia Ranch Todaro, Contrada Carlici, 52, Montallegro",
    "nome": {
     "it": "Scuderia Ranch Todaro"
@@ -5756,8 +5814,8 @@
    ],
    "sotto": "mare",
    "foto": "img/foto/torre-salsa-acqua.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3433653,
+   "lng": 13.3802016,
    "mappe": "SUP e kayak lungo Torre Salsa, Cala Manbrù Beach Club, Siculiana Marina",
    "nome": {
     "it": "SUP e kayak lungo Torre Salsa"
@@ -5833,8 +5891,8 @@
    ],
    "sotto": "info",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3917045,
+   "lng": 13.3514196,
    "mappe": "Pro Loco Montallegro, Montallegro AG",
    "nome": {
     "it": "Pro Loco Montallegro"
@@ -5872,9 +5930,9 @@
    ],
    "sotto": "info",
    "foto": "img/foto/montallegro-monte-suso.jpg",
-   "lat": 37.393945,
-   "lng": 13.350086,
-   "mappe": "Comune di Montallegro, Corso Vittorio Emanuele, 92010 Montallegro (AG)",
+   "lat": 37.3939899,
+   "lng": 13.3500971,
+   "mappe": "Comune di Montallegro, Corso Vittorio Emanuele, 60, 92010 Montallegro (AG)",
    "nome": {
     "it": "Comune di Montallegro"
    },
@@ -5891,7 +5949,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Corso Vittorio Emanuele, 92010 Montallegro (AG)"
+     "it": "Corso Vittorio Emanuele, 60, 92010 Montallegro (AG)",
+     "en": "Corso Vittorio Emanuele, 60, 92010 Montallegro (AG)"
     },
     {
      "tipo": "orari",
@@ -5917,8 +5976,8 @@
    ],
    "sotto": "info",
    "foto": "",
-   "lat": 37.396015,
-   "lng": 13.351545,
+   "lat": 37.3959912,
+   "lng": 13.3510446,
    "mappe": "Stazione Carabinieri, Via Cesare Battisti, 92010 Montallegro (AG)",
    "nome": {
     "it": "Stazione Carabinieri"
@@ -5959,8 +6018,8 @@
    ],
    "sotto": "info",
    "foto": "img/foto/montallegro-monte-suso.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3938466,
+   "lng": 13.350111,
    "mappe": "Polizia Municipale, Corso Vittorio Emanuele, 50, 92010 Montallegro (AG)",
    "nome": {
     "it": "Polizia Municipale"
@@ -6000,8 +6059,8 @@
    ],
    "sotto": "salute",
    "foto": "",
-   "lat": 37.389005,
-   "lng": 13.352179,
+   "lat": 37.3889329,
+   "lng": 13.3519252,
    "mappe": "Farmacia di Montallegro, Viale della Vittoria, 117, 92010 Montallegro (AG)",
    "nome": {
     "it": "Farmacia di Montallegro"
@@ -6044,8 +6103,8 @@
    ],
    "sotto": "salute",
    "foto": "",
-   "lat": 37.395809,
-   "lng": 13.351085,
+   "lat": 37.395742,
+   "lng": 13.3511262,
    "mappe": "Guardia medica, Via Cesare Battisti, 24, 92010 Montallegro (AG)",
    "nome": {
     "it": "Guardia medica"
@@ -6086,8 +6145,8 @@
    ],
    "sotto": "salute",
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Italian_traffic_signs_-_pronto_soccorso_%28figura_II_353%29.svg/1280px-Italian_traffic_signs_-_pronto_soccorso_%28figura_II_353%29.svg.png",
-   "lat": null,
-   "lng": null,
+   "lat": 37.492476,
+   "lng": 13.2697561,
    "mappe": "Pronto soccorso di Ribera, Via Circonvallazione, 113, 92016 Ribera (AG)",
    "nome": {
     "it": "Pronto soccorso di Ribera"
@@ -6127,8 +6186,8 @@
    ],
    "sotto": "salute",
    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Italian_traffic_signs_-_pronto_soccorso_%28figura_II_353%29.svg/1280px-Italian_traffic_signs_-_pronto_soccorso_%28figura_II_353%29.svg.png",
-   "lat": null,
-   "lng": null,
+   "lat": 37.352122,
+   "lng": 13.607766,
    "mappe": "Pronto soccorso di Agrigento, Contrada Consolida, 92100 Agrigento",
    "nome": {
     "it": "Pronto soccorso di Agrigento"
@@ -6168,8 +6227,8 @@
    ],
    "sotto": "salute",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3928689,
+   "lng": 13.3502421,
    "mappe": "Centro Odontoiatrico Spagnolo, Corso Vittorio Emanuele, 87, 92010 Montallegro (AG)",
    "nome": {
     "it": "Centro Odontoiatrico Spagnolo"
@@ -6208,8 +6267,8 @@
    ],
    "sotto": "salute",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.391384,
+   "lng": 13.3504851,
    "mappe": "ABC Analisi Cliniche, Viale della Vittoria, 35, 92010 Montallegro (AG)",
    "nome": {
     "it": "ABC Analisi Cliniche"
@@ -6251,9 +6310,9 @@
    ],
    "sotto": "salute",
    "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Labor Dental, Via Roma, 92010 Montallegro (AG)",
+   "lat": 37.3953337,
+   "lng": 13.3499373,
+   "mappe": "Labor Dental, Via Roma, 17, 92010 Montallegro (AG)",
    "nome": {
     "it": "Labor Dental"
    },
@@ -6270,7 +6329,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Via Roma, 92010 Montallegro (AG)"
+     "it": "Via Roma, 17, 92010 Montallegro (AG)",
+     "en": "Via Roma, 17, 92010 Montallegro (AG)"
     }
    ],
    "consigli": {
@@ -6291,8 +6351,8 @@
    ],
    "sotto": "trasporti",
    "foto": "",
-   "lat": 37.3768,
-   "lng": 13.3278,
+   "lat": 37.3768012,
+   "lng": 13.327624,
    "mappe": "Sosta Camper «U Pantanu», Contrada Torre Salsa, 92010 Montallegro (AG)",
    "nome": {
     "it": "Sosta Camper Torre Salsa «U Pantanu»",
@@ -6368,8 +6428,8 @@
    ],
    "sotto": "trasporti",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3946543,
+   "lng": 13.3495239,
    "mappe": "Taxi NCC Transfer Montallegro, Via Caltabellotta, 13, 92010 Montallegro (AG)",
    "nome": {
     "it": "Taxi NCC Transfer Montallegro"
@@ -6451,8 +6511,8 @@
    ],
    "sotto": "trasporti",
    "foto": "",
-   "lat": 37.388912,
-   "lng": 13.351133,
+   "lat": 37.3888411,
+   "lng": 13.3511248,
    "mappe": "Distributore Eni, Variante SS115, 92010 Montallegro (AG)",
    "nome": {
     "it": "Distributore Eni"
@@ -6495,8 +6555,8 @@
    ],
    "sotto": "spesa",
    "foto": "",
-   "lat": 37.390879,
-   "lng": 13.353225,
+   "lat": 37.3910021,
+   "lng": 13.353518,
    "mappe": "Conad City, Via Calvario, 19, 92010 Montallegro (AG)",
    "nome": {
     "it": "Conad City"
@@ -6542,8 +6602,8 @@
    ],
    "sotto": "negozi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3935565,
+   "lng": 13.350121,
    "mappe": "Tabaccheria Edicola Manzone, Corso Vittorio Emanuele, 86, 92010 Montallegro (AG)",
    "nome": {
     "it": "Tabaccheria Edicola Manzone"
@@ -6580,20 +6640,21 @@
    "categorie": [
     "servizi"
    ],
-   "sotto": "negozi",
+   "sotto": "fiori",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3925628,
+   "lng": 13.350232,
    "mappe": "Magic's Flowers, Corso Vittorio Emanuele, 103, 92010 Montallegro (AG)",
    "nome": {
     "it": "Magic's Flowers"
    },
    "etichetta": {
-    "it": "Fiori e articoli regalo",
-    "en": "Flowers & gifts"
+    "it": "Fiorista",
+    "en": "Florist"
    },
    "breve": {
-    "it": "Fiori, articoli da regalo e souvenir sul corso."
+    "it": "Il negozio di fiori storico del paese, dal 1949: fiori, piante, articoli da regalo e addobbi floreali, anche per i matrimoni.",
+    "en": "The town's long-standing flower shop, open since 1949: flowers, plants, gifts and floral decorations, weddings included."
    },
    "testo": {
     "it": []
@@ -6610,7 +6671,8 @@
    "zona": "paese",
    "verificato": "novembre 2026",
    "contatti": {
-    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
+    "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/",
+    "tel": "3880417875"
    }
   },
   {
@@ -6619,20 +6681,21 @@
    "categorie": [
     "servizi"
    ],
-   "sotto": "negozi",
+   "sotto": "fiori",
    "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Il Giardino di Alice, Corso Vittorio Emanuele, 69, 92010 Montallegro (AG)",
+   "lat": 37.3910279,
+   "lng": 13.3506979,
+   "mappe": "Il Giardino di Alice, Viale della Vittoria, 57, 92010 Montallegro (AG)",
    "nome": {
     "it": "Il Giardino di Alice"
    },
    "etichetta": {
-    "it": "Fiori, piante e allestimenti",
-    "en": "Flowers, plants & decorations"
+    "it": "Fiorista",
+    "en": "Florist"
    },
    "breve": {
-    "it": "Fiori, piante e allestimenti floreali per matrimoni ed eventi."
+    "it": "Fiori, piante e allestimenti floreali per matrimoni ed eventi, sul viale della Vittoria.",
+    "en": "Flowers, plants and floral decorations for weddings and events, on Viale della Vittoria."
    },
    "testo": {
     "it": []
@@ -6640,7 +6703,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Corso Vittorio Emanuele, 69, 92010 Montallegro (AG)"
+     "it": "Viale della Vittoria, 57, 92010 Montallegro (AG)",
+     "en": "Viale della Vittoria, 57, 92010 Montallegro (AG)"
     }
    ],
    "consigli": {
@@ -6655,6 +6719,47 @@
    "verificato": "novembre 2026"
   },
   {
+   "id": "fiori-maria-curallo",
+   "fonte": "portale",
+   "categorie": [
+    "servizi"
+   ],
+   "sotto": "fiori",
+   "foto": "",
+   "lat": 37.3919181,
+   "lng": 13.3499107,
+   "mappe": "Piazza Lo Verde, 3, 92010 Montallegro (AG)",
+   "nome": {
+    "it": "Fiori di Maria Curallo",
+    "en": "Fiori di Maria Curallo"
+   },
+   "etichetta": {
+    "it": "Fiorista",
+    "en": "Florist"
+   },
+   "breve": {
+    "it": "Fiori e piante in piazza Lo Verde, nel centro del paese.",
+    "en": "Flowers and plants on Piazza Lo Verde, in the town centre."
+   },
+   "testo": {
+    "it": []
+   },
+   "info": [
+    {
+     "tipo": "dove",
+     "it": "Piazza Lo Verde, 3, 92010 Montallegro (AG)",
+     "en": "Piazza Lo Verde, 3, 92010 Montallegro (AG)"
+    }
+   ],
+   "consigli": {
+    "it": []
+   },
+   "contatti": {
+    "tel": "3396055454"
+   },
+   "zona": "paese"
+  },
+  {
    "id": "ferramenta-baglio",
    "fonte": "portale",
    "categorie": [
@@ -6662,8 +6767,8 @@
    ],
    "sotto": "negozi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3913682,
+   "lng": 13.3502684,
    "mappe": "Ferramenta Baglio, Viale della Vittoria, 28, 92010 Montallegro (AG)",
    "nome": {
     "it": "Ferramenta Baglio"
@@ -6701,8 +6806,8 @@
    ],
    "sotto": "negozi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3869004,
+   "lng": 13.3534664,
    "mappe": "Mobili Lentini, Viale della Vittoria, 163, 92010 Montallegro (AG)",
    "nome": {
     "it": "Mobili Lentini"
@@ -6817,9 +6922,9 @@
    ],
    "sotto": "negozi",
    "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Edil Aurora, Montallegro AG",
+   "lat": 37.39724,
+   "lng": 13.3521055,
+   "mappe": "Edil Aurora, Via Cesare Battisti, 65, 92010 Montallegro (AG)",
    "nome": {
     "it": "Edil Aurora"
    },
@@ -6834,6 +6939,11 @@
     "it": []
    },
    "info": [
+    {
+     "tipo": "dove",
+     "it": "Via Cesare Battisti, 65, 92010 Montallegro (AG)",
+     "en": "Via Cesare Battisti, 65, 92010 Montallegro (AG)"
+    },
     {
      "tipo": "orari",
      "it": "Dal lunedì al venerdì 7:00–13:00 e 14:00–18:00, sabato 7:00–13:00."
@@ -6857,8 +6967,8 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": 37.390404,
-   "lng": 13.351669,
+   "lat": 37.3903667,
+   "lng": 13.3516736,
    "mappe": "Ufficio Postale, Via Fratelli Ferraro, 11, 92010 Montallegro (AG)",
    "nome": {
     "it": "Ufficio Postale"
@@ -6908,9 +7018,9 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": null,
-   "lng": null,
-   "mappe": "Grimaldi Auto, Viale della Vittoria, 92010 Montallegro (AG)",
+   "lat": 37.3887627,
+   "lng": 13.3519935,
+   "mappe": "Grimaldi Auto, Viale della Vittoria, 126, 92010 Montallegro (AG)",
    "nome": {
     "it": "Grimaldi Auto"
    },
@@ -6927,7 +7037,8 @@
    "info": [
     {
      "tipo": "dove",
-     "it": "Viale della Vittoria, 92010 Montallegro (AG)"
+     "it": "Viale della Vittoria, 126, 92010 Montallegro (AG)",
+     "en": "Viale della Vittoria, 126, 92010 Montallegro (AG)"
     },
     {
      "tipo": "orari",
@@ -6953,8 +7064,8 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3947805,
+   "lng": 13.3445731,
    "mappe": "Officina Meccatronica Bonifacio, Via Roma, 97, 92010 Montallegro (AG)",
    "nome": {
     "it": "Officina Meccatronica Bonifacio"
@@ -6992,8 +7103,8 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3825788,
+   "lng": 13.3547072,
    "mappe": "Schembri Pneumatici, Contrada Carlici, 92010 Montallegro (AG)",
    "nome": {
     "it": "Schembri Pneumatici"
@@ -7032,8 +7143,8 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3923945,
+   "lng": 13.350112,
    "mappe": "Moto Service Gagliano, Via Villani, 1, 92010 Montallegro (AG)",
    "nome": {
     "it": "Moto Service Gagliano"
@@ -7072,8 +7183,8 @@
    ],
    "sotto": "servizi",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3725628,
+   "lng": 13.3610489,
    "mappe": "CLS Costruzioni, Contrada Bifara, 92010 Montallegro (AG)",
    "nome": {
     "it": "CLS Costruzioni"
@@ -7111,8 +7222,8 @@
    ],
    "sotto": "benessere",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3946837,
+   "lng": 13.3502662,
    "mappe": "Parrucchieria Dacci un Taglio, Corso Vittorio Emanuele, 9, 92010 Montallegro (AG)",
    "nome": {
     "it": "Parrucchieria Dacci un Taglio"
@@ -7210,8 +7321,8 @@
    ],
    "sotto": "benessere",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3906394,
+   "lng": 13.3507826,
    "mappe": "Beauty Line, Viale della Vittoria, 60, 92010 Montallegro (AG)",
    "nome": {
     "it": "Beauty Line"
@@ -7247,8 +7358,8 @@
    ],
    "sotto": "svago",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3901782,
+   "lng": 13.3510937,
    "mappe": "Tata Games, Viale della Vittoria, 99, 92010 Montallegro (AG)",
    "nome": {
     "it": "Tata Games"
@@ -7325,8 +7436,8 @@
    ],
    "sotto": "comunita",
    "foto": "",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3928405,
+   "lng": 13.3495115,
    "mappe": "Chiesa Madre, Via Ferraro, 10, 92010 Montallegro (AG)",
    "nome": {
     "it": "Chiesa Madre"
@@ -7364,8 +7475,8 @@
    ],
    "sotto": "comunita",
    "foto": "https://equippersmontallegro.it/wp-content/themes/equippers-montallegro/assets/img/hero-video.webp",
-   "lat": null,
-   "lng": null,
+   "lat": 37.389885,
+   "lng": 13.3521647,
    "mappe": "Equippers Montallegro, Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
    "nome": {
     "it": "Equippers Montallegro"
@@ -7409,8 +7520,8 @@
    ],
    "sotto": "comunita",
    "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/museo-civilta-contadina-montallegro-rosa-lilt.jpg",
-   "lat": null,
-   "lng": null,
+   "lat": 37.3899774,
+   "lng": 13.3515584,
    "mappe": "LILT Montallegro, Viale della Vittoria, 101, 92010 Montallegro (AG)",
    "nome": {
     "it": "LILT Montallegro"
@@ -7515,8 +7626,8 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.3335,
-   "lng": 13.4206,
+   "lat": 37.3367831,
+   "lng": 13.4206695,
    "mappe": "Siculiana (AG)",
    "nome": {
     "it": "Siculiana: castello e Santuario del Crocifisso",
@@ -7583,8 +7694,8 @@
     "spiagge",
     "dintorni"
    ],
-   "lat": 37.3356,
-   "lng": 13.4225,
+   "lat": 37.3408636,
+   "lng": 13.3833871,
    "mappe": "Spiaggia di Siculiana Marina",
    "nome": {
     "it": "Spiaggia di Siculiana Marina",
@@ -7699,7 +7810,9 @@
    },
    "contatti": {
     "web": "https://comune.realmonte.ag.it"
-   }
+   },
+   "lat": 37.314738,
+   "lng": 13.4174033
   },
   {
    "id": "villa-romana-durrueli",
@@ -7708,8 +7821,8 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.28981,
-   "lng": 13.48775,
+   "lat": 37.2898326,
+   "lng": 13.4877874,
    "mappe": "Villa Romana di Durrueli, Realmonte",
    "nome": {
     "it": "Villa Romana di Durrueli",
@@ -7925,8 +8038,8 @@
     "dintorni",
     "spiagge"
    ],
-   "lat": 37.304099,
-   "lng": 13.431129,
+   "lat": 37.3026836,
+   "lng": 13.4337942,
    "mappe": "Spiaggia Le Pergole, Contrada Pergole, Realmonte (AG)",
    "nome": {
     "it": "Spiaggia Le Pergole",
@@ -8057,7 +8170,9 @@
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/6/68/IMG_6572_-_Agrigento_-_caos_la_casa_natale_di_Luigi_Pirandello_-_2_di_2_-.jpg",
    "contatti": {
     "web": "https://www.parcovalledeitempli.it"
-   }
+   },
+   "lat": 37.2912693,
+   "lng": 13.5519772
   },
   {
    "id": "kolymbethra",
@@ -8066,8 +8181,8 @@
     "dintorni",
     "natura"
    ],
-   "lat": 37.2931,
-   "lng": 13.6002,
+   "lat": 37.2915808,
+   "lng": 13.5818532,
    "mappe": "Giardino della Kolymbethra, Agrigento",
    "nome": {
     "it": "Giardino della Kolymbethra",
@@ -8237,7 +8352,9 @@
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Telamons,_from_Zeus_Temple_in_Akragas,_after_480_BC,_AM_Agrigento,_120816.jpg",
    "contatti": {
     "web": "https://www.parcovalledeitempli.it"
-   }
+   },
+   "lat": 37.2969514,
+   "lng": 13.5889019
   },
   {
    "id": "agrigento-centro",
@@ -8307,7 +8424,9 @@
    "fotoRiserva": "https://upload.wikimedia.org/wikipedia/commons/1/18/Historic_centre_of_Agrigento_seen_from_the_Valle_dei_Templi_-_Italy_2015_(2).JPG",
    "contatti": {
     "web": "https://comune.agrigento.it"
-   }
+   },
+   "lat": 37.31103,
+   "lng": 13.5817891
   },
   {
    "id": "farm-cultural-park",
@@ -8356,7 +8475,9 @@
    },
    "contatti": {
     "web": "https://www.farmculturalpark.com"
-   }
+   },
+   "lat": 37.3133687,
+   "lng": 13.6583899
   },
   {
    "id": "sciacca",
@@ -8365,8 +8486,8 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.50917,
-   "lng": 13.08889,
+   "lat": 37.5066395,
+   "lng": 13.0820604,
    "mappe": "Piazza Angelo Scandaliato, Sciacca",
    "nome": {
     "it": "Sciacca",
@@ -8433,8 +8554,8 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.505688,
-   "lng": 13.080469,
+   "lat": 37.5064064,
+   "lng": 13.1063519,
    "mappe": "Castello Incantato, Via Fondo Bentivegna, 16, 92019 Sciacca (AG)",
    "nome": {
     "it": "Castello Incantato di Sciacca",
@@ -8505,8 +8626,8 @@
     "dintorni",
     "cultura"
    ],
-   "lat": 37.57574,
-   "lng": 13.21861,
+   "lat": 37.5757509,
+   "lng": 13.2187264,
    "mappe": "Caltabellotta (AG)",
    "nome": {
     "it": "Caltabellotta",
@@ -8619,7 +8740,9 @@
    },
    "contatti": {
     "tel": "3662485772"
-   }
+   },
+   "lat": 37.391055,
+   "lng": 13.289887
   },
   {
    "id": "marea-eraclea",
@@ -8664,7 +8787,9 @@
     "it": [],
     "en": []
    },
-   "stagionale": true
+   "stagionale": true,
+   "lat": 37.3920078,
+   "lng": 13.2874177
   }
  ],
  "eventi": [
@@ -9608,6 +9733,13 @@
     "nome": {
      "it": "Negozi",
      "en": "Shops"
+    }
+   },
+   {
+    "id": "fiori",
+    "nome": {
+     "it": "Fiori e piante",
+     "en": "Flowers and plants"
     }
    },
    {

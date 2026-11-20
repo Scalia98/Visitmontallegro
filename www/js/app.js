@@ -309,7 +309,7 @@
     ristoranti: 'fork', mare: 'fork', bar: 'cup', pub: 'glass', eventi: 'star',
     hotel: 'bed', bb: 'bed', camere: 'bed', agri: 'leaf', villa: 'home', casa: 'home',
     formaggi: 'basket', olio: 'drop', vino: 'glass', miele: 'basket', conserve: 'basket', tipici: 'shop', pane: 'basket', carne: 'basket',
-    info: 'info', salute: 'cross', trasporti: 'bus', spesa: 'basket', negozi: 'shop', servizi: 'wrench', benessere: 'star', comunita: 'people', svago: 'star',
+    info: 'info', salute: 'cross', trasporti: 'bus', spesa: 'basket', negozi: 'shop', fiori: 'leaf', servizi: 'wrench', benessere: 'star', comunita: 'people', svago: 'star',
     escursioni: 'hike', natura: 'leaf', cavallo: 'hike', cultura: 'columns'
   };
   var ZONE = { paese: 'zonaPaese', bovo: 'zonaBovo', 'torre-salsa': 'zonaTorre', campagna: 'zonaCampagna', eraclea: 'zonaEraclea' };
