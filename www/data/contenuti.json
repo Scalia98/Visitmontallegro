@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-24.01",
+ "versione": "2026-11-24.02",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1272,7 +1272,7 @@
    "categorie": [
     "cultura"
    ],
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Montallegro.jpg/1280px-Montallegro.jpg",
    "lat": 37.3928405,
    "lng": 13.3495115,
    "mappe": "Chiesa di San Leonardo, Via Ferraro 10, Montallegro",
@@ -1307,7 +1307,8 @@
    },
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/"
-   }
+   },
+   "credito": "Immagine di repertorio · Toni Pecoraro · Pubblico dominio"
   },
   {
    "id": "museo-civilta-contadina",
@@ -1761,7 +1762,7 @@
    "categorie": [
     "cultura"
    ],
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cercenasco_railway_halt.jpg/1280px-Cercenasco_railway_halt.jpg",
    "lat": 37.3890941,
    "lng": 13.3546134,
    "mappe": "Stazione di Montallegro",
@@ -1788,7 +1789,8 @@
    },
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/"
-   }
+   },
+   "credito": "Immagine di repertorio · Luca Bergamasco · CC BY-SA 3.0"
   },
   {
    "id": "scala-dei-turchi",
@@ -2441,7 +2443,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pizza_Margherita_%E3%83%94%E3%82%B6%E3%83%BB%E3%83%9E%E3%83%AB%E3%82%B2%E3%83%AA%E3%83%BC%E3%82%BF.jpg/1280px-Pizza_Margherita_%E3%83%94%E3%82%B6%E3%83%BB%E3%83%9E%E3%83%AB%E3%82%B2%E3%83%AA%E3%83%BC%E3%82%BF.jpg",
    "lat": 37.3882354,
    "lng": 13.3525807,
    "mappe": "La Preferita, Viale della Vittoria, 135, 92010 Montallegro (AG)",
@@ -2492,7 +2494,8 @@
    "riconoscimenti": [
     "Campionato Mondiale della Pizza 2026: 35° su 361"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · ノボホショコロトソ · CC BY 4.0"
   },
   {
    "id": "pops",
@@ -2501,7 +2504,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Margherita_Originale.JPG/1280px-Margherita_Originale.JPG",
    "lat": 37.3951885,
    "lng": 13.3502977,
    "mappe": "Pizzeria e Trattoria da Pops, Corso Vittorio Emanuele, 92010 Montallegro (AG)",
@@ -2537,7 +2540,8 @@
     "tel": "3717461659",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Mario56 · CC BY-SA 3.0"
   },
   {
    "id": "dennys",
@@ -2549,7 +2553,7 @@
     "ristoranti",
     "bar"
    ],
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Cannoli_tipo_mignon_con_ripieno_03.jpg/1280px-Cannoli_tipo_mignon_con_ripieno_03.jpg",
    "lat": 37.3899287,
    "lng": 13.3512624,
    "mappe": "Denny's, Viale della Vittoria, 98, 92010 Montallegro (AG)",
@@ -2591,7 +2595,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · OppidumNissenae · CC BY-SA 4.0"
   },
   {
    "id": "osteria-del-gorgo",
@@ -2600,7 +2605,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pasta_con_le_sarde.jpg/1280px-Pasta_con_le_sarde.jpg",
    "lat": 37.3972217,
    "lng": 13.329579,
    "mappe": "Osteria del Gorgo Montallegro, Contrada Gorgo, 92010 Montallegro (AG)",
@@ -2648,7 +2653,8 @@
     "sab": "12:00-15:00, 19:00-24:00",
     "dom": "12:00-15:00, 19:00-24:00"
    },
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Sebastian Fischer · CC BY-SA 3.0"
   },
   {
    "id": "camelot",
@@ -2657,7 +2663,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Pizza_Margherita_%28%29.JPG/1280px-Pizza_Margherita_%28%29.JPG",
    "lat": 37.3920576,
    "lng": 13.3500765,
    "mappe": "Pizzeria Camelot, Corso Vittorio Emanuele, 160, 92010 Montallegro (AG)",
@@ -2695,7 +2701,8 @@
     "tel": "3398541022",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Lombroso · CC BY-SA 4.0"
   },
   {
    "id": "da-calogero",
@@ -2704,7 +2711,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Punch_Neapolitan_Pizza_%282257039638%29.jpg/1280px-Punch_Neapolitan_Pizza_%282257039638%29.jpg",
    "lat": 37.3932248,
    "lng": 13.3502467,
    "mappe": "Pizzeria da Calogero, Corso Vittorio Emanuele, 92010 Montallegro (AG)",
@@ -2740,7 +2747,8 @@
     "tel": "3336927899",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Tony Webster · CC BY 2.0"
   },
   {
    "id": "bistrot",
@@ -2870,7 +2878,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pasta_con_le_sarde_%28Palermo%29.jpg/1280px-Pasta_con_le_sarde_%28Palermo%29.jpg",
    "lat": 37.3946876,
    "lng": 13.3500922,
    "mappe": "Do Ziu Michele, Corso Vittorio Emanuele, 92010 Montallegro (AG)",
@@ -2910,7 +2918,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Adriao · CC BY 3.0"
   },
   {
    "id": "locanda-perbellini",
@@ -2986,7 +2995,7 @@
     "spiagge"
    ],
    "sotto": "mare",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Le_dune_a_torre_salsa.jpg/1280px-Le_dune_a_torre_salsa.jpg",
    "lat": 37.3792326,
    "lng": 13.3091667,
    "mappe": "Marina Giò, Bovo Marina, 92010 Montallegro (AG)",
@@ -3038,7 +3047,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Graziella Taibi · CC BY-SA 4.0"
   },
   {
    "id": "canaima",
@@ -3047,7 +3057,7 @@
     "mangiare"
    ],
    "sotto": "mare",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/tramonto1.jpg",
    "lat": 37.3807923,
    "lng": 13.3070902,
    "mappe": "Canaima, Contrada Bovo Marina, 92010 Montallegro (AG)",
@@ -3096,7 +3106,8 @@
     "dom": "08:30-24:00"
    },
    "stagionale": true,
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "hakuna-matata",
@@ -3106,7 +3117,7 @@
     "spiagge"
    ],
    "sotto": "mare",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Spiaggia-tramonto.jpg",
    "lat": 37.3809433,
    "lng": 13.3068808,
    "mappe": "Hakuna Matata, Bovo Marina, 92010 Montallegro (AG)",
@@ -3152,7 +3163,8 @@
     "Noleggio canoe",
     "Spiaggia accessibile"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "onda-marina",
@@ -3162,7 +3174,7 @@
     "spiagge"
    ],
    "sotto": "mare",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Spaghetti_Allo_Scoglio%2C_Villa_Romana_Trattoria%2C_Cairns%2C_2025%2C_01.jpg/1280px-Spaghetti_Allo_Scoglio%2C_Villa_Romana_Trattoria%2C_Cairns%2C_2025%2C_01.jpg",
    "lat": 37.3807758,
    "lng": 13.3075927,
    "mappe": "Onda Marina, Bovo Marina, 92010 Montallegro (AG)",
@@ -3206,7 +3218,8 @@
     "prenotaTesto": "Prenota su TheFork"
    },
    "zona": "bovo",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Chris Olszewski · CC BY-SA 4.0"
   },
   {
    "id": "don-pablo",
@@ -3215,7 +3228,7 @@
     "mangiare"
    ],
    "sotto": "mare",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/viale-bovomarina.jpeg",
    "lat": 37.380539,
    "lng": 13.30792,
    "mappe": "Don Pablo, Bovo Marina, 92010 Montallegro (AG)",
@@ -3253,7 +3266,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "bovo",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "moderna",
@@ -3262,7 +3276,7 @@
     "mangiare"
    ],
    "sotto": "bar",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/PARISIAN_BREAKFAST.jpg/1280px-PARISIAN_BREAKFAST.jpg",
    "lat": 37.3891937,
    "lng": 13.3521859,
    "mappe": "Pasticceria Moderna, Viale della Vittoria, 109, 92010 Montallegro (AG)",
@@ -3304,7 +3318,8 @@
     "tel": "3248954771",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Nancy Wong · CC BY-SA 4.0"
   },
   {
    "id": "barry-white",
@@ -3313,7 +3328,7 @@
     "mangiare"
    ],
    "sotto": "bar",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gelato_in_Hamilton_3.jpg/1280px-Gelato_in_Hamilton_3.jpg",
    "lat": 37.3908626,
    "lng": 13.350645,
    "mappe": "Café Barry White, Viale della Vittoria, 44, 92010 Montallegro (AG)",
@@ -3352,7 +3367,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Clovermoss · CC BY 4.0"
   },
   {
    "id": "roxy-bar",
@@ -3361,7 +3377,7 @@
     "mangiare"
    ],
    "sotto": "bar",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Espresso_at_Sainsbury%27s_Low_Hall%2C_Chingford%2C_London_4.jpg/1280px-Espresso_at_Sainsbury%27s_Low_Hall%2C_Chingford%2C_London_4.jpg",
    "lat": 37.3904861,
    "lng": 13.3508567,
    "mappe": "Roxy Bar, Via I Febbraio, 68, 92010 Montallegro (AG)",
@@ -3396,7 +3412,8 @@
    "zona": "paese",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
-   }
+   },
+   "credito": "Immagine di repertorio · Acabashi · CC BY-SA 4.0"
   },
   {
    "id": "osteria-al-cappuccino",
@@ -3405,7 +3422,7 @@
     "mangiare"
    ],
    "sotto": "pub",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Aperol_Spritz_-_Santa_Ynez_Kitchen_-_Sarah_Stierch.jpg/1280px-Aperol_Spritz_-_Santa_Ynez_Kitchen_-_Sarah_Stierch.jpg",
    "lat": 37.3896914,
    "lng": 13.3513937,
    "mappe": "Osteria al Cappuccino, Viale della Vittoria, 108, 92010 Montallegro (AG)",
@@ -3446,7 +3463,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Missvain · CC BY 4.0"
   },
   {
    "id": "wild-west-pub",
@@ -3455,7 +3473,7 @@
     "mangiare"
    ],
    "sotto": "pub",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Beer_taps_%282013%29-01.jpg/1280px-Beer_taps_%282013%29-01.jpg",
    "lat": 37.3907015,
    "lng": 13.3507612,
    "mappe": "Wild West Pub, Viale della Vittoria, 54, 92010 Montallegro (AG)",
@@ -3493,7 +3511,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-mangiare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · abruellmann · CC0"
   },
   {
    "id": "villa-domini",
@@ -3502,7 +3521,7 @@
     "mangiare"
    ],
    "sotto": "eventi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Wedding_Banquet_setting.jpeg/1280px-Wedding_Banquet_setting.jpeg",
    "lat": 37.3791809,
    "lng": 13.3606615,
    "mappe": "Villa Domini, Contrada Costa Domini, 1, 92010 Montallegro (AG)",
@@ -3544,7 +3563,8 @@
     "facebook": "https://www.facebook.com/villadominirestaurant"
    },
    "zona": "campagna",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Tracy Hunter · CC BY 2.0"
   },
   {
    "id": "relais-briuccia",
@@ -3665,7 +3685,7 @@
     "dormire"
    ],
    "sotto": "agri",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Panorama_Torre_salsa.jpg/1280px-Panorama_Torre_salsa.jpg",
    "lat": 37.3867408,
    "lng": 13.3430232,
    "mappe": "Agriturismo Casebianche, Contrada Stretto, 92010 Montallegro (AG)",
@@ -3714,7 +3734,8 @@
     "Aria condizionata",
     "Animali ammessi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Pinoparisi61 · CC BY-SA 4.0"
   },
   {
    "id": "mangiatoie-cavaliere",
@@ -3835,7 +3856,7 @@
     "dormire"
    ],
    "sotto": "bb",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Montallegro_Hauptstra%C3%9Fe.jpg/1280px-Montallegro_Hauptstra%C3%9Fe.jpg",
    "lat": 37.3905082,
    "lng": 13.3506405,
    "mappe": "La Maison, Via Siracusa, 4, 92010 Montallegro (AG)",
@@ -3880,7 +3901,8 @@
    "caratteristiche": [
     "Wi-Fi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Clemensfranz · CC BY 2.5"
   },
   {
    "id": "eden-capo-bianco",
@@ -3889,7 +3911,7 @@
     "dormire"
    ],
    "sotto": "bb",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Capo_Bianco_%28Sicily%29.jpg/1280px-Capo_Bianco_%28Sicily%29.jpg",
    "lat": 37.3946142,
    "lng": 13.3007429,
    "mappe": "L'Eden di Capo Bianco, Contrada Gorgo Vizzì, Bovo Marina, 92010 Montallegro (AG)",
@@ -3938,7 +3960,8 @@
     "Colazione",
     "Parcheggio privato",
     "Wi-Fi"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Yiyi · CC BY-SA 4.0"
   },
   {
    "id": "villa-del-poeta",
@@ -3947,7 +3970,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Riseva_vista_dall%27alto.JPG/1280px-Riseva_vista_dall%27alto.JPG",
    "lat": 37.3803725,
    "lng": 13.3523681,
    "mappe": "Villa del Poeta, Campagna di Torre Salsa, Montallegro (AG)",
@@ -4003,7 +4026,8 @@
     "Giochi per bambini",
     "Animali su richiesta"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Occhigatta · CC BY-SA 3.0"
   },
   {
    "id": "villa-domizia",
@@ -4213,7 +4237,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/La_discesa_verso_il_mare%2C_ingreso_Eremita.JPG/1280px-La_discesa_verso_il_mare%2C_ingreso_Eremita.JPG",
    "lat": 37.3788873,
    "lng": 13.3533655,
    "mappe": "Villa Chiara, Montallegro AG",
@@ -4256,7 +4280,8 @@
     "Parcheggio",
     "Wi-Fi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Pensa Lara · CC BY-SA 4.0"
   },
   {
    "id": "casale-bovo-marina",
@@ -4265,7 +4290,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Panoramica-tramonto.jpg",
    "lat": 37.3893681,
    "lng": 13.3096414,
    "mappe": "Il Casale di Bovo Marina, Montallegro AG",
@@ -4311,7 +4336,8 @@
     "Aria condizionata",
     "Animali ammessi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "villa-cecilia",
@@ -4320,7 +4346,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Vista_mare_da_lontano_con_gabbiani.jpg/1280px-Vista_mare_da_lontano_con_gabbiani.jpg",
    "lat": 37.3927952,
    "lng": 13.3046911,
    "mappe": "Villa Cecilia, Montallegro AG",
@@ -4367,7 +4393,8 @@
     "Wi-Fi",
     "Aria condizionata"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Manusss19 · CC BY-SA 4.0"
   },
   {
    "id": "villa-tre-s",
@@ -4376,7 +4403,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-3.jpeg",
    "lat": 37.3904495,
    "lng": 13.3043422,
    "mappe": "Villa Tre \"S\", Montallegro AG",
@@ -4420,7 +4447,8 @@
     "3 posti auto",
     "Animali ammessi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "villa-peppino",
@@ -4429,7 +4457,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-panorama.jpg",
    "lat": 37.3970844,
    "lng": 13.3281995,
    "mappe": "Villa Peppino, Contrada Gorgo, 6, 92010 Montallegro (AG)",
@@ -4478,7 +4506,8 @@
     "Wi-Fi",
     "Aria condizionata"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "villa-mari-e-monti",
@@ -4487,7 +4516,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Panorama_a_Torre_Salsa.JPG/1280px-Panorama_a_Torre_Salsa.JPG",
    "lat": null,
    "lng": null,
    "mappe": "Villa Mari e Monti, Montallegro AG",
@@ -4533,7 +4562,8 @@
     "Barbecue",
     "Parcheggio"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Pensa Lara · CC BY-SA 4.0"
   },
   {
    "id": "villa-caterina",
@@ -4542,7 +4572,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Montallegro_-_panoramio.jpg/1280px-Montallegro_-_panoramio.jpg",
    "lat": 37.3897257,
    "lng": 13.3541984,
    "mappe": "Villa Caterina, Via Liborio Bonifacio 40, 92010 Montallegro (AG)",
@@ -4586,7 +4616,8 @@
     "Aria condizionata",
     "Ingresso indipendente",
     "Wi-Fi"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Николай Максимович · CC BY 3.0"
   },
   {
    "id": "villa-emanuela",
@@ -4595,7 +4626,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Beach_in_Eraclea_Minoa_-_Italy_2015_(2).JPG/1280px-Beach_in_Eraclea_Minoa_-_Italy_2015_(2).JPG",
    "lat": 37.3930702,
    "lng": 13.3024397,
    "mappe": "Villa Emanuela, Contrada Bovo Marina, 92010 Montallegro (AG)",
@@ -4644,7 +4675,8 @@
     "Aria condizionata",
     "Parcheggio privato",
     "Wi-Fi"
-   ]
+   ],
+   "credito": "Immagine di repertorio · José Luiz Bernardes Ribeiro · CC BY-SA 4.0"
   },
   {
    "id": "villa-chalet-al-mare",
@@ -4653,7 +4685,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-6.jpeg",
    "lat": null,
    "lng": null,
    "mappe": "Villa Chalet al Mare, Contrada Bovo Marina 57, 92010 Montallegro (AG)",
@@ -4697,7 +4729,8 @@
     "Vista mare",
     "Parcheggio",
     "Animali ammessi"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "casa-corte-eraclea",
@@ -4706,7 +4739,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Torre_Salsa_%28con_vista_Capo_Bianco%29_-_panoramio.jpg/1280px-Torre_Salsa_%28con_vista_Capo_Bianco%29_-_panoramio.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Casa Corte sul Golfo di Eraclea Minoa, Montallegro AG",
@@ -4742,7 +4775,8 @@
    "caratteristiche": [
     "Vista mare"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · gironavigando.it · CC BY 3.0"
   },
   {
    "id": "cannocchiale-sul-mare",
@@ -4751,7 +4785,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-9-1.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Cannocchiale sul Mare, Montallegro AG",
@@ -4791,7 +4825,8 @@
     "Wi-Fi",
     "Stufa a legna"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "casa-tramonti",
@@ -4800,7 +4835,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Un_tramonto_di_quotidiana_Bellezza_-_Torre_Salsa_AG_Sicilia.jpg/1280px-Un_tramonto_di_quotidiana_Bellezza_-_Torre_Salsa_AG_Sicilia.jpg",
    "lat": 37.3788109,
    "lng": 13.30933,
    "mappe": "Casa da cui godersi meravigliosi tramonti, Montallegro AG",
@@ -4832,7 +4867,8 @@
     "prenotaTesto": "Vedi su Airbnb",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
    },
-   "zona": "campagna"
+   "zona": "campagna",
+   "credito": "Immagine di repertorio · Thaileisa23 · CC BY-SA 4.0"
   },
   {
    "id": "villa-giulia",
@@ -4841,7 +4877,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Belice_Valley.jpg/1280px-Belice_Valley.jpg",
    "lat": 37.3890406,
    "lng": 13.3142109,
    "mappe": "Villa Giulia Bovo Marina, Montallegro AG",
@@ -4886,7 +4922,8 @@
     "Parcheggio",
     "Wi-Fi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Thomas · CC BY-SA 2.0"
   },
   {
    "id": "le-3-rose",
@@ -4895,7 +4932,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Torre_Salsa_-_Veduta_dall%27alto_del_sentiero.jpg/1280px-Torre_Salsa_-_Veduta_dall%27alto_del_sentiero.jpg",
    "lat": 37.3950824,
    "lng": 13.3332416,
    "mappe": "Le 3 Rose Apartments, Contrada Gorgo, 92010 Montallegro (AG)",
@@ -4942,7 +4979,8 @@
     "Wi-Fi",
     "Parcheggio"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Fonsi51 · CC BY-SA 4.0"
   },
   {
    "id": "casa-canneto",
@@ -4951,7 +4989,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Laghetto-Gorgo-Flora-.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Casa Canneto, Montallegro AG",
@@ -4993,7 +5031,8 @@
     "Parcheggio",
     "Animali ammessi"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "villa-theia",
@@ -5002,7 +5041,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-8.jpg",
    "lat": 37.3866882,
    "lng": 13.30336,
    "mappe": "Villa Theía, Montallegro AG",
@@ -5042,7 +5081,8 @@
     "Parcheggio",
     "Aria condizionata"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "la-margherita",
@@ -5051,7 +5091,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/montallegro-panorama-monte-suso.jpg",
    "lat": 37.3936386,
    "lng": 13.3497801,
    "mappe": "La Margherita, Montallegro AG",
@@ -5089,7 +5129,8 @@
     "Balcone",
     "Aria condizionata"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "casa-dei-nonni",
@@ -5098,7 +5139,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/montallegro-monte-suso-veduta.jpg",
    "lat": 37.3924701,
    "lng": 13.3495702,
    "mappe": "La Casa dei Nonni, Via Villani, 28, 92010 Montallegro (AG)",
@@ -5136,7 +5177,8 @@
     "prenotaTesto": "Vedi su Booking",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/dove-dormire/"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "bovo-marina-suites",
@@ -5145,7 +5187,7 @@
     "dormire"
    ],
    "sotto": "camere",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/FOTO-7.jpeg",
    "lat": null,
    "lng": null,
    "mappe": "Bovo Marina Suites, Contrada Bovo Marina, 92010 Montallegro (AG)",
@@ -5184,7 +5226,8 @@
     "web": "https://www.lunaminoica.it/"
    },
    "zona": "bovo",
-   "caratteristiche": []
+   "caratteristiche": [],
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "caretta-caretta",
@@ -5193,7 +5236,7 @@
     "dormire"
    ],
    "sotto": "camere",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/3/39/Loggerhead_Sea_Turtle_%28Caretta_caretta%29_%283149756764%29.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Caretta Caretta, Contrada Bovo Marina, 92010 Montallegro (AG)",
@@ -5232,7 +5275,8 @@
     "web": "https://www.lunaminoica.it/"
    },
    "zona": "bovo",
-   "caratteristiche": []
+   "caratteristiche": [],
+   "credito": "Immagine di repertorio · Cliff from Arlington, Virginia · CC BY 2.0"
   },
   {
    "id": "casa-pizzuco",
@@ -5241,7 +5285,7 @@
     "dormire"
    ],
    "sotto": "camere",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Montallegro_-_panoramio_%281%29.jpg/1280px-Montallegro_-_panoramio_%281%29.jpg",
    "lat": 37.3914528,
    "lng": 13.3499696,
    "mappe": "Casa Pizzuco, Via Volturno 16, 92010 Montallegro (AG)",
@@ -5286,7 +5330,8 @@
     "Aria condizionata",
     "Wi-Fi",
     "Ingresso indipendente"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Николай Максимович · CC BY 3.0"
   },
   {
    "id": "cantina-rustica",
@@ -5295,7 +5340,7 @@
     "dormire"
    ],
    "sotto": "casa",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/MonteSuso-Cover.jpg",
    "lat": 37.3908793,
    "lng": 13.3504578,
    "mappe": "Cantina Rustica, Viale della Vittoria 100, 92010 Montallegro (AG)",
@@ -5343,7 +5388,8 @@
     "Aria condizionata",
     "Parcheggio",
     "Wi-Fi"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "adler-sicilia",
@@ -5588,7 +5634,7 @@
     "sapori"
    ],
    "sotto": "vino",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wine_Cellar_at_Chateau_Kirwan.jpg/1280px-Wine_Cellar_at_Chateau_Kirwan.jpg",
    "lat": 37.3906941,
    "lng": 13.3282618,
    "mappe": "Cantina Baglio Caruana, Contrada Torre Salsa, 92010 Montallegro (AG)",
@@ -5647,7 +5693,8 @@
     "Cena",
     "Parcheggio"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Jon · CC BY 2.0"
   },
   {
    "id": "calogero-caruana",
@@ -5656,7 +5703,7 @@
     "sapori"
    ],
    "sotto": "vino",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Vineyards_of_Planeta_winery.jpg/1280px-Vineyards_of_Planeta_winery.jpg",
    "lat": 37.3920045,
    "lng": 13.3534081,
    "mappe": "Azienda Agricola Calogero Caruana, Contrada Piano Canale 7, Montallegro",
@@ -5706,7 +5753,8 @@
     "email": "aziendagricolacaruana@gmail.com",
     "instagram": "https://www.instagram.com/aziendaagricolacalogerocaruana/",
     "facebook": "https://www.facebook.com/aziendaagricolacalogerocaruana/"
-   }
+   },
+   "credito": "Immagine di repertorio · Michal Osmenda · CC BY-SA 2.0"
   },
   {
    "id": "tipico-montallegro",
@@ -5715,7 +5763,7 @@
     "sapori"
    ],
    "sotto": "tipici",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fresh_Vegetables_display_in_Iloilo_Terminal_Public_Market_01.jpg/1280px-Fresh_Vegetables_display_in_Iloilo_Terminal_Public_Market_01.jpg",
    "lat": 37.3910489,
    "lng": 13.3505188,
    "mappe": "Tipico Montallegro, Viale della Vittoria, 32, 92010 Montallegro (AG)",
@@ -5773,7 +5821,8 @@
     "Confezioni regalo",
     "Spedizioni"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · OnlyJanz · CC BY-SA 4.0"
   },
   {
    "id": "antichi-sapori-caserecci",
@@ -5782,7 +5831,7 @@
     "sapori"
    ],
    "sotto": "conserve",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Jars_of_pickles.jpg/1280px-Jars_of_pickles.jpg",
    "lat": 37.3797164,
    "lng": 13.3558392,
    "mappe": "Antichi Sapori Caserecci, Contrada Carlici, 92010 Montallegro (AG)",
@@ -5823,7 +5872,8 @@
     "Carciofi",
     "Melanzane",
     "Salsa del diavolo"
-   ]
+   ],
+   "credito": "Immagine di repertorio · Noah Sussman · CC BY 2.0"
   },
   {
    "id": "conserve-ittiche-diego-dimora",
@@ -5891,7 +5941,7 @@
     "sapori"
    ],
    "sotto": "formaggi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ricotta_fresca_%28Wiki_Loves_Sicilia%29.jpg/1280px-Ricotta_fresca_%28Wiki_Loves_Sicilia%29.jpg",
    "lat": 37.4044963,
    "lng": 13.3291099,
    "mappe": "Caseificio Rifor, Contrada Gorgo, 92010 Montallegro (AG)",
@@ -5930,7 +5980,8 @@
     "Ricotta",
     "Formaggi di pecora",
     "Formaggi di capra"
-   ]
+   ],
+   "credito": "Immagine di repertorio · 8w9d · CC0"
   },
   {
    "id": "oleificio-chiara",
@@ -5939,7 +5990,7 @@
     "sapori"
    ],
    "sotto": "olio",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Olive_oil_factory_%E2%80%93_IMG_20241111_163515_1.jpg/1280px-Olive_oil_factory_%E2%80%93_IMG_20241111_163515_1.jpg",
    "lat": 37.3858161,
    "lng": 13.3567274,
    "mappe": "Oleificio Chiara, Contrada Parisa, 17, 92010 Montallegro (AG)",
@@ -5972,7 +6023,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/sapori-e-prodotti/"
    },
    "zona": "paese",
-   "posizioneIndicativa": true
+   "posizioneIndicativa": true,
+   "credito": "Immagine di repertorio · Kızıl · CC BY-SA 4.0"
   },
   {
    "id": "arte-del-pane",
@@ -5981,7 +6033,7 @@
     "sapori"
    ],
    "sotto": "pane",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Arancini_Al_Ragu%27_-_Giuseppes_2026-06-11.jpg/1280px-Arancini_Al_Ragu%27_-_Giuseppes_2026-06-11.jpg",
    "lat": 37.3918621,
    "lng": 13.3504369,
    "mappe": "L'Arte del Pane, Via Salvatore Ingraudo Gagliano, 11, 92010 Montallegro (AG)",
@@ -6018,7 +6070,8 @@
    "contatti": {
     "tel": "0922845046",
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/sapori-e-prodotti/"
-   }
+   },
+   "credito": "Immagine di repertorio · Andy Li · CC0"
   },
   {
    "id": "panificio-del-corso",
@@ -6027,7 +6080,7 @@
     "sapori"
    ],
    "sotto": "pane",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Loaves_of_Bread_%28Unsplash%29.jpg/1280px-Loaves_of_Bread_%28Unsplash%29.jpg",
    "lat": 37.3941252,
    "lng": 13.3502907,
    "mappe": "Panificio del Corso, Corso Vittorio Emanuele, 44, 92010 Montallegro (AG)",
@@ -6062,7 +6115,8 @@
     "it": []
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Clark Young · CC0"
   },
   {
    "id": "panificio-piruzza",
@@ -6071,7 +6125,7 @@
     "sapori"
    ],
    "sotto": "pane",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Artisan_Loaves_of_Bread_%28Unsplash%29.jpg/1280px-Artisan_Loaves_of_Bread_%28Unsplash%29.jpg",
    "lat": 37.3909923,
    "lng": 13.3509776,
    "mappe": "Panificio Piruzza, Via Cucchiara, 11, 92010 Montallegro (AG)",
@@ -6109,7 +6163,8 @@
     "tel": "0922845006"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Drew Coffman · CC0"
   },
   {
    "id": "macelleria-vella",
@@ -6118,7 +6173,7 @@
     "sapori"
    ],
    "sotto": "carne",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Meat_counter.jpg/1280px-Meat_counter.jpg",
    "lat": 37.3948134,
    "lng": 13.350354,
    "mappe": "Macelleria Vella · La Bontà della Carne, Corso Vittorio Emanuele, 5, 92010 Montallegro (AG)",
@@ -6154,7 +6209,8 @@
    "verificato": "novembre 2026",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/sapori-e-prodotti/"
-   }
+   },
+   "credito": "Immagine di repertorio · Southern Foodways Alliance · CC BY 2.0"
   },
   {
    "id": "macelleria-zambito",
@@ -6163,7 +6219,7 @@
     "sapori"
    ],
    "sotto": "carne",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Meat_display_in_butcher%27s_shop%2C_Bodmin%2C_Cornwall_-_January_2023.jpg/1280px-Meat_display_in_butcher%27s_shop%2C_Bodmin%2C_Cornwall_-_January_2023.jpg",
    "lat": 37.3927526,
    "lng": 13.3501408,
    "mappe": "Macelleria Zambito, Corso Vittorio Emanuele, 95, 92010 Montallegro (AG)",
@@ -6209,7 +6265,8 @@
     "sab": "08:00-13:30, 16:00-20:00",
     "dom": "chiuso"
    },
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Mutney · CC BY-SA 4.0"
   },
   {
    "id": "opera-ammare",
@@ -6682,7 +6739,7 @@
     "servizi"
    ],
    "sotto": "info",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Carabinieri_Renault_Clio_Police_Car.jpg/1280px-Carabinieri_Renault_Clio_Police_Car.jpg",
    "lat": 37.3959912,
    "lng": 13.3510446,
    "mappe": "Stazione Carabinieri, Via Cesare Battisti, 92010 Montallegro (AG)",
@@ -6721,7 +6778,8 @@
     "web": "https://www.carabinieri.it"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · djedj · CC0"
   },
   {
    "id": "polizia-municipale",
@@ -6777,7 +6835,7 @@
     "servizi"
    ],
    "sotto": "salute",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Green_cross_in_Lubiljana.jpg/1280px-Green_cross_in_Lubiljana.jpg",
    "lat": 37.3889329,
    "lng": 13.3519252,
    "mappe": "Farmacia di Montallegro, Viale della Vittoria, 117, 92010 Montallegro (AG)",
@@ -6818,7 +6876,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Lukas Plewnia · CC BY-SA 2.0"
   },
   {
    "id": "guardia-medica",
@@ -6827,7 +6886,7 @@
     "servizi"
    ],
    "sotto": "salute",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Doctors_stethoscope_1.jpg/1280px-Doctors_stethoscope_1.jpg",
    "lat": 37.395742,
    "lng": 13.3511262,
    "mappe": "Guardia medica, Via Cesare Battisti, 24, 92010 Montallegro (AG)",
@@ -6868,7 +6927,8 @@
     ]
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Stethoscopes · CC BY-SA 3.0"
   },
   {
    "id": "pronto-soccorso-ribera",
@@ -6975,7 +7035,7 @@
     "servizi"
    ],
    "sotto": "salute",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Dental_chair_in_a_dentist_clinic.jpg/1280px-Dental_chair_in_a_dentist_clinic.jpg",
    "lat": 37.3928689,
    "lng": 13.3502421,
    "mappe": "Centro Odontoiatrico Spagnolo, Corso Vittorio Emanuele, 87, 92010 Montallegro (AG)",
@@ -7012,7 +7072,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · IrfanDP · CC BY-SA 4.0"
   },
   {
    "id": "abc-analisi",
@@ -7021,7 +7082,7 @@
     "servizi"
    ],
    "sotto": "salute",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Laboratory_Test_Tubes%3B_from_a_medical_laboratory_in_Abuja%2C_Nigeria.jpg/1280px-Laboratory_Test_Tubes%3B_from_a_medical_laboratory_in_Abuja%2C_Nigeria.jpg",
    "lat": 37.391384,
    "lng": 13.3504851,
    "mappe": "ABC Analisi Cliniche, Viale della Vittoria, 35, 92010 Montallegro (AG)",
@@ -7061,7 +7122,8 @@
    "verificato": "novembre 2026",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
-   }
+   },
+   "credito": "Immagine di repertorio · Frankincense Diala · CC0"
   },
   {
    "id": "labor-dental",
@@ -7070,7 +7132,7 @@
     "servizi"
    ],
    "sotto": "salute",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Liberty_Wing%27s_Dental_Lab_%288419856%29.jpg/1280px-Liberty_Wing%27s_Dental_Lab_%288419856%29.jpg",
    "lat": 37.3953337,
    "lng": 13.3499373,
    "mappe": "Labor Dental, Via Roma, 17, 92010 Montallegro (AG)",
@@ -7108,7 +7170,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · U.S. Air Force · Pubblico dominio"
   },
   {
    "id": "sosta-camper-u-pantanu",
@@ -7117,7 +7180,7 @@
     "servizi"
    ],
    "sotto": "trasporti",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/riserva-torre-salsa-mare.jpg",
    "lat": 37.3768012,
    "lng": 13.327624,
    "mappe": "Sosta Camper «U Pantanu», Contrada Torre Salsa, 92010 Montallegro (AG)",
@@ -7185,7 +7248,8 @@
     "web": "https://sostacampertorresalsa.it/",
     "prenota": "https://www.sostacampertorresalsa.it/prenotazioni",
     "prenotaTesto": "Prenota online"
-   }
+   },
+   "credito": "Immagine di repertorio · Visit Montallegro Bovo Marina"
   },
   {
    "id": "taxi-ncc-montallegro",
@@ -7194,7 +7258,7 @@
     "servizi"
    ],
    "sotto": "trasporti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/TAXI.jpg/1280px-TAXI.jpg",
    "lat": 37.3946543,
    "lng": 13.3495239,
    "mappe": "Taxi NCC Transfer Montallegro, Via Caltabellotta, 13, 92010 Montallegro (AG)",
@@ -7231,7 +7295,8 @@
     "email": "ingraudo385@gmail.com"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Petar Milošević · CC BY-SA 4.0"
   },
   {
    "id": "flixbus",
@@ -7292,7 +7357,7 @@
     "servizi"
    ],
    "sotto": "trasporti",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Eni_petrol_station_via_al_Laghetto_Sorengo_20250822.jpg/1280px-Eni_petrol_station_via_al_Laghetto_Sorengo_20250822.jpg",
    "lat": 37.3888411,
    "lng": 13.3511248,
    "mappe": "Distributore Eni, Variante SS115, 92010 Montallegro (AG)",
@@ -7333,7 +7398,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Moliva · CC BY-SA 4.0"
   },
   {
    "id": "conad-city",
@@ -7342,7 +7408,7 @@
     "servizi"
    ],
    "sotto": "spesa",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Conad_City_%28Tony_Market%29_via_Santa_Barbara_Nuoro.jpg/1280px-Conad_City_%28Tony_Market%29_via_Santa_Barbara_Nuoro.jpg",
    "lat": 37.3910021,
    "lng": 13.353518,
    "mappe": "Conad City, Via Calvario, 19, 92010 Montallegro (AG)",
@@ -7386,7 +7452,8 @@
    "verificato": "novembre 2026",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
-   }
+   },
+   "credito": "Immagine di repertorio · Air fans · CC0"
   },
   {
    "id": "tabaccheria-manzone",
@@ -7395,7 +7462,7 @@
     "servizi"
    ],
    "sotto": "negozi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sali_e_Tabacchi.jpg",
    "lat": 37.3935565,
    "lng": 13.350121,
    "mappe": "Tabaccheria Edicola Manzone, Corso Vittorio Emanuele, 86, 92010 Montallegro (AG)",
@@ -7432,7 +7499,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Lucarelli · Pubblico dominio"
   },
   {
    "id": "magics-flowers",
@@ -7441,7 +7509,7 @@
     "servizi"
    ],
    "sotto": "fiori",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/050529_Barcelona_091.jpg/1280px-050529_Barcelona_091.jpg",
    "lat": 37.3925628,
    "lng": 13.350232,
    "mappe": "Magic's Flowers, Corso Vittorio Emanuele, 103, 92010 Montallegro (AG)",
@@ -7480,7 +7548,8 @@
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/",
     "tel": "3880417875"
-   }
+   },
+   "credito": "Immagine di repertorio · Sergi Larripa · CC BY-SA 3.0"
   },
   {
    "id": "il-giardino-di-alice",
@@ -7489,7 +7558,7 @@
     "servizi"
    ],
    "sotto": "fiori",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bouquet_of_roses_of_various_colours.jpg",
    "lat": 37.3910279,
    "lng": 13.3506979,
    "mappe": "Il Giardino di Alice, Viale della Vittoria, 57, 92010 Montallegro (AG)",
@@ -7528,7 +7597,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Rohini · CC BY-SA 4.0"
   },
   {
    "id": "fiori-maria-curallo",
@@ -7537,7 +7607,7 @@
     "servizi"
    ],
    "sotto": "fiori",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Stapelia_lepida_in_a_garden_centre.jpg/1280px-Stapelia_lepida_in_a_garden_centre.jpg",
    "lat": 37.3919181,
    "lng": 13.3499107,
    "mappe": "Piazza Lo Verde, 3, 92010 Montallegro (AG)",
@@ -7574,7 +7644,8 @@
    "contatti": {
     "tel": "3396055454"
    },
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Tangopaso · Pubblico dominio"
   },
   {
    "id": "ferramenta-baglio",
@@ -7583,7 +7654,7 @@
     "servizi"
    ],
    "sotto": "negozi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Woodworking_Tools_at_the_Women%27s_Woodshop_in_Minneapolis%2C_MN.jpg/1280px-Woodworking_Tools_at_the_Women%27s_Woodshop_in_Minneapolis%2C_MN.jpg",
    "lat": 37.3913682,
    "lng": 13.3502684,
    "mappe": "Ferramenta Baglio, Viale della Vittoria, 28, 92010 Montallegro (AG)",
@@ -7619,7 +7690,8 @@
     "tel": "3288854487"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Terasaface · CC BY-SA 4.0"
   },
   {
    "id": "mobili-lentini",
@@ -7628,7 +7700,7 @@
     "servizi"
    ],
    "sotto": "negozi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%9F%8F%E5%AF%A7%E9%85%92%E5%BA%97_Park_Lane_Hotel_basement_%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85_IKEA_shop_living_room_sofa_furniture_September_2022_Px3_02.jpg/1280px-HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%9F%8F%E5%AF%A7%E9%85%92%E5%BA%97_Park_Lane_Hotel_basement_%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85_IKEA_shop_living_room_sofa_furniture_September_2022_Px3_02.jpg",
    "lat": 37.3869004,
    "lng": 13.3534664,
    "mappe": "Mobili Lentini, Viale della Vittoria, 163, 92010 Montallegro (AG)",
@@ -7668,7 +7740,8 @@
     "tel": "0922847139"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · TOMUWN 2sreimoa HUNGAI · CC BY-SA 4.0"
   },
   {
    "id": "euromobili-caruana",
@@ -7750,7 +7823,7 @@
     "servizi"
    ],
    "sotto": "negozi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Floor_Tiles_in_Yuanbao_Temple.jpg/1280px-Floor_Tiles_in_Yuanbao_Temple.jpg",
    "lat": 37.39724,
    "lng": 13.3521055,
    "mappe": "Edil Aurora, Via Cesare Battisti, 65, 92010 Montallegro (AG)",
@@ -7792,7 +7865,8 @@
     "email": "edilaurora.todarovin@tiscali.it"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Tbatb · CC BY-SA 4.0"
   },
   {
    "id": "ufficio-postale",
@@ -7801,7 +7875,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Poste_Italiane_-_sign.jpg/1280px-Poste_Italiane_-_sign.jpg",
    "lat": 37.3903667,
    "lng": 13.3516736,
    "mappe": "Ufficio Postale, Via Fratelli Ferraro, 11, 92010 Montallegro (AG)",
@@ -7851,7 +7925,8 @@
    "verificato": "novembre 2026",
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
-   }
+   },
+   "credito": "Immagine di repertorio · Mattes · CC BY-SA 3.0"
   },
   {
    "id": "grimaldi-auto",
@@ -7860,7 +7935,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cars%2C_cars%2C_cars_-_panoramio.jpg/1280px-Cars%2C_cars%2C_cars_-_panoramio.jpg",
    "lat": 37.3887627,
    "lng": 13.3519935,
    "mappe": "Grimaldi Auto, Viale della Vittoria, 126, 92010 Montallegro (AG)",
@@ -7903,7 +7978,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Immanuel Giel · CC BY 3.0"
   },
   {
    "id": "officina-bonifacio",
@@ -7912,7 +7988,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mechanic_works_on_car_engine_performing_routine_maintenance_and_inspections_on_vehicle_parts.jpg/1280px-Mechanic_works_on_car_engine_performing_routine_maintenance_and_inspections_on_vehicle_parts.jpg",
    "lat": 37.3947805,
    "lng": 13.3445731,
    "mappe": "Officina Meccatronica Bonifacio, Via Roma, 97, 92010 Montallegro (AG)",
@@ -7948,7 +8024,8 @@
     "tel": "3392732125"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Shixart1985 · CC BY 2.0"
   },
   {
    "id": "schembri-pneumatici",
@@ -7957,7 +8034,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tyres_On_Sale_In_A_Tyre_Shop.jpg/1280px-Tyres_On_Sale_In_A_Tyre_Shop.jpg",
    "lat": 37.3825788,
    "lng": 13.3547072,
    "mappe": "Schembri Pneumatici, Contrada Carlici, 92010 Montallegro (AG)",
@@ -7994,7 +8071,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "campagna",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Collins Musonda · CC BY-SA 4.0"
   },
   {
    "id": "moto-service-gagliano",
@@ -8003,7 +8081,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Harley-Davidson_motorcycles_parked_at_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-02.jpg/1280px-Harley-Davidson_motorcycles_parked_at_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-02.jpg",
    "lat": 37.3923945,
    "lng": 13.350112,
    "mappe": "Moto Service Gagliano, Via Villani, 1, 92010 Montallegro (AG)",
@@ -8040,7 +8118,8 @@
     "web": "https://www.visitmontallegrobovomarina.it/scopri-e-gusta/cosa-fare/"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Chris Woodrich · CC BY-SA 4.0"
   },
   {
    "id": "cls-costruzioni",
@@ -8049,7 +8128,7 @@
     "servizi"
    ],
    "sotto": "servizi",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Clean_concrete_mixer_truck.jpg/1280px-Clean_concrete_mixer_truck.jpg",
    "lat": 37.3725628,
    "lng": 13.3610489,
    "mappe": "CLS Costruzioni, Contrada Bifara, 92010 Montallegro (AG)",
@@ -8085,7 +8164,8 @@
     "tel": "3925805779"
    },
    "zona": "campagna",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · woodleywonderworks · CC BY 2.0"
   },
   {
    "id": "dacci-un-taglio",
@@ -8094,7 +8174,7 @@
     "servizi"
    ],
    "sotto": "benessere",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Interior_view_of_modern_beauty_salon.jpg/1280px-Interior_view_of_modern_beauty_salon.jpg",
    "lat": 37.3946837,
    "lng": 13.3502662,
    "mappe": "Parrucchieria Dacci un Taglio, Corso Vittorio Emanuele, 9, 92010 Montallegro (AG)",
@@ -8141,7 +8221,8 @@
     "sab": "09:00-19:30",
     "dom": "chiuso"
    },
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Shixart1985 · CC BY 2.0"
   },
   {
    "id": "new-style-barber-shop",
@@ -8150,7 +8231,7 @@
     "servizi"
    ],
    "sotto": "benessere",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/HK_CWB_Causeway_Bay_Percival_Street_shop_Naughty_barber_01.jpg/1280px-HK_CWB_Causeway_Bay_Percival_Street_shop_Naughty_barber_01.jpg",
    "lat": 37.3925479,
    "lng": 13.3500657,
    "mappe": "New Style Barber Shop, Corso Vittorio Emanuele, 138, 92010 Montallegro (AG)",
@@ -8195,7 +8276,8 @@
     "ven": "09:00-13:00, 16:00-20:00",
     "sab": "09:00-13:00, 16:00-20:00",
     "dom": "chiuso"
-   }
+   },
+   "credito": "Immagine di repertorio · BaiyuenPlennra Guumz · CC0"
   },
   {
    "id": "beauty-line",
@@ -8204,7 +8286,7 @@
     "servizi"
    ],
    "sotto": "benessere",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hair_salon_-_Arlington%2C_MA.jpg/1280px-Hair_salon_-_Arlington%2C_MA.jpg",
    "lat": 37.3906394,
    "lng": 13.3507826,
    "mappe": "Beauty Line, Viale della Vittoria, 60, 92010 Montallegro (AG)",
@@ -8237,7 +8319,8 @@
     "it": []
    },
    "contatti": {},
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Daderot · CC0"
   },
   {
    "id": "tata-games",
@@ -8246,7 +8329,7 @@
     "servizi"
    ],
    "sotto": "svago",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Video_Game_machines_%2851333057549%29.jpg/1280px-Video_Game_machines_%2851333057549%29.jpg",
    "lat": 37.3901782,
    "lng": 13.3510937,
    "mappe": "Tata Games, Viale della Vittoria, 99, 92010 Montallegro (AG)",
@@ -8283,7 +8366,8 @@
     "tel2": "0922847705"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Steve Elliott · CC BY-SA 2.0"
   },
   {
    "id": "campo-bocce",
@@ -8292,7 +8376,7 @@
     "servizi"
    ],
    "sotto": "svago",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bocce_court_1r.jpg/1280px-Bocce_court_1r.jpg",
    "lat": 37.3949211,
    "lng": 13.3500127,
    "mappe": "Campo da bocce, Via Piave, 2, 92010 Montallegro (AG)",
@@ -8326,7 +8410,8 @@
     "it": []
    },
    "contatti": {},
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · liz west · CC BY 2.0"
   },
   {
    "id": "chiesa-madre",
@@ -8335,7 +8420,7 @@
     "servizi"
    ],
    "sotto": "comunita",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Montallegro.jpg/1280px-Montallegro.jpg",
    "lat": 37.3928405,
    "lng": 13.3495115,
    "mappe": "Chiesa Madre, Via Ferraro, 10, 92010 Montallegro (AG)",
@@ -8371,7 +8456,8 @@
     "tel": "0922847751"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Toni Pecoraro · Pubblico dominio"
   },
   {
    "id": "aula-multimediale-ercole-longo",
@@ -8380,7 +8466,7 @@
     "servizi"
    ],
    "sotto": "comunita",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_chairs_in_WIPO%27s_Conference_Hall_have_a_unique_retraction_mechanism_that_pulls_them_towards_the_desks_when_not_in_use.jpg/1280px-The_chairs_in_WIPO%27s_Conference_Hall_have_a_unique_retraction_mechanism_that_pulls_them_towards_the_desks_when_not_in_use.jpg",
    "lat": 37.389885,
    "lng": 13.3521647,
    "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
@@ -8425,7 +8511,8 @@
     "tel": "3288597144"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Immagine di repertorio · Emmanuel Berrod · CC BY-SA 4.0"
   },
   {
    "id": "chiesa-equippers",
@@ -8589,7 +8676,7 @@
     "servizi"
    ],
    "sotto": "comunita",
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Luci_a_San_Siro.jpg/1280px-Luci_a_San_Siro.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Montallegro (AG)",
@@ -8617,7 +8704,8 @@
     "it": []
    },
    "contatti": {},
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "Immagine di repertorio · Oscar Federico Bodini · CC BY-SA 2.0"
   },
   {
    "id": "siculiana",
@@ -8812,7 +8900,9 @@
     "web": "https://comune.realmonte.ag.it"
    },
    "lat": 37.314738,
-   "lng": 13.4174033
+   "lng": 13.4174033,
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Siculiana_Pergole_03_Panoramic.jpg/1920px-Siculiana_Pergole_03_Panoramic.jpg",
+   "credito": "Marco from Belgium · CC BY 2.0"
   },
   {
    "id": "villa-romana-durrueli",
