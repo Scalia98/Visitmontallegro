@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-20.05",
+ "versione": "2026-11-24.01",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1237,7 +1237,7 @@
    "categorie": [
     "cultura"
    ],
-   "foto": "",
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Montallegro_Kirche.jpg/1920px-Montallegro_Kirche.jpg",
    "lat": 37.3902177,
    "lng": 13.3517671,
    "mappe": "Chiesa Santa Maria dell'Immacolata, Montallegro",
@@ -1264,7 +1264,8 @@
    },
    "contatti": {
     "web": "https://www.visitmontallegrobovomarina.it/"
-   }
+   },
+   "credito": "Clemensfranz · CC BY 2.5"
   },
   {
    "id": "chiesa-san-leonardo",
@@ -1668,7 +1669,7 @@
     "cultura"
    ],
    "sotto": "cultura",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Artigianato.jpg",
    "lat": 37.3896174,
    "lng": 13.351929,
    "mappe": "Museo della Civiltà Contadina, Viale della Vittoria, Montallegro",
@@ -1734,6 +1735,25 @@
     "Forno per la ceramica",
     "Aperto a tutti",
     "Corso per ragazzi 10-18 anni"
+   ],
+   "credito": "Visit Montallegro Bovo Marina",
+   "galleria": [
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/Artigianato.jpg",
+     "credito": "Visit Montallegro Bovo Marina",
+     "didascalia": {
+      "it": "Nel Museo della Civiltà Contadina, che ospita Crita Allegra",
+      "en": "Inside the Museo della Civiltà Contadina, home of Crita Allegra"
+     }
+    },
+    {
+     "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/artigianato-2.jpg",
+     "credito": "Visit Montallegro Bovo Marina",
+     "didascalia": {
+      "it": "L’artigianato di una volta nel museo",
+      "en": "Old crafts in the museum"
+     }
+    }
    ]
   },
   {
@@ -2314,7 +2334,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "https://angioristorante.it/wp-content/uploads/2026/05/Ristorante-Pizzeria-Angio5.jpeg",
+   "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento2.jpeg",
    "lat": 37.3796912,
    "lng": 13.3592623,
    "mappe": "Ristorante Pizzeria Angiò, Contrada Costa Domini, 1, 92010 Montallegro (AG)",
@@ -2326,11 +2346,17 @@
     "en": "Restaurant & pizzeria"
    },
    "breve": {
-    "it": "Pizza e piatti di pesce in contrada Costa Domini, appena fuori dal paese."
+    "it": "Pizza e piatti di pesce in contrada Costa Domini, appena fuori dal paese.",
+    "en": "Restaurant and pizzeria just outside the village: Sicilian cooking, fresh fish and wood-fired pizza, in a modern venue with a palm garden."
    },
    "testo": {
     "it": [
-     "Ristorante e pizzeria di campagna con cucina italiana: pizze, primi e secondi di pesce. Si può prenotare anche su TheFork."
+     "Da Angiò si incontrano due passioni: la cucina della tradizione siciliana e l'arte della pizza. Le pizze escono dal forno a legna; in carta ci sono piatti di pesce fresco, crudi e tartare compresi, e carni selezionate, preparati con ingredienti del territorio.",
+     "Il locale è moderno ed elegante, con una sala luminosa e un giardino tra le palme che la sera si accende di luci. Si prenota per telefono oppure su TheFork."
+    ],
+    "en": [
+     "Angiò brings together two passions: traditional Sicilian cooking and the art of pizza. Pizzas come out of the wood-fired oven, and the menu has fresh fish, raw dishes and tartares included, as well as selected meats, all made with local ingredients.",
+     "The venue is modern and stylish, with a bright dining room and a palm garden that lights up in the evening. Book by phone or on TheFork."
     ]
    },
    "info": [
@@ -2350,12 +2376,63 @@
     "tel": "3274569456",
     "web": "https://angioristorante.it/",
     "prenota": "https://www.thefork.it/ristorante/ristorante-pizzeria-angio-r832086",
-    "prenotaTesto": "Prenota su TheFork"
+    "prenotaTesto": "Prenota su TheFork",
+    "email": "info@angioristorante.it"
    },
    "zona": "campagna",
    "verificato": "novembre 2026",
-   "fotoRiserva": "https://angioristorante.it/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-09-at-10.01.08-3.jpeg",
-   "credito": "Ristorante Pizzeria Angiò"
+   "fotoRiserva": "https://angioristorante.it/wp-content/uploads/2026/05/Ristorante-Pizzeria-Angio5.jpeg",
+   "credito": "Ristorante Pizzeria Angiò",
+   "galleria": [
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento2.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "Il giardino con le palme, la sera",
+      "en": "The palm garden in the evening"
+     }
+    },
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento1.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "La sala",
+      "en": "The dining room"
+     }
+    },
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento3.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "La facciata del ristorante",
+      "en": "The restaurant front"
+     }
+    },
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento9.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "Un piatto di gamberi",
+      "en": "A prawn dish"
+     }
+    },
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento14.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "Crudi di mare",
+      "en": "Raw seafood"
+     }
+    },
+    {
+     "foto": "https://angioristorante.it/wp-content/uploads/2024/06/Ristorante-agrigento10.jpeg",
+     "credito": "Ristorante Pizzeria Angiò",
+     "didascalia": {
+      "it": "Un primo della casa",
+      "en": "A house pasta dish"
+     }
+    }
+   ]
   },
   {
    "id": "la-preferita",
@@ -2376,12 +2453,17 @@
     "en": "Pizzeria & kitchen"
    },
    "breve": {
-    "it": "La pizzeria di Marco Cassaro, 35° su 361 nella Pizza Classica al Campionato Mondiale della Pizza 2026."
+    "it": "La pizzeria di Marco Cassaro, 35° su 361 nella Pizza Classica al Campionato Mondiale della Pizza 2026.",
+    "en": "Marco Cassaro's pizzeria, 35th out of 361 in Classic Pizza at the 2026 World Pizza Championship."
    },
    "testo": {
     "it": [
      "Marco Cassaro è il pizzaiolo montallegrese che ad aprile 2026, a Parma, si è piazzato 35° su 361 nella categoria Pizza Classica con la sua «Selvatica». Era al Mondiale già nel 2016.",
      "Oltre alla pizza c'è la cucina, con piatti di pesce. Si mangia la sera."
+    ],
+    "en": [
+     "Marco Cassaro is the Montallegro pizzaiolo who, in April 2026 in Parma, placed 35th out of 361 in the Classic Pizza category with his «Selvatica». He had already competed at the World Championship in 2016.",
+     "Besides pizza there's a kitchen, with fish dishes. Open in the evening."
     ]
    },
    "info": [
@@ -2431,10 +2513,16 @@
     "en": "Trattoria & pizzeria"
    },
    "breve": {
-    "it": "Trattoria e pizzeria sul corso, nel centro del paese."
+    "it": "Trattoria e pizzeria sul corso, nel centro del paese.",
+    "en": "Trattoria and pizzeria on the main street, in the centre of the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Da Pops si mangia come in una trattoria di paese, con i piatti della cucina e la pizza, sul corso Vittorio Emanuele, nel centro di Montallegro. Per prenotare un tavolo basta una telefonata."
+    ],
+    "en": [
+     "Pops is a proper village trattoria, with home-style dishes and pizza, on Corso Vittorio Emanuele in the centre of Montallegro. A phone call is all it takes to book a table."
+    ]
    },
    "info": [
     {
@@ -2473,11 +2561,15 @@
     "en": "Pastry shop, pizzeria & restaurant"
    },
    "breve": {
-    "it": "Un locale su tre livelli: pasticceria e gelato di giorno, pizzeria e cucina la sera."
+    "it": "Un locale su tre livelli: pasticceria e gelato di giorno, pizzeria e cucina la sera.",
+    "en": "A venue on three levels: pastries and gelato by day, pizzeria and restaurant in the evening."
    },
    "testo": {
     "it": [
      "Pasticceria, gelateria, pizzeria e ristorante sul viale principale, con servizio di catering. Aperto dalla mattina alla sera."
+    ],
+    "en": [
+     "Pastry shop, gelateria, pizzeria and restaurant on the main avenue, with a catering service. Open from morning to evening."
     ]
    },
    "info": [
@@ -2524,7 +2616,14 @@
     "en": "Sicilian osteria in Contrada Gorgo, in the countryside of Montallegro."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un'osteria di campagna dove si mangia la cucina siciliana, in contrada Gorgo: la campagna del Laghetto Gorgo, a pochi minuti dal paese.",
+     "Apre a cena dal martedì alla domenica; il sabato e la domenica anche a pranzo, l'ideale dopo una mattinata al laghetto. Il lunedì è chiuso."
+    ],
+    "en": [
+     "A country osteria serving Sicilian food in contrada Gorgo, the countryside around Laghetto Gorgo, a few minutes from the village.",
+     "Open for dinner Tuesday to Sunday; on Saturdays and Sundays also for lunch, perfect after a morning at the lake. Closed on Mondays."
+    ]
    },
    "info": [
     {
@@ -2570,10 +2669,18 @@
     "en": "Pizzeria"
    },
    "breve": {
-    "it": "Pizza ai tavoli sulla piccola piazza Lo Verde, oppure da asporto."
+    "it": "Pizza ai tavoli sulla piccola piazza Lo Verde, oppure da asporto.",
+    "en": "Pizza at tables on the little Piazza Lo Verde, or to take away."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La Pizzeria Camelot è sul corso Vittorio Emanuele, affacciata sulla piccola piazza Lo Verde: la pizza si mangia ai tavoli in piazza, nel cuore del paese.",
+     "Si può anche ordinare da asporto: chiama e passa a ritirarla."
+    ],
+    "en": [
+     "Pizzeria Camelot is on Corso Vittorio Emanuele, looking onto the little Piazza Lo Verde: you eat your pizza at the tables on the square, in the heart of the village.",
+     "You can also order to take away: call ahead and pick it up."
+    ]
    },
    "info": [
     {
@@ -2609,10 +2716,16 @@
     "en": "Pizzeria"
    },
    "breve": {
-    "it": "Piccola pizzeria di paese con l'impasto che riposa 24 ore."
+    "it": "Piccola pizzeria di paese con l'impasto che riposa 24 ore.",
+    "en": "A small village pizzeria whose dough rests for 24 hours."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una pizzeria piccola e senza fronzoli sul corso Vittorio Emanuele, nel centro del paese. Il suo punto di forza è l'impasto, lasciato riposare 24 ore prima di diventare pizza."
+    ],
+    "en": [
+     "A small, no-frills pizzeria on Corso Vittorio Emanuele, in the centre of the village. Its strong point is the dough, left to rest for 24 hours before it becomes pizza."
+    ]
    },
    "info": [
     {
@@ -2636,7 +2749,7 @@
     "mangiare"
    ],
    "sotto": "ristoranti",
-   "foto": "",
+   "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-giro-tagliata.jpg",
    "lat": 37.3886994,
    "lng": 13.352028,
    "mappe": "Bistrot 01/93, Viale della Vittoria, 130, 92010 Montallegro (AG)",
@@ -2644,43 +2757,111 @@
     "it": "Bistrot 01/93"
    },
    "etichetta": {
-    "it": "Bistrot di carne",
-    "en": "Meat bistro"
+    "it": "Braceria, ristorante e hamburgeria",
+    "en": "Steakhouse, restaurant and burgers"
    },
    "breve": {
-    "it": "Solo carne, cotta direttamente sul fuoco: bistecche, tartare e hamburger."
+    "it": "La braceria di Montallegro: tagli scelti, dalla Scottona al Kobe A5, cotti alla brace e serviti su piastra rovente, a pranzo e a cena.",
+    "en": "Montallegro's steakhouse: choice cuts, from Scottona to Kobe A5, grilled over embers and served on a sizzling plate, for lunch and dinner."
    },
    "testo": {
     "it": [
-     "Il bistrot ha aperto nel giugno 2021 sul viale della Vittoria e serve soltanto piatti di carne: tagli alla brace, tartare e hamburger."
+     "Al Bistrot 01/93, sul viale della Vittoria, la carne è una cosa seria: Scottona, Black Angus, Chianina, Fassona piemontese, Tomahawk, Wagyu e Kobe A5, cotti sulla griglia e portati in tavola su una piastra ancora rovente, per gustarli fino all'ultimo boccone.",
+     "La bistecca si sceglie per taglio, T-bone o costata, e si paga a peso, misurato a crudo. Tra i piatti della casa ci sono il Giro Tagliata, con il tagliere e tre tagliate in sequenza, il menu Fiorentina a coppia, le costine alla brace, lo spaghettone alla carbonara e il burger Bistrot 01/93 con doppio hamburger.",
+     "A pranzo, tutti i giorni tranne il martedì, c'è un menu con primo, secondo e dolce. Su prenotazione organizzano compleanni, cene aziendali e di gruppo con un menu costruito insieme. C'è anche l'asporto: si ordina su WhatsApp e si ritira al locale."
+    ],
+    "en": [
+     "At Bistrot 01/93, on Viale della Vittoria, meat is taken seriously: Scottona, Black Angus, Chianina, Piedmontese Fassona, Tomahawk, Wagyu and Kobe A5, cooked on the grill and brought to the table on a plate that is still sizzling, so it stays hot to the last bite.",
+     "You choose your steak by cut, T-bone or rib-eye, and pay by weight, measured raw. House favourites include the Giro Tagliata, a sharing board followed by three sliced steaks in a row, the Fiorentina menu for two, grilled ribs, spaghettone carbonara and the Bistrot 01/93 double burger.",
+     "At lunch, every day except Tuesday, there is a set menu with a first course, a main and dessert. Birthdays, company dinners and group meals can be booked with a menu planned together. Takeaway is available too: order on WhatsApp and collect at the restaurant."
     ]
    },
    "info": [
     {
      "tipo": "dove",
-     "it": "Viale della Vittoria, 130, 92010 Montallegro (AG)"
+     "it": "Viale della Vittoria, 130/132, 92010 Montallegro (AG)",
+     "en": "Viale della Vittoria, 130/132, 92010 Montallegro (AG)"
     }
    ],
    "consigli": {
-    "it": []
+    "it": [
+     "Il Giro Tagliata è per almeno due persone; il menu Fiorentina è pensato per due."
+    ],
+    "en": [
+     "The Giro Tagliata is for at least two people; the Fiorentina menu is meant for two."
+    ]
    },
    "contatti": {
     "tel": "3334629084",
     "web": "https://bistrot0193.it/",
     "instagram": "https://www.instagram.com/bistrot0193/",
-    "facebook": "https://www.facebook.com/p/Bistrot-0193-Montallegro-100068029583984/"
+    "facebook": "https://www.facebook.com/p/Bistrot-0193-Montallegro-100068029583984/",
+    "whatsapp": "393334629084",
+    "email": "bistrot0193@gmail.com",
+    "prenota": "https://bistrot0193.it/prenota/",
+    "prenotaTesto": "Prenota un tavolo"
    },
    "zona": "paese",
    "orari": {
-    "lun": "18:00-24:00",
+    "lun": "12:00-15:00, 19:00-24:00",
     "mar": "chiuso",
-    "mer": "18:00-24:00",
-    "gio": "18:00-24:00",
-    "ven": "18:00-24:00",
-    "sab": "18:00-24:00",
-    "dom": "18:00-24:00"
+    "mer": "12:00-15:00, 19:00-24:00",
+    "gio": "12:00-15:00, 19:00-24:00",
+    "ven": "12:00-15:00, 19:00-24:00",
+    "sab": "12:00-15:00, 19:00-24:00",
+    "dom": "12:00-15:00, 19:00-24:00"
    },
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "fotoRiserva": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-sala-panoramica.jpg",
+   "credito": "Bistrot 01/93",
+   "galleria": [
+    {
+     "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-brace-tbone-2.jpg",
+     "credito": "Bistrot 01/93",
+     "didascalia": {
+      "it": "La bistecca con l'osso sulla brace",
+      "en": "A bone-in steak on the grill"
+     }
+    },
+    {
+     "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-sala-panoramica.jpg",
+     "credito": "Bistrot 01/93",
+     "didascalia": {
+      "it": "La sala, con la parete dei vini",
+      "en": "The dining room and its wine wall"
+     }
+    },
+    {
+     "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-menu-fiorentina.jpg",
+     "credito": "Bistrot 01/93",
+     "didascalia": {
+      "it": "Il menu Fiorentina a coppia",
+      "en": "The Fiorentina menu for two"
+     }
+    },
+    {
+     "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-ribs.jpg",
+     "credito": "Bistrot 01/93",
+     "didascalia": {
+      "it": "Le costine affumicate alla brace",
+      "en": "Smoked ribs from the grill"
+     }
+    },
+    {
+     "foto": "https://bistrot0193.it/wp-content/uploads/2026/11/bistrot0193-burger-bistrot.jpg",
+     "credito": "Bistrot 01/93",
+     "didascalia": {
+      "it": "Il burger Bistrot 01/93",
+      "en": "The Bistrot 01/93 burger"
+     }
+    }
+   ],
+   "caratteristiche": [
+    "Carne alla brace",
+    "Menu pranzo",
+    "Asporto",
+    "Feste e cene di gruppo"
+   ]
   },
   {
    "id": "do-ziu-michele",
@@ -2701,10 +2882,18 @@
     "en": "Trattoria & pizzeria"
    },
    "breve": {
-    "it": "Trattoria e pizzeria in paese, con cucina di casa e piatti di pesce."
+    "it": "Trattoria e pizzeria in paese, con cucina di casa e piatti di pesce.",
+    "en": "Trattoria and pizzeria in the village, with home cooking and fish dishes."
    },
    "testo": {
-    "it": []
+    "it": [
+     "«Do Ziu Michele», in siciliano, vuol dire «da zio Michele»: il nome racconta già lo spirito del locale, una trattoria di paese sul corso Vittorio Emanuele.",
+     "In tavola la cucina di casa, i piatti di pesce e la pizza."
+    ],
+    "en": [
+     "In Sicilian, «Do Ziu Michele» means «at Uncle Michele's»: the name says it all, a village trattoria on Corso Vittorio Emanuele.",
+     "On the table: home cooking, fish dishes and pizza."
+    ]
    },
    "info": [
     {
@@ -2809,11 +2998,15 @@
     "en": "Beach club, restaurant & pizzeria"
    },
    "breve": {
-    "it": "Lido con ristorante e pizzeria tra le dune, accanto alla Riserva di Torre Salsa. Il chiosco ha la forma di una barca."
+    "it": "Lido con ristorante e pizzeria tra le dune, accanto alla Riserva di Torre Salsa. Il chiosco ha la forma di una barca.",
+    "en": "Beach club with restaurant and pizzeria among the dunes, next to the Torre Salsa reserve. The kiosk is shaped like a boat."
    },
    "testo": {
     "it": [
      "Ci si arriva con una breve passeggiata nella pineta di Bovo Marina. Pizza, piatti di pesce e un menu senza glutine, con ombrelloni e lettini in spiaggia."
+    ],
+    "en": [
+     "You get there with a short walk through the Bovo Marina pine wood. Pizza, fish dishes and a gluten-free menu, with umbrellas and sunbeds on the beach."
     ]
    },
    "info": [
@@ -2833,6 +3026,9 @@
    "consigli": {
     "it": [
      "Menu senza glutine"
+    ],
+    "en": [
+     "Gluten-free menu"
     ]
    },
    "contatti": {
@@ -2863,11 +3059,15 @@
     "en": "Restaurant & lounge bar"
    },
    "breve": {
-    "it": "Ristorante e lounge bar sulle scogliere verso Capo Bianco, famoso per i tramonti."
+    "it": "Ristorante e lounge bar sulle scogliere verso Capo Bianco, famoso per i tramonti.",
+    "en": "Restaurant and lounge bar on the cliffs towards Capo Bianco, famous for its sunsets."
    },
    "testo": {
     "it": [
      "Dalla colazione all'aperitivo fino alla cena. In cucina il pescato del giorno, le busiate e il cous cous di pesce, con proposte senza glutine, vegane e vegetariane."
+    ],
+    "en": [
+     "From breakfast to aperitivo and dinner. In the kitchen: the catch of the day, busiate pasta and fish couscous, with gluten-free, vegan and vegetarian options."
     ]
    },
    "info": [
@@ -2918,11 +3118,15 @@
     "en": "Beach club & lounge bar"
    },
    "breve": {
-    "it": "Lido con bar e cucina siciliana tra le riserve di Torre Salsa e della Foce del Platani."
+    "it": "Lido con bar e cucina siciliana tra le riserve di Torre Salsa e della Foce del Platani.",
+    "en": "Beach club with a bar and Sicilian food between the Torre Salsa and Platani river mouth reserves."
    },
    "testo": {
     "it": [
      "Stabilimento balneare con bar e ristorante, cocktail, panini e insalate. Noleggia canoe e la spiaggia è accessibile alle persone con disabilità."
+    ],
+    "en": [
+     "A beach club with bar and restaurant, cocktails, sandwiches and salads. Canoes for hire, and the beach is accessible to people with disabilities."
     ]
    },
    "info": [
@@ -2970,11 +3174,15 @@
     "en": "Seafood trattoria"
    },
    "breve": {
-    "it": "Trattoria e bar sulla spiaggia di Bovo Marina, con il pesce del giorno e la spiaggia attrezzata."
+    "it": "Trattoria e bar sulla spiaggia di Bovo Marina, con il pesce del giorno e la spiaggia attrezzata.",
+    "en": "Trattoria and bar on Bovo Marina beach, with the catch of the day and a serviced beach."
    },
    "testo": {
     "it": [
      "Cucina di pesce semplice: linguine alle vongole, busiate con le sarde, frittura."
+    ],
+    "en": [
+     "Simple fish cooking: linguine with clams, busiate with sardines, fried fish."
     ]
    },
    "info": [
@@ -3019,10 +3227,16 @@
     "en": "Bar, restaurant & pizzeria"
    },
    "breve": {
-    "it": "Bar, ristorante e pizzeria a Bovo Marina, aperto a pranzo e a cena."
+    "it": "Bar, ristorante e pizzeria a Bovo Marina, aperto a pranzo e a cena.",
+    "en": "Bar, restaurant and pizzeria in Bovo Marina, open for lunch and dinner."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Bar, ristorante e pizzeria nello stesso locale, a Bovo Marina: il posto comodo per una pausa durante la giornata al mare, dal caffè al pranzo, fino alla pizza della sera."
+    ],
+    "en": [
+     "Bar, restaurant and pizzeria under one roof in Bovo Marina: a handy stop during a day at the sea, from coffee to lunch to an evening pizza."
+    ]
    },
    "info": [
     {
@@ -3060,10 +3274,18 @@
     "en": "Pastry shop & café"
    },
    "breve": {
-    "it": "All'ingresso del paese, vicino al parcheggio: colazioni, tavola calda e aperitivo la sera."
+    "it": "All'ingresso del paese, vicino al parcheggio: colazioni, tavola calda e aperitivo la sera.",
+    "en": "At the entrance to the village, near the car park: breakfast, hot meals and evening aperitivo."
    },
    "testo": {
-    "it": []
+    "it": [
+     "È la prima sosta per chi arriva a Montallegro: la Pasticceria Moderna sta all'ingresso del paese, sul viale della Vittoria, vicino al parcheggio.",
+     "Si comincia presto, con la colazione e i dolci della pasticceria; a mezzogiorno c'è la tavola calda e la sera l'aperitivo."
+    ],
+    "en": [
+     "It's the first stop for anyone arriving in Montallegro: Pasticceria Moderna is at the entrance to the village, on Viale della Vittoria, near the car park.",
+     "It opens early for breakfast and pastries; at lunchtime there's a hot counter, and in the evening aperitivo."
+    ]
    },
    "info": [
     {
@@ -3103,11 +3325,17 @@
     "en": "Café, pastry shop & ice cream"
    },
    "breve": {
-    "it": "Piccola pasticceria e gelateria di famiglia: colazioni, gelato fatto in casa e aperitivi."
+    "it": "Piccola pasticceria e gelateria di famiglia: colazioni, gelato fatto in casa e aperitivi.",
+    "en": "A small family pastry shop and gelateria: breakfast, homemade gelato and aperitivo."
    },
    "testo": {
     "it": [
+     "Sul viale della Vittoria, il Café Barry White è un locale di famiglia: colazioni e pasticceria, il gelato fatto in casa e, la sera, l'aperitivo.",
      "D'estate il gelato arriva anche a Torre Salsa, con il furgoncino."
+    ],
+    "en": [
+     "On Viale della Vittoria, Café Barry White is a family-run spot: breakfast and pastries, homemade gelato and, in the evening, aperitivo.",
+     "In summer the gelato even reaches Torre Salsa, on the little van."
     ]
    },
    "info": [
@@ -3145,10 +3373,16 @@
     "en": "Bar"
    },
    "breve": {
-    "it": "Bar di paese per il caffè e una sosta veloce."
+    "it": "Bar di paese per il caffè e una sosta veloce.",
+    "en": "A village bar for coffee and a quick break."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un bar di paese in via I Febbraio: il posto giusto per un caffè al banco e una sosta veloce."
+    ],
+    "en": [
+     "A village bar on Via I Febbraio: the right place for a coffee at the counter and a quick break."
+    ]
    },
    "info": [
     {
@@ -3183,10 +3417,16 @@
     "en": "Tavern & cocktail bar"
    },
    "breve": {
-    "it": "Locale serale sul viale della Vittoria, aperto dal pomeriggio."
+    "it": "Locale serale sul viale della Vittoria, aperto dal pomeriggio.",
+    "en": "An evening spot on Viale della Vittoria, open from the afternoon."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Osteria e cocktail bar sul viale della Vittoria. Apre alle cinque del pomeriggio ed è un punto di ritrovo per la serata, dall'aperitivo al dopocena."
+    ],
+    "en": [
+     "Osteria and cocktail bar on Viale della Vittoria. It opens at five in the afternoon and is a meeting place for the evening, from aperitivo to after dinner."
+    ]
    },
    "info": [
     {
@@ -3227,10 +3467,16 @@
     "en": "Pub"
    },
    "breve": {
-    "it": "Il pub del viale: birre, cocktail e le partite in TV."
+    "it": "Il pub del viale: birre, cocktail e le partite in TV.",
+    "en": "The pub on the avenue: beers, cocktails and football on TV."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il pub del viale della Vittoria, per le serate tra amici: birre, cocktail e le partite in TV."
+    ],
+    "en": [
+     "The pub on Viale della Vittoria, for evenings with friends: beers, cocktails and the match on TV."
+    ]
    },
    "info": [
     {
@@ -3268,11 +3514,15 @@
     "en": "Restaurant & event venue"
    },
    "breve": {
-    "it": "Villa di campagna a gestione familiare per cene, banchetti e feste: lauree, compleanni, cerimonie."
+    "it": "Villa di campagna a gestione familiare per cene, banchetti e feste: lauree, compleanni, cerimonie.",
+    "en": "A family-run country villa for dinners, banquets and parties: graduations, birthdays, ceremonies."
    },
    "testo": {
     "it": [
      "Cucina siciliana tradizionale e creativa, con pesce e proposte vegetariane e vegane. Per gli eventi si concorda tutto con la famiglia."
+    ],
+    "en": [
+     "Traditional and creative Sicilian cooking, with fish and vegetarian and vegan options. For events, everything is arranged with the family."
     ]
    },
    "info": [
@@ -3427,11 +3677,15 @@
     "en": "Farm stay"
    },
    "breve": {
-    "it": "Tre edifici rurali restaurati tra mandorli e ulivi, a pochi minuti d'auto da Bovo Marina e Torre Salsa."
+    "it": "Tre edifici rurali restaurati tra mandorli e ulivi, a pochi minuti d'auto da Bovo Marina e Torre Salsa.",
+    "en": "Three restored farm buildings among almond and olive trees, a few minutes' drive from Bovo Marina and Torre Salsa."
    },
    "testo": {
     "it": [
      "Piccolo agriturismo con camere familiari dotate di angolo cottura, un giardino con solarium e la zona barbecue. Su Trip.com ha 9,8 su 10 con oltre cento recensioni."
+    ],
+    "en": [
+     "A small agriturismo with family rooms with kitchenette, a garden with sun terrace and a barbecue area. On Trip.com it scores 9.8 out of 10 from over a hundred reviews."
     ]
    },
    "info": [
@@ -3481,12 +3735,19 @@
     "en": "B&B"
    },
    "breve": {
-    "it": "Il B&B nell'antica stalla di un palazzo nobiliare dell'Ottocento, nel cuore antico di Montallegro."
+    "it": "Il B&B nell'antica stalla di un palazzo nobiliare dell'Ottocento, nel cuore antico di Montallegro.",
+    "en": "A B&B in the old stables of a 19th-century noble palazzo, in the historic heart of Montallegro."
    },
    "testo": {
     "it": [
-     "Le stalle del palazzo che fu del «Cavalier Briuccia» sono state restaurate tenendo il fascino della Sicilia di un tempo, con i comfort di oggi.",
-     "Dal paese si raggiungono in pochi minuti Torre Salsa, Bovo Marina ed Eraclea Minoa; la Scala dei Turchi e la Valle dei Templi sono a mezz'ora."
+     "Le Mangiatoie del Cavaliere è un B&B ricavato nell'antico cortile in pietra del «Cavalier Briuccia». Secoli fa quel cortile era un punto di riferimento per i contadini, i proprietari terrieri e i commercianti di Montallegro e dei dintorni: ci si veniva per lavorare e per fare affari.",
+     "Le vecchie stalle e i casali dove si depositava il raccolto sono diventati camere moderne, restaurate senza cancellare la storia del cortile. Al mattino c'è la colazione.",
+     "È in posizione strategica tra Agrigento e Sciacca: in pochi minuti si arriva a Torre Salsa, Bovo Marina ed Eraclea Minoa, e la Scala dei Turchi e la Valle dei Templi sono a mezz'ora."
+    ],
+    "en": [
+     "Le Mangiatoie del Cavaliere is a B&B set in the old stone courtyard of the «Cavalier Briuccia». Centuries ago this courtyard was a hub for farmers, landowners and merchants from Montallegro and the surrounding area: people came here to work and to do business.",
+     "The old stables and the barns where the harvest was stored have become modern rooms, restored without erasing the courtyard's history. Breakfast is served in the morning.",
+     "It's strategically placed between Agrigento and Sciacca: Torre Salsa, Bovo Marina and Eraclea Minoa are minutes away, and the Scala dei Turchi and the Valley of the Temples are half an hour's drive."
     ]
    },
    "info": [
@@ -3497,6 +3758,11 @@
     {
      "tipo": "distanze",
      "it": "Circa 4 km da Torre Salsa"
+    },
+    {
+     "tipo": "orari",
+     "it": "Accoglienza dalle 8 alle 20.",
+     "en": "Reception from 8 am to 8 pm."
     }
    ],
    "consigli": {
@@ -3505,7 +3771,9 @@
    "contatti": {
     "tel": "3206896437",
     "email": "lemangiatoiedelcavaliere@gmail.com",
-    "web": "https://www.lemangiatoiedelcavaliere.it"
+    "web": "https://www.lemangiatoiedelcavaliere.it",
+    "prenota": "https://lemangiatoiedelcavaliere.it/bookingonline",
+    "prenotaTesto": "Prenota una camera"
    },
    "zona": "paese",
    "caratteristiche": [
@@ -3516,7 +3784,49 @@
    ],
    "verificato": "novembre 2026",
    "fotoRiserva": "https://lemangiatoiedelcavaliere.it/ogfile/lemangiatoiedelcavaliere_it_it.jpg",
-   "credito": "Le Mangiatoie del Cavaliere"
+   "credito": "Le Mangiatoie del Cavaliere",
+   "galleria": [
+    {
+     "foto": "https://globaluserfiles.com/media/3226_1ce33f045035a47032d538b7efde6699cab6a7d6.jpeg/v1/w_1400,h_0/foto-facciata_1609873348896.webp",
+     "credito": "Le Mangiatoie del Cavaliere",
+     "didascalia": {
+      "it": "La facciata",
+      "en": "The façade"
+     }
+    },
+    {
+     "foto": "https://globaluserfiles.com/media/3226_a366de9a4f6ede49762cdc1137cdd553f2155386.jpeg",
+     "credito": "Le Mangiatoie del Cavaliere",
+     "didascalia": {
+      "it": "Il cortile in pietra",
+      "en": "The stone courtyard"
+     }
+    },
+    {
+     "foto": "https://globaluserfiles.com/media/3226_3f36d38af7de1d53d81d5e64172c8d00f862ad72.jpeg",
+     "credito": "Le Mangiatoie del Cavaliere",
+     "didascalia": {
+      "it": "I vecchi casali del cortile",
+      "en": "The old farm buildings in the courtyard"
+     }
+    },
+    {
+     "foto": "https://globaluserfiles.com/media/3226_c600ddeaa97b7aeed6f1cb69198be0ae22dfe3a0.jpeg",
+     "credito": "Le Mangiatoie del Cavaliere",
+     "didascalia": {
+      "it": "L’antico cortile del Cavalier Briuccia",
+      "en": "The old courtyard of the Cavalier Briuccia"
+     }
+    },
+    {
+     "foto": "https://globaluserfiles.com/media/3226_0aac0f163b8224cb592d9d41812dcd9aa15cec38.jpeg",
+     "credito": "Le Mangiatoie del Cavaliere",
+     "didascalia": {
+      "it": "La colazione",
+      "en": "Breakfast"
+     }
+    }
+   ]
   },
   {
    "id": "la-maison",
@@ -3537,10 +3847,16 @@
     "en": "B&B"
    },
    "breve": {
-    "it": "Piccola struttura in via Siracusa, nel centro del paese, con Wi-Fi in tutte le camere."
+    "it": "Piccola struttura in via Siracusa, nel centro del paese, con Wi-Fi in tutte le camere.",
+    "en": "A small B&B on Via Siracusa, in the village centre, with Wi-Fi in every room."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un piccolo B&B nel centro di Montallegro, in via Siracusa: comodo per girare il paese a piedi e partire per le spiagge della costa, con Eraclea Minoa a circa 9 chilometri. In tutte le camere c'è il Wi-Fi."
+    ],
+    "en": [
+     "A small B&B in the centre of Montallegro, on Via Siracusa: handy for exploring the village on foot and heading out to the beaches, with Eraclea Minoa about 9 km away. All rooms have Wi-Fi."
+    ]
    },
    "info": [
     {
@@ -3590,7 +3906,14 @@
     "en": "Beachfront B&B in Bovo Marina, with a garden and rooms overlooking the sea or the garden."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un B&B fronte spiaggia a Bovo Marina, con le camere che guardano il mare o il giardino. Prende il nome da Capo Bianco, il promontorio di marna bianca che chiude il golfo verso Eraclea Minoa.",
+     "Fuori ci sono il giardino e il barbecue; al mattino c'è la colazione e l'auto resta nel parcheggio privato."
+    ],
+    "en": [
+     "A beachfront B&B in Bovo Marina, with rooms looking out over the sea or the garden. It takes its name from Capo Bianco, the white marl headland that closes the gulf towards Eraclea Minoa.",
+     "Outside there's a garden with a barbecue; breakfast is served in the morning and there's private parking."
+    ]
    },
    "info": [
     {
@@ -3636,11 +3959,15 @@
     "en": "Country villa"
    },
    "breve": {
-    "it": "Villa tutta per voi nella campagna verso Torre Salsa, con giardino e barbecue, a 10 minuti da Bovo Marina."
+    "it": "Villa tutta per voi nella campagna verso Torre Salsa, con giardino e barbecue, a 10 minuti da Bovo Marina.",
+    "en": "A whole villa to yourselves in the countryside towards Torre Salsa, with garden and barbecue, 10 minutes from Bovo Marina."
    },
    "testo": {
     "it": [
      "Tre camere e due bagni, la cucina attrezzata e un grande giardino con la zona relax, il barbecue e il tavolo per mangiare fuori. La Riserva di Torre Salsa è a 2,4 km; per l'arrivo c'è una guida al self check-in."
+    ],
+    "en": [
+     "Three bedrooms and two bathrooms, a fully equipped kitchen and a big garden with a relax area, barbecue and an outdoor dining table. The Torre Salsa reserve is 2.4 km away, and there's a self check-in guide for your arrival."
     ]
    },
    "info": [
@@ -3789,7 +4116,7 @@
     "dormire"
    ],
    "sotto": "villa",
-   "foto": "",
+   "foto": "https://images.posarellivillas.com/property_posarelli/96242/asra16:10:1500:x_webp/01.jpg",
    "lat": 37.3863068,
    "lng": 13.3106937,
    "mappe": "Villa Anthea, Montallegro AG",
@@ -3801,17 +4128,28 @@
     "en": "Villa with pool"
    },
    "breve": {
-    "it": "Villa di 100 m² con piscina privata e vista mare, a circa 700 metri dalla spiaggia di Bovo Marina."
+    "it": "Villa di 100 m² con piscina privata e vista mare, a circa 700 metri dalla spiaggia di Bovo Marina.",
+    "en": "A 100 m² villa with a private pool and sea views, about 700 metres from Bovo Marina beach."
    },
    "testo": {
     "it": [
-     "Tutta su un livello, con tre camere e due bagni più uno esterno, per sei ospiti. La piscina misura 10 × 5 metri e si usa da aprile a novembre."
+     "Villa Anthea sta accanto alla Riserva di Torre Salsa, in una posizione panoramica: la luce e la vista sul mare, dentro e fuori casa, sono il suo punto forte. Gli interni sono moderni e curati.",
+     "È tutta su un piano: soggiorno con zona pranzo e cucina, due camere matrimoniali, una delle quali con il bagno, e una camera con due letti singoli, per sei ospiti. I bagni sono due dentro casa più uno esterno.",
+     "Fuori ci sono la piscina di 10 × 5 metri, che si usa da aprile a novembre, le terrazze, il gazebo e la veranda. La spiaggia di Bovo Marina è a 700 metri, il paese a 6 chilometri, Eraclea Minoa a 12."
+    ],
+    "en": [
+     "Villa Anthea stands next to the Torre Salsa reserve in a panoramic spot: the light and the sea views, inside and out, are its best feature. The interiors are modern and well finished.",
+     "It's all on one level: living room with dining area and kitchen, two double bedrooms, one with en-suite, and a twin room, for six guests. Two bathrooms indoors plus one outside.",
+     "Outside are the 10 × 5 m pool, open from April to November, the terraces, the gazebo and the veranda. Bovo Marina beach is 700 m away, the village 6 km, Eraclea Minoa 12 km."
     ]
    },
    "info": [],
    "consigli": {
     "it": [
-     "Animali non ammessi"
+     "Gli animali non sono ammessi"
+    ],
+    "en": [
+     "Pets are not allowed"
     ]
    },
    "contatti": {
@@ -3825,12 +4163,48 @@
     "Vista mare",
     "3 camere",
     "Fino a 6 ospiti",
+    "Gazebo e veranda",
     "Barbecue",
     "Parcheggio",
     "Wi-Fi",
     "Aria condizionata"
    ],
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Posarelli Villas",
+   "galleria": [
+    {
+     "foto": "https://images.posarellivillas.com/property_posarelli/96242/asra16:10:1500:x_webp/01.jpg",
+     "credito": "Posarelli Villas",
+     "didascalia": {
+      "it": "La piscina con la vista sul mare",
+      "en": "The pool with the sea view"
+     }
+    },
+    {
+     "foto": "https://images.posarellivillas.com/property_posarelli/96242/asra16:10:1500:x_webp/03.jpg",
+     "credito": "Posarelli Villas",
+     "didascalia": {
+      "it": "La piscina tra le colline e il mare",
+      "en": "The pool between the hills and the sea"
+     }
+    },
+    {
+     "foto": "https://images.posarellivillas.com/property_posarelli/96242/asra16:10:1500:x_webp/04.jpg",
+     "credito": "Posarelli Villas",
+     "didascalia": {
+      "it": "La villa affacciata sulla piscina",
+      "en": "The villa overlooking the pool"
+     }
+    },
+    {
+     "foto": "https://images.posarellivillas.com/property_posarelli/96242/asra16:10:1500:x_webp/07.jpg",
+     "credito": "Posarelli Villas",
+     "didascalia": {
+      "it": "La veranda sulla piscina",
+      "en": "The veranda by the pool"
+     }
+    }
+   ]
   },
   {
    "id": "villa-chiara",
@@ -3851,11 +4225,15 @@
     "en": "Country villa"
    },
    "breve": {
-    "it": "Villa di 120 m² a 500 metri dall'ingresso Eremita della Riserva di Torre Salsa, con vista su mare e monti."
+    "it": "Villa di 120 m² a 500 metri dall'ingresso Eremita della Riserva di Torre Salsa, con vista su mare e monti.",
+    "en": "A 120 m² villa 500 metres from the Eremita entrance to the Torre Salsa reserve, with views of the sea and the hills."
    },
    "testo": {
     "it": [
      "Tre camere, una matrimoniale, una doppia e una singola, l'angolo barbecue e il forno a legna. La spiaggia di Bovo Marina è a cinque minuti d'auto. Su Airbnb ha 4,95 con più di cento recensioni."
+    ],
+    "en": [
+     "Three bedrooms – a double, a twin and a single – a barbecue corner and a wood-fired oven. Bovo Marina beach is five minutes' drive away. On Airbnb it scores 4.95 from more than a hundred reviews."
     ]
    },
    "info": [],
@@ -3899,10 +4277,18 @@
     "en": "Villa"
    },
    "breve": {
-    "it": "Villa con vista mare e terrazza, a poche centinaia di metri dalla spiaggia di Bovo Marina."
+    "it": "Villa con vista mare e terrazza, a poche centinaia di metri dalla spiaggia di Bovo Marina.",
+    "en": "A villa with sea views and a terrace, a few hundred metres from Bovo Marina beach."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una villa per famiglie e gruppi fino a sette persone, con due bagni, la terrazza e la vista sul mare.",
+     "La spiaggia di Bovo Marina è a poche centinaia di metri. Ci sono il barbecue, il parcheggio, il Wi-Fi e l'aria condizionata, e gli animali sono i benvenuti."
+    ],
+    "en": [
+     "A villa for families and groups of up to seven, with two bathrooms, a terrace and sea views.",
+     "Bovo Marina beach is a few hundred metres away. There's a barbecue, parking, Wi-Fi and air conditioning, and pets are welcome."
+    ]
    },
    "info": [],
    "consigli": {
@@ -3946,10 +4332,18 @@
     "en": "Villa"
    },
    "breve": {
-    "it": "Villa con vista su mare e monti, giardino e terrazza, con tre camere."
+    "it": "Villa con vista su mare e monti, giardino e terrazza, con tre camere.",
+    "en": "A villa with views of the sea and hills, a garden and a terrace, with three bedrooms."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Tre camere, un bagno e la cucina attrezzata, con il giardino e una terrazza: dalla villa si vedono insieme il mare e i monti.",
+     "Ha il parcheggio, il Wi-Fi e l'aria condizionata."
+    ],
+    "en": [
+     "Three bedrooms, one bathroom and a fully equipped kitchen, with a garden and a terrace: from the villa you see both the sea and the hills.",
+     "Parking, Wi-Fi and air conditioning."
+    ]
    },
    "info": [],
    "consigli": {
@@ -3994,10 +4388,18 @@
     "en": "Villa"
    },
    "breve": {
-    "it": "Villa di 100 m² con vista mare, giardino e terrazza coperta, per un massimo di 6 ospiti."
+    "it": "Villa di 100 m² con vista mare, giardino e terrazza coperta, per un massimo di 6 ospiti.",
+    "en": "A 100 m² villa with sea views, a garden and a covered terrace, for up to 6 guests."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Cento metri quadrati con tre camere, per un massimo di sei ospiti. Ha la vista sul mare, una terrazza coperta per stare all'ombra e il giardino con il barbecue.",
+     "Ci sono tre posti auto e gli animali sono ammessi."
+    ],
+    "en": [
+     "A hundred square metres with three bedrooms, for up to six guests. Sea views, a covered terrace for the shade and a garden with a barbecue.",
+     "Three parking spaces, and pets are allowed."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4039,10 +4441,18 @@
     "en": "Holiday home"
    },
    "breve": {
-    "it": "Casa vacanze in contrada Gorgo con giardino, area giochi per bambini e solarium."
+    "it": "Casa vacanze in contrada Gorgo con giardino, area giochi per bambini e solarium.",
+    "en": "A holiday home in contrada Gorgo with a garden, children's play area and sun terrace."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una casa vacanze in contrada Gorgo, comoda per le famiglie con bambini: c'è il giardino con l'area giochi, il patio e il solarium per prendere il sole.",
+     "Ha il parcheggio, il Wi-Fi e l'aria condizionata."
+    ],
+    "en": [
+     "A holiday home in contrada Gorgo, handy for families with children: there's a garden with a play area, a patio and a sun terrace.",
+     "Parking, Wi-Fi and air conditioning."
+    ]
    },
    "info": [
     {
@@ -4089,10 +4499,18 @@
     "en": "Hillside villa"
    },
    "breve": {
-    "it": "Villa in collina fino a 10 ospiti, con porticato coperto, doccia esterna e barbecue."
+    "it": "Villa in collina fino a 10 ospiti, con porticato coperto, doccia esterna e barbecue.",
+    "en": "A hillside villa for up to 10 guests, with a covered porch, outdoor shower and barbecue."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una villa in collina adatta ai gruppi numerosi: quattro camere e due bagni, fino a dieci persone.",
+     "Sotto il porticato coperto si sta all'aperto anche nelle ore più calde; ci sono il barbecue, la doccia esterna per quando si torna dal mare e il parcheggio."
+    ],
+    "en": [
+     "A hillside villa suited to large groups: four bedrooms and two bathrooms, for up to ten people.",
+     "The covered porch lets you stay outdoors even in the hottest hours; there's a barbecue, an outdoor shower for when you're back from the beach, and parking."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4138,10 +4556,15 @@
    },
    "breve": {
     "it": "Appartamenti per le vacanze in paese, con giardino, gazebo e barbecue.",
-    "en": "Holiday apartments in the town, with a garden, gazebo and barbecue."
+    "en": "Holiday apartments in the village, with garden, gazebo and barbecue."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Appartamenti con ingresso indipendente in via Liborio Bonifacio, in paese. Fuori c'è il giardino con il gazebo e il barbecue; dentro l'aria condizionata e il Wi-Fi."
+    ],
+    "en": [
+     "Apartments with their own entrance on Via Liborio Bonifacio, in the village. Outside there's a garden with a gazebo and barbecue; inside, air conditioning and Wi-Fi."
+    ]
    },
    "info": [
     {
@@ -4186,10 +4609,17 @@
    },
    "breve": {
     "it": "Villa a Bovo Marina con terrazza sul giardino, a meno di 2 km dalla spiaggia di Eraclea Minoa.",
-    "en": "Villa in Bovo Marina with a terrace over the garden, less than 2 km from Eraclea Minoa beach."
+    "en": "A villa in Bovo Marina with a terrace over the garden, less than 2 km from Eraclea Minoa beach."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una camera da letto per un massimo di quattro ospiti e due bagni, con la cucina attrezzata e la lavatrice: comoda anche per i soggiorni lunghi.",
+     "Dalla terrazza si guarda il giardino. C'è il parcheggio privato, con l'aria condizionata e il Wi-Fi."
+    ],
+    "en": [
+     "One bedroom for up to four guests and two bathrooms, with a fully equipped kitchen and washing machine: comfortable for longer stays too.",
+     "The terrace looks over the garden. Private parking, air conditioning and Wi-Fi."
+    ]
    },
    "info": [
     {
@@ -4237,10 +4667,17 @@
    },
    "breve": {
     "it": "Chalet di 45 m² a Bovo Marina, con giardino, barbecue e vista mare.",
-    "en": "45 m² chalet in Bovo Marina, with a garden, barbecue and sea views."
+    "en": "A 45 m² chalet in Bovo Marina, with a garden, barbecue and sea views."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Uno chalet di 45 metri quadrati, tutto per sé, a Bovo Marina: piccolo ma con il giardino, il barbecue e la vista sul mare.",
+     "C'è il parcheggio e gli animali sono ammessi."
+    ],
+    "en": [
+     "A 45 m² chalet all to yourselves in Bovo Marina: small, but with a garden, a barbecue and a sea view.",
+     "Parking available, and pets are allowed."
+    ]
    },
    "info": [
     {
@@ -4281,10 +4718,16 @@
     "en": "Holiday home"
    },
    "breve": {
-    "it": "Casa con corte sulla collina sopra Bovo Marina, con vista sul golfo da Torre Salsa a Capo Bianco."
+    "it": "Casa con corte sulla collina sopra Bovo Marina, con vista sul golfo da Torre Salsa a Capo Bianco.",
+    "en": "A house with a courtyard on the hill above Bovo Marina, overlooking the bay from Torre Salsa to Capo Bianco."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La casa si apre su una corte, sulla collina che sta sopra Bovo Marina. Da lì lo sguardo abbraccia tutto il golfo di Eraclea Minoa, dalle falesie di Torre Salsa fino al promontorio bianco di Capo Bianco."
+    ],
+    "en": [
+     "The house opens onto a courtyard on the hill above Bovo Marina. From there the view takes in the whole Gulf of Eraclea Minoa, from the Torre Salsa cliffs to the white headland of Capo Bianco."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4320,11 +4763,15 @@
     "en": "Holiday home"
    },
    "breve": {
-    "it": "Casa sulla collina tra Torre Salsa ed Eraclea Minoa, con vista mare e un sentiero che scende alla spiaggia di Bovo Marina."
+    "it": "Casa sulla collina tra Torre Salsa ed Eraclea Minoa, con vista mare e un sentiero che scende alla spiaggia di Bovo Marina.",
+    "en": "A house on the hill between Torre Salsa and Eraclea Minoa, with sea views and a path down to Bovo Marina beach."
    },
    "testo": {
     "it": [
      "Tre camere e due bagni e mezzo per cinque ospiti. Alla spiaggia si scende a piedi lungo un sentiero piuttosto ripido, oppure in auto su strada privata."
+    ],
+    "en": [
+     "Three bedrooms and two and a half bathrooms for five guests. You can walk down to the beach on a fairly steep path, or drive down a private road."
     ]
    },
    "info": [],
@@ -4365,10 +4812,16 @@
     "en": "Holiday home"
    },
    "breve": {
-    "it": "Casa intera nella campagna di Montallegro, affacciata sui tramonti della costa."
+    "it": "Casa intera nella campagna di Montallegro, affacciata sui tramonti della costa.",
+    "en": "A whole house in the Montallegro countryside, facing the sunsets over the coast."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il nome dice tutto: è una casa intera nella campagna di Montallegro, per chi vuole chiudere la giornata guardando il sole che scende sul mare."
+    ],
+    "en": [
+     "The name says it all: a whole house in the Montallegro countryside, for anyone who wants to end the day watching the sun go down over the sea."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4400,11 +4853,15 @@
     "en": "Country house"
    },
    "breve": {
-    "it": "Casa di campagna restaurata tra ulivi e mandorli, a 2,5 km da Bovo Marina."
+    "it": "Casa di campagna restaurata tra ulivi e mandorli, a 2,5 km da Bovo Marina.",
+    "en": "A restored country house among olive and almond trees, 2.5 km from Bovo Marina."
    },
    "testo": {
     "it": [
      "Sta nella tenuta di famiglia dell'host, che propone anche lezioni di cucina e passeggiate. Nella stessa tenuta c'è un monolocale."
+    ],
+    "en": [
+     "It's on the host's family estate, where cooking lessons and walks are also on offer. There's a studio flat on the same estate."
     ]
    },
    "info": [
@@ -4450,11 +4907,15 @@
     "en": "Apartments"
    },
    "breve": {
-    "it": "Tre appartamenti climatizzati, Tea, Alba e Damasco, con ingresso indipendente e spazio esterno privato."
+    "it": "Tre appartamenti climatizzati, Tea, Alba e Damasco, con ingresso indipendente e spazio esterno privato.",
+    "en": "Three air-conditioned apartments – Tea, Alba and Damasco – each with its own entrance and private outdoor space."
    },
    "testo": {
     "it": [
      "Il design è ispirato al baglio siciliano. Gli appartamenti sono vicini alla Riserva di Torre Salsa e a pochi minuti dalla spiaggia di Bovo Marina."
+    ],
+    "en": [
+     "The design is inspired by the Sicilian baglio. The apartments are close to the Torre Salsa reserve and a few minutes from Bovo Marina beach."
     ]
    },
    "info": [
@@ -4502,10 +4963,18 @@
     "en": "Small detached house"
    },
    "breve": {
-    "it": "Casetta indipendente a circa un chilometro dal paese e cinque dalla spiaggia di Bovo Marina."
+    "it": "Casetta indipendente a circa un chilometro dal paese e cinque dalla spiaggia di Bovo Marina.",
+    "en": "A detached little house about a kilometre from the village and five from Bovo Marina beach."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una casetta tutta indipendente con una camera, fino a quattro ospiti, la cucina e il parcheggio.",
+     "Sta a circa un chilometro dal paese e a cinque dalla spiaggia di Bovo Marina; gli animali sono ammessi."
+    ],
+    "en": [
+     "A fully detached little house with one bedroom, for up to four guests, a kitchen and parking.",
+     "About a kilometre from the village and five from Bovo Marina beach; pets are allowed."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4545,10 +5014,16 @@
     "en": "Sea-view penthouse"
    },
    "breve": {
-    "it": "Attico con vista mare e due terrazze private, in una villa con più unità indipendenti."
+    "it": "Attico con vista mare e due terrazze private, in una villa con più unità indipendenti.",
+    "en": "A penthouse with sea views and two private terraces, in a villa with several independent units."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un attico all'ultimo piano di una villa divisa in più unità indipendenti. Ha due terrazze private con la vista sul mare, il barbecue, il parcheggio e l'aria condizionata."
+    ],
+    "en": [
+     "A top-floor penthouse in a villa split into several independent units. Two private terraces with sea views, a barbecue, parking and air conditioning."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4588,10 +5063,16 @@
     "en": "Apartment"
    },
    "breve": {
-    "it": "Appartamento in paese con due camere, balcone e aria condizionata."
+    "it": "Appartamento in paese con due camere, balcone e aria condizionata.",
+    "en": "A flat in the village with two bedrooms, a balcony and air conditioning."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un appartamento in paese con due camere, il balcone e l'aria condizionata: una base comoda per vivere Montallegro e raggiungere in pochi minuti d'auto le spiagge di Bovo Marina e Torre Salsa."
+    ],
+    "en": [
+     "A flat in the village with two bedrooms, a balcony and air conditioning: a handy base for enjoying Montallegro and driving to the beaches of Bovo Marina and Torre Salsa in a few minutes."
+    ]
    },
    "info": [],
    "consigli": {
@@ -4629,10 +5110,16 @@
     "en": "Studio & rooms"
    },
    "breve": {
-    "it": "Monolocale e camere in paese."
+    "it": "Monolocale e camere in paese.",
+    "en": "A studio and rooms in the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un monolocale e alcune camere in via Villani, in paese: una sistemazione semplice per chi vuole dormire nel centro di Montallegro."
+    ],
+    "en": [
+     "A studio and a few rooms on Via Villani, in the village: a simple place to stay for anyone who wants to sleep in the centre of Montallegro."
+    ]
    },
    "info": [
     {
@@ -4672,10 +5159,15 @@
    },
    "breve": {
     "it": "Affittacamere a Bovo Marina, della stessa gestione di Luna Minoica.",
-    "en": "Guest rooms in Bovo Marina, run by the same management as Luna Minoica."
+    "en": "Rooms to let in Bovo Marina, run by the same management as Luna Minoica."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Le camere di Bovo Marina Suites, a Bovo Marina, sono della stessa gestione di Luna Minoica Suites & Apartments: per informazioni e prenotazioni si usano gli stessi recapiti."
+    ],
+    "en": [
+     "The Bovo Marina Suites rooms, in Bovo Marina, are run by the same management as Luna Minoica Suites & Apartments: use the same contacts for information and bookings."
+    ]
    },
    "info": [
     {
@@ -4715,10 +5207,15 @@
    },
    "breve": {
     "it": "Affittacamere a Bovo Marina, della stessa gestione di Luna Minoica.",
-    "en": "Guest rooms in Bovo Marina, run by the same management as Luna Minoica."
+    "en": "Rooms to let in Bovo Marina, run by the same management as Luna Minoica."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il nome è quello della tartaruga marina che depone le uova sulle spiagge di questa costa. Le camere, a Bovo Marina, sono della stessa gestione di Luna Minoica Suites & Apartments, che risponde per informazioni e prenotazioni."
+    ],
+    "en": [
+     "It's named after the loggerhead sea turtle that lays its eggs on the beaches of this coast. The rooms, in Bovo Marina, are run by Luna Minoica Suites & Apartments, who handle information and bookings."
+    ]
    },
    "info": [
     {
@@ -4758,10 +5255,15 @@
    },
    "breve": {
     "it": "Camere in affitto in paese, in via Volturno, con aria condizionata e Wi-Fi. Online si trova come Pizzuco Holiday Rooms.",
-    "en": "Rooms for rent in the town, on Via Volturno, with air conditioning and Wi-Fi. Listed online as Pizzuco Holiday Rooms."
+    "en": "Rooms to let in the village, on Via Volturno, with air conditioning and Wi-Fi. Online it's listed as Pizzuco Holiday Rooms."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Camere con il bagno privato e l'ingresso indipendente, in via Volturno, nel paese. Ci sono l'aria condizionata e il Wi-Fi."
+    ],
+    "en": [
+     "Rooms with private bathroom and their own entrance, on Via Volturno in the village. Air conditioning and Wi-Fi."
+    ]
    },
    "info": [
     {
@@ -4807,10 +5309,17 @@
    },
    "breve": {
     "it": "Appartamento di 40 m² per due persone in viale della Vittoria, in paese.",
-    "en": "40 m² apartment for two on Viale della Vittoria, in the town."
+    "en": "A 40 m² flat for two on Viale della Vittoria, in the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Quaranta metri quadrati per una coppia, sul viale della Vittoria: la camera, la cucina attrezzata e la lavatrice, con l'aria condizionata, il Wi-Fi e il parcheggio.",
+     "Dal viale si raggiungono a piedi i bar, i ristoranti e i negozi del paese."
+    ],
+    "en": [
+     "Forty square metres for a couple on Viale della Vittoria: bedroom, fully equipped kitchen and washing machine, with air conditioning, Wi-Fi and parking.",
+     "The village's bars, restaurants and shops are within walking distance along the avenue."
+    ]
    },
    "info": [
     {
@@ -5218,12 +5727,17 @@
     "en": "Local food shop"
    },
    "breve": {
-    "it": "La bottega dei prodotti del territorio sul viale della Vittoria: frutta e verdura dei coltivatori della zona, conserve e confezioni regalo da spedire a casa."
+    "it": "La bottega dei prodotti del territorio sul viale della Vittoria: frutta e verdura dei coltivatori della zona, conserve e confezioni regalo da spedire a casa.",
+    "en": "The local produce shop on Viale della Vittoria: fruit and vegetables from local growers, preserves and gift boxes shipped to your home."
    },
    "testo": {
     "it": [
      "L'hanno aperta Gaetana e Marco alla fine del 2022. Quello che vendono viene da aziende di famiglia e da piccoli produttori scelti uno per uno: c'è il fresco di stagione, ci sono le conserve e qualche bottiglia di vino.",
      "Su richiesta preparano confezioni regalo su misura e le spediscono a casa."
+    ],
+    "en": [
+     "Gaetana and Marco opened it at the end of 2022. What they sell comes from family firms and small producers chosen one by one: seasonal fresh produce, preserves and a few bottles of wine.",
+     "On request they make up custom gift boxes and ship them to your home."
     ]
    },
    "info": [
@@ -5479,11 +5993,15 @@
     "en": "Bakery & savoury snacks"
    },
    "breve": {
-    "it": "Pane fresco, calzoni, arancine e dolci siciliani in via Salvatore Ingraudo Gagliano."
+    "it": "Pane fresco, calzoni, arancine e dolci siciliani in via Salvatore Ingraudo Gagliano.",
+    "en": "Fresh bread, calzoni, arancine and Sicilian sweets on Via Salvatore Ingraudo Gagliano."
    },
    "testo": {
     "it": [
      "Il panificio dei fratelli Tulumello: oltre al pane ci sono la rosticceria, con i calzoni e le arancine, e i dolci della tradizione siciliana."
+    ],
+    "en": [
+     "The Tulumello brothers' bakery: besides bread there's the rosticceria, with calzoni and arancine, and traditional Sicilian sweets."
     ]
    },
    "info": [
@@ -5523,10 +6041,15 @@
    },
    "breve": {
     "it": "Pane fresco e prodotti da forno sul corso Vittorio Emanuele, nel centro del paese.",
-    "en": "Fresh bread and baked goods on Corso Vittorio Emanuele, in the town centre."
+    "en": "Fresh bread and baked goods on Corso Vittorio Emanuele, in the centre of the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un forno nel centro del paese, al numero 44 del corso Vittorio Emanuele: la mattina si passa per il pane fresco e per i prodotti da forno."
+    ],
+    "en": [
+     "A bakery in the centre of the village, at no. 44 Corso Vittorio Emanuele: drop in in the morning for fresh bread and baked goods."
+    ]
    },
    "info": [
     {
@@ -5565,7 +6088,12 @@
     "en": "The Piruzza brothers' bakery on Via Cucchiara: fresh bread and baked goods."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Un panificio di famiglia in via Cucchiara: i fratelli Piruzza sfornano il pane fresco e i prodotti da forno."
+    ],
+    "en": [
+     "A family bakery on Via Cucchiara, where the Piruzza brothers bake fresh bread and other baked goods."
+    ]
    },
    "info": [
     {
@@ -5602,10 +6130,16 @@
     "en": "Butcher & deli"
    },
    "breve": {
-    "it": "La macelleria di Mariella Vella sul corso principale: carne fresca e salumi."
+    "it": "La macelleria di Mariella Vella sul corso principale: carne fresca e salumi.",
+    "en": "Mariella Vella's butcher's shop on the main street: fresh meat and cured meats."
    },
    "testo": {
-    "it": []
+    "it": [
+     "«La Bontà della Carne» è la macelleria e salumeria di Mariella Vella, all'inizio del corso Vittorio Emanuele: al banco la carne fresca e i salumi."
+    ],
+    "en": [
+     "«La Bontà della Carne» is Mariella Vella's butcher's and deli, at the start of Corso Vittorio Emanuele: fresh meat and cured meats at the counter."
+    ]
    },
    "info": [
     {
@@ -5642,10 +6176,15 @@
    },
    "breve": {
     "it": "La macelleria sul corso Vittorio Emanuele.",
-    "en": "The butcher's shop on Corso Vittorio Emanuele."
+    "en": "The butcher's on Corso Vittorio Emanuele."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Una macelleria di paese sul corso Vittorio Emanuele, con la carne fresca al banco. È aperta dal lunedì al sabato, la mattina e il pomeriggio."
+    ],
+    "en": [
+     "A village butcher's on Corso Vittorio Emanuele, with fresh meat at the counter. Open Monday to Saturday, morning and afternoon."
+    ]
    },
    "info": [
     {
@@ -5839,11 +6378,19 @@
     "en": "WWF guided visit"
    },
    "breve": {
-    "it": "Con il personale del WWF dal centro visite al giardino delle orchidee, alla Valle del ginepro e alle cave con vista sul mare, fino alla spiaggia."
+    "it": "Con il personale del WWF dal centro visite al giardino delle orchidee, alla Valle del ginepro e alle cave con vista sul mare, fino alla spiaggia.",
+    "en": "With WWF staff from the visitor centre to the orchid garden, the Juniper Valley and the quarries overlooking the sea, all the way to the beach."
    },
    "testo": {
     "it": [
-     "La riserva, 762 ettari protetti dal 2000, è gestita dal WWF. Sulla sua spiaggia nidifica la tartaruga Caretta caretta: d'estate i nidi vengono segnalati e recintati."
+     "La visita parte dal centro visite «F. Galìa» di Siculiana e segue una strada di terra battuta fino al giardino delle orchidee, sui terreni del WWF, dove si vedono alcune delle orchidee censite nella riserva. Subito dopo c'è la Valle del ginepro: gli ultimi esemplari di ginepro turbinato crescono ai piedi di un anfiteatro naturale di cristalli di gesso.",
+     "Risalendo la valle si arriva alle vecchie cave, abbandonate da anni, con i panorami sul mare e i «pinnacoli carsici» venuti alla luce con gli scavi. Da qui il sentiero natura scende lungo la costa, dalla macchia alle dune, fino alla spiaggia e al suo mare limpido.",
+     "La riserva, 762 ettari protetti dal 2000, è gestita dal WWF e fa parte della rete europea Natura 2000, che tutela anche i fondali. Sulla spiaggia nidifica la tartaruga Caretta caretta: d'estate i nidi vengono segnalati e recintati."
+    ],
+    "en": [
+     "The visit starts from the «F. Galìa» visitor centre in Siculiana and follows a dirt road to the orchid garden on WWF land, where you can see some of the orchids recorded in the reserve. Right after comes the Juniper Valley: the last junipers grow at the foot of a natural amphitheatre of gypsum crystals.",
+     "Climbing up the valley you reach the old quarries, abandoned for years, with views over the sea and the «karst pinnacles» exposed by the digging. From here the nature trail runs along the coast, from scrub to dunes, down to the beach and its clear water.",
+     "The reserve, 762 hectares protected since 2000, is managed by WWF and is part of the European Natura 2000 network, which also protects the seabed. Loggerhead turtles nest on the beach: in summer the nests are marked and fenced off."
     ]
    },
    "info": [
@@ -5866,9 +6413,19 @@
    "consigli": {
     "it": [
      "Lunedì, mercoledì e venerdì su prenotazione",
-     "Sospese dal 30 giugno al 15 settembre",
+     "Sospese dal 30 giugno al 15 settembre per il caldo: in quei giorni si può prenotare un incontro al centro visite",
      "Accesso libero alla riserva: 8–20 d’estate, 8–17 il resto dell’anno",
-     "Si prenota all’Ufficio Riserva di Siculiana"
+     "Si prenota all’Ufficio Riserva di Siculiana, aperto dal lunedì al sabato",
+     "Porta binocolo, pantaloni lunghi, cappello, giacca a vento, scarpe chiuse, borraccia e costume",
+     "Con la pioggia evita la sterrata dell’ingresso Pantano, anche in fuoristrada"
+    ],
+    "en": [
+     "Mondays, Wednesdays and Fridays, by booking",
+     "Suspended from 30 June to 15 September because of the heat: on those days you can book a talk at the visitor centre",
+     "Open access to the reserve: 8 am–8 pm in summer, 8 am–5 pm the rest of the year",
+     "Book at the reserve office in Siculiana, open Monday to Saturday",
+     "Bring binoculars, long trousers, a hat, a windproof jacket, closed shoes, a water bottle and your swimsuit",
+     "When it rains, avoid the dirt road to the Pantano entrance, even in a 4x4"
     ]
    },
    "contatti": {
@@ -5909,6 +6466,12 @@
       "en": "The reserve's beach and path"
      }
     }
+   ],
+   "caratteristiche": [
+    "Giardino delle orchidee",
+    "Valle del ginepro",
+    "Cave e pinnacoli carsici",
+    "Sentiero fino alla spiaggia"
    ]
   },
   {
@@ -5930,11 +6493,19 @@
     "en": "SUP & kayak tours"
    },
    "breve": {
-    "it": "Due ore in SUP o in kayak con un istruttore lungo circa 4 km della costa della riserva, partendo da Siculiana Marina."
+    "it": "Due ore in SUP o in kayak con un istruttore lungo circa 4 km della costa della riserva, partendo da Siculiana Marina.",
+    "en": "Two hours by SUP or kayak with an instructor along about 4 km of the reserve's coast, starting from Siculiana Marina."
    },
    "testo": {
     "it": [
-     "Il tour parte dal Cala Manbrù Beach Club e comincia con una breve lezione. Sono compresi l'ingresso al beach club e gli spogliatoi."
+     "Il tour parte dal Cala Manbrù Beach Club e comincia con una breve lezione. Sono compresi l'ingresso al beach club e gli spogliatoi.",
+     "Si pagaia per circa due ore lungo la costa della Riserva di Torre Salsa, uno dei tratti più incontaminati del litorale agrigentino.",
+     "Cala Manbrù è un beach club con cento lettini e un ristorante sul mare, premiato nel 2026 come miglior ristorante sulla spiaggia della Sicilia dalla guida ai migliori beach club d'Italia. Dopo il tour si può restare per la giornata e chiudere con l'aperitivo al tramonto sulla terrazza."
+    ],
+    "en": [
+     "The tour starts from Cala Manbrù Beach Club with a short lesson. Entry to the beach club and the changing rooms are included.",
+     "You paddle for about two hours along the coast of the Torre Salsa reserve, one of the most unspoilt stretches of the Agrigento coastline.",
+     "Cala Manbrù is a beach club with a hundred sunbeds and a seafront restaurant, named the best beach restaurant in Sicily in 2026 by the guide to Italy's best beach clubs. After the tour you can stay for the day and finish with a sunset aperitivo on the terrace."
     ]
    },
    "info": [
@@ -5961,7 +6532,13 @@
    "consigli": {
     "it": [
      "Parte da Siculiana Marina, a pochi minuti da Montallegro",
-     "D’estate: il beach club apre a maggio"
+     "D’estate: il beach club apre a maggio",
+     "Il kayak non è adatto ai bambini sotto i 3 anni"
+    ],
+    "en": [
+     "Starts from Siculiana Marina, a few minutes from Montallegro",
+     "Summer only: the beach club opens in May",
+     "Kayaking is not suitable for children under 3"
     ]
    },
    "contatti": {
@@ -5985,6 +6562,14 @@
       "it": "Le falesie bianche viste dall’alto",
       "en": "The white cliffs from above"
      }
+    },
+    {
+     "foto": "https://www.calamanbru.com/lovable-uploads/9b3ce3cc-913e-4fa4-b756-9222808c16ff.webp",
+     "credito": "Cala Manbrù",
+     "didascalia": {
+      "it": "La spiaggia di Cala Manbrù a Siculiana Marina",
+      "en": "Cala Manbrù beach, Siculiana Marina"
+     }
     }
    ]
   },
@@ -5995,7 +6580,7 @@
     "servizi"
    ],
    "sotto": "info",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2025/03/cover-Piazza.jpg",
    "lat": 37.3917045,
    "lng": 13.3514196,
    "mappe": "Pro Loco Montallegro, Montallegro AG",
@@ -6007,11 +6592,19 @@
     "en": "Tourist information"
    },
    "breve": {
-    "it": "Informazioni su eventi, visite al Museo della Civiltà Contadina e soggiorno in paese."
+    "it": "Informazioni su eventi, visite al Museo della Civiltà Contadina e soggiorno in paese.",
+    "en": "Information on events, visits to the Museo della Civiltà Contadina and staying in the village."
    },
    "testo": {
     "it": [
-     "La Pro Loco Montallegro APS è un'associazione di volontari: organizza gli eventi del paese e accompagna chi viene a scoprirlo. Scrivi o chiama per qualsiasi informazione."
+     "La Pro Loco Montallegro APS è un'associazione di volontari che lavora per far conoscere e vivere il paese: organizza gli eventi durante tutto l'anno e accompagna chi viene a scoprire Montallegro e Bovo Marina.",
+     "Dà informazioni sulle visite al Museo della Civiltà Contadina, sta avviando con gli artisti del paese il laboratorio Crita Allegra, cura il portale visitmontallegrobovomarina.it e, insieme al Comune, ha voluto questa app.",
+     "Per qualsiasi informazione scrivi o chiama: rispondono i volontari."
+    ],
+    "en": [
+     "Pro Loco Montallegro APS is a volunteer association that works to help people discover and enjoy the village: it organises events all year round and helps visitors explore Montallegro and Bovo Marina.",
+     "It provides information on visits to the Museo della Civiltà Contadina, is launching the Crita Allegra workshop with local artists, runs the visitmontallegrobovomarina.it portal and, together with the Comune, created this app.",
+     "For any information, write or call: the volunteers will answer."
     ]
    },
    "info": [],
@@ -6025,7 +6618,8 @@
     "web": "https://www.visitmontallegrobovomarina.it"
    },
    "zona": "paese",
-   "verificato": "novembre 2026"
+   "verificato": "novembre 2026",
+   "credito": "Visit Montallegro Bovo Marina"
   },
   {
    "id": "comune-montallegro",
@@ -6046,10 +6640,18 @@
     "en": "Town hall"
    },
    "breve": {
-    "it": "Uffici comunali e anagrafe. Per le comunicazioni ufficiali c'è la PEC."
+    "it": "Uffici comunali e anagrafe. Per le comunicazioni ufficiali c'è la PEC.",
+    "en": "Council offices and registry office. Official communications go by certified email (PEC)."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il municipio è sul corso Vittorio Emanuele, nel centro del paese: qui ci sono gli uffici comunali e l'anagrafe. Il Comune amministra anche Bovo Marina, la frazione sul mare.",
+     "Prima di andare controlla orari e servizi sul sito del Comune; per le comunicazioni formali c'è la PEC."
+    ],
+    "en": [
+     "The town hall is on Corso Vittorio Emanuele, in the centre of the village: it houses the council offices and the registry office. The Comune also runs Bovo Marina, the seaside hamlet.",
+     "Check opening times and services on the Comune website before you go; formal communications go by PEC (certified email)."
+    ]
    },
    "info": [
     {
@@ -6092,10 +6694,16 @@
     "en": "Carabinieri police"
    },
    "breve": {
-    "it": "La stazione dell'Arma in paese. Per le emergenze chiama il 112."
+    "it": "La stazione dell'Arma in paese. Per le emergenze chiama il 112.",
+    "en": "The local Carabinieri station. In an emergency, call 112."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La stazione dei Carabinieri di Montallegro è in via Cesare Battisti: qui si va per denunce e pratiche. Per qualsiasi emergenza, a qualsiasi ora, il numero da chiamare è il 112."
+    ],
+    "en": [
+     "Montallegro's Carabinieri station is on Via Cesare Battisti: this is where you go to report a crime or deal with paperwork. For any emergency, at any time, call 112."
+    ]
    },
    "info": [
     {
@@ -6134,10 +6742,16 @@
     "en": "Local police"
    },
    "breve": {
-    "it": "Il comando della polizia locale sul corso principale."
+    "it": "Il comando della polizia locale sul corso principale.",
+    "en": "The local police headquarters on the main street."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il comando della Polizia Municipale è sul corso Vittorio Emanuele, a pochi passi dal municipio. Si occupa di traffico, parcheggi e sicurezza in paese e a Bovo Marina."
+    ],
+    "en": [
+     "The municipal police headquarters is on Corso Vittorio Emanuele, a few steps from the town hall. It handles traffic, parking and safety in the village and in Bovo Marina."
+    ]
    },
    "info": [
     {
@@ -6175,10 +6789,16 @@
     "en": "Pharmacy"
    },
    "breve": {
-    "it": "L'unica farmacia del paese, sul viale della Vittoria."
+    "it": "L'unica farmacia del paese, sul viale della Vittoria.",
+    "en": "The village's only pharmacy, on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "È l'unica farmacia di Montallegro, sul viale della Vittoria. D'estate è aperta dal lunedì al sabato, la mattina e il pomeriggio fino alle 21; per l'orario invernale e per i turni festivi conviene telefonare."
+    ],
+    "en": [
+     "Montallegro's only pharmacy, on Viale della Vittoria. In summer it's open Monday to Saturday, morning and afternoon until 9 pm; for winter hours and holiday rotas, call ahead."
+    ]
    },
    "info": [
     {
@@ -6219,10 +6839,18 @@
     "en": "Out-of-hours doctor"
    },
    "breve": {
-    "it": "Il medico per le notti, i fine settimana e i festivi, nei locali dell'ASP di via Cesare Battisti."
+    "it": "Il medico per le notti, i fine settimana e i festivi, nei locali dell'ASP di via Cesare Battisti.",
+    "en": "The out-of-hours doctor for nights, weekends and public holidays, at the ASP premises on Via Cesare Battisti."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La guardia medica, oggi chiamata continuità assistenziale, sostituisce il medico di famiglia quando lo studio è chiuso: di notte, nei fine settimana e nei giorni festivi.",
+     "A Montallegro ha sede nei locali dell'ASP di via Cesare Battisti. Per le emergenze chiama sempre il 112."
+    ],
+    "en": [
+     "The guardia medica, now called «continuità assistenziale», stands in for the family doctor when their surgery is closed: at night, at weekends and on public holidays.",
+     "In Montallegro it's based at the ASP premises on Via Cesare Battisti. For emergencies, always call 112."
+    ]
    },
    "info": [
     {
@@ -6261,10 +6889,18 @@
     "en": "Fratelli Parlapiano hospital"
    },
    "breve": {
-    "it": "Il pronto soccorso più vicino, a circa 17 km."
+    "it": "Il pronto soccorso più vicino, a circa 17 km.",
+    "en": "The nearest A&E, about 17 km away."
    },
    "testo": {
-    "it": []
+    "it": [
+     "È il pronto soccorso dell'Ospedale Fratelli Parlapiano di Ribera, il più vicino a Montallegro: circa 17 chilometri verso ovest, lungo la statale 115.",
+     "In caso di emergenza chiama il 112: i soccorsi scelgono l'ospedale più adatto."
+    ],
+    "en": [
+     "The A&E of the Fratelli Parlapiano hospital in Ribera, the closest to Montallegro: about 17 km west along the SS115.",
+     "In an emergency call 112: the ambulance service will choose the most suitable hospital."
+    ]
    },
    "info": [
     {
@@ -6302,10 +6938,18 @@
     "en": "San Giovanni di Dio hospital"
    },
    "breve": {
-    "it": "L'ospedale principale della provincia, a circa 31 km. Pronto soccorso aperto 24 ore su 24."
+    "it": "L'ospedale principale della provincia, a circa 31 km. Pronto soccorso aperto 24 ore su 24.",
+    "en": "The province's main hospital, about 31 km away. A&E open 24 hours a day."
    },
    "testo": {
-    "it": []
+    "it": [
+     "L'Ospedale San Giovanni di Dio, in contrada Consolida, è il presidio principale della provincia di Agrigento, con il pronto soccorso aperto giorno e notte. Da Montallegro sono circa 31 chilometri verso est, lungo la statale 115.",
+     "In caso di emergenza chiama il 112."
+    ],
+    "en": [
+     "San Giovanni di Dio hospital, in contrada Consolida, is the main hospital in the province of Agrigento, with A&E open day and night. It's about 31 km east of Montallegro along the SS115.",
+     "In an emergency call 112."
+    ]
    },
    "info": [
     {
@@ -6343,10 +6987,16 @@
     "en": "Dentist"
    },
    "breve": {
-    "it": "Centro odontoiatrico sul corso principale."
+    "it": "Centro odontoiatrico sul corso principale.",
+    "en": "A dental centre on the main street."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Studio dentistico sul corso Vittorio Emanuele, nel centro del paese: per visite e cure si prende appuntamento per telefono."
+    ],
+    "en": [
+     "A dental practice on Corso Vittorio Emanuele, in the centre of the village: call to book a check-up or treatment."
+    ]
    },
    "info": [
     {
@@ -6383,10 +7033,16 @@
     "en": "Medical laboratory"
    },
    "breve": {
-    "it": "Prelievi ed esami di laboratorio sul viale della Vittoria."
+    "it": "Prelievi ed esami di laboratorio sul viale della Vittoria.",
+    "en": "Blood tests and lab tests on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il laboratorio di analisi cliniche del paese, sul viale della Vittoria: si va la mattina, dal lunedì al venerdì, per i prelievi e gli esami di laboratorio."
+    ],
+    "en": [
+     "The village's clinical laboratory, on Viale della Vittoria: go in the morning, Monday to Friday, for blood tests and lab tests."
+    ]
    },
    "info": [
     {
@@ -6426,10 +7082,16 @@
     "en": "Dental laboratory"
    },
    "breve": {
-    "it": "Laboratorio odontotecnico per protesi e lavori su misura."
+    "it": "Laboratorio odontotecnico per protesi e lavori su misura.",
+    "en": "A dental laboratory for prostheses and custom work."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Laboratorio odontotecnico in via Roma: realizza protesi dentarie e lavori su misura."
+    ],
+    "en": [
+     "A dental laboratory on Via Roma, making dental prostheses and custom work."
+    ]
    },
    "info": [
     {
@@ -6469,7 +7131,7 @@
    },
    "breve": {
     "it": "Area camper al confine con la Riserva di Torre Salsa, a meno di un chilometro dalla spiaggia, con docce calde, Wi-Fi, bar, noleggio bici e navetta per il mare.",
-    "en": "A campervan area on the edge of the Torre Salsa reserve, less than a kilometre from the beach, with hot showers, Wi-Fi, a bar, bike hire and a beach shuttle."
+    "en": "A campervan area on the edge of the Torre Salsa reserve, less than a kilometre from the beach, with hot showers, Wi-Fi, bar, bike hire and a beach shuttle."
    },
    "testo": {
     "it": [
@@ -6477,8 +7139,8 @@
      "Ci sono carico e scarico delle acque, docce calde, bagni, Wi-Fi, bar, area barbecue e lavanderia. Si possono noleggiare le bici e c'è la navetta fino alla spiaggia."
     ],
     "en": [
-     "The area opened in 2022 on the family farmland of Vanessa and her brother Stefano, on the edge of the Torre Salsa reserve, less than a kilometre from the beach.",
-     "There's water loading and waste disposal, hot showers, toilets, Wi-Fi, a bar, a barbecue area and laundry. You can hire bikes, and a shuttle runs to the beach."
+     "The area opened in 2022 on the family land of Vanessa and her brother Stefano, on the edge of the Torre Salsa reserve, less than a kilometre from the beach.",
+     "There's water fill and waste disposal, hot showers, toilets, Wi-Fi, a bar, a barbecue area and a laundry. Bikes can be hired and there's a shuttle to the beach."
     ]
    },
    "info": [
@@ -6544,10 +7206,16 @@
     "en": "Taxi & transfers"
    },
    "breve": {
-    "it": "Taxi e noleggio con conducente con base in paese."
+    "it": "Taxi e noleggio con conducente con base in paese.",
+    "en": "Taxi and chauffeur service based in the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il servizio di taxi e noleggio con conducente di Franco Ingraudo, con base a Montallegro: corse e transfer su prenotazione, per chi arriva in paese o deve spostarsi senza auto."
+    ],
+    "en": [
+     "Franco Ingraudo's taxi and chauffeur service, based in Montallegro: rides and transfers on booking, for anyone arriving in the village or getting around without a car."
+    ]
    },
    "info": [
     {
@@ -6584,10 +7252,18 @@
     "en": "Bus service"
    },
    "breve": {
-    "it": "Dalla fermata sulla SS115 ci sono corse per Agrigento (circa 40 minuti) e per l'aeroporto di Trapani (circa 2 ore)."
+    "it": "Dalla fermata sulla SS115 ci sono corse per Agrigento (circa 40 minuti) e per l'aeroporto di Trapani (circa 2 ore).",
+    "en": "From the stop on the SS115 there are buses to Agrigento (about 40 minutes) and to Trapani airport (about 2 hours)."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La fermata FlixBus di Montallegro è sulla statale 115, accanto al distributore Eni. Da qui partono le corse per Agrigento, in circa 40 minuti, e per l'aeroporto di Trapani, in circa due ore.",
+     "Orari e biglietti si trovano sul sito e nell'app FlixBus: conviene comprare il biglietto prima."
+    ],
+    "en": [
+     "Montallegro's FlixBus stop is on the SS115, next to the Eni petrol station. Buses go to Agrigento, in about 40 minutes, and to Trapani airport, in about two hours.",
+     "Timetables and tickets are on the FlixBus website and app: best to buy your ticket in advance."
+    ]
    },
    "info": [
     {
@@ -6628,10 +7304,16 @@
     "en": "Fuel station & bar"
    },
    "breve": {
-    "it": "Stazione di servizio con bar sulla statale 115."
+    "it": "Stazione di servizio con bar sulla statale 115.",
+    "en": "A service station with a bar on the SS115."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La stazione di servizio sulla variante della statale 115, con il bar per una sosta. Accanto c'è la fermata degli autobus FlixBus."
+    ],
+    "en": [
+     "The service station on the SS115 bypass, with a bar for a break. The FlixBus stop is right next to it."
+    ]
    },
    "info": [
     {
@@ -6672,10 +7354,16 @@
     "en": "Supermarket"
    },
    "breve": {
-    "it": "Supermercato in via Calvario per la spesa di tutti i giorni."
+    "it": "Supermercato in via Calvario per la spesa di tutti i giorni.",
+    "en": "A supermarket on Via Calvario for everyday shopping."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il supermercato del paese, in via Calvario, per la spesa di tutti i giorni. È aperto dal lunedì al sabato, la mattina e il pomeriggio."
+    ],
+    "en": [
+     "The village supermarket, on Via Calvario, for everyday shopping. Open Monday to Saturday, morning and afternoon."
+    ]
    },
    "info": [
     {
@@ -6719,10 +7407,16 @@
     "en": "Tobacconist & newsagent"
    },
    "breve": {
-    "it": "Tabacchi, giornali e ricariche sul corso."
+    "it": "Tabacchi, giornali e ricariche sul corso.",
+    "en": "Tobacco, newspapers and top-ups on the main street."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Tabaccheria ed edicola sul corso Vittorio Emanuele: tabacchi, giornali e riviste, ricariche telefoniche."
+    ],
+    "en": [
+     "Tobacconist and newsagent on Corso Vittorio Emanuele: tobacco, newspapers and magazines, phone top-ups."
+    ]
    },
    "info": [
     {
@@ -6760,10 +7454,17 @@
    },
    "breve": {
     "it": "Il negozio di fiori storico del paese, dal 1949: fiori, piante, articoli da regalo e addobbi floreali, anche per i matrimoni.",
-    "en": "The town's long-standing flower shop, open since 1949: flowers, plants, gifts and floral decorations, weddings included."
+    "en": "The village's historic flower shop, since 1949: flowers, plants, gifts and floral decorations, including for weddings."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Dal 1949 Magic's Flowers è il negozio di fiori storico di Montallegro, sul corso Vittorio Emanuele.",
+     "Oltre ai fiori e alle piante prepara addobbi floreali per i matrimoni e le altre occasioni, e ha una scelta di articoli da regalo."
+    ],
+    "en": [
+     "Since 1949 Magic's Flowers has been Montallegro's historic flower shop, on Corso Vittorio Emanuele.",
+     "As well as flowers and plants, it makes floral decorations for weddings and other occasions, and has a selection of gifts."
+    ]
    },
    "info": [
     {
@@ -6801,10 +7502,15 @@
    },
    "breve": {
     "it": "Fiori, piante e allestimenti floreali per matrimoni ed eventi, sul viale della Vittoria.",
-    "en": "Flowers, plants and floral decorations for weddings and events, on Viale della Vittoria."
+    "en": "Flowers, plants and floral arrangements for weddings and events, on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il Giardino di Alice è il negozio di fiori e piante sul viale della Vittoria. Cura gli allestimenti floreali per matrimoni ed eventi e prepara mazzi e composizioni su richiesta."
+    ],
+    "en": [
+     "Il Giardino di Alice is the flower and plant shop on Viale della Vittoria. It handles floral arrangements for weddings and events and makes bouquets and compositions to order."
+    ]
    },
    "info": [
     {
@@ -6845,10 +7551,15 @@
    },
    "breve": {
     "it": "Fiori e piante in piazza Lo Verde, nel centro del paese.",
-    "en": "Flowers and plants on Piazza Lo Verde, in the town centre."
+    "en": "Flowers and plants on Piazza Lo Verde, in the village centre."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il negozio di fiori di Maria Curallo si affaccia su piazza Lo Verde, nel centro di Montallegro: fiori e piante per la casa, per un regalo o per una ricorrenza."
+    ],
+    "en": [
+     "Maria Curallo's flower shop looks onto Piazza Lo Verde, in the centre of Montallegro: flowers and plants for the home, for a gift or for a special occasion."
+    ]
    },
    "info": [
     {
@@ -6884,10 +7595,16 @@
     "en": "Hardware shop"
    },
    "breve": {
-    "it": "Utensili e materiale per la casa, il fai da te e il giardino."
+    "it": "Utensili e materiale per la casa, il fai da te e il giardino.",
+    "en": "Tools and supplies for the home, DIY and the garden."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La ferramenta sul viale della Vittoria: utensili, minuteria e materiale per la casa, il fai da te e il giardino."
+    ],
+    "en": [
+     "The hardware shop on Viale della Vittoria: tools, fittings and supplies for the home, DIY and the garden."
+    ]
    },
    "info": [
     {
@@ -6923,10 +7640,16 @@
     "en": "Furniture"
    },
    "breve": {
-    "it": "Il negozio di mobili della famiglia Lentini."
+    "it": "Il negozio di mobili della famiglia Lentini.",
+    "en": "The Lentini family's furniture shop."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il negozio di mobili e arredamento della famiglia Lentini, sul viale della Vittoria. È aperto dal lunedì al sabato, la mattina e il pomeriggio."
+    ],
+    "en": [
+     "The Lentini family's furniture and home furnishings shop, on Viale della Vittoria. Open Monday to Saturday, morning and afternoon."
+    ]
    },
    "info": [
     {
@@ -6976,8 +7699,8 @@
      "Si compra in negozio, con consegna a domicilio anche in giornata. Si paga con carta, bancomat o NFC."
     ],
     "en": [
-     "Furniture and lighting for the home, with made-to-measure design and build.",
-     "Buy in store, with home delivery, same-day too. Cards, debit cards and NFC payments accepted."
+     "Furniture and lighting for the home, with made-to-measure design and production.",
+     "You buy in store, with home delivery, even on the same day. Cards, debit cards and contactless payments accepted."
     ]
    },
    "info": [
@@ -7039,10 +7762,16 @@
     "en": "Building materials"
    },
    "breve": {
-    "it": "Materiali edili, pavimenti e rivestimenti."
+    "it": "Materiali edili, pavimenti e rivestimenti.",
+    "en": "Building materials, floor and wall tiles."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Rivendita di materiali edili in via Cesare Battisti, con pavimenti e rivestimenti per chi costruisce o ristruttura. Apre presto: dalle 7 del mattino, dal lunedì al sabato."
+    ],
+    "en": [
+     "Building materials on Via Cesare Battisti, with floor and wall tiles for anyone building or renovating. It opens early: from 7 am, Monday to Saturday."
+    ]
    },
    "info": [
     {
@@ -7084,10 +7813,18 @@
     "en": "Post office"
    },
    "breve": {
-    "it": "Ufficio postale con il Postamat, l'unico sportello automatico del paese."
+    "it": "Ufficio postale con il Postamat, l'unico sportello automatico del paese.",
+    "en": "Post office with the Postamat, the only cash machine in the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "L'ufficio di Poste Italiane è in via Fratelli Ferraro: spedizioni, pagamenti e servizi postali, la mattina dal lunedì al sabato.",
+     "Fuori c'è il Postamat, l'unico sportello automatico di Montallegro: è qui che si prelevano i contanti."
+    ],
+    "en": [
+     "The Poste Italiane office is on Via Fratelli Ferraro: shipping, payments and postal services, mornings Monday to Saturday.",
+     "Outside is the Postamat, the only cash machine in Montallegro: this is where you withdraw cash."
+    ]
    },
    "info": [
     {
@@ -7135,10 +7872,16 @@
     "en": "Car dealer"
    },
    "breve": {
-    "it": "Rivendita di automobili sul viale della Vittoria."
+    "it": "Rivendita di automobili sul viale della Vittoria.",
+    "en": "Car dealer on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Rivendita di automobili sul viale della Vittoria, aperta dal lunedì al sabato, la mattina e il pomeriggio."
+    ],
+    "en": [
+     "Car dealer on Viale della Vittoria, open Monday to Saturday, morning and afternoon."
+    ]
    },
    "info": [
     {
@@ -7181,10 +7924,16 @@
     "en": "Car repairs"
    },
    "breve": {
-    "it": "Meccanica ed elettronica per l'auto, con diagnosi computerizzata."
+    "it": "Meccanica ed elettronica per l'auto, con diagnosi computerizzata.",
+    "en": "Car mechanics and electronics, with computer diagnostics."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Officina meccatronica in via Roma: interviene sulla meccanica e sull'elettronica dell'auto, con la diagnosi computerizzata. Un riferimento utile anche per chi è in vacanza e ha un problema con la macchina."
+    ],
+    "en": [
+     "A mechatronics garage on Via Roma: mechanical and electronic car repairs, with computer diagnostics. Useful for visitors too if the car gives trouble."
+    ]
    },
    "info": [
     {
@@ -7220,10 +7969,16 @@
     "en": "Tyre shop"
    },
    "breve": {
-    "it": "Gommista in contrada Carlici."
+    "it": "Gommista in contrada Carlici.",
+    "en": "Tyre service in contrada Carlici."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Gommista in contrada Carlici, per il cambio, la riparazione e il montaggio degli pneumatici."
+    ],
+    "en": [
+     "Tyre specialist in contrada Carlici, for tyre changes, repairs and fitting."
+    ]
    },
    "info": [
     {
@@ -7260,10 +8015,16 @@
     "en": "Motorbikes & bikes"
    },
    "breve": {
-    "it": "Vendita di moto e bici, ricambi, accessori e abbigliamento."
+    "it": "Vendita di moto e bici, ricambi, accessori e abbigliamento.",
+    "en": "Motorbikes and bikes for sale, spare parts, accessories and clothing."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Moto e bici in via Villani: vendita, ricambi, accessori e abbigliamento per chi va su due ruote."
+    ],
+    "en": [
+     "Motorbikes and bicycles on Via Villani: sales, spare parts, accessories and clothing for life on two wheels."
+    ]
    },
    "info": [
     {
@@ -7300,10 +8061,16 @@
     "en": "Concrete & building"
    },
    "breve": {
-    "it": "Impresa di calcestruzzi e costruzioni in contrada Bifara."
+    "it": "Impresa di calcestruzzi e costruzioni in contrada Bifara.",
+    "en": "Concrete and construction company in contrada Bifara."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Impresa di calcestruzzi e costruzioni con sede in contrada Bifara, per lavori edili e forniture di calcestruzzo."
+    ],
+    "en": [
+     "Concrete and construction company based in contrada Bifara, for building work and concrete supply."
+    ]
    },
    "info": [
     {
@@ -7339,10 +8106,16 @@
     "en": "Hairdresser"
    },
    "breve": {
-    "it": "Taglio, piega e colore nel salone sul corso."
+    "it": "Taglio, piega e colore nel salone sul corso.",
+    "en": "Cut, blow-dry and colour at the salon on the main street."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il salone di parrucchieria sul corso Vittorio Emanuele, per taglio, piega e colore. È aperto dal martedì al sabato, con orario continuato dalle 9 alle 19:30."
+    ],
+    "en": [
+     "The hair salon on Corso Vittorio Emanuele, for cuts, blow-dries and colour. Open Tuesday to Saturday, all day from 9 am to 7:30 pm."
+    ]
    },
    "info": [
     {
@@ -7393,7 +8166,12 @@
     "en": "Alessandro Ingraudo's barber shop on Corso Vittorio Emanuele."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Nel suo barber shop sul corso Vittorio Emanuele, Alessandro Ingraudo si occupa di taglio e barba. È aperto dal martedì al sabato; lunedì e domenica è chiuso."
+    ],
+    "en": [
+     "In his barber shop on Corso Vittorio Emanuele, Alessandro Ingraudo does haircuts and beards. Open Tuesday to Saturday; closed on Monday and Sunday."
+    ]
    },
    "info": [
     {
@@ -7439,10 +8217,15 @@
    },
    "breve": {
     "it": "Il salone da parrucchiere di Antonino Pizzuco, in viale della Vittoria.",
-    "en": "Antonino Pizzuco's hair salon on Viale della Vittoria."
+    "en": "Antonino Pizzuco's hair salon, on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Il salone da parrucchiere di Antonino Pizzuco, sul viale della Vittoria. Per un appuntamento si passa direttamente in negozio."
+    ],
+    "en": [
+     "Antonino Pizzuco's hair salon, on Viale della Vittoria. To book, just drop by the shop."
+    ]
    },
    "info": [
     {
@@ -7475,10 +8258,16 @@
     "en": "Games arcade"
    },
    "breve": {
-    "it": "Sala giochi sul viale della Vittoria."
+    "it": "Sala giochi sul viale della Vittoria.",
+    "en": "Games arcade on Viale della Vittoria."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Sala giochi sul viale della Vittoria, un punto di ritrovo per il tempo libero in paese."
+    ],
+    "en": [
+     "Games arcade on Viale della Vittoria, a place to spend free time in the village."
+    ]
    },
    "info": [
     {
@@ -7516,10 +8305,15 @@
    },
    "breve": {
     "it": "Il campo da bocce di via Piave, in paese.",
-    "en": "The bocce court on Via Piave, in town."
+    "en": "The bowls ground on Via Piave, in the village."
    },
    "testo": {
-    "it": []
+    "it": [
+     "In via Piave, in paese, c'è il campo dove si gioca a bocce: un gioco di una volta che a Montallegro ha ancora il suo posto."
+    ],
+    "en": [
+     "On Via Piave, in the village, is the ground where people play bocce: an old-time game that still has its place in Montallegro."
+    ]
    },
    "info": [
     {
@@ -7553,10 +8347,16 @@
     "en": "Mother church · San Leonardo parish"
    },
    "breve": {
-    "it": "La chiesa madre dell'Immacolata e di San Leonardo, cuore della vita religiosa del paese."
+    "it": "La chiesa madre dell'Immacolata e di San Leonardo, cuore della vita religiosa del paese.",
+    "en": "The mother church of the Immacolata and San Leonardo, the heart of the village's religious life."
    },
    "testo": {
-    "it": []
+    "it": [
+     "È la parrocchia di Montallegro, intitolata a San Leonardo, patrono del paese: qui si chiedono gli orari delle messe, i sacramenti e le informazioni sulle feste religiose, come quella del patrono il 6 novembre."
+    ],
+    "en": [
+     "Montallegro's parish, dedicated to San Leonardo, the village's patron saint: ask here for Mass times, sacraments and information on religious feasts, such as the patron saint's day on 6 November."
+    ]
    },
    "info": [
     {
@@ -7597,7 +8397,14 @@
     "en": "The town's multimedia hall on Viale della Vittoria, next to the Museum of Rural Life: it hosts meetings and events."
    },
    "testo": {
-    "it": []
+    "it": [
+     "L'Aula Multimediale Ercole Agatino Longo è la sala del paese per incontri ed eventi, sul viale della Vittoria, accanto al Museo della Civiltà Contadina.",
+     "Per sapere cosa c'è in programma, chiedi alla Pro Loco."
+    ],
+    "en": [
+     "The Aula Multimediale Ercole Agatino Longo is the village hall for meetings and events, on Viale della Vittoria, next to the Museo della Civiltà Contadina.",
+     "To find out what's on, ask the Pro Loco."
+    ]
    },
    "info": [
     {
@@ -7628,9 +8435,9 @@
    ],
    "sotto": "comunita",
    "foto": "https://equippersmontallegro.it/wp-content/themes/equippers-montallegro/assets/img/hero-video.webp",
-   "lat": 37.389885,
-   "lng": 13.3521647,
-   "mappe": "Equippers Montallegro, Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "lat": 37.3947223,
+   "lng": 13.3487986,
+   "mappe": "Equippers Montallegro, Via Mameli, 1, 92010 Montallegro (AG)",
    "nome": {
     "it": "Equippers Montallegro"
    },
@@ -7639,20 +8446,31 @@
     "en": "Evangelical church"
    },
    "breve": {
-    "it": "Una chiesa giovane che si ritrova nell'Aula Multimediale Ercole Longo: la domenica sera e il mercoledì per la preghiera."
+    "it": "«Una chiesa come non te l’aspetti»: musica, la Parola, area kids e aperitivo, ogni domenica alle 18:30 in via Mameli.",
+    "en": "«A church like you've never imagined»: music, the Word, a kids' area and aperitivo, every Sunday at 6:30 pm on Via Mameli."
    },
    "testo": {
-    "it": []
+    "it": [
+     "Equippers Montallegro fa parte di Equippers, un movimento mondiale di chiese locali nato in Nuova Zelanda e arrivato in Italia nel 2016. A Montallegro è nata il 29 ottobre 2025 e apre le porte a chiunque voglia conoscere Gesù e trovare una famiglia.",
+     "La domenica sera c'è il Sunday Service: lode e adorazione, la predicazione, l'area kids per i bambini, il bar e l'aperitivo finale per stare insieme. Il mercoledì sera c'è la Prayer Night, per pregare insieme per la chiesa, le famiglie e il paese; il mercoledì mattina la Scuola Biblica si segue online.",
+     "Prediche, dirette e video sono sul canale YouTube e su Instagram, @equippersmontallegro."
+    ],
+    "en": [
+     "Equippers Montallegro is part of Equippers, a worldwide movement of local churches born in New Zealand that arrived in Italy in 2016. The Montallegro church started on 29 October 2025 and opens its doors to anyone who wants to get to know Jesus and find a family.",
+     "On Sunday evenings there's the Sunday Service: praise and worship, the message, a kids' area, the bar and a closing aperitivo to hang out together. On Wednesday evenings there's Prayer Night, to pray together for the church, families and the village; on Wednesday mornings the Bible School runs online.",
+     "Sermons, livestreams and videos are on YouTube and on Instagram, @equippersmontallegro."
+    ]
    },
    "info": [
     {
      "tipo": "dove",
-     "it": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
-     "scheda": "aula-multimediale-ercole-longo"
+     "it": "Via Mameli, 1, 92010 Montallegro (AG)",
+     "en": "Via Mameli, 1, 92010 Montallegro (AG)"
     },
     {
      "tipo": "orari",
-     "it": "Domenica alle 18:30 · Prayer Night il mercoledì alle 20:15."
+     "it": "Sunday Service la domenica alle 18:30 (d’estate, dal 21 giugno al 31 agosto, alle 11:00) · Prayer Night il mercoledì alle 20:15 · Scuola Biblica online il mercoledì alle 10:00.",
+     "en": "Sunday Service on Sundays at 6:30 pm (in summer, 21 June–31 August, at 11 am) · Prayer Night on Wednesdays at 8:15 pm · online Bible School on Wednesdays at 10 am."
     }
    ],
    "consigli": {
@@ -7660,11 +8478,20 @@
    },
    "contatti": {
     "instagram": "https://www.instagram.com/equippersmontallegro/",
-    "web": "https://equippersmontallegro.it"
+    "web": "https://equippersmontallegro.it",
+    "email": "equippersmontallegro@gmail.com",
+    "whatsapp": "393206896437"
    },
    "zona": "paese",
    "verificato": "novembre 2026",
-   "credito": "Equippers Montallegro"
+   "credito": "Equippers Montallegro",
+   "caratteristiche": [
+    "Lode e adorazione",
+    "Area kids",
+    "Area bar",
+    "Aperitivo",
+    "Dirette su YouTube"
+   ]
   },
   {
    "id": "lilt-montallegro",
@@ -7685,10 +8512,18 @@
     "en": "Italian League Against Cancer"
    },
    "breve": {
-    "it": "La sezione locale della LILT, per la prevenzione e il sostegno ai malati."
+    "it": "La sezione locale della LILT, per la prevenzione e il sostegno ai malati.",
+    "en": "The local branch of LILT, for cancer prevention and support for patients."
    },
    "testo": {
-    "it": []
+    "it": [
+     "La LILT, la Lega Italiana per la Lotta contro i Tumori, ha a Montallegro una sua sezione, sul viale della Vittoria. Si occupa di prevenzione, con iniziative di sensibilizzazione, e di sostegno ai malati.",
+     "La sede è aperta il pomeriggio, dal lunedì al venerdì."
+    ],
+    "en": [
+     "LILT, the Italian League Against Cancer, has a local branch in Montallegro, on Viale della Vittoria. It works on prevention, with awareness initiatives, and on support for patients.",
+     "The office is open in the afternoon, Monday to Friday."
+    ]
    },
    "info": [
     {
@@ -7717,7 +8552,7 @@
     "servizi"
    ],
    "sotto": "comunita",
-   "foto": "",
+   "foto": "https://www.visitmontallegrobovomarina.it/wp-content/uploads/2026/10/asd-bovo-marina-montallegro-squadra.jpg",
    "lat": null,
    "lng": null,
    "mappe": "Montallegro (AG)",
@@ -7730,17 +8565,23 @@
    },
    "breve": {
     "it": "L'associazione sportiva dilettantistica di Montallegro e Bovo Marina.",
-    "en": "The amateur sports club of Montallegro and Bovo Marina."
+    "en": "The amateur sports association of Montallegro and Bovo Marina."
    },
    "testo": {
-    "it": []
+    "it": [
+     "L'ASD Bovo Marina Montallegro è l'associazione sportiva dilettantistica del paese, con la sua squadra: nel nome tiene insieme Montallegro e Bovo Marina, la frazione sul mare."
+    ],
+    "en": [
+     "ASD Bovo Marina Montallegro is the village's amateur sports association, with its own team: its name brings together Montallegro and Bovo Marina, the seaside hamlet."
+    ]
    },
    "info": [],
    "consigli": {
     "it": []
    },
    "contatti": {},
-   "zona": "paese"
+   "zona": "paese",
+   "credito": "ASD Bovo Marina Montallegro"
   },
   {
    "id": "inter-club-montallegro",
@@ -7761,10 +8602,15 @@
    },
    "breve": {
     "it": "Il club dei tifosi nerazzurri di Montallegro.",
-    "en": "Montallegro's club of Inter supporters."
+    "en": "The Nerazzurri supporters' club of Montallegro."
    },
    "testo": {
-    "it": []
+    "it": [
+     "È il club dei tifosi dell'Inter di Montallegro: organizza le trasferte per andare allo stadio e ha le sue magliette, felpe e braccialetti."
+    ],
+    "en": [
+     "Montallegro's Inter supporters' club: it organises trips to the stadium and has its own shirts, sweatshirts and bracelets."
+    ]
    },
    "info": [],
    "consigli": {
@@ -8631,7 +9477,9 @@
     "web": "https://www.farmculturalpark.com"
    },
    "lat": 37.3133687,
-   "lng": 13.6583899
+   "lng": 13.6583899,
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Farm_Cultural_Park.jpg/1920px-Farm_Cultural_Park.jpg",
+   "credito": "Francesco Lombardi · CC BY-SA 4.0"
   },
   {
    "id": "sciacca",
@@ -8896,7 +9744,9 @@
     "tel": "3662485772"
    },
    "lat": 37.391055,
-   "lng": 13.289887
+   "lng": 13.289887,
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Spiaggia_-Eraclea_Minoa_%284%29.JPG/1920px-Spiaggia_-Eraclea_Minoa_%284%29.JPG",
+   "credito": "Hein56didden · CC BY-SA 3.0"
   },
   {
    "id": "marea-eraclea",
@@ -8943,7 +9793,9 @@
    },
    "stagionale": true,
    "lat": 37.3920078,
-   "lng": 13.2874177
+   "lng": 13.2874177,
+   "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Spiaggia_-Eraclea_Minoa_%284%29.JPG/1920px-Spiaggia_-Eraclea_Minoa_%284%29.JPG",
+   "credito": "Hein56didden · CC BY-SA 3.0"
   }
  ],
  "eventi": [
