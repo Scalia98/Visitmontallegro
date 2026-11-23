@@ -1,0 +1,29 @@
+# Schermate per App Store e Google Play (iPhone 6,9" e Android, italiano e inglese).
+# Si avvia a mano: GitHub → Actions → «Schermate per gli store» → Run workflow.
+# Alla fine si scaricano dall'artefatto «schermate-store» in fondo alla pagina dell'esecuzione.
+name: Schermate per gli store
+on:
+  workflow_dispatch:
+jobs:
+  schermate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Installa Playwright e Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --with-deps chromium
+      - name: Crea le schermate
+        run: |
+          python3 -m http.server 8099 --directory www >/dev/null 2>&1 &
+          sleep 2
+          node strumenti/schermate-store.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: schermate-store
+          path: schermate/
+          retention-days: 30
