@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-24.02",
+ "versione": "2026-11-24.03",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -2287,12 +2287,17 @@
     "en": "Chef's restaurant"
    },
    "breve": {
-    "it": "La cucina dello chef Damiano Ferraro nel palazzo ottocentesco del Relais Briuccia, nel cuore antico del paese."
+    "it": "La cucina dello chef Damiano Ferraro nel palazzo ottocentesco del Relais Briuccia, nel cuore antico del paese.",
+    "en": "Chef Damiano Ferraro's cooking in the 19th-century palazzo of Relais Briuccia, in the old heart of the village."
    },
    "testo": {
     "it": [
      "Tornato a Montallegro dopo anni di cucine all'estero, lo chef Damiano Ferraro ha restituito vita a un palazzo nobiliare che da bambino vedeva chiuso. Oggi al piano terra c'è il suo ristorante, con la sala affacciata sul cortile interno.",
      "Si mangia per menu degustazione: cucina siciliana e mediterranea rivista con tecnica, materie prime dell'isola e una carta dei vini quasi tutta siciliana."
+    ],
+    "en": [
+     "Back in Montallegro after years in kitchens abroad, chef Damiano Ferraro brought back to life a noble palazzo he had seen closed up as a child. Today his restaurant is on the ground floor, with the dining room overlooking the inner courtyard.",
+     "Dining is by tasting menu: Sicilian and Mediterranean cooking reinterpreted with technique, ingredients from the island and a wine list that is almost entirely Sicilian."
     ]
    },
    "info": [
@@ -2302,12 +2307,16 @@
     },
     {
      "tipo": "orari",
-     "it": "Il pranzo si fa su richiesta."
+     "it": "Il pranzo si fa su richiesta.",
+     "en": "Lunch on request."
     }
    ],
    "consigli": {
     "it": [
      "Meglio prenotare, soprattutto nel fine settimana"
+    ],
+    "en": [
+     "Best to book, especially at weekends"
     ]
    },
    "contatti": {
@@ -2368,7 +2377,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Aperto la sera; la domenica anche a pranzo. Il giorno di chiusura cambia: chiama prima."
+     "it": "Aperto la sera; la domenica anche a pranzo. Il giorno di chiusura cambia: chiama prima.",
+     "en": "Open in the evening; on Sundays also at lunchtime. The closing day varies: call first."
     }
    ],
    "consigli": {
@@ -2583,7 +2593,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dalla mattina alla sera: per gli orari esatti chiama."
+     "it": "Dalla mattina alla sera: per gli orari esatti chiama.",
+     "en": "From morning to evening: call for exact times."
     }
    ],
    "consigli": {
@@ -2941,12 +2952,17 @@
     "en": "Beach restaurant"
    },
    "breve": {
-    "it": "Il ristorante sulla spiaggia ideato dallo chef Giancarlo Perbellini, segnalato dalla Guida MICHELIN 2026."
+    "it": "Il ristorante sulla spiaggia ideato dallo chef Giancarlo Perbellini, segnalato dalla Guida MICHELIN 2026.",
+    "en": "The beach restaurant created by chef Giancarlo Perbellini, listed in the 2026 MICHELIN Guide."
    },
    "testo": {
     "it": [
      "Lo ha voluto nel 2020 lo chef veronese Giancarlo Perbellini, tre stelle Michelin con la sua Casa Perbellini, insieme a Luna Minoica. In cucina c'è lo chef residente, in sala una carta dei vini dedicata alla Sicilia.",
      "Il menu è di mare e gioca con i classici siciliani: la cotoletta di tonno, le busiate alla trapanese, l'arancina che non è fritta."
+    ],
+    "en": [
+     "It was founded in 2020 by Verona chef Giancarlo Perbellini, who holds three Michelin stars with his Casa Perbellini, together with Luna Minoica. The resident chef runs the kitchen, and the wine list is dedicated to Sicily.",
+     "The menu is seafood and plays with Sicilian classics: tuna cutlet, busiate alla trapanese, the arancina that isn't fried."
     ]
    },
    "info": [
@@ -2956,12 +2972,16 @@
     },
     {
      "tipo": "stagione",
-     "it": "Le date di apertura cambiano ogni anno: controlla sul sito"
+     "it": "Le date di apertura cambiano ogni anno: controlla sul sito",
+     "en": "Opening dates change every year: check the website"
     }
    ],
    "consigli": {
     "it": [
      "Prenotazione consigliata"
+    ],
+    "en": [
+     "Booking recommended"
     ]
    },
    "contatti": {
@@ -3025,11 +3045,13 @@
     },
     {
      "tipo": "orari",
-     "it": "In stagione tutti i giorni dalle 9 alle 23:30."
+     "it": "In stagione tutti i giorni dalle 9 alle 23:30.",
+     "en": "In season, every day from 9:00 to 23:30."
     },
     {
      "tipo": "stagione",
-     "it": "È un lido estivo: fuori stagione chiama prima di andare"
+     "it": "È un lido estivo: fuori stagione chiama prima di andare",
+     "en": "It's a summer beach club: out of season, call before going"
     }
    ],
    "consigli": {
@@ -3147,7 +3169,8 @@
     },
     {
      "tipo": "stagione",
-     "it": "È un lido estivo: fuori stagione chiama prima di andare"
+     "it": "È un lido estivo: fuori stagione chiama prima di andare",
+     "en": "It's a summer beach club: out of season, call before going"
     }
    ],
    "consigli": {
@@ -3204,7 +3227,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Tutti i giorni dalle 8 a mezzanotte. Fuori stagione chiama prima."
+     "it": "Tutti i giorni dalle 8 a mezzanotte. Fuori stagione chiama prima.",
+     "en": "Every day from 8:00 to midnight. Out of season, call first."
     }
    ],
    "consigli": {
@@ -3308,7 +3332,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal mattino presto alla sera."
+     "it": "Dal mattino presto alla sera.",
+     "en": "From early morning to evening."
     }
    ],
    "consigli": {
@@ -3452,7 +3477,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Apre alle 17:00."
+     "it": "Apre alle 17:00.",
+     "en": "Opens at 17:00."
     }
    ],
    "consigli": {
@@ -3551,7 +3577,8 @@
     },
     {
      "tipo": "orari",
-     "it": "A cena dalle 19:00. Eventi su prenotazione."
+     "it": "A cena dalle 19:00. Eventi su prenotazione.",
+     "en": "Dinner from 19:00. Events by reservation."
     }
    ],
    "consigli": {
@@ -3585,12 +3612,17 @@
     "en": "Boutique hotel"
    },
    "breve": {
-    "it": "Sette camere e suite in un palazzo nobiliare del 1850, nel centro storico, con il ristorante Capitolo Primo."
+    "it": "Sette camere e suite in un palazzo nobiliare del 1850, nel centro storico, con il ristorante Capitolo Primo.",
+    "en": "Seven rooms and suites in a noble palazzo from 1850 in the historic centre, with the Capitolo Primo restaurant."
    },
    "testo": {
     "it": [
      "Il palazzo è stato restaurato conservando i pavimenti originali e gli arredi d'epoca. Dalla reception un pavimento di vetro lascia vedere la cantina; al piano terra c'è il ristorante Capitolo Primo dello chef Damiano Ferraro.",
      "Su richiesta il relais organizza una cooking class con lo chef e degustazioni di vini siciliani."
+    ],
+    "en": [
+     "The palazzo has been restored keeping its original floors and period furniture. From the reception, a glass floor reveals the wine cellar; on the ground floor is chef Damiano Ferraro's Capitolo Primo restaurant.",
+     "On request, the relais organises a cooking class with the chef and tastings of Sicilian wines."
     ]
    },
    "info": [
@@ -3639,12 +3671,17 @@
     "en": "Seafront suites & apartments"
    },
    "breve": {
-    "it": "Camere, suite e appartamenti a 200 metri dalla spiaggia di Bovo Marina, con due piscine e la Locanda Perbellini al Mare."
+    "it": "Camere, suite e appartamenti a 200 metri dalla spiaggia di Bovo Marina, con due piscine e la Locanda Perbellini al Mare.",
+    "en": "Rooms, suites and apartments 200 metres from Bovo Marina beach, with two pools and the Locanda Perbellini al Mare."
    },
    "testo": {
     "it": [
      "In un giardino mediterraneo ci sono due piscine, una d'acqua dolce e una d'acqua salata, la spiaggia attrezzata e una piccola spa. Oltre alle camere e alle suite ci sono appartamenti per quattro persone e una tenda glamping con piscina privata.",
      "Nella struttura c'è il ristorante fronte mare Locanda Perbellini al Mare."
+    ],
+    "en": [
+     "In a Mediterranean garden there are two pools, one freshwater and one saltwater, a beach with sunbeds and umbrellas and a small spa. Besides the rooms and suites there are apartments for four people and a glamping tent with a private pool.",
+     "The seafront restaurant Locanda Perbellini al Mare is on site."
     ]
    },
    "info": [
@@ -3656,6 +3693,9 @@
    "consigli": {
     "it": [
      "Cani di piccola taglia su accordo"
+    ],
+    "en": [
+     "Small dogs by arrangement"
     ]
    },
    "contatti": {
@@ -3778,7 +3818,8 @@
     },
     {
      "tipo": "distanze",
-     "it": "Circa 4 km da Torre Salsa"
+     "it": "Circa 4 km da Torre Salsa",
+     "en": "About 4 km from Torre Salsa"
     },
     {
      "tipo": "orari",
@@ -3886,7 +3927,8 @@
     },
     {
      "tipo": "distanze",
-     "it": "Eraclea Minoa a circa 9 km"
+     "it": "Eraclea Minoa a circa 9 km",
+     "en": "Eraclea Minoa about 9 km away"
     }
    ],
    "consigli": {
@@ -4000,7 +4042,8 @@
     },
     {
      "tipo": "distanze",
-     "it": "10 minuti da Bovo Marina · 2,4 km dalla Riserva di Torre Salsa"
+     "it": "10 minuti da Bovo Marina · 2,4 km dalla Riserva di Torre Salsa",
+     "en": "10 minutes from Bovo Marina · 2.4 km from the Torre Salsa Reserve"
     }
    ],
    "consigli": {
@@ -4264,6 +4307,9 @@
    "consigli": {
     "it": [
      "Animali non ammessi"
+    ],
+    "en": [
+     "No pets allowed"
     ]
    },
    "contatti": {
@@ -4375,6 +4421,9 @@
    "consigli": {
     "it": [
      "Animali non ammessi"
+    ],
+    "en": [
+     "No pets allowed"
     ]
    },
    "contatti": {
@@ -4545,6 +4594,9 @@
    "consigli": {
     "it": [
      "Fino a 5 ospiti si usa solo il piano inferiore"
+    ],
+    "en": [
+     "For up to 5 guests only the lower floor is used"
     ]
    },
    "contatti": {
@@ -4903,7 +4955,8 @@
    "info": [
     {
      "tipo": "distanze",
-     "it": "2,5 km da Bovo Marina · 6 km dalla Riserva di Torre Salsa"
+     "it": "2,5 km da Bovo Marina · 6 km dalla Riserva di Torre Salsa",
+     "en": "2.5 km from Bovo Marina · 6 km from the Torre Salsa Reserve"
     }
    ],
    "consigli": {
@@ -4964,6 +5017,9 @@
    "consigli": {
     "it": [
      "Animali non ammessi"
+    ],
+    "en": [
+     "No pets allowed"
     ]
    },
    "contatti": {
@@ -5318,6 +5374,9 @@
    "consigli": {
     "it": [
      "Animali non ammessi"
+    ],
+    "en": [
+     "No pets allowed"
     ]
    },
    "contatti": {
@@ -5528,12 +5587,17 @@
     "en": "Farm cheese maker"
    },
    "breve": {
-    "it": "Ricotta e formaggi fatti con il latte crudo del gregge di famiglia, che pascola anche dentro la Riserva di Torre Salsa."
+    "it": "Ricotta e formaggi fatti con il latte crudo del gregge di famiglia, che pascola anche dentro la Riserva di Torre Salsa.",
+    "en": "Ricotta and cheeses made with raw milk from the family flock, which also grazes inside the Torre Salsa Reserve."
    },
    "testo": {
     "it": [
      "L'azienda l'ha avviata un ragazzo che ha scelto di restare sulla terra di famiglia. Le pecore sono circa quattrocento, allevate allo stato semibrado: pascolano a rotazione, anche nella riserva gestita dal WWF, e mangiano il foraggio coltivato in azienda.",
      "Con il loro latte crudo si fanno la ricotta e i formaggi, venduti a chilometro zero nel punto vendita di piazza Lo Verde. Dietro c'è la stessa famiglia della Scuderia Ranch Todaro: sono questi i prodotti della degustazione dopo l'uscita a cavallo."
+    ],
+    "en": [
+     "The farm was started by a young man who chose to stay on his family's land. There are about four hundred sheep, raised semi-wild: they graze in rotation, also in the WWF-run reserve, and eat fodder grown on the farm.",
+     "Their raw milk is used to make ricotta and cheeses, sold zero-kilometre at the shop in piazza Lo Verde. The same family runs Scuderia Ranch Todaro: these are the products served at the tasting after the horse ride."
     ]
    },
    "info": [
@@ -5543,12 +5607,16 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al sabato, la mattina e il pomeriggio; la domenica è chiuso. Gli orari cambiano secondo le fonti: meglio chiamare prima."
+     "it": "Dal lunedì al sabato, la mattina e il pomeriggio; la domenica è chiuso. Gli orari cambiano secondo le fonti: meglio chiamare prima.",
+     "en": "Monday to Saturday, mornings and afternoons; closed on Sundays. Opening times vary between sources: best to call first."
     }
    ],
    "consigli": {
     "it": [
      "I suoi prodotti si assaggiano anche dopo l'uscita a cavallo della Scuderia Ranch Todaro"
+    ],
+    "en": [
+     "You can also taste its products after the horse ride with Scuderia Ranch Todaro"
     ]
    },
    "contatti": {
@@ -5586,11 +5654,15 @@
     "en": "Sicilian black bee honey"
    },
    "breve": {
-    "it": "Il miele dell'ape nera sicula, l'Apis mellifera siciliana: millefiori, sulla, arancio e il miele in favo, da comprare anche online."
+    "it": "Il miele dell'ape nera sicula, l'Apis mellifera siciliana: millefiori, sulla, arancio e il miele in favo, da comprare anche online.",
+    "en": "Honey from the Sicilian black bee, Apis mellifera siciliana: wildflower, sulla, orange blossom and honeycomb, also sold online."
    },
    "testo": {
     "it": [
      "È una società agricola di contrada Gorgo che alleva l'ape nera sicula, la sottospecie nata sull'isola. Nel negozio online ci sono il millefiori, il miele di sulla e quello d'arancio, il polline e il miele in favo, da mangiare insieme alla cera."
+    ],
+    "en": [
+     "A farm in contrada Gorgo that keeps the Sicilian black bee, the subspecies native to the island. The online shop has wildflower, sulla and orange blossom honey, pollen and honeycomb, to be eaten together with the wax."
     ]
    },
    "info": [
@@ -5646,12 +5718,17 @@
     "en": "Winery · organic wines"
    },
    "breve": {
-    "it": "La cantina di Roberto Caruana tra i vigneti di Torre Salsa: vini biologici, la visita tra vigna e botti e la degustazione con i sapori siciliani."
+    "it": "La cantina di Roberto Caruana tra i vigneti di Torre Salsa: vini biologici, la visita tra vigna e botti e la degustazione con i sapori siciliani.",
+    "en": "Roberto Caruana's winery among the Torre Salsa vineyards: organic wines, a tour of the vineyard and the barrels, and a tasting with Sicilian flavours."
    },
    "testo": {
     "it": [
      "Roberto, padrone di casa ed enologo, accompagna tra i filari e poi in cantina: la lavorazione dell'uva, i silos di fermentazione, l'affinamento in botte e in barrique, l'imbottigliamento.",
      "La degustazione è di tre vini biologici, con caponata, panelle e pane cunzato. Chi vuole resta a cena: piatti della tradizione siciliana con i vini della cantina."
+    ],
+    "en": [
+     "Roberto, host and winemaker, takes you through the rows of vines and then into the cellar: how the grapes are processed, the fermentation tanks, ageing in casks and barriques, bottling.",
+     "The tasting is of three organic wines, with caponata, panelle and pane cunzato. If you like, you can stay for dinner: traditional Sicilian dishes with the winery's wines."
     ]
    },
    "info": [
@@ -5667,17 +5744,23 @@
     },
     {
      "tipo": "durata",
-     "it": "Circa 2 ore la degustazione, 3 la cena"
+     "it": "Circa 2 ore la degustazione, 3 la cena",
+     "en": "About 2 hours for the tasting, 3 for the dinner"
     },
     {
      "tipo": "orari",
-     "it": "Degustazioni il lunedì e il venerdì alle 17:30; la cena alle 21, nei giorni da concordare. Si prenota almeno il giorno prima."
+     "it": "Degustazioni il lunedì e il venerdì alle 17:30; la cena alle 21, nei giorni da concordare. Si prenota almeno il giorno prima.",
+     "en": "Tastings on Mondays and Fridays at 17:30; dinner at 21:00 on days to be agreed. Book at least the day before."
     }
    ],
    "consigli": {
     "it": [
      "Prenotazione obbligatoria",
      "Il baglio è anche un relais con camere e piscina: lo trovi in Dove dormire"
+    ],
+    "en": [
+     "Booking required",
+     "The baglio is also a relais with rooms and a pool: you'll find it under Where to stay"
     ]
    },
    "contatti": {
@@ -5843,12 +5926,17 @@
     "en": "Preserves"
    },
    "breve": {
-    "it": "Le conserve di Rosario Dimora in contrada Carlici: alici, tonno sott'olio, carciofi, melanzane e la salsa del diavolo."
+    "it": "Le conserve di Rosario Dimora in contrada Carlici: alici, tonno sott'olio, carciofi, melanzane e la salsa del diavolo.",
+    "en": "Rosario Dimora's preserves in contrada Carlici: anchovies, tuna in oil, artichokes, aubergines and salsa del diavolo."
    },
    "testo": {
     "it": [
      "Nel laboratorio di contrada Carlici si preparano i sott'oli di mare e di terra: le alici, anche al peperoncino o marinate con prezzemolo, il tonno a pinna gialla sott'olio, i peperoncini ripieni di tonno e cipolla, i carciofi alla contadina e quelli interi grigliati, le melanzane e il paté di carciofi e tonno.",
      "Al banco ci sono anche formaggi, salumi e vino."
+    ],
+    "en": [
+     "In the workshop in contrada Carlici they make preserves in oil from the sea and the land: anchovies, also with chilli or marinated with parsley, yellowfin tuna in oil, chillies stuffed with tuna and onion, country-style artichokes and whole grilled ones, aubergines and artichoke and tuna pâté.",
+     "At the counter there are also cheeses, cured meats and wine."
     ]
    },
    "info": [
@@ -5953,11 +6041,15 @@
     "en": "Cheese maker"
    },
    "breve": {
-    "it": "Ricotta e formaggi di pecora e di capra fatti a mano, nel caseificio di contrada Gorgo."
+    "it": "Ricotta e formaggi di pecora e di capra fatti a mano, nel caseificio di contrada Gorgo.",
+    "en": "Handmade sheep's and goat's milk ricotta and cheeses, at the dairy in contrada Gorgo."
    },
    "testo": {
     "it": [
      "Il caseificio è in campagna, in contrada Gorgo, dalle parti dell'oasi del Laghetto Gorgo. La ricotta e i formaggi di pecora e di capra si fanno a mano, sul posto."
+    ],
+    "en": [
+     "The dairy is in the countryside, in contrada Gorgo, near the Laghetto Gorgo oasis. The ricotta and the sheep's and goat's cheeses are made by hand on site."
     ]
    },
    "info": [
@@ -6002,11 +6094,15 @@
     "en": "Olive oil mill"
    },
    "breve": {
-    "it": "Il frantoio di Montallegro, in contrada Parisa, per l'olio extravergine del territorio."
+    "it": "Il frantoio di Montallegro, in contrada Parisa, per l'olio extravergine del territorio.",
+    "en": "Montallegro's olive mill, in contrada Parisa, for the area's extra virgin olive oil."
    },
    "testo": {
     "it": [
      "Lo porta avanti Chiara Rosalia Palmisano. Il momento giusto per passare è l'autunno, quando si raccolgono le olive e il frantoio lavora: meglio telefonare prima."
+    ],
+    "en": [
+     "It is run by Chiara Rosalia Palmisano. The best time to drop by is autumn, when the olives are harvested and the mill is working: better to phone first."
     ]
    },
    "info": [
@@ -6280,19 +6376,25 @@
    "lng": 13.3092381,
    "mappe": "L'operAmmare · A cavallo al mare, Viale Lungomare, 9, Bovo Marina",
    "nome": {
-    "it": "L'operAmmare · A cavallo al mare"
+    "it": "L'operAmmare · A cavallo al mare",
+    "en": "L'operAmmare · Horse riding by the sea"
    },
    "etichetta": {
     "it": "Passeggiate a cavallo",
     "en": "Horse rides"
    },
    "breve": {
-    "it": "Dal maneggio sul lungomare di Bovo Marina, tra pineta e mare verso Torre Salsa e Capo Bianco, con una guida equestre ambientale."
+    "it": "Dal maneggio sul lungomare di Bovo Marina, tra pineta e mare verso Torre Salsa e Capo Bianco, con una guida equestre ambientale.",
+    "en": "From the riding stable on the Bovo Marina seafront, between pine wood and sea towards Torre Salsa and Capo Bianco, with an environmental equestrian guide."
    },
    "testo": {
     "it": [
      "Ci sono cinque uscite: il pony per i bambini (20 minuti), un'ora per i bambini, la passeggiata di un'ora e quella di due ore con rinfresco.",
      "Per i cavalieri esperti c'è la mezza giornata fino a Eraclea Minoa, con il bagno a cavallo nel Platani. Si esce tutto l'anno, con orario da concordare."
+    ],
+    "en": [
+     "There are five rides: the pony ride for children (20 minutes), one hour for children, the one-hour ride and the two-hour ride with refreshments.",
+     "For experienced riders there is the half day to Eraclea Minoa, with a swim on horseback in the Platani. Rides run all year round, at times to be agreed."
     ]
    },
    "info": [
@@ -6309,7 +6411,8 @@
     },
     {
      "tipo": "durata",
-     "it": "Da 20 minuti a mezza giornata"
+     "it": "Da 20 minuti a mezza giornata",
+     "en": "From 20 minutes to half a day"
     }
    ],
    "consigli": {
@@ -6318,6 +6421,12 @@
      "Sotto i 14 anni serve un adulto",
      "Peso massimo 110 kg",
      "Si può disdire fino a 24 ore prima"
+    ],
+    "en": [
+     "Minimum age 5 (3 for children's activities)",
+     "Under 14s need an adult with them",
+     "Maximum weight 110 kg",
+     "You can cancel up to 24 hours before"
     ]
    },
    "contatti": {
@@ -6428,7 +6537,8 @@
    "lng": 13.4232409,
    "mappe": "Centro visite Riserva Torre Salsa, Via Roma, 156/D, 92010 Siculiana (AG)",
    "nome": {
-    "it": "Visite guidate della Riserva di Torre Salsa"
+    "it": "Visite guidate della Riserva di Torre Salsa",
+    "en": "Guided tours of the Torre Salsa Reserve"
    },
    "etichetta": {
     "it": "Visita guidata WWF",
@@ -6464,7 +6574,8 @@
     },
     {
      "tipo": "durata",
-     "it": "Circa mezza giornata"
+     "it": "Circa mezza giornata",
+     "en": "About half a day"
     }
    ],
    "consigli": {
@@ -6543,7 +6654,8 @@
    "lng": 13.3802016,
    "mappe": "SUP e kayak lungo Torre Salsa, Cala Manbrù Beach Club, Siculiana Marina",
    "nome": {
-    "it": "SUP e kayak lungo Torre Salsa"
+    "it": "SUP e kayak lungo Torre Salsa",
+    "en": "SUP and kayak along Torre Salsa"
    },
    "etichetta": {
     "it": "Tour in SUP o kayak",
@@ -6579,11 +6691,13 @@
     },
     {
      "tipo": "durata",
-     "it": "2 ore"
+     "it": "2 ore",
+     "en": "2 hours"
     },
     {
      "tipo": "lingue",
-     "it": "Italiano, English"
+     "it": "Italiano, English",
+     "en": "Italian, English"
     }
    ],
    "consigli": {
@@ -6690,7 +6804,8 @@
    "lng": 13.3500971,
    "mappe": "Comune di Montallegro, Corso Vittorio Emanuele, 60, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Comune di Montallegro"
+    "it": "Comune di Montallegro",
+    "en": "Municipality of Montallegro"
    },
    "etichetta": {
     "it": "Municipio",
@@ -6718,7 +6833,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Uffici aperti la mattina nei giorni feriali: verifica sul sito del Comune."
+     "it": "Uffici aperti la mattina nei giorni feriali: verifica sul sito del Comune.",
+     "en": "Offices open on weekday mornings: check the Municipality's website."
     }
    ],
    "consigli": {
@@ -6744,7 +6860,8 @@
    "lng": 13.3510446,
    "mappe": "Stazione Carabinieri, Via Cesare Battisti, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Stazione Carabinieri"
+    "it": "Stazione Carabinieri",
+    "en": "Carabinieri station"
    },
    "etichetta": {
     "it": "Carabinieri",
@@ -6771,6 +6888,9 @@
    "consigli": {
     "it": [
      "Emergenze: 112"
+    ],
+    "en": [
+     "Emergencies: 112"
     ]
    },
    "contatti": {
@@ -6793,7 +6913,8 @@
    "lng": 13.350111,
    "mappe": "Polizia Municipale, Corso Vittorio Emanuele, 50, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Polizia Municipale"
+    "it": "Polizia Municipale",
+    "en": "Municipal police"
    },
    "etichetta": {
     "it": "Polizia locale",
@@ -6840,7 +6961,8 @@
    "lng": 13.3519252,
    "mappe": "Farmacia di Montallegro, Viale della Vittoria, 117, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Farmacia di Montallegro"
+    "it": "Farmacia di Montallegro",
+    "en": "Montallegro pharmacy"
    },
    "etichetta": {
     "it": "Farmacia",
@@ -6865,7 +6987,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Orario estivo: dal lunedì al sabato 8:30–14:00 e 16:00–21:00, domenica chiuso. Per l’orario invernale e i turni chiama."
+     "it": "Orario estivo: dal lunedì al sabato 8:30–14:00 e 16:00–21:00, domenica chiuso. Per l’orario invernale e i turni chiama.",
+     "en": "Summer hours: Monday to Saturday 8:30–14:00 and 16:00–21:00, closed on Sundays. Call for winter hours and duty rotas."
     }
    ],
    "consigli": {
@@ -6891,7 +7014,8 @@
    "lng": 13.3511262,
    "mappe": "Guardia medica, Via Cesare Battisti, 24, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Guardia medica"
+    "it": "Guardia medica",
+    "en": "Out-of-hours doctor (guardia medica)"
    },
    "etichetta": {
     "it": "Continuità assistenziale",
@@ -6918,12 +7042,16 @@
     },
     {
      "tipo": "orari",
-     "it": "Notti dei giorni feriali dalle 20 alle 8; prefestivi e festivi dalle 10 del giorno prima alle 8 del giorno dopo."
+     "it": "Notti dei giorni feriali dalle 20 alle 8; prefestivi e festivi dalle 10 del giorno prima alle 8 del giorno dopo.",
+     "en": "Weekday nights from 20:00 to 8:00; on days before holidays and on holidays from 10:00 the day before until 8:00 the day after."
     }
    ],
    "consigli": {
     "it": [
      "Per le emergenze chiama il 118"
+    ],
+    "en": [
+     "For emergencies call 118"
     ]
    },
    "zona": "paese",
@@ -6942,7 +7070,8 @@
    "lng": 13.2697561,
    "mappe": "Pronto soccorso di Ribera, Via Circonvallazione, 113, 92016 Ribera (AG)",
    "nome": {
-    "it": "Pronto soccorso di Ribera"
+    "it": "Pronto soccorso di Ribera",
+    "en": "Ribera emergency department"
    },
    "etichetta": {
     "it": "Ospedale Fratelli Parlapiano",
@@ -6971,6 +7100,9 @@
    "consigli": {
     "it": [
      "Per le emergenze chiama il 118"
+    ],
+    "en": [
+     "For emergencies call 118"
     ]
    },
    "contatti": {
@@ -6991,7 +7123,8 @@
    "lng": 13.607766,
    "mappe": "Pronto soccorso di Agrigento, Contrada Consolida, 92100 Agrigento",
    "nome": {
-    "it": "Pronto soccorso di Agrigento"
+    "it": "Pronto soccorso di Agrigento",
+    "en": "Agrigento emergency department"
    },
    "etichetta": {
     "it": "Ospedale San Giovanni di Dio",
@@ -7020,6 +7153,9 @@
    "consigli": {
     "it": [
      "Per le emergenze chiama il 118"
+    ],
+    "en": [
+     "For emergencies call 118"
     ]
    },
    "contatti": {
@@ -7112,7 +7248,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al venerdì, la mattina."
+     "it": "Dal lunedì al venerdì, la mattina.",
+     "en": "Monday to Friday, mornings."
     }
    ],
    "consigli": {
@@ -7310,7 +7447,8 @@
    "lng": 13.351174,
    "mappe": "Fermata FlixBus, Strada Statale 115, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Autobus FlixBus"
+    "it": "Autobus FlixBus",
+    "en": "FlixBus coaches"
    },
    "etichetta": {
     "it": "Autobus di linea",
@@ -7341,6 +7479,10 @@
     "it": [
      "Il punto esatto della fermata è indicato sul biglietto",
      "Ad Agrigento ferma in via Cicerone e a piazzale Rosselli"
+    ],
+    "en": [
+     "The exact stop is shown on the ticket",
+     "In Agrigento it stops in via Cicerone and at piazzale Rosselli"
     ]
    },
    "contatti": {
@@ -7362,7 +7504,8 @@
    "lng": 13.3511248,
    "mappe": "Distributore Eni, Variante SS115, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Distributore Eni"
+    "it": "Distributore Eni",
+    "en": "Eni petrol station"
    },
    "etichetta": {
     "it": "Carburante e bar",
@@ -7387,7 +7530,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal 1 ottobre al 30 aprile: tutti i giorni 7:00–12:30 e 15:30–19:00."
+     "it": "Dal 1 ottobre al 30 aprile: tutti i giorni 7:00–12:30 e 15:30–19:00.",
+     "en": "From 1 October to 30 April: every day 7:00–12:30 and 15:30–19:00."
     }
    ],
    "consigli": {
@@ -7730,7 +7874,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al sabato 9:00–13:00 e 16:00–20:00."
+     "it": "Dal lunedì al sabato 9:00–13:00 e 16:00–20:00.",
+     "en": "Monday to Saturday 9:00–13:00 and 16:00–20:00."
     }
    ],
    "consigli": {
@@ -7854,7 +7999,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al venerdì 7:00–13:00 e 14:00–18:00, sabato 7:00–13:00."
+     "it": "Dal lunedì al venerdì 7:00–13:00 e 14:00–18:00, sabato 7:00–13:00.",
+     "en": "Monday to Friday 7:00–13:00 and 14:00–18:00, Saturday 7:00–13:00."
     }
    ],
    "consigli": {
@@ -7880,7 +8026,8 @@
    "lng": 13.3516736,
    "mappe": "Ufficio Postale, Via Fratelli Ferraro, 11, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Ufficio Postale"
+    "it": "Ufficio Postale",
+    "en": "Post office"
    },
    "etichetta": {
     "it": "Poste Italiane",
@@ -7910,6 +8057,10 @@
     "it": [
      "Postamat attivo 24 ore su 24",
      "In paese non ci sono banche: le più vicine sono a Cattolica Eraclea e Siculiana"
+    ],
+    "en": [
+     "Postamat cash machine available 24 hours a day",
+     "There are no banks in the village: the nearest are in Cattolica Eraclea and Siculiana"
     ]
    },
    "zona": "paese",
@@ -7966,7 +8117,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al sabato 8:30–13:00 e 15:00–20:00."
+     "it": "Dal lunedì al sabato 8:30–13:00 e 15:00–20:00.",
+     "en": "Monday to Saturday 8:30–13:00 and 15:00–20:00."
     }
    ],
    "consigli": {
@@ -8381,7 +8533,8 @@
    "lng": 13.3500127,
    "mappe": "Campo da bocce, Via Piave, 2, 92010 Montallegro (AG)",
    "nome": {
-    "it": "Campo da bocce"
+    "it": "Campo da bocce",
+    "en": "Bocce court"
    },
    "etichetta": {
     "it": "Bocce",
@@ -8619,7 +8772,8 @@
     },
     {
      "tipo": "orari",
-     "it": "Dal lunedì al venerdì 16:00–19:00."
+     "it": "Dal lunedì al venerdì 16:00–19:00.",
+     "en": "Monday to Friday 16:00–19:00."
     }
    ],
    "consigli": {
