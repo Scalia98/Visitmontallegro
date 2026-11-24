@@ -127,9 +127,10 @@ Le persone le attivano con un tocco: riquadro in home, Info → Notifiche, tasto
 ### 1. Gli account (a nome della Pro Loco)
 Conviene pubblicare a nome della **Pro Loco Montallegro APS**, come ha fatto la Pro Loco Agrigento con Agrigento InfoApp: sullo store compare l'ente, non una persona.
 
-- **D-U-N-S**: numero identificativo gratuito che Apple e Google chiedono alle organizzazioni. Cerca la Pro Loco su [developer.apple.com/enroll/duns-lookup](https://developer.apple.com/enroll/duns-lookup/) (meglio da Safari) con nome legale esatto, indirizzo della sede e un tuo contatto; se non c'è, invia la richiesta gratuita da lì. Dun & Bradstreet può chiamarti: tieni pronti statuto, codice fiscale e iscrizione al RUNTS. Arriva entro 5 giorni lavorativi, poi Apple impiega fino a 2 giorni lavorativi a riceverlo. Lo stesso numero serve per Google Play.
-- **Apple Developer Program**: 99 USD l'anno. Le organizzazioni non profit riconosciute che pubblicano solo app gratuite, senza acquisti in app, possono chiedere l'**esonero dalla quota** (disponibile anche in Italia): durante l'iscrizione come organizzazione scegli l'opzione per richiedere l'esonero. Servono: Apple Account con autenticazione a due fattori e il tuo nome e cognome veri, il nome legale dell'ente (sarà il «venditore» sullo store), il D-U-N-S, sede e telefono, il sito su un dominio dell'ente (visitmontallegrobovomarina.it) e il contatto di una persona che confermi che puoi firmare per la Pro Loco. Apple valuta ogni richiesta.
-- **Google Play Console**: 25 USD una tantum. Con un account **organizzazione** non serve il test chiuso obbligatorio (12 tester per 14 giorni) richiesto agli account personali nuovi.
+- **D-U-N-S**: numero identificativo gratuito che Apple e Google chiedono alle organizzazioni. Cerca la Pro Loco su [developer.apple.com/enroll/duns-lookup](https://developer.apple.com/enroll/duns-lookup/) (meglio da Safari) con nome legale esatto, indirizzo della sede e un tuo contatto; se non c'è, invia la richiesta gratuita da lì. Dun & Bradstreet può chiamarti: tieni pronti statuto, codice fiscale e iscrizione al RUNTS. Arriva entro 5 giorni lavorativi, poi Apple impiega fino a 2 giorni lavorativi a riceverlo. Lo stesso numero serve per Google Play (chiedendolo direttamente a Dun & Bradstreet, Google avvisa che possono servire fino a 30 giorni: meglio il modulo di Apple). Nome, indirizzo e sito devono essere identici in D-U-N-S, Apple e Google.
+- **Apple Developer Program**: 99 USD l'anno. Le organizzazioni non profit riconosciute che pubblicano solo app gratuite, senza acquisti in app, possono chiedere l'**esonero dalla quota** (disponibile anche in Italia): durante l'iscrizione come organizzazione scegli l'opzione per richiedere l'esonero. Servono: Apple Account con autenticazione a due fattori e il tuo nome e cognome veri, un'**email di lavoro sul dominio dell'ente** (per esempio `proloco@visitmontallegrobovomarina.it`: Apple non accetta un indirizzo gmail; la crea chi gestisce l'hosting Aruba del portale), il nome legale dell'ente (sarà il «venditore» sullo store), il D-U-N-S, sede e telefono, il sito su un dominio dell'ente (visitmontallegrobovomarina.it) e il contatto di una persona che confermi che puoi firmare per la Pro Loco. Apple valuta ogni richiesta.
+- **Google Play Console**: 25 USD una tantum. Con un account **organizzazione** non serve il test chiuso obbligatorio (12 tester per 14 giorni) richiesto agli account personali nuovi. Prima di pubblicare Google chiede di **verificare il sito** con Search Console: registra visitmontallegrobovomarina.it in [Search Console](https://search.google.com/search-console) con lo stesso account Google della Play Console (con il solo accesso a WordPress va bene il metodo «tag HTML», per esempio con il plugin Site Kit di Google), poi invia la richiesta da Play Console → Dettagli account.
+- **Lettera del Comune**: l'app dice di essere un progetto del Comune, quindi tieni pronta una lettera su carta intestata, firmata dal Sindaco, che autorizza la Pro Loco Montallegro APS a pubblicare «Visit Montallegro Bovo Marina» su App Store e Google Play e a usare il nome del Comune. Su Apple va allegata nelle note per la revisione; su Google, nella dichiarazione «App governative», può essere chiesto che la mandi il Comune da un suo indirizzo ufficiale.
 
 ### 2a. iPhone senza Mac (Codemagic)
 1. Il progetto è su GitHub nel repository pubblico [`Scalia98/Visitmontallegro`](https://github.com/Scalia98/Visitmontallegro): pubblico perché l'app ne scarica i contenuti aggiornati.
@@ -157,19 +158,34 @@ Con Codemagic: carica il keystore in Settings → Code signing identities con il
 Il keystore va conservato con cura: senza, non potrai più aggiornare l'app.
 
 ### 4. Cosa chiedono gli store
-- **Privacy**: carica `www/privacy.html` sul sito e usa quell'indirizzo come URL dell'informativa. Nel questionario Apple sulla privacy la risposta è «Dati non raccolti» finché nell'app degli store non ci sono le notifiche; con le notifiche vanno dichiarati gli identificativi del dispositivo e i dati d'uso, come indica OneSignal.
-- **Screenshot**: in `screenshot-store/` trovi le immagini iPhone 6,9" (1320 × 2868), in italiano e inglese, pronte da caricare.
-- **Categoria**: Viaggi. **Età**: 4+.
+- **Privacy**: l'informativa è già online su https://scalia98.github.io/Visitmontallegro/privacy.html (si aggiorna da sola con `www/privacy.html`); la pagina di assistenza è https://scalia98.github.io/Visitmontallegro/assistenza.html. Nel questionario Apple sulla privacy la risposta è «Dati non raccolti» finché nell'app degli store non ci sono le notifiche; con le notifiche vanno dichiarati gli identificativi del dispositivo e i dati d'uso, come indica OneSignal.
+- **Screenshot**: in `screenshot-store/iphone` le immagini per iPhone 6,9" (1320 × 2868) e in `screenshot-store/android` quelle per Google Play (1080 × 2040), 8 per lingua in italiano e inglese, senza contenuti di stagione. Per rifarle con i contenuti aggiornati: GitHub → Actions → **Schermate per gli store** → Run workflow; le nuove finiscono nel ramo `schermate-store`.
+- **Categoria**: Viaggi. **Età**: nel questionario Apple i riferimenti all'alcol (degustazioni di vino, pub) vanno segnati come «rari»: l'app risulta 13+.
 
 ### Testi per la scheda
 - **Nome**: Visit Montallegro Bovo Marina
-- **Sottotitolo**: Torre Salsa, spiagge ed eventi
-- **Parole chiave**: montallegro,bovo marina,torre salsa,agrigento,sicilia,spiagge,riserva,eraclea minoa,pro loco,eventi
-- **Descrizione**:
-  Visit Montallegro Bovo Marina è la guida ufficiale di Montallegro, un progetto del Comune di Montallegro e della Pro Loco Montallegro APS.
-  Scopri la Riserva Naturale Torre Salsa e la Dama Bianca, la spiaggia di Bovo Marina, Eraclea Minoa e Capo Bianco, i ruderi del paese antico su Monte Suso, le chiese e il Museo della Civiltà Contadina.
-  Prenota su WhatsApp le escursioni guidate, trova dove mangiare e dormire con orari e contatti, i prodotti tipici e i produttori del paese, la farmacia e i servizi utili, i posti da vedere nei dintorni, come arrivare, il meteo e il mare con le previsioni, la mappa, gli eventi e tutti i numeri utili.
-  Tieni premuta l'icona per andare dritto a Spiagge, Visit Torre Salsa e Visit.
+- **Sottotitolo** (Apple): Torre Salsa, spiagge ed eventi · in inglese: Torre Salsa, beaches & events
+- **Parole chiave** (Apple): agrigento,sicilia,riserva,eraclea minoa,capo bianco,scala dei turchi,mare,escursioni,guida,pro loco · in inglese: agrigento,sicily,nature reserve,eraclea minoa,capo bianco,scala dei turchi,beach,sea,hiking,guide
+- **Descrizione breve** (Google Play): La guida di Montallegro e Bovo Marina: Torre Salsa, spiagge, esperienze, eventi
+- **Descrizione** (la stessa su Apple e Google; la versione inglese è nel documento con i testi per gli store):
+  Visit Montallegro Bovo Marina è la guida di Montallegro e Bovo Marina, in provincia di Agrigento: un progetto del Comune di Montallegro e della Pro Loco Montallegro APS, voluto dal Sindaco e dal Vicesindaco e realizzato dalla web agency Disegna il tuo sito.
+
+  SPIAGGE E RISERVA
+  La Riserva Naturale Torre Salsa, oasi WWF con chilometri di costa senza lidi, falesie bianche e dune. La spiaggia di Bovo Marina, Eraclea Minoa e Capo Bianco.
+
+  COSA VEDERE
+  Il paese, i ruderi del borgo antico su Monte Suso, le chiese e il Museo della Civiltà Contadina. Nei dintorni la Scala dei Turchi, la Valle dei Templi e altre mete della provincia, con itinerari già pronti.
+
+  ESPERIENZE
+  Escursioni nella riserva, passeggiate a cavallo, SUP e kayak, birdwatching al Laghetto Gorgo e visite guidate: molte si prenotano su WhatsApp con un tocco.
+
+  MANGIARE, DORMIRE, SAPORI
+  Ristoranti, pizzerie, lidi e bar con orari e numeri di telefono, gli alloggi del paese, i prodotti tipici e i produttori locali.
+
+  INFO UTILI
+  La mappa con la tua posizione, il meteo e lo stato del mare, come arrivare, gli eventi, i numeri di emergenza, la farmacia e i servizi del paese.
+
+  Salva i posti che ti piacciono nei preferiti. L'app è in italiano e in inglese, senza registrazione e senza pubblicità.
 
 ---
 
@@ -178,7 +194,7 @@ Il keystore va conservato con cura: senza, non potrai più aggiornare l'app.
 - **Meteo**: Open-Meteo, gratuito per uso non commerciale e senza chiave.
 - **Foto Wikimedia Commons**: i luoghi di «Cosa vedere» hanno la loro galleria (Scala dei Turchi, Valle dei Templi, Eraclea Minoa, Kolymbethra, Museo Griffo, Caltabellotta, Sciacca…). Solo foto con licenza libera verificata (pubblico dominio, CC0, CC BY, CC BY-SA): autore e licenza compaiono su ogni foto e nella sezione Info → Crediti c'è il link alla pagina di ciascun file. `npm run foto` (e Codemagic a ogni compilazione) le scarica dentro l'app. Per aggiungere altre foto a un luogo basta aggiungere voci al campo `galleria` della sua scheda in `www/data/contenuti.json` (foto, credito, didascalia).
 - **Siti web**: ogni luogo ha il link al sito ufficiale (Parco Valle dei Templi, FAI, Farm Cultural Park, comuni) o alla sua pagina sul portale; le attività di Montallegro senza un sito proprio rimandano alla pagina del portale che le elenca (Dove mangiare, Dove dormire, Sapori, Cosa fare).
-- **Mancano ancora le foto** di: Chiesa dell'Immacolata, Chiesa di San Leonardo, vecchia stazione, spiaggia di Giallonardo, Farm Cultural Park, e di ristoranti, B&B, negozi e servizi: per questi servono foto della Pro Loco o dei titolari (su Commons non ci sono foto libere).
+- **Foto di repertorio**: ogni scheda ha una foto. Dove non c'è una foto libera del posto c'è un'immagine di repertorio, segnata nel credito con «Immagine di repertorio»: appena la Pro Loco o i titolari danno foto loro, si sostituiscono in `www/data/contenuti.json`.
 - **Foto del portale**: `npm run foto` scarica anche le foto delle schede e delle gallerie prese da visitmontallegrobovomarina.it e le riduce con `sharp`, così nell'app installata ci sono anche senza rete; se il sito non risponde restano online e l'app le carica quando c'è rete. Le gallerie si aprono a tutto schermo; una foto che non si riesce a caricare sparisce dalla galleria invece di lasciare un riquadro vuoto.
 - **Anteprima su Claude**: l'anteprima pubblicata su claude.ai non può caricare immagini da altri siti, quindi lì le foto del portale non si vedono (si vedono le foto già dentro l'app). Nell'app installata e nella versione web caricata sul tuo hosting si vedono tutte.
 
