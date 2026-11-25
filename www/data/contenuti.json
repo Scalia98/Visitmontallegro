@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-25.02",
+ "versione": "2026-11-25.03",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1725,10 +1725,10 @@
    ],
    "consigli": {
     "it": [
-     "Primi passi (8–12 anni) è al completo. Per Mani in crita (13–18 anni) ci sono ancora posti: serve l’iscrizione online."
+     "Primi passi (8–12 anni) è al completo: dal modulo online puoi lasciare il numero e l’email di un genitore e, se si libera un posto o per il prossimo laboratorio, ti contattiamo noi. Per Mani in crita (13–18 anni) ci sono ancora posti: serve l’iscrizione online."
     ],
     "en": [
-     "First steps (ages 8–12) is full. Hands in clay (ages 13–18) still has places: online registration required."
+     "First steps (ages 8–12) is full: in the online form you can leave a parent's phone number and email, and we'll contact you if a place opens up or for the next workshop. Hands in clay (ages 13–18) still has places: online registration required."
     ]
    },
    "contatti": {
@@ -10087,8 +10087,8 @@
    },
    "info": [
     {
-     "it": "Iscrizioni online: posti solo per Mani in crita (13–18 anni)",
-     "en": "Online registration: places left only for ages 13–18",
+     "it": "Iscriviti online (13–18 anni) o lascia i contatti per Primi passi",
+     "en": "Sign up online (ages 13–18) or leave your details for ages 8–12",
      "link": "https://tally.so/r/kbNoZM"
     },
     {
