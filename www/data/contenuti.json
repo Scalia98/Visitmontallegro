@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-24.03",
+ "versione": "2026-11-25.01",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -1690,14 +1690,14 @@
     "it": [
      "«Crita», in siciliano, è l'argilla. Crita Allegra è il nuovo laboratorio artistico di Montallegro, dentro il Museo della Civiltà Contadina, con un forno per la ceramica: è nato grazie agli artisti del paese e al Comune, con il progetto del GAL Sicani.",
      "Adesso la Pro Loco, insieme a Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino e Teresa Tuttolomondo, sta mettendo in funzione il laboratorio.",
-     "Aprirà due volte a settimana ed è aperto a tutti. Per i ragazzi dai 10 ai 18 anni ci sarà un laboratorio di ceramica di sei incontri, due al mese, la sera dalle 18.",
-     "Si comincia con una serata di presentazione: i video e la storia del progetto, con gli interventi del Sindaco, del Vicesindaco e degli artisti coinvolti. La data sarà annunciata a breve."
+     "Aprirà due volte a settimana ed è aperto a tutti. Per i ragazzi dagli 8 ai 18 anni c'è un laboratorio di ceramica di sei incontri, due al mese, la sera dalle 18, in due gruppi: «Primi passi» per 8–12 anni e «Mani in crita» per 13–18 anni.",
+     "Si comincia venerdì 27 novembre alle 18:00 all'Aula Multimediale Ercole Longo: la presentazione del progetto, con gli interventi del Sindaco, dell'Assessore al Turismo, degli artisti e della Pro Loco, è aperta a tutti; poi il primo laboratorio per i ragazzi, su iscrizione."
     ],
     "en": [
      "“Crita” is Sicilian for clay. Crita Allegra is Montallegro's new art workshop, inside the Museum of Rural Life, with a ceramics kiln: it came about thanks to the town's artists and the town council, through a GAL Sicani project.",
      "Now the Pro Loco, together with Maria Caro, Rosanna Panarisi, Virginia Todaro, Lia Piruzza, Maria Ferraro, Annalisa Liberto, Stefania Borsellino and Teresa Tuttolomondo, is getting the workshop up and running.",
-     "It will open twice a week, to everyone. For young people aged 10 to 18 there will be a ceramics course of six evening sessions, two a month, starting at 6 pm.",
-     "It starts with a presentation evening: videos and the story of the project, with talks by the Mayor, the Deputy Mayor and the artists involved. The date will be announced soon."
+     "It will open twice a week, to everyone. For young people aged 8 to 18 there is a ceramics course of six evening sessions, two a month, starting at 6 pm, in two groups: «Primi passi» (first steps) for ages 8–12 and «Mani in crita» (hands in clay) for ages 13–18.",
+     "It all starts on Friday 27 November at 6 pm at the Aula Multimediale Ercole Longo: the project launch, with talks by the Mayor, the Councillor for Tourism, the artists and the Pro Loco, is open to everyone; then the first workshop for young people, registration required."
     ]
    },
    "info": [
@@ -1713,6 +1713,11 @@
      "en": "Twice a week, open to everyone: days to be announced at the presentation evening"
     },
     {
+     "it": "Iscrizioni online ai laboratori per ragazzi",
+     "en": "Online registration for the youth workshops",
+     "link": "https://tally.so/r/kbNoZM"
+    },
+    {
      "tipo": "contatto",
      "it": "Per informazioni: Pro Loco Montallegro",
      "en": "For information: Pro Loco Montallegro"
@@ -1720,10 +1725,10 @@
    ],
    "consigli": {
     "it": [
-     "Per sapere la data della serata di presentazione scrivi alla Pro Loco."
+     "Per i laboratori dei ragazzi serve l'iscrizione online: 10 posti per gruppo, in ordine di arrivo."
     ],
     "en": [
-     "To find out the date of the presentation evening, write to the Pro Loco."
+     "The youth workshops need online registration: 10 places per group, first come, first served."
     ]
    },
    "contatti": {
@@ -1735,7 +1740,7 @@
    "caratteristiche": [
     "Forno per la ceramica",
     "Aperto a tutti",
-    "Corso per ragazzi 10-18 anni"
+    "Corso per ragazzi 8-18 anni"
    ],
    "credito": "Visit Montallegro Bovo Marina",
    "galleria": [
@@ -10043,6 +10048,58 @@
   }
  ],
  "eventi": [
+  {
+   "id": "crita-allegra-primo-laboratorio",
+   "evidenza": true,
+   "breve": {
+    "it": "Presentazione del progetto e laboratori di ceramica per ragazzi dagli 8 ai 18 anni, su iscrizione.",
+    "en": "Project launch and ceramics workshops for ages 8 to 18, registration required."
+   },
+   "notifica": {
+    "it": "Venerdì 27 novembre alle 18:00 presentiamo il progetto e parte il primo laboratorio di ceramica per ragazzi dagli 8 ai 18 anni. Posti limitati: iscriviti dall’app.",
+    "en": "Friday 27 November at 6 pm: project launch and the first ceramics workshop for ages 8 to 18. Limited places: sign up in the app."
+   },
+   "foto": "img/foto/crita-allegra-pupazzo.jpg",
+   "inizio": "2026-11-27",
+   "fine": "2026-11-27",
+   "ora": {
+    "it": "ore 18:00",
+    "en": "6 pm"
+   },
+   "titolo": {
+    "it": "Crita Allegra · Primo laboratorio",
+    "en": "Crita Allegra · First workshop"
+   },
+   "luogo": {
+    "it": "Aula Multimediale Ercole Longo, Montallegro",
+    "en": "Aula Multimediale Ercole Longo, Montallegro"
+   },
+   "scheda": "aula-multimediale-ercole-longo",
+   "organizza": "Pro Loco Montallegro APS",
+   "testo": {
+    "it": "Venerdì 27 novembre alle 18:00, all'Aula Multimediale Ercole Longo, si presenta Crita Allegra: il laboratorio di ceramica della Pro Loco nel Museo della Civiltà Contadina, nato grazie agli artisti di Montallegro e al Comune. Intervengono il Sindaco, l'Assessore al Turismo, gli artisti e la Pro Loco, e la presentazione è aperta a tutti. A seguire il primo laboratorio per ragazzi, in due gruppi da 10 posti: Primi passi (8–12 anni), il laboratorio di base con le tecniche della ceramica, e Mani in crita (13–18 anni), il laboratorio creativo in cui si crea una decorazione di Natale da cuocere nel forno. Per i laboratori serve l'iscrizione online.",
+    "en": "On Friday 27 November at 6 pm, at the Aula Multimediale Ercole Longo, the Pro Loco presents Crita Allegra: its ceramics workshop in the Museum of Rural Life, created with Montallegro's artists and the town council. The Mayor, the councillor for tourism, the artists and the Pro Loco will speak, and the presentation is open to all. It is followed by the first workshop for young people, in two groups of 10: Primi passi (ages 8–12), the beginners' workshop on ceramic techniques, and Mani in crita (ages 13–18), the creative workshop where everyone makes a Christmas decoration to be fired in the kiln. Online registration is required for the workshops."
+   },
+   "info": [
+    {
+     "it": "Iscrizioni online ai laboratori",
+     "en": "Online registration for the workshops",
+     "link": "https://tally.so/r/kbNoZM"
+    },
+    {
+     "tipo": "telefono",
+     "it": "Per maggiori info",
+     "en": "For more info",
+     "tel": "3288597144"
+    },
+    {
+     "it": "Cos'è Crita Allegra",
+     "en": "About Crita Allegra",
+     "scheda": "crita-allegra"
+    }
+   ],
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+  },
   {
    "id": "natale-2026",
    "programma": true,
