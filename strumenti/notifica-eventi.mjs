@@ -7,6 +7,9 @@
 //     e quelli che prima erano «da confermare» e ora sono confermati. Salta bozze, eventi già finiti,
 //     eventi ancora da confermare e quelli con "notifica": false. Con "notifica": {"it": "…", "en": "…"}
 //     il testo della notifica è quello scritto lì.
+//     Richiamo: per riavvisare un evento già annunciato (per esempio «ultimi posti») aggiungi o cambia
+//     "richiamo": {"id": "<nome nuovo>", "it": "…", "en": "…"}. Parte un avviso con quel testo
+//     ogni volta che cambia l'id; lo stesso id non parte due volte.
 //  2. Aspetta che il programma nuovo sia online: raw.githubusercontent.com tiene una copia in cache
 //     fino a 5 minuti e le foto nuove arrivano con il workflow «Versione web».
 //  3. Manda un solo avviso per push, in italiano a chi ha l'app in italiano (tag lingua = it, o senza tag)
@@ -151,7 +154,8 @@ function componi(annunci, tutti) {
       pagina: 'evento-' + e.id, ids: [e.id], foto: e.foto,
       testi: Object.fromEntries(LINGUE.map((L) => [L, {
         titolo: tx(e.titolo, L),
-        testo: (e.notifica && typeof e.notifica === 'object' && tx(e.notifica, L)) ||
+        testo: (tipo === 'richiamo' && e.richiamo && tx(e.richiamo, L)) ||
+          (e.notifica && typeof e.notifica === 'object' && tx(e.notifica, L)) ||
           [tipo === 'confermato' ? T[L].confermato : T[L].nuovo, quando(e, L), tx(e.luogo, L)].filter(Boolean).join(' · ')
       }]))
     };
@@ -256,9 +260,11 @@ if (elencoIds(env.EVENTI).length) {
     const v = vecchi.get(e.id);
     if (!v) return [{ e, tipo: 'nuovo' }];
     if (v.daConfermare) return [{ e, tipo: 'confermato' }];
+    const r = e.richiamo && typeof e.richiamo === 'object' && e.richiamo.id;
+    if (r && r !== (v.richiamo && v.richiamo.id)) return [{ e, tipo: 'richiamo' }];
     return [];
   });
-  if (!annunci.length) esci('Nessun evento nuovo o appena confermato: nessuna notifica.');
+  if (!annunci.length) esci('Nessun evento nuovo, appena confermato o con un richiamo nuovo: nessuna notifica.');
 }
 
 const avviso = componi(annunci, tutti);
@@ -294,7 +300,7 @@ for (const L of PROVA ? ['it'] : LINGUE) {
     contents: { en: testo, it: testo },
     web_url: webUrl,
     app_url: appUrl,
-    idempotency_key: PROVA ? randomUUID() : uuidDa(`${MANUALE ? 'manuale:' + (env.GITHUB_RUN_ID || randomUUID()) : 'auto'}:${annunci.map(({ e, tipo }) => tipo + ':' + e.id).sort().join(',')}:${L}`)
+    idempotency_key: PROVA ? randomUUID() : uuidDa(`${MANUALE ? 'manuale:' + (env.GITHUB_RUN_ID || randomUUID()) : 'auto'}:${annunci.map(({ e, tipo }) => (tipo === 'richiamo' ? 'richiamo-' + e.richiamo.id : tipo) + ':' + e.id).sort().join(',')}:${L}`)
   };
   if (immagine) corpo.chrome_web_image = immagine;
   if (invio.inviaDopo) corpo.send_after = invio.inviaDopo;
