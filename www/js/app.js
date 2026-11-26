@@ -49,7 +49,7 @@
         "Emergenze in mare: Guardia Costiera 1530. Emergenze a terra: 112."
       ],
       esperienzeIntro: "Escursioni in riserva, passeggiate a cavallo, kayak e SUP, natura e cultura del paese.",
-      mangiareIntro: "Ristoranti, pizzerie, lidi sul mare, bar e pub di Montallegro e Bovo Marina, più i migliori indirizzi dei dintorni.", spiaggeVicine: "Altre spiagge vicine", territorio: "Scopri il territorio", altriLuoghi: "Altri luoghi da vedere", neiDintorni: "Nei dintorni", foto: "Foto", chiudi: "Chiudi", notiziePortale: "Notizie ed eventi sul portale", fotoNonDisponibile: "Foto non disponibile senza rete",
+      mangiareIntro: "Ristoranti, pizzerie, lidi sul mare, bar e pub di Montallegro e Bovo Marina, più i migliori indirizzi dei dintorni.", spiaggeVicine: "Altre spiagge vicine", territorio: "Scopri il territorio", altriLuoghi: "Altri luoghi da vedere", neiDintorni: "Nei dintorni", foto: "Foto", chiudi: "Chiudi", notiziePortale: "Notizie ed eventi sul portale", fotoNonDisponibile: "Foto non disponibile senza rete", locandina: "Locandina", ingrandisci: "Tocca la locandina per ingrandirla",
       dormireIntro: "Hotel, B&B, affittacamere, agriturismi, ville e case vacanza a Montallegro e Bovo Marina, sul mare e in campagna.",
       chiamaPrima: "Molti locali sul mare aprono solo in stagione: chiama prima di andare.",
       tuttiLocali: "Altri locali sul portale Visit Montallegro", tutteStrutture: "Tutte le strutture sul portale Visit Montallegro",
@@ -133,7 +133,7 @@
         "Emergencies at sea: Coast Guard 1530. On land: 112."
       ],
       esperienzeIntro: "Nature reserve hikes, horse rides, kayak and SUP, nature and local culture.",
-      mangiareIntro: "Restaurants, pizzerias, beach clubs, bars and pubs in Montallegro and Bovo Marina, plus the best addresses nearby.", spiaggeVicine: "More beaches nearby", territorio: "Discover the area", altriLuoghi: "More places to see", neiDintorni: "Nearby", foto: "Photos", chiudi: "Close", notiziePortale: "News and events on the website", fotoNonDisponibile: "Photo not available offline",
+      mangiareIntro: "Restaurants, pizzerias, beach clubs, bars and pubs in Montallegro and Bovo Marina, plus the best addresses nearby.", spiaggeVicine: "More beaches nearby", territorio: "Discover the area", altriLuoghi: "More places to see", neiDintorni: "Nearby", foto: "Photos", chiudi: "Close", notiziePortale: "News and events on the website", fotoNonDisponibile: "Photo not available offline", locandina: "Poster", ingrandisci: "Tap the poster to enlarge it",
       dormireIntro: "Hotels, B&Bs, guest rooms, farm stays, villas and holiday homes in Montallegro and Bovo Marina, by the sea and in the countryside.",
       chiamaPrima: "Many seaside places open only in season: call before you go.",
       tuttiLocali: "More places on the Visit Montallegro website", tutteStrutture: "All places to stay on the Visit Montallegro website",
@@ -1495,10 +1495,30 @@
       '</div></article>';
   };
 
+  // locandina dell'evento: intera, senza ritagli; un tocco la apre a tutto schermo.
+  // Nell'app installata le immagini aggiunte dopo l'ultima versione non sono nel telefono: si prendono dalla web app.
+  function fotoDalWeb(src) {
+    return src && !/^https?:\/\//.test(src) && CFG.WEB_URL ? CFG.WEB_URL.replace(/#.*$/, '').replace(/[^/]*$/, '') + src.replace(/^\.?\//, '') : '';
+  }
+  function locandinaHtml(e) {
+    if (!e.locandina) return '';
+    return '<figure class="locandina"><button type="button" data-azione="apri-locandina" data-id="' + esc(e.id) + '" aria-label="' + esc(t('locandina') + ': ' + tx(e.titolo)) + '">' +
+      immagine(e.locandina, fotoDalWeb(e.locandina)) + '</button><figcaption>' + esc(t('ingrandisci')) + '</figcaption></figure>';
+  }
+  function apriLocandina(id) {
+    var e = evento(id);
+    if (!e || !e.locandina) return;
+    var im = document.querySelector('.locandina img');
+    mostraVisore(t('locandina') + ': ' + tx(e.titolo), [{ foto: (im && im.currentSrc) || e.locandina }], 0);
+  }
   function apriFoto(id, i) {
     var p = scheda(id);
     if (!p || !p.galleria || !p.galleria.length) return;
+    mostraVisore(tx(p.nome), p.galleria, i);
+  }
+  function mostraVisore(nome, galleria, i) {
     chiudiFoto();
+    var p = { nome: nome, galleria: galleria };
     var n = p.galleria.length;
     var box = document.createElement('div');
     box.className = 'visore';
@@ -1512,14 +1532,14 @@
         (did || g.credito ? '<figcaption>' + esc(did) + (g.credito ? '<small>© ' + esc(g.credito) + '</small>' : '') + '</figcaption>' : '') + '</figure>';
     }).join('') + '</div>' +
       '<button type="button" class="visore-chiudi" data-azione="chiudi-foto" aria-label="' + esc(t('chiudi')) + '">' + ic('close') + '</button>' +
-      '<span class="visore-n">' + (i + 1) + ' / ' + n + '</span>';
+      (n > 1 ? '<span class="visore-n">' + (i + 1) + ' / ' + n + '</span>' : '');
     document.body.appendChild(box);
     document.documentElement.classList.add('bloccato');
     var pista = box.querySelector('.visore-pista');
     var conta = box.querySelector('.visore-n');
     pista.scrollLeft = i * pista.clientWidth;
     pista.addEventListener('scroll', function () {
-      conta.textContent = (Math.round(pista.scrollLeft / Math.max(1, pista.clientWidth)) + 1) + ' / ' + n;
+      if (conta) conta.textContent = (Math.round(pista.scrollLeft / Math.max(1, pista.clientWidth)) + 1) + ' / ' + n;
     }, { passive: true });
     box.querySelectorAll('img').forEach(function (im) {
       im.addEventListener('error', function () { im.parentNode.classList.add('rotta'); });
@@ -1618,6 +1638,7 @@
       (e.organizza ? fatto('info', t('organizza') + ': ' + esc(e.organizza)) : '') +
       '</div>' +
       '<div class="testo"><p>' + esc(tx(e.testo)) + '</p></div>' +
+      locandinaHtml(e) +
       (figli.length ? '<section class="blocco programma"><h2>' + esc(t('programma')) + '</h2><div class="elenco">' + figli.map(rigaEvento).join('') + '</div>' + notaProgramma(e) + '</section>' : '') +
       '<div class="azioni">' + az.join('') + '</div>' +
       '</div></article>';
@@ -2089,6 +2110,8 @@
       aggiornaRicerca();
     } else if (az === 'apri-foto') {
       apriFoto(el.getAttribute('data-id'), +el.getAttribute('data-i') || 0);
+    } else if (az === 'apri-locandina') {
+      apriLocandina(el.getAttribute('data-id'));
     } else if (az === 'chiudi-foto') {
       chiudiFoto();
     } else if (az === 'chiudi-foglio') {

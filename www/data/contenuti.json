@@ -1,5 +1,5 @@
 {
- "versione": "2026-11-25.04",
+ "versione": "2026-11-26.01",
  "_nota": "Contenuti di Visit Montallegro Bovo Marina. Ogni testo ha la versione it ed en. foto: percorso in www/img/foto/ oppure indirizzo https (Wikimedia Commons); fotoRiserva: indirizzo alternativo se il primo non si carica. lat/lng null = il luogo non compare sulla mappa; navigaA = punto dove portano le indicazioni stradali, se diverso dal segnaposto. Le categorie decidono in quale sezione compare una scheda. Le schede con \"fonte\": \"portale\" vengono dalla guida del portale (verificate a novembre 2026); quelle con \"fonte\": \"imposta\" vengono dall'elenco delle strutture registrate all'imposta di soggiorno di Montallegro (impostamontallegro.it); \"sotto\" è la sottocategoria usata per i filtri. Partner della Pro Loco: in una scheda \"partner\": true, oppure la data di scadenza \"AAAA-MM-GG\", la mette tra i partner (bollino, primi posti nella sua sezione, home «Consigliati dalla Pro Loco»). Il blocco \"proloco\" contiene quota socio e prezzo partner delle pagine Diventa socio e Diventa partner. Itinerari: \"tipo\" (piedi, bici, cavallo, mare, natura, cultura, sapori) decide il filtro e l'etichetta; \"dati\" (lunghezza, dislivello, difficoltà), \"traccia\" (link al percorso GPS) e \"consigli\" sono facoltativi; una tappa senza \"scheda\" è solo testo. Niente prezzi nell'app: al posto del prezzo una riga {\"tipo\": \"telefono\", \"it\": \"Per maggiori info\", \"tel\": \"numero\"}; il numero diventa un tasto per chiamare. Eventi: inizio/fine (AAAA-MM-GG); \"quando\" sostituisce le date calcolate quando non sono di seguito; \"gruppo\" lega un appuntamento al suo programma (l'evento con \"programma\": true elenca i suoi); \"evidenza\": true mette l'evento nella card «In evidenza» in home e in Eventi fino al giorno dell'evento, con \"occhiello\" e \"breve\"; \"contatto\" aggiunge WhatsApp e Chiama (\"messaggio\" è il testo già scritto); \"mappe\" aggiunge le indicazioni; \"scheda\" collega il luogo alla sua scheda; \"info\" sono righe come nelle schede; \"daConfermare\": true mette l'etichetta «Da confermare»; \"ora\" è l'orario scritto per lingua, accanto alla data. Una slide della home con \"fino\" sparisce dopo quella data. Eventi: \"programmaNota\" (it/en) è la riga che compare sotto il programma di un evento con \"programma\": true, per dire che arrivano altri appuntamenti.",
  "paese": {
   "lat": 37.39385,
@@ -10127,8 +10127,8 @@
     "en": "Got an event to suggest for Christmas in Montallegro? Write to us at prolocomontallegro@gmail.com"
    },
    "testo": {
-    "it": "Dal 19 dicembre al 6 gennaio Montallegro festeggia il Natale. Per ora sono confermati tre appuntamenti: Montallegro Legge · Xmas Edition con Felice Cavallaro, il Concerto di Natale con gli Zagara Swing e lo Spettacolo di Natale.",
-    "en": "From 19 December to 6 January Montallegro celebrates Christmas. Three events are confirmed so far: Montallegro Legge · Xmas Edition with Felice Cavallaro, the Christmas concert with Zagara Swing and the Christmas Show."
+    "it": "Dal 19 dicembre al 6 gennaio Montallegro festeggia il Natale. Per ora sono confermati quattro appuntamenti: Montallegro Legge · Xmas Edition con Felice Cavallaro il 19 dicembre e con Alessandro Cutrona il 6 gennaio, il Concerto di Natale con gli Zagara Swing e lo Spettacolo di Natale.",
+    "en": "From 19 December to 6 January Montallegro celebrates Christmas. Four events are confirmed so far: Montallegro Legge · Xmas Edition with Felice Cavallaro on 19 December and with Alessandro Cutrona on 6 January, the Christmas concert with Zagara Swing and the Christmas Show."
    },
    "info": [
     {
@@ -10160,10 +10160,25 @@
    "organizza": "Pro Loco Montallegro APS",
    "contatto": "pro-loco",
    "testo": {
-    "it": "Montallegro Legge torna in versione natalizia con Felice Cavallaro, giornalista del Corriere della Sera e direttore della Strada degli Scrittori. Presenta «Sciascia l'eretico» (Solferino), il ritratto di Leonardo Sciascia scritto da chi lo ha conosciuto fin da bambino, a Racalmuto.",
-    "en": "Montallegro Legge, the town's book series, returns in a Christmas edition with Felice Cavallaro, journalist at Corriere della Sera and director of the Strada degli Scrittori. He presents «Sciascia l'eretico» (Solferino), his portrait of Leonardo Sciascia, whom he knew from childhood in Racalmuto."
+    "it": "Montallegro Legge torna in versione natalizia con Felice Cavallaro, giornalista del Corriere della Sera e direttore della Strada degli Scrittori. Presenta «Sciascia l'eretico. Storie e profezie di un siciliano scomodo» (Solferino), il ritratto di Leonardo Sciascia scritto da chi lo ha conosciuto fin da bambino, a Racalmuto. A seguire aperitivo e rinfresco. Direzione artistica di Roberto Bruccoleri.",
+    "en": "Montallegro Legge, the town's book series, returns in a Christmas edition with Felice Cavallaro, journalist at Corriere della Sera and director of the Strada degli Scrittori. He presents «Sciascia l'eretico. Storie e profezie di un siciliano scomodo» (Solferino), his portrait of Leonardo Sciascia, whom he knew from childhood in Racalmuto. Followed by drinks and refreshments. Artistic director: Roberto Bruccoleri."
    },
-   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)",
+   "occhiello": {
+    "it": "Con Felice Cavallaro",
+    "en": "With Felice Cavallaro"
+   },
+   "ora": {
+    "it": "ore 18:30",
+    "en": "6:30 pm"
+   },
+   "locandina": "img/foto/montallegro-legge-xmas-locandina.jpg",
+   "scheda": "aula-multimediale-ercole-longo",
+   "richiamo": {
+    "id": "2026-11-26-locandina",
+    "it": "Ecco la locandina: sabato 19 dicembre Felice Cavallaro presenta «Sciascia l'eretico», mercoledì 6 gennaio Alessandro Cutrona «Harry Potter, il mago di carta». Ore 18:30.",
+    "en": "Here's the poster: on Saturday 19 December Felice Cavallaro presents «Sciascia l'eretico», on Wednesday 6 January Alessandro Cutrona «Harry Potter, il mago di carta». 6:30 pm."
+   }
   },
   {
    "id": "concerto-natale-2026",
@@ -10217,6 +10232,39 @@
     "it": "Il palco è di chi sale: canta, suona, recita o fai ridere il pubblico.",
     "en": "The stage is yours: sing, play, recite or make the audience laugh."
    }
+  },
+  {
+   "id": "montallegro-legge-xmas-2027",
+   "gruppo": "natale-2026",
+   "notifica": false,
+   "foto": "img/foto/natale-libro.jpg",
+   "locandina": "img/foto/montallegro-legge-xmas-locandina.jpg",
+   "inizio": "2027-01-06",
+   "fine": "2027-01-06",
+   "ora": {
+    "it": "ore 18:30",
+    "en": "6:30 pm"
+   },
+   "titolo": {
+    "it": "Montallegro Legge · Xmas Edition",
+    "en": "Montallegro Legge · Xmas Edition"
+   },
+   "occhiello": {
+    "it": "Con Alessandro Cutrona",
+    "en": "With Alessandro Cutrona"
+   },
+   "luogo": {
+    "it": "Aula Multimediale Ercole Longo, Montallegro",
+    "en": "Aula Multimediale Ercole Longo, Montallegro"
+   },
+   "scheda": "aula-multimediale-ercole-longo",
+   "organizza": "Pro Loco Montallegro APS",
+   "contatto": "pro-loco",
+   "testo": {
+    "it": "Montallegro Legge chiude il Natale con Alessandro Cutrona, che presenta «Harry Potter, il mago di carta. Itinerari letterari nel mondo di Hogwarts», scritto con Salvatore Ferlita: un viaggio letterario nella saga di J.K. Rowling, romanzo dopo romanzo. A seguire aperitivo e rinfresco. Direzione artistica di Roberto Bruccoleri.",
+    "en": "Montallegro Legge closes the Christmas season with Alessandro Cutrona, who presents «Harry Potter, il mago di carta. Itinerari letterari nel mondo di Hogwarts», written with Salvatore Ferlita: a literary journey through J.K. Rowling's saga, novel by novel. Followed by drinks and refreshments. Artistic director: Roberto Bruccoleri."
+   },
+   "mappe": "Aula Multimediale Ercole Longo, Viale della Vittoria, 105, 92010 Montallegro (AG)"
   }
  ],
  "ricorrenze": [
