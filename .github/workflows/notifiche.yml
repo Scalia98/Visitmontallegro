@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       eventi:
-        description: 'Eventi da annunciare: id separati da virgola (vuoto, in prova = il prossimo evento)'
+        description: 'Eventi da annunciare: id separati da virgola; «id:richiamo» rimanda il richiamo (vuoto, in prova = il prossimo evento)'
         required: false
         default: ''
       prova:

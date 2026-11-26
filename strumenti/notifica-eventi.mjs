@@ -20,7 +20,8 @@
 // Variabili d'ambiente (le passa il workflow)
 //   ONESIGNAL_API_KEY  chiave API dell'app OneSignal (segreto del repository). Senza, non manda niente.
 //   PRIMA, DOPO        i commit da confrontare (github.event.before e github.sha).
-//   EVENTI             id degli eventi da annunciare, separati da virgola, al posto del confronto.
+//   EVENTI             id degli eventi da annunciare, separati da virgola, al posto del confronto
+//                      («id:richiamo» rimanda il testo del richiamo di quell'evento).
 //   PROVA=1            solo prova: manda subito e solo al telefono di prova (campo «telefono» dell'avvio a mano,
 //                      o PROVA_ID: id delle iscrizioni separati da virgola).
 //   MANUALE=1          avvio a mano: niente attesa iniziale e ogni avvio manda di nuovo.
@@ -242,10 +243,13 @@ const invio = PROVA ? { inviaDopo: null, giorno: roma(adesso).giorno } : quandoM
 
 let annunci;
 if (elencoIds(env.EVENTI).length) {
-  annunci = elencoIds(env.EVENTI).map((id) => {
+  // «id:richiamo» rimanda il testo del richiamo dell'evento invece dell'annuncio
+  annunci = elencoIds(env.EVENTI).map((voce) => {
+    const [id, modo] = voce.split(':');
     const e = tutti.find((x) => x.id === id);
     if (!e) esci(`Nel programma non c'è nessun evento con id «${id}».`, 1);
-    return { e, tipo: 'nuovo' };
+    if (modo === 'richiamo' && !(e.richiamo && e.richiamo.id)) esci(`L'evento «${id}» non ha un richiamo.`, 1);
+    return { e, tipo: modo === 'richiamo' ? 'richiamo' : 'nuovo' };
   });
 } else if (PROVA) {
   const prossimo = tutti.filter((e) => annunciabile(e, invio.giorno) && !e.programma)
